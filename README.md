@@ -51,7 +51,7 @@ Example usage:
 </details>
 
 ## Evaluation
-Our evaluation for lateral thinking includes 3 dimension: the semantic-based/lexical-based metrics, our proposed KG-based metrics and the DAT score. and the detail usage are as following:
+Our evaluation for lateral thinking includes 3 dimension: the semantic-based/lexical-based metrics, our proposed KG-based metrics and the DAT score. The detail usage are as following:
 - To calculate BLEU scores and BLEURT scores for generated results, run script `evaluation_lmqg.py`.
 - The KG-based evaluation needs to run script `evaluation_kg.py` to generate an autometically eventKG annotation for generated files first, then run script `evaluate_graph_score.py`
 - DAT score is a metric to evaluate divergent, and you can run `evaluate_dat_score.py` to get the DAT scores.

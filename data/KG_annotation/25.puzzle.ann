@@ -1,0 +1,37 @@
+T1	Event 17 23	stands
+T2	Head_End 2 5	man
+T3	Head_End 51 57	island
+T4	Att_span 42 50	tropical
+T5	Event 63 68	takes
+T6	Head_End 60 62	he
+T7	Head_End 75 84	cigarette
+T8	Event 86 92	lights
+T9	Event 101 107	begins
+T10	Head_End 108 115	smoking
+T11	Event 121 130	takes out
+T12	Head_End 118 120	he
+T13	Head_End 133 139	letter
+T14	Event 144 150	begins
+T15	Head_End 151 158	reading
+T16	Event 178 183	burns
+T17	Head_End 168 177	cigarette
+T18	Event 217 230	doesn't throw
+T19	Head_End 214 216	he
+T20	Event 244 249	cries
+T21	Head_End 241 243	he
+E1	Event:T1 End:T2 Head:T3
+E2	Event:T5 Head:T6 End:T7
+E3	Event:T8 Head:T6 End:T7
+E4	Event:T9 Head:T6 End:T10
+E5	Event:T11 Head:T12 End:T13
+E6	Event:T14 Head:T12 End:T15
+E7	Event:T16 End:T17
+E8	Event:T18 Head:T19 End:T17
+E9	Event:T20 Head:T21
+R1	Entity_att Arg1:T4 Arg2:T3
+T22	Att_span 6 16	in uniform
+R2	Entity_att Arg1:T22 Arg2:T2	
+R3	EventTemporal Arg1:E3 Arg2:E4	
+R4	EventTemporal Arg1:E2 Arg2:E3	
+R5	EventTemporal Arg1:E5 Arg2:E6	
+R6	EventTemporal Arg1:E6 Arg2:E7	

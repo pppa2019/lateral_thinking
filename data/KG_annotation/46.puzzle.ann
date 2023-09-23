@@ -1,0 +1,5 @@
+T2	Head_End 20 23	man
+T3	Event 24 28	dies
+E1	Event:T3 Head:T2
+T1	Event 0 16	A flash of light
+E2	Event:T1 

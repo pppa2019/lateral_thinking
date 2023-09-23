@@ -1,0 +1,29 @@
+T1	Event 42 51	collected
+T2	Head_End 52 62	autographs
+T3	Event 113 122	purchased
+T4	Head_End 32 37	woman
+T5	Head_End 127 132	check
+T6	Event 149 152	pay
+T7	Head_End 85 87	he
+T9	Head_End 97 107	restaurant
+T10	Event 88 92	left
+T11	Event 220 232	never cashed
+T12	Head_End 200 205	check
+T13	Event 248 258	never paid
+T14	Head_End 241 247	artist
+E1	Event:T1 End:T2 Head:T4
+E2	Event:T3 Head:T4 End:T5
+E3	Event:T6 Head:T7
+E5	Event:T10 Head:T7 End:T9
+E6	Event:T11 End:T12
+E7	Event:T13 Head:T14
+T15	Head_End 4 7	man
+T16	Head_End 14 27	famous artist
+R1	EntityEqual Arg1:T15 Arg2:T16	
+T17	Event 63 66	saw
+E8	Event:T17 Head:T4 End:T18
+T18	Head_End 67 70	him
+T8	Att_span 166 193	from the restaurant manager
+R2	Event_att Arg1:T8 Arg2:E3	
+R3	EventCause Arg1:E6 Arg2:E7	
+R4	EventTemporal Arg1:E5 Arg2:E2	

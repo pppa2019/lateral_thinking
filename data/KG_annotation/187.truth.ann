@@ -1,0 +1,6 @@
+T1	Event 8 17	returning
+T2	Head_End 0 3	she
+T3	Head_End 29 41	library book
+E1	Event:T1 Head:T2 End:T3
+T4	Att_span 21 28	overdue
+R1	Entity_att Arg1:T4 Arg2:T3	

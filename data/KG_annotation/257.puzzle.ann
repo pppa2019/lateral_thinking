@@ -1,0 +1,11 @@
+T1	Head_End 0 30	A significant number of people
+T2	Event 31 35	have
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 36 64	a Crucifixion scene tattooed
+T4	Att_span 65 80	on their bodies
+R1	Event_att Arg1:T4 Arg2:E1	
+T5	Head_End 82 94	These people
+T6	Event 95 108	did not share
+E2	Event:T6 Head:T5 End:T7
+T7	Head_End 109 141	any particular religious beliefs
+R2	EntityEqual Arg1:T5 Arg2:T1	

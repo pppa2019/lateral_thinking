@@ -1,0 +1,23 @@
+T1	Head_End 0 7	Someone
+T2	Event 20 27	conceal
+E1	Event:T2 Head:T4 End:T5
+T3	Non_Core_Event 8 11	saw
+E2	Non_Core_Event:T3 Head:T1
+R1	NC2Event Arg1:E2 Arg2:E1	
+T4	Head_End 16 19	guy
+T5	Head_End 30 34	card
+T6	Non_Core_Event 40 46	proved
+E3	Non_Core_Event:T6 
+T7	Head_End 51 55	deck
+T8	Att_span 60 69	defective
+R2	Entity_att Arg1:T8 Arg2:T7	
+T9	Event 73 86	turning it up
+E4	Event:T9 Head:T11
+T10	Event 91 103	pointing out
+E5	Event:T10 Head:T11
+T11	Head_End 116 119	ace
+T12	Att_span 108 115	missing
+R3	Entity_att Arg1:T12 Arg2:T11	
+R4	EventSameTime Arg1:E4 Arg2:E5	
+R5	EventCause Arg1:E5 Arg2:E3	
+R6	EventCause Arg1:E4 Arg2:E3	

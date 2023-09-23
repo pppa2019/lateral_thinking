@@ -1,0 +1,87 @@
+T1	Event 12 22	comes home
+T2	Head_End 8 11	man
+T3	Att_span 2 7	large
+T4	Head_End 40 49	apartment
+T5	Att_span 30 39	penthouse
+T6	Event 53 59	shares
+T7	Event 91 97	taking
+T8	Head_End 102 110	elevator
+T10	Att_span 114 135	from the ground floor
+T11	Event 140 144	sees
+T12	Head_End 137 139	he
+T13	Head_End 145 150	signs
+T14	Non_Core_Event 185 192	assumes
+T15	Head_End 220 227	affair;
+T16	Event 210 216	having
+T17	Event 252 259	escaped
+T18	Head_End 260 275	down the stairs
+T19	Event 290 295	looks
+T20	Head_End 282 289	husband
+T21	Head_End 304 318	french windows
+T22	Event 323 327	sees
+T23	Head_End 343 346	man
+T24	Event 352 359	leaving
+T25	Head_End 369 377	entrance
+T26	Att_span 364 368	main
+T27	Att_span 347 351	just
+T28	Event 408 414	pushes
+T29	Head_End 419 431	refrigerator
+T30	Head_End 470 473	man
+T31	Att_span 464 469	young
+T32	Event 494 498	dies
+T33	Head_End 549 558	young man
+T35	Event 597 601	fall
+T36	Head_End 584 596	refrigerator
+T37	Event 575 581	having
+T38	Head_End 618 634	wife's boyfriend
+E1	Event:T1 End:T2
+E2	Event:T6 Head:T2 End:T4
+E3	Event:T7 Head:T2 End:T8
+E4	Event:T11 Head:T12 End:T13
+E5	Non_Core_Event:T14 Head:T12
+E6	Event:T16 Head:T43 Head2:T15
+E7	Event:T17 End:T18 Head:T44
+E8	Event:T19 Head:T20 End:T21
+E9	Event:T22 Head:T20 End:T23
+E10	Event:T24 End:T25
+E11	Event:T28 End:T29 Head:T20
+E12	Event:T32 Head:T39
+E13	Event:T35 Head:T36 End:T33
+E14	Event:T37 End:T38
+R1	Entity_att Arg1:T3 Arg2:T2
+R2	Entity_att Arg1:T5 Arg2:T4
+R4	Entity_att Arg1:T26 Arg2:T25
+R5	Event_att Arg1:T27 Arg2:T24
+R6	Entity_att Arg1:T31 Arg2:T30
+T41	Att_span 60 89	with his beautiful young wife
+R9	Event_att Arg1:T41 Arg2:E2	
+R3	Event_att Arg1:T10 Arg2:E3	
+T9	Att_span 154 164	lovemaking
+R10	Entity_att Arg1:T9 Arg2:T13	
+T42	Att_span 165 179	in the bedroom
+R11	Entity_att Arg1:T42 Arg2:T13	
+R12	EventCause Arg1:E4 Arg2:E5	
+T43	Head_End 198 206	his wife
+R13	NC2Event Arg1:E5 Arg2:E6	
+T44	Head_End 228 236	her beau
+T45	Att_span 241 251	presumably
+R14	Event_att Arg1:T45 Arg2:E7	
+T46	Att_span 330 342	good-looking
+R15	Entity_att Arg1:T46 Arg2:T23	
+T47	Att_span 436 454	through the window
+R16	Event_att Arg1:T47 Arg2:E11	
+T39	Head_End 486 493	husband
+T40	Event 504 516	heart attack
+E15	Event:T40 
+T48	Event 522 534	overexertion
+E16	Event:T48 
+R8	EventCause Arg1:E16 Arg2:E15	
+R17	EventCause Arg1:E15 Arg2:E12	
+T34	Event 565 569	dies
+E17	Event:T34 
+R7	EventCause Arg1:E13 Arg2:E17	
+T49	Event 644 650	hiding
+E18	Event:T49 Head:T38 End:T50
+T50	Head_End 651 673	inside the refrigerato
+T51	Event 681 685	dies
+E19	Event:T51 Head:T38

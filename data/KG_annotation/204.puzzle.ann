@@ -1,0 +1,29 @@
+T1	Head_End 14 17	man
+T2	Event 18 25	reached
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 30 35	river
+T4	Att_span 36 73	with a fox, a duck, and a bag of corn
+R1	Entity_att Arg1:T4 Arg2:T1	
+T5	Head_End 84 87	fox
+T6	Event 88 91	ate
+E2	Event:T6 Head:T5 End:T7
+T7	Head_End 92 113	corn as well as ducks
+T8	Head_End 134 138	boat
+T9	Event 149 151	in
+E3	Event:T9 Head:T8 End:T3
+T10	Head_End 158 160	he
+R2	EntityEqual Arg1:T10 Arg2:T1	
+T11	Event 167 171	take
+E4	Event:T11 Head:T10 End:T12
+T12	Head_End 177 193	one of the three
+T13	Head_End 227 230	fox
+T14	Att_span 231 263	with either the corn or the duck
+T15	Event 213 222	not leave
+E5	Event:T15 Head:T16 End:T13
+T16	Head_End 204 206	He
+R3	EntityEqual Arg1:T16 Arg2:T1	
+R4	Entity_att Arg1:T14 Arg2:T13	
+T17	Head_End 285 289	duck
+T18	Event 303 306	eat
+E6	Event:T18 Head:T17 End:T19
+T19	Head_End 311 315	corn

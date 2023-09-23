@@ -1,0 +1,8 @@
+T1	Head_End 2 5	man
+T2	Event 15 19	dead
+E1	Event:T2 Head:T1
+T3	Att_span 20 44	outside a large building
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Head_End 50 56	a hole
+T5	Event 57 59	in
+E2	Event:T5 Head:T4 End:T1

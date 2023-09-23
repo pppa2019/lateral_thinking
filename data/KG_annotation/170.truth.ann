@@ -1,0 +1,39 @@
+T1	Head_End 4 14	shopkeeper
+T2	Head_End 20 32	French baker
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 38 54	American tourist
+T4	Event 55 65	walks into
+E1	Event:T4 Head:T3 End:T5
+T5	Head_End 70 76	bakery
+T6	Event 78 95	pauses to look up
+E2	Event:T6 Head:T3 End:T8
+T7	Event 96 104	remember
+E3	Event:T7 Head:T3 End:T8
+R2	EventSameTime Arg1:E2 Arg2:E3	
+T8	Head_End 109 125	word for "bread"
+T9	Att_span 126 135	in French
+R3	Entity_att Arg1:T9 Arg2:T8	
+T10	Head_End 155 159	pain
+R4	EntityEqual Arg1:T10 Arg2:T8	
+T11	Head_End 167 175	American
+R5	EntityEqual Arg1:T11 Arg2:T3	
+T12	Event 176 180	says
+E4	Event:T12 Head:T11 End:T13
+T13	Head_End 185 189	word
+T14	Head_End 204 227	the English word "pain"
+R6	EntityEqual Arg1:T14 Arg2:T13	
+T15	Head_End 243 253	shopkeeper
+T16	Event 254 273	does not understand
+E5	Event:T16 Head:T15 End:T17
+T17	Head_End 279 301	the American is saying
+R7	EntityEqual Arg1:T17 Arg2:T13	
+T18	Event 312 316	does
+E6	Event:T18 Head:T15
+R8	EventTemporal Arg1:E5 Arg2:E6	
+T20	Event 326 333	annoyed
+E7	Event:T20 Head:T21 End:T19
+T21	Head_End 318 320	he
+T19	Head_End 352 374	horrible pronunciation
+T22	Head_End 339 351	the person's
+R9	EntityPartof Arg1:T22 Arg2:T19	
+R10	EntityEqual Arg1:T22 Arg2:T11	

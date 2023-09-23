@@ -1,0 +1,62 @@
+T1	Head_End 0 13	A small plane
+T2	Event 18 24	flying
+E1	Event:T2 Head:T1
+T3	Att_span 25 48	from Albany to New York
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Att_span 49 63	some years ago
+R2	Event_att Arg1:T4 Arg2:E1	
+T5	Head_End 95 111	a grumpy old man
+T7	Head_End 136 153	a grumpy old lady
+T9	Event 65 78	Seated beside
+E2	Event:T9 Head:T5 End:T7
+T10	Head_End 188 192	Each
+T11	Event 219 236	complaining about
+E3	Event:T11 Head:T10 End:T14
+T12	Non_Core_Event 193 198	spent
+E4	Non_Core_Event:T12 Head:T13
+T13	Head_End 199 218	most of the journey
+R5	NC2Event Arg1:E4 Arg2:E3	
+T14	Head_End 237 246	the other
+T15	Head_End 258 268	compromise
+T16	Event 273 280	reached
+E5	Event:T16 Head:T15
+T17	Head_End 286 293	old man
+R6	EntityEqual Arg1:T17 Arg2:T5	
+T18	Non_Core_Event 294 303	agreed to
+E6	Non_Core_Event:T18 
+T19	Event 304 309	throw
+E7	Event:T19 Head:T17 End:T20
+R7	NC2Event Arg1:E6 Arg2:E7	
+T20	Head_End 310 318	his pipe
+T21	Att_span 319 336	out of the window
+R8	Event_att Arg1:T21 Arg2:E7	
+T6	Event 112 119	smoking
+E8	Event:T6 Head:T5 End:T22
+T22	Head_End 120 131	a foul pipe
+R3	EntityEqual Arg1:T20 Arg2:T22	
+T8	Head_End 159 175	a noisy pet duck
+T23	Att_span 176 186	on her lap
+R4	Entity_att Arg1:T23 Arg2:T8	
+T24	Event 154 158	with
+E9	Event:T24 Head:T7 End:T8
+T25	Head_End 344 352	old lady
+T26	Event 359 364	throw
+E10	Event:T26 Head:T25 End:T27
+T27	Head_End 365 373	her duck
+R9	EntityEqual Arg1:T27 Arg2:T8	
+R10	EventCause Arg1:E10 Arg2:E7	
+T28	Head_End 406 411	plane
+T29	Event 412 429	was about to land
+E11	Event:T29 Head:T28
+R11	EntityEqual Arg1:T25 Arg2:T7	
+T30	Head_End 435 439	lady
+T31	Non_Core_Event 444 458	pleased to see
+E12	Non_Core_Event:T31 Head:T30
+T32	Event 468 484	flying alongside
+E13	Event:T32 Head:T33 End:T34
+R12	NC2Event Arg1:E12 Arg2:E13	
+T33	Head_End 463 467	duck
+T34	Head_End 489 494	plane
+R13	EntityEqual Arg1:T33 Arg2:T27	
+R14	EntityEqual Arg1:T34 Arg2:T28	
+R15	EventSameTime Arg1:E11 Arg2:E13	

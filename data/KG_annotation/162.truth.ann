@@ -1,0 +1,3 @@
+T1	Head_End 5 11	island
+T2	Head_End 18 32	traffic island
+R1	EntityEqual Arg1:T2 Arg2:T1	

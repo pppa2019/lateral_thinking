@@ -1,0 +1,6 @@
+T1	Head_End 2 14	blind beggar
+T2	Head_End 21 28	brother
+T3	Event 15 18	had
+E1	Event:T3 Head:T1 End:T2
+T4	Att_span 33 37	died
+R1	Entity_att Arg1:T4 Arg2:T2	

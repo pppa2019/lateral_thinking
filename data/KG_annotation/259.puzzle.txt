@@ -1,0 +1,1 @@
+A total of 213 people enter a knockout tennis tournament. What is the least number of matches that must be played to decide an overall winner?

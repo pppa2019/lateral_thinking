@@ -1,0 +1,30 @@
+T1	Event 5 17	scuba diving
+T4	Event 44 49	lands
+T5	Head_End 38 43	plane
+T6	Event 61 66	fills
+T7	Head_End 71 76	tanks
+T8	Event 89 96	sucking
+T9	Event 124 135	runs out of
+T10	Head_End 136 139	air
+T11	Event 185 190	dumps
+T12	Head_End 150 155	plane
+E1	Event:T1 Head2:T3
+E2	Event:T4 Head:T5
+E3	Event:T6 Head:T5 End:T7
+E4	Event:T8 Head:T5 End:T14
+E5	Event:T9 End:T10 Head:T3
+E6	Event:T11 Head:T12 End:T13
+T3	Head_End 0 2	he
+R1	EventTemporal Arg1:E2 Arg2:E3	
+T2	Att_span 77 87	with water
+R2	Entity_att Arg1:T2 Arg2:T7	
+T14	Head_End 97 100	him
+T15	Head_End 113 118	water
+R3	EntityPartof Arg1:T14 Arg2:T15	
+T16	Event 159 168	in flight
+E7	Event:T16 Head:T12
+R4	EventTemporal Arg1:E4 Arg2:E5	
+R5	EventTemporal Arg1:E7 Arg2:E6	
+T13	Head_End 203 218	water  with him
+T17	Att_span 226 247	onto a burning forest
+R6	Event_att Arg1:T17 Arg2:E6	

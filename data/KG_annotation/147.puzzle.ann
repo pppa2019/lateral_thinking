@@ -1,0 +1,26 @@
+T1	Event 29 33	walk
+T2	Head_End 25 28	you
+T3	Head_End 47 52	field
+T4	Att_span 41 46	large
+T6	Event 0 6	hiking
+T7	Event 144 148	find
+T8	Head_End 140 143	you
+T9	Head_End 151 156	cabin
+E1	Event:T1 Head:T2
+E3	Event:T6 Head:T2
+E4	Event:T7 Head:T8 End:T9
+R1	Entity_att Arg1:T4 Arg2:T3
+T5	Event 57 61	camp
+E2	Event:T5 Head:T2 End:T12
+R3	EventTemporal Arg1:E1 Arg2:E2	
+T12	Head_End 86 97	at a stream
+T13	Att_span 62 73	a few miles
+R4	Entity_att Arg1:T13 Arg2:T12	
+T14	Event 103 108	snows
+E5	Event:T14 End:T15
+T15	Head_End 109 121	in the night
+T10	Att_span 170 190	with two dead bodies
+R2	Entity_att Arg1:T10 Arg2:T9	
+T11	Att_span 127 139	the next day
+R5	Event_att Arg1:T11 Arg2:E4	
+R6	EventTemporal Arg1:E2 Arg2:E5	

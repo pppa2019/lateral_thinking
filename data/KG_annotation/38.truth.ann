@@ -1,0 +1,56 @@
+T1	Event 13 17	sets
+T2	Head_End 22 25	car
+T3	Head_End 47 60	hot dog stand
+T5	Event 78 83	works
+T6	Head_End 71 77	victim
+T7	Event 94 100	wedges
+T8	Head_End 86 88	he
+T9	Head_End 104 113	ice block
+T10	Event 128 132	keep
+T12	Head_End 137 148	brake pedal
+T13	Event 159 163	puts
+T14	Head_End 121 124	car
+T16	Event 199 204	flies
+T17	Head_End 216 220	city
+T18	Att_span 208 215	another
+T19	Event 224 229	avoid
+T20	Event 249 253	warm
+T21	Head_End 254 258	day;
+T22	Event 287 292	rolls
+T23	Head_End 283 286	car
+T24	Head_End 293 306	down the hill
+T25	Event 272 277	melts
+T26	Head_End 268 271	ice
+T27	Event 311 318	strikes
+T28	Head_End 323 334	hot dog man
+T30	Event 358 365	killing
+E1	Event:T1 End:T2 Head:T31
+E2	Event:T5 Head:T6 End:T3
+E3	Event:T7 Head:T8 End:T9
+E4	Event:T10 Head:T8 End:T12
+E5	Event:T13 Head:T8 End:T14 End2:T33
+E7	Event:T16 Head:T8 End:T17
+E8	Event:T19 Head:T8
+E9	Event:T20 End:T21
+E10	Event:T22 Head:T23 End:T24
+E11	Event:T25 End:T26
+E12	Event:T27 Head:T23 End:T28
+E13	Event:T30 End:T28
+R2	Entity_att Arg1:T18 Arg2:T17
+T31	Head_End 4 12	murderer
+T32	Att_span 26 36	on a slope
+R4	Event_att Arg1:T32 Arg2:E1	
+T4	Event 37 42	above
+E14	Event:T4 Head:T2 End:T3
+T11	Att_span 149 153	down
+R1	Entity_att Arg1:T11 Arg2:T12	
+R5	EventTemporal Arg1:E4 Arg2:E5	
+T33	Head_End 168 171	car
+T15	Att_span 175 182	neutral
+R6	Event_att Arg1:T15 Arg2:E5	
+R7	EventCause Arg1:E7 Arg2:E8	
+R8	EventCause Arg1:E9 Arg2:E11	
+R3	EventCause Arg1:E11 Arg2:E10	
+R9	EventTemporal Arg1:E10 Arg2:E12	
+T29	Att_span 335 356	at his roadside stand
+R10	Event_att Arg1:T29 Arg2:E12	

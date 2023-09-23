@@ -1,0 +1,16 @@
+T1	Head_End 4 7	man
+T2	Head_End 12 19	Picasso
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 25 32	builder
+T4	Non_Core_Event 40 47	decided
+E1	Non_Core_Event:T4 Head:T3
+T5	Event 56 78	building the extension
+E2	Event:T5 
+R2	NC2Event Arg1:E1 Arg2:E2	
+T6	Event 88 105	be able to retain
+E3	Event:T6 Head:T3 End:T7
+T7	Head_End 106 141	Picasso's rough sketch of the plans
+R3	EntityPartof Arg1:T7 Arg2:T2	
+T8	Event 158 177	worth far more than
+E4	Event:T8 Head:T7 End:T9
+T9	Head_End 182 211	cost of the construction work

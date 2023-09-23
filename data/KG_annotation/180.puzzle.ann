@@ -1,0 +1,9 @@
+T1	Head_End 2 7	train
+T2	Event 8 18	pulls into
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 21 28	station
+T4	Head_End 54 64	passengers
+T5	Event 65 69	move
+E2	Event:T5 Head:T4
+T6	Att_span 34 53	none of the waiting
+R1	Entity_att Arg1:T6 Arg2:T4	

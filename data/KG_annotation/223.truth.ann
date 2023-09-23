@@ -1,0 +1,13 @@
+T1	Event 15 18	are
+T2	Head_End 4 14	dried peas
+T3	Head_End 33 37	ball
+T4	Att_span 26 32	soccer
+T5	Event 47 50	use
+T6	Event 71 77	enable
+T7	Head_End 86 90	hear
+E1	Event:T1 Head:T2 End:T8
+E2	Event:T5 End:T3
+E3	Event:T6 Head:T2 End:T7 End2:T9
+R1	Entity_att Arg1:T4 Arg2:T3
+T8	Head_End 19 25	inside
+T9	Head_End 54 66	blind people

@@ -1,0 +1,13 @@
+T1	Non_Core_Event 41 45	made
+T3	Head_End 46 55	something
+E1	Non_Core_Event:T1 Head:T4
+T4	Head_End 6 11	harry
+T5	Event 16 23	working
+E2	Event:T5 Head:T4
+T6	Att_span 24 37	in his garage
+R1	Event_att Arg1:T6 Arg2:E2	
+T2	Event 56 62	travel
+E3	Event:T2 Head:T3
+R2	NC2Event Arg1:E1 Arg2:E3	
+T7	Att_span 63 108	at over 3000 miles (4800 kilometers) per hour
+R3	Event_att Arg1:T7 Arg2:E3	

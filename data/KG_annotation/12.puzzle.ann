@@ -1,0 +1,14 @@
+T1	Head_End 0 6	Beulah
+T2	Event 7 11	died
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 12 31	in the Appalachians
+T4	Head_End 39 44	Craig
+T6	Head_End 50 56	at sea
+T5	Event 45 49	died
+E2	Event:T5 Head:T4 End:T6
+T7	Head_End 59 67	Everyone
+T8	Event 77 89	happier with
+E3	Event:T8 Head:T7
+T9	Event 90 103	Craig's death
+E4	Event:T9 
+R1	EventCause Arg1:E4 Arg2:E3	

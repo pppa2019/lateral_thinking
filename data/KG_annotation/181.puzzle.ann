@@ -1,0 +1,9 @@
+T1	Event 44 49	plays
+T2	Head_End 37 43	kitten
+E1	Event:T1 Head:T2
+T3	Head_End 4 18	orient express
+T4	Event 22 30	derailed
+E2	Event:T4 Head:T3
+R1	EventSameTime Arg1:E2 Arg2:E1	
+T5	Att_span 50 56	nearby
+R2	Event_att Arg1:T5 Arg2:E1	

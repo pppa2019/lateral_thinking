@@ -1,0 +1,42 @@
+T1	Event 97 102	plays
+T2	Head_End 105 126	word-association game
+T3	Event 146 150	says
+T4	Head_End 152 172	the land of the free
+T5	Event 229 233	says
+T6	Head_End 235 255	the terror of flight
+T7	Head_End 273 295	the gloom of the grave
+T8	Event 314 319	knows
+T9	Head_End 306 313	citizen
+T10	Att_span 303 305	us
+T11	Head_End 320 335	the first verse
+T12	Head_End 352 358	anthem
+T13	Att_span 343 351	national
+T14	Event 386 395	memorized
+T16	Head_End 428 443	the third verse
+E1	Event:T1 End:T2 Head:T21
+E2	Event:T3 End:T4 Head:T25
+E3	Event:T5 End:T6 Head:T25
+E4	Event:T8 Head:T9 End:T11
+E5	Event:T14 Head:T18 End2:T19
+R1	Entity_att Arg1:T10 Arg2:T9
+R2	Entity_att Arg1:T13 Arg2:T12
+T18	Head_End 369 374	a spy
+T19	Head_End 396 411	the third verse
+T20	Head_End 15 34	america during wwii
+T21	Head_End 37 41	greg
+T22	Head_End 47 58	german spy.
+R3	EntityEqual Arg1:T21 Arg2:T22	
+T23	Att_span 127 135	with him
+R4	Event_att Arg1:T23 Arg2:E1	
+T24	Event 180 188	responds
+E8	Event:T24 Head:T26 Head2:T27
+T25	Head_End 142 145	tim
+T26	Head_End 175 179	greg
+R5	EventTemporal Arg1:E2 Arg2:E8	
+T27	Head_End 195 217	the home of the brave"
+T28	Event 267 271	says
+E9	Event:T28 End:T7 Head:T26
+R6	EventTemporal Arg1:E3 Arg2:E9	
+T29	Head_End 419 422	tim
+T30	Event 423 427	knew
+E10	Event:T30 Head:T29 End:T16

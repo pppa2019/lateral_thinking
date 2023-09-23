@@ -1,0 +1,18 @@
+T1	Head_End 2 5	man
+T2	Event 6 13	driving
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 14 21	his car
+T4	Event 22 30	turns on
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 35 40	radio
+R1	EventTemporal Arg1:E1 Arg2:E2	
+T6	Event 51 61	pulls over
+E3	Event:T6 Head:T1
+T7	Att_span 62 85	to the side of the road
+R2	Event_att Arg1:T7 Arg2:E3	
+R3	EventTemporal Arg1:E2 Arg2:E3	
+T8	Event 90 96	shoots
+E4	Event:T8 Head:T1 End:T9
+T9	Head_End 97 104	himself
+R4	EntityEqual Arg1:T9 Arg2:T1	
+R5	EventTemporal Arg1:E3 Arg2:E4	

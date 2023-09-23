@@ -1,0 +1,22 @@
+T1	Head_End 2 5	man
+T2	Event 9 18	listening
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 22 34	a radio show
+T4	Event 39 48	providing
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 49 73	the bedroom phone number
+T6	Event 74 76	as
+E3	Event:T6 Head:T5 End:T7
+T7	Head_End 77 104	the number he needs to call
+T8	Event 132 137	heard
+E4	Event:T8 End:T9 Head:T1
+T9	Head_End 138 151	a man's voice
+T10	Att_span 157 169	at this time
+T11	Head_End 176 184	his wife
+T12	Event 188 190	at
+E5	Event:T12 Head:T11 End:T13
+T13	Head_End 191 195	home
+R1	Event_att Arg1:T10 Arg2:E5	
+T14	Event 226 234	cheating
+E6	Event:T14 Head:T11
+R2	EventCause Arg1:E4 Arg2:E6	

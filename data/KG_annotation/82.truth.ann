@@ -1,0 +1,18 @@
+T1	Head_End 0 2	He
+T2	Head_End 8 20	mail courier
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Event 25 33	delivers
+E1	Event:T3 Head:T1 End:T4
+T4	Head_End 34 42	packages
+T5	Event 43 45	to
+E2	Event:T5 Head:T4 End:T6
+T6	Head_End 46 77	the different foreign embassies
+T7	Head_End 81 98	the United States
+T8	Head_End 101 123	The land of an embassy
+T9	Event 124 134	belongs to
+E3	Event:T9 Head:T8 End:T10
+T10	Head_End 135 161	the country of the embassy
+T11	Event 163 169	not to
+E4	Event:T11 Head:T8 End:T7
+T13	Event 78 80	in
+E5	Event:T13 Head:T6 End:T7

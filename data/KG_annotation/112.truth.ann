@@ -1,0 +1,21 @@
+T1	Event 26 30	bled
+T2	Head_End 4 9	woman
+T3	Event 69 73	seen
+T4	Head_End 78 82	baby
+T5	Event 118 124	called
+T6	Head_End 95 98	kid
+T7	Att_span 103 114	technically
+E1	Event:T1 Head:T2
+E2	Event:T3 End:T4 Head:T10
+E3	Event:T5 Head:T6 End:T12
+R1	Event_att Arg1:T7 Arg2:T5
+T8	Event 10 20	gave birth
+E4	Event:T8 Head:T2
+T9	Event 34 40	death.
+E5	Event:T9 Head:T2
+R2	EventTemporal Arg1:E4 Arg2:E1	
+R3	EventTemporal Arg1:E1 Arg2:E5	
+T10	Head_End 52 58	father
+T11	Att_span 63 68	never
+R4	Event_att Arg1:T11 Arg2:E2	
+T12	Head_End 127 134	strange

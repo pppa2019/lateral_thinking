@@ -1,0 +1,20 @@
+T1	Event 17 24	playing
+T2	Head_End 9 12	man
+T3	Event 25 36	santa claus
+T4	Head_End 51 58	reason;
+T5	Att_span 42 50	whatever
+T6	Head_End 100 103	and
+T7	Event 62 69	slipped
+T8	Event 76 87	coming down
+T9	Event 104 109	broke
+T10	Head_End 114 118	neck
+E1	Event:T1 Head:T2 Head:T6
+E2	Event:T3 Head:T4
+E3	Event:T7 End:T2
+E4	Event:T8 End:T2 End2:T12
+E5	Event:T9 Head:T2 End:T10
+R1	Entity_att Arg1:T5 Arg2:T4
+T11	Att_span 4 8	dead
+R2	Entity_att Arg1:T11 Arg2:T2	
+T12	Head_End 92 99	chimney
+R3	EventTemporal Arg1:E4 Arg2:E5	

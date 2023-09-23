@@ -1,0 +1,13 @@
+T1	Head_End 2 5	man
+T2	Event 9 15	killed
+E1	Event:T2 Head:T1
+T3	Att_span 16 26	on a train
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Event 35 40	found
+E2	Event:T4 Head:T6
+T6	Head_End 29 31	He
+T5	Head_End 66 75	the floor
+T7	Att_span 76 92	in his own blood
+R2	Event_att Arg1:T7 Arg2:E2	
+T8	Att_span 49 62	written "elf"
+R3	Entity_att Arg1:T8 Arg2:T5	

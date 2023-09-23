@@ -1,0 +1,12 @@
+T1	Event 6 11	kills
+T2	Head_End 2 5	man
+T3	Event 27 31	goes
+E1	Event:T1 Head:T2 End:T4
+E2	Event:T3 Head:T2 End:T5
+T4	Head_End 16 20	wife
+R1	EventTemporal Arg1:E1 Arg2:E2	
+T5	Head_End 43 48	house
+T6	Event 53 58	kills
+E3	Event:T6 End:T7
+R2	EventTemporal Arg1:E2 Arg2:E3	
+T7	Head_End 59 66	himself

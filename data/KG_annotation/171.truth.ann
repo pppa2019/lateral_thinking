@@ -1,0 +1,24 @@
+T1	Head_End 4 7	man
+T2	Event 8 16	believes
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 28 45	be the last human
+T4	Att_span 46 54	on earth
+R1	Entity_att Arg1:T4 Arg2:T3	
+T5	Head_End 57 59	He
+T6	Event 60 80	doesn't want to live
+E2	Event:T6 Head:T5 End:T7
+T7	Head_End 81 91	by himself
+T8	Event 99 104	jumps
+E3	Event:T8 Head:T9
+T9	Head_End 96 98	he
+R2	EventCause Arg1:E2 Arg2:E3	
+T10	Head_End 122 131	telephone
+T11	Event 132 137	rings
+E4	Event:T11 Head:T10
+R3	EventTemporal Arg1:E3 Arg2:E4	
+T12	Event 162 167	alive
+E5	Event:T12 Head:T13
+R4	EventEqual Arg1:E4 Arg2:E5	
+T13	Head_End 155 161	people
+R5	EntityEqual Arg1:T5 Arg2:T1	
+R6	EntityEqual Arg1:T9 Arg2:T5	

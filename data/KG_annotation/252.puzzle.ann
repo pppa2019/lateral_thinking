@@ -1,0 +1,8 @@
+T1	Head_End 2 5	man
+T2	Event 6 21	sitting at home
+E1	Event:T2 Head:T1
+T3	Event 26 35	killed by
+E2	Event:T3 Head:T1 End:T4
+T4	Head_End 36 48	a little boy
+T5	Att_span 53 64	was outside
+R1	Entity_att Arg1:T5 Arg2:T4	

@@ -1,0 +1,15 @@
+T2	Head_End 5 13	incident
+T3	Att_span 0 4	this
+T5	Head_End 92 98	duties
+T6	Att_span 85 91	import
+T7	Head_End 100 113	mercedes cars
+R1	Entity_att Arg1:T3 Arg2:T2
+R2	Entity_att Arg1:T6 Arg2:T5
+T8	Event 24 32	occurred
+E3	Event:T8 Head:T2
+T1	Event 44 47	war
+E1	Event:T1 End:T9 End2:T10
+R3	NC2Event Arg1:E3 Arg2:E1	
+T9	Head_End 56 62	israel
+T10	Head_End 67 73	egypt.
+R4	EntityPartof Arg1:T5 Arg2:T7	

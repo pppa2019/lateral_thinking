@@ -1,0 +1,9 @@
+T1	Event 11 19	murdered
+T2	Head_End 2 7	woman
+T3	Event 65 70	think
+T4	Head_End 79 87	accident
+E1	Event:T1 End:T2
+E2	Event:T3 End:T4 Head:T6
+T5	Att_span 20 50	in front of hundreds of people
+R1	Event_att Arg1:T5 Arg2:E1	
+T6	Head_End 32 50	hundreds of people

@@ -1,0 +1,56 @@
+T1	Head_End 4 7	man
+T2	Event 12 14	in
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 17 21	ship
+T5	Head_End 42 57	a desert island
+T4	Event 31 41	wrecked on
+E2	Event:T4 Head:T3 End:T5
+T6	Event 82 86	left
+E3	Event:T6 Head:T8 End:T7
+T7	Head_End 77 81	food
+T8	Head_End 64 69	there
+R1	EntityEqual Arg1:T5 Arg2:T8	
+T9	Head_End 88 105	another passenger
+T10	Event 106 113	brought
+E4	Event:T10 Head:T9 End:T11
+T11	Head_End 114 118	what
+T12	Att_span 119 126	he said
+R2	Entity_att Arg1:T12 Arg2:T11	
+T13	Head_End 131 138	abalone
+R3	EntityEqual Arg1:T13 Arg2:T11	
+T14	Head_End 166 176	man's wife
+R4	EntityPartof Arg1:T11 Arg2:T14	
+T15	Event 182 193	had died in
+E5	Event:T15 Head:T14
+T16	Event 198 203	wreck
+E6	Event:T16 
+R6	EventEqual Arg1:E2 Arg2:E6	
+R5	EventCause Arg1:E6 Arg2:E5	
+T17	Head_End 210 213	man
+T18	Non_Core_Event 214 222	suspects
+E7	Non_Core_Event:T18 Head:T17
+T19	Head_End 248 252	they
+T20	Event 261 267	return
+E8	Event:T20 Head:T19 End:T21
+T21	Head_End 271 283	civilization
+R7	EntityPartof Arg1:T17 Arg2:T19	
+R8	EntityPartof Arg1:T9 Arg2:T19	
+R9	EntityEqual Arg1:T1 Arg2:T17	
+T22	Head_End 285 287	he
+T23	Event 288 294	orders
+E9	Event:T23 Head:T22 End:T24
+T24	Head_End 295 302	abalone
+T25	Non_Core_Event 304 312	realizes
+E10	Non_Core_Event:T25 Head:T22
+T26	Event 326 329	ate
+E11	Event:T26 Head:T27 End:T28
+T27	Head_End 323 325	he
+T28	Head_End 341 349	his wife
+R10	NC2Event Arg1:E10 Arg2:E11	
+T29	Event 355 360	kills
+E12	Event:T29 Head:T27 End:T30
+T30	Head_End 361 368	himself
+R11	EventTemporal Arg1:E10 Arg2:E12	
+R12	EntityEqual Arg1:T14 Arg2:T28	
+R13	EntityEqual Arg1:T22 Arg2:T27	
+R14	EntityEqual Arg1:T17 Arg2:T22	

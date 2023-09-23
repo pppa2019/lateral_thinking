@@ -1,0 +1,9 @@
+T1	Event 23 29	moves;
+T2	Head_End 2 5	car
+T3	Event 36 40	dies
+T4	Head_End 32 35	man
+E1	Event:T1 End:T2
+E2	Event:T3 End:T4
+T5	Att_span 6 22	without a driver
+R1	Entity_att Arg1:T5 Arg2:T2	
+R2	EventTemporal Arg1:E1 Arg2:E2	

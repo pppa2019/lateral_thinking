@@ -1,0 +1,8 @@
+T1	Event 12 15	hit
+T2	Head_End 0 2	he
+T3	Head_End 44 49	waste
+T4	Att_span 37 43	toilet
+E1	Event:T1 End:T2 Head:T3
+R1	Entity_att Arg1:T4 Arg2:T3
+T5	Att_span 30 36	frozen
+R2	Entity_att Arg1:T5 Arg2:T3	

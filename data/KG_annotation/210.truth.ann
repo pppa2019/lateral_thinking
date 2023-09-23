@@ -1,0 +1,14 @@
+T1	Head_End 4 9	sheep
+T2	Event 10 24	kept coming to
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 29 33	road
+T4	Head_End 42 46	they
+T5	Event 47 59	liked to eat
+E2	Event:T5 Head:T4 End:T6
+T6	Head_End 64 68	salt
+T7	Event 69 75	put on
+E3	Event:T7 Head:T6 End:T3
+T8	Event 88 104	stop it freezing
+E4	Event:T8 Head:T6 End:T3
+R1	EntityEqual Arg1:T4 Arg2:T1	
+R2	EventCause Arg1:E2 Arg2:E1	

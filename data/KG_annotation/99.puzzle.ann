@@ -1,0 +1,9 @@
+T1	Head_End 2 6	rope
+T2	Event 7 13	breaks
+E1	Event:T2 Head:T1
+T3	Head_End 18 22	bell
+T4	Event 23 28	rings
+E2	Event:T4 Head:T3
+T5	Head_End 33 36	man
+T6	Event 37 41	dies
+E3	Event:T6 Head:T5

@@ -1,0 +1,9 @@
+T1	Event 3 7	made
+T2	Head_End 0 2	he
+T3	Head_End 12 19	candles
+T4	Head_End 40 45	cakes
+T5	Att_span 31 39	birthday
+E1	Event:T1 Head:T2 End:T3
+R1	Entity_att Arg1:T5 Arg2:T4
+T6	Event 25 30	go on
+E2	Event:T6 Head:T3 End:T4

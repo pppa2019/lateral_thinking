@@ -1,0 +1,30 @@
+T1	Head_End 14 19	vicar
+T2	Non_Core_Event 20 27	noticed
+E1	Non_Core_Event:T2 Head:T1
+T3	Event 67 73	struck
+E2	Event:T3 End:T4 Head:T5
+T4	Head_End 74 82	13 times
+R1	NC2Event Arg1:E1 Arg2:E2	
+T5	Head_End 33 46	the old clock
+T6	Att_span 47 66	in the church tower
+R2	Entity_att Arg1:T6 Arg2:T5	
+T7	Att_span 83 94	at midnight
+R3	Event_att Arg1:T7 Arg2:E2	
+T8	Event 103 117	the same thing
+E3	Event:T8 
+R4	EventEqual Arg1:E2 Arg2:E3	
+T9	Att_span 118 137	the following night
+R5	Event_att Arg1:T9 Arg2:E3	
+T10	Head_End 141 143	he
+T11	Event 162 174	investigated
+E4	Event:T11 Head:T10 End:T12
+T12	Head_End 148 161	the mechanism
+R6	EventCause Arg1:E3 Arg2:E4	
+R7	EntityEqual Arg1:T10 Arg2:T1	
+T13	Event 195 211	in perfect order
+E5	Event:T13 Head:T5
+T14	Event 227 242	struck 13 again
+E6	Event:T14 Head:T5
+T15	Att_span 243 253	that night
+R8	Event_att Arg1:T15 Arg2:E6	
+R9	EventTemporal Arg1:E2 Arg2:E3	

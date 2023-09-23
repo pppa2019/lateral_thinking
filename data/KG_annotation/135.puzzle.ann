@@ -1,0 +1,6 @@
+T1	Head_End 2 5	man
+T2	Event 15 19	dead
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 20 33	in the arctic
+T4	Att_span 34 57	with a pack on his back
+R1	Entity_att Arg1:T4 Arg2:T1	

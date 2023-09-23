@@ -1,0 +1,30 @@
+T1	Event 4 10	leaves
+T2	Head_End 15 20	house
+T3	Event 22 29	wearing
+T4	Head_End 32 36	mask
+T5	Event 41 49	carrying
+T6	Head_End 59 63	sack
+T7	Event 83 90	returns
+T8	Head_End 80 82	he
+T9	Event 109 113	full
+T10	Head_End 97 101	sack
+T11	Event 119 123	goes
+T12	Head_End 116 118	he
+T13	Event 140 149	turns out
+T14	Head_End 154 160	lights
+E1	Event:T1 End:T2 Head:T16
+E2	Event:T3 End:T4
+E3	Event:T5 End:T6
+E4	Event:T7 End:T8
+E5	Event:T9 End:T10
+E6	Event:T11 Head:T12
+E7	Event:T13 Head:T12 End:T14
+T15	Att_span 53 58	empty
+R1	Entity_att Arg1:T15 Arg2:T6	
+R2	EventSameTime Arg1:E1 Arg2:E2	
+R3	EventSameTime Arg1:E1 Arg2:E3	
+R4	EventTemporal Arg1:E1 Arg2:E4	
+R5	EventTemporal Arg1:E4 Arg2:E5	
+R6	EventTemporal Arg1:E5 Arg2:E6	
+R7	EventTemporal Arg1:E6 Arg2:E7	
+T16	Head_End 0 3	joe

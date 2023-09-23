@@ -1,0 +1,38 @@
+T1	Head_End 0 5	Mr. H
+T2	Event 6 11	meets
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 12 17	Mr. X
+T4	Non_Core_Event 18 20	in
+E2	Non_Core_Event:T4 Head:T5
+T5	Head_End 21 32	a hotel bar
+R1	NC2Event Arg1:E1 Arg2:E2	
+T6	Head_End 45 54	hypnotist
+R2	EntityEqual Arg1:T6 Arg2:T3	
+T7	Non_Core_Event 62 68	claims
+E3	Non_Core_Event:T7 Head:T1
+T8	Event 72 91	can't be hypnotized
+E4	Event:T8 Head:T1
+R3	NC2Event Arg1:E3 Arg2:E4	
+T9	Event 93 119	A heated discussion ensues
+E5	Event:T9 
+T10	Event 133 143	hypnotizes
+E6	Event:T10 Head:T3 End:T1
+T11	Event 153 159	commit
+E7	Event:T11 Head:T1 End:T12
+T12	Head_End 164 169	crime
+R4	EventCause Arg1:E6 Arg2:E7	
+T13	Event 181 197	actually commits
+E8	Event:T13 Head:T1 End:T12
+T14	Event 215 233	has a heart attack
+E9	Event:T14 Head:T3
+R5	EventTemporal Arg1:E9 Arg2:E8	
+T15	Event 238 245	punches
+E10	Event:T15 Head:T3 End:T1
+T16	Non_Core_Event 269 273	stop
+E11	Non_Core_Event:T16 
+T17	Event 274 280	commit
+E12	Event:T17 Head:T1
+R6	EventEqual Arg1:E12 Arg2:E7	
+R7	EventTemporal Arg1:E9 Arg2:E10	
+R8	EventCause Arg1:E10 Arg2:E11	
+R9	NC2Event Arg1:E11 Arg2:E12	

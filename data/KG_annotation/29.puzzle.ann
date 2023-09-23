@@ -1,0 +1,16 @@
+T1	Event 9 14	lying
+T2	Head_End 2 5	man
+E1	Event:T1 End:T2
+T3	Head_End 15 19	face
+T4	Event 20 24	down
+E2	Event:T4 Head:T3
+T5	Event 26 30	dead
+E3	Event:T5 
+T6	Att_span 32 45	in the desert
+R1	EventSameTime Arg1:E1 Arg2:E2	
+R2	EventSameTime Arg1:E2 Arg2:E3	
+R3	Event_att Arg1:T6 Arg2:E3	
+T7	Att_span 47 64	with a match near
+R4	Event_att Arg1:T7 Arg2:E3	
+T8	Att_span 65 87	his outstretched hand.
+R5	Event_att Arg1:T8 Arg2:E3	

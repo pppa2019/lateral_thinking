@@ -1,0 +1,31 @@
+T1	Event 36 40	live
+T2	Head_End 0 31	bob and carol and ted and alice
+T3	Att_span 32 35	all
+T4	Event 75 81	go out
+T5	Head_End 61 74	bob and carol
+T6	Event 108 114	return
+E1	Event:T1 Head:T2 End:T9
+E2	Event:T4 Head:T5 End:T10
+E3	Event:T6 End:T5
+R1	Entity_att Arg1:T3 Arg2:T2
+T9	Head_End 48 58	same house
+R2	EntityPartof Arg1:T5 Arg2:T2	
+T10	Head_End 87 92	movie
+T11	Head_End 116 121	alice
+T12	Event 125 135	lying dead
+E5	Event:T12 Head:T11
+T13	Att_span 136 148	on the floor
+R3	Event_att Arg1:T13 Arg2:E5	
+T14	Att_span 149 180	in a puddle of water and glass.
+R4	Event_att Arg1:T14 Arg2:E5	
+T15	Head_End 201 204	ted
+T7	Event 205 211	killed
+E4	Event:T7 Head:T15 End:T11
+T8	Event 227 241	not prosecuted
+E6	Event:T8 End:T15
+T16	Event 245 262	severely punished
+E7	Event:T16 End:T15
+R5	EventTemporal Arg1:E1 Arg2:E2	
+R6	EventTemporal Arg1:E2 Arg2:E3	
+R7	EventTemporal Arg1:E4 Arg2:E6	
+R8	EventSameTime Arg1:E6 Arg2:E7	

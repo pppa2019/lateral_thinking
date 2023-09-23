@@ -1,0 +1,6 @@
+T1	Head_End 0 2	He
+T2	Event 3 12	stretches
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 13 24	a long rope
+T4	Att_span 25 48	from point A to point B
+R1	Event_att Arg1:T4 Arg2:E1	

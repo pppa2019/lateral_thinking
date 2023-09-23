@@ -1,0 +1,3 @@
+T2	Head_End 4 16	truck driver
+T3	Event 21 28	walking
+E2	Event:T3 Head:T2

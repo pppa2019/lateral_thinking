@@ -1,0 +1,35 @@
+T1	Event 10 18	watching
+T2	Head_End 2 5	man
+T3	Head_End 19 29	television
+T4	Event 125 131	called
+T5	Head_End 122 124	he
+T6	Head_End 136 142	number
+T7	Event 150 156	stated
+T8	Head_End 161 165	size
+T9	Event 171 179	received
+T10	Event 231 240	regretted
+T11	Head_End 218 220	he
+T12	Head_End 241 246	doing
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 Head:T5 End:T6
+E3	Event:T7 Head:T5 End:T8
+E4	Event:T9 Head:T5 End:T20
+E5	Event:T10 Head:T11 End:T12
+T14	Event 38 41	saw
+E6	Event:T14 Head:T2 End:T15
+T15	Head_End 45 58	advertisement
+T17	Head_End 89 106	first 100 viewers
+T18	Event 111 120	phoned in
+E7	Event:T18 Head:T17
+T16	Event 59 67	offering
+E8	Event:T16 End:T19
+T19	Head_End 68 81	free t-shirts
+R1	EventCause Arg1:E7 Arg2:E8	
+R2	EventTemporal Arg1:E2 Arg2:E3	
+R3	EventTemporal Arg1:E3 Arg2:E4	
+T20	Head_End 184 196	free t-shirt
+R4	EventCause Arg1:E4 Arg2:E5	
+T13	Att_span 197 211	in a few days.
+R5	Entity_att Arg1:T13 Arg2:T20	
+T21	Att_span 212 217	later
+R6	Event_att Arg1:T21 Arg2:E5	

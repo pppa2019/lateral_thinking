@@ -1,0 +1,20 @@
+T1	Att_span 0 28	four rational and reasonable
+T2	Head_End 29 35	people
+R1	Entity_att Arg1:T1 Arg2:T2	
+T3	Event 41 47	seated
+E1	Event:T3 End:T2
+T4	Att_span 48 62	around a table
+R2	Event_att Arg1:T4 Arg2:E1	
+T5	Head_End 73 86	three of them
+T6	Event 87 96	jumped up
+E2	Event:T6 Head:T5
+T7	Event 111 115	beat
+E3	Event:T7 End:T8 Head:T5
+T8	Head_End 116 130	the fourth one
+R3	EntityPartof Arg1:T5 Arg2:T2	
+R4	EntityPartof Arg1:T8 Arg2:T2	
+R5	EventTemporal Arg1:E2 Arg2:E3	
+T9	Att_span 101 110	viciously
+R6	Event_att Arg1:T9 Arg2:E3	
+T10	Att_span 131 140	senseless
+R7	Event_att Arg1:T10 Arg2:E3	

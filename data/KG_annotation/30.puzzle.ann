@@ -1,0 +1,13 @@
+T1	Event 9 14	lying
+T2	Head_End 2 5	man
+T3	Event 46 53	wearing
+T4	Head_End 56 64	backpack
+E1	Event:T1 End:T2
+E2	Event:T3 Head:T2 End:T4
+T5	Event 16 20	dead
+E3	Event:T5 Head:T2
+T6	Att_span 22 31	face down
+T7	Att_span 32 45	in the desert
+R1	EventSameTime Arg1:E1 Arg2:E3	
+R3	Event_att Arg1:T7 Arg2:E3	
+R2	Entity_att Arg1:T6 Arg2:T2	

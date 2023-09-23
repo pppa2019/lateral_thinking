@@ -1,0 +1,11 @@
+T1	Non_Core_Event 46 50	lead
+T2	Head_End 10 16	change
+T6	Event 57 65	increase
+T7	Head_End 69 74	trade
+T8	Att_span 79 94	local sex shops
+E1	Non_Core_Event:T1 Head:T2
+E2	Event:T6 End:T7
+T3	Att_span 20 45	state traffic regulations
+R2	Entity_att Arg1:T3 Arg2:T2	
+R3	NC2Event Arg1:E1 Arg2:E2	
+R1	Entity_att Arg1:T8 Arg2:T7	

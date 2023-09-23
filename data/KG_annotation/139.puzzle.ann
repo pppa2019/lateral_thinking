@@ -1,0 +1,8 @@
+T1	Head_End 2 5	man
+T2	Att_span 6 10	lies
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Event 11 15	dead
+E1	Event:T3 Head:T1 End:T4
+T4	Head_End 16 25	in a room
+T5	Att_span 26 47	with fifty-three bees
+R2	Entity_att Arg1:T5 Arg2:T1	

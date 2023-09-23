@@ -1,0 +1,14 @@
+T1	Head_End 2 11	riverboat
+T2	Event 12 23	filled with
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 24 34	passengers
+T4	Event 44 52	capsized
+E2	Event:T4 Head:T1
+T5	Event 54 62	drowning
+E3	Event:T5 Head:T7
+T6	Att_span 63 70	most of
+T7	Head_End 71 76	those
+R1	Entity_att Arg1:T6 Arg2:T7	
+T8	Att_span 77 83	aboard
+R2	Entity_att Arg1:T8 Arg2:T7	
+R3	EventCause Arg1:E2 Arg2:E3	

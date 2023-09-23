@@ -1,0 +1,13 @@
+T1	Head_End 25 30	comma
+T2	Att_span 0 19	In European numbers
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Head_End 68 81	decimal point
+T4	Att_span 52 61	Americans
+R2	Entity_att Arg1:T4 Arg2:T3	
+R3	EntityEqual Arg1:T3 Arg2:T1	
+T5	Head_End 88 91	man
+T6	Event 119 122	ran
+E1	Event:T6 Head:T5 End:T7
+T7	Head_End 123 137	19.475 km/hour
+T8	Head_End 148 167	a pretty good speed
+R4	EntityEqual Arg1:T8 Arg2:T7	

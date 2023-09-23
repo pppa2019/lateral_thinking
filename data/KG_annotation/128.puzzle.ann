@@ -1,0 +1,5 @@
+T1	Head_End 0 17	A pile of sawdust
+T2	Head_End 19 25	no net
+T3	Head_End 29 32	man
+T4	Event 33 37	dies
+E1	Event:T4 Head:T3

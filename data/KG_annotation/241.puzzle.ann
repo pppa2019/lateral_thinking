@@ -1,0 +1,36 @@
+T1	Head_End 0 11	Tom and Joe
+T3	Event 12 19	went to
+E1	Event:T3 Head:T1 End:T2
+T2	Head_End 22 27	movie
+T4	Head_End 87 90	Tom
+T5	Event 91 95	drew
+E2	Event:T5 Head:T4 End:T6
+T6	Head_End 98 101	gun
+T7	Att_span 65 85	During a quiet scene
+R1	Event_att Arg1:T7 Arg2:E2	
+T8	Head_End 103 106	Joe
+T9	Event 107 115	screamed
+E3	Event:T9 Head:T8 End:T10
+T10	Head_End 117 129	Don't shoot!
+T12	Event 138 142	shot
+E4	Event:T12 End:T13 Head:T4
+T13	Head_End 143 146	him
+R2	EntityEqual Arg1:T13 Arg2:T8	
+T11	Event 157 161	left
+E5	Event:T11 Head:T4
+T14	Head_End 163 174	Many people
+T15	Event 175 178	saw
+E6	Event:T15 Head:T14
+T16	Event 183 188	leave
+E7	Event:T16 Head:T4
+R3	EventSameTime Arg1:E6 Arg2:E7	
+T17	Head_End 193 197	they
+T18	Event 198 208	restrained
+E8	Event:T18 Head:T17 End:T4
+R4	EntityEqual Arg1:T17 Arg2:T14	
+T19	Head_End 218 224	police
+T20	Event 225 232	arrived
+E9	Event:T20 Head:T19
+T21	Event 245 253	released
+E10	Event:T21 Head:T19 End:T4
+R5	EventTemporal Arg1:E9 Arg2:E10	

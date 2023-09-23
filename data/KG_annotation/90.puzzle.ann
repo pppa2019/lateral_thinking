@@ -1,0 +1,4 @@
+T1	Head_End 2 5	man
+T2	Event 15 25	hanging in
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 26 39	a locked room

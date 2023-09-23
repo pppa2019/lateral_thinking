@@ -1,0 +1,19 @@
+T1	Head_End 12 17	joker
+T2	Event 18 24	living
+E1	Event:T2 Head:T1
+T3	Att_span 25 42	in a nearby house
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Head_End 62 86	his rifle and a silencer
+T5	Event 136 142	stroke
+E2	Event:T5 Head:T6
+T6	Head_End 124 135	the twelfth
+T7	Event 91 96	fired
+E3	Event:T7 Head:T8 End:T9
+R2	EventTemporal Arg1:E2 Arg2:E3	
+T8	Head_End 88 90	he
+T9	Head_End 97 105	a bullet
+T10	Att_span 106 117	at the bell
+R3	Event_att Arg1:T10 Arg2:E3	
+T11	Non_Core_Event 56 61	using
+E4	Non_Core_Event:T11 Head:T4
+R4	NC2Event Arg1:E4 Arg2:E3	

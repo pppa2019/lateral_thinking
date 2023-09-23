@@ -1,0 +1,23 @@
+T1	Head_End 4 7	man
+T2	Event 10 18	sleeping
+E1	Event:T2 Head:T1
+T3	Event 19 26	snoring
+E2	Event:T3 Head:T1
+R1	EventCause Arg1:E1 Arg2:E2	
+T4	Non_Core_Event 27 35	affected
+E3	Non_Core_Event:T4 Head:T5
+T5	Head_End 40 49	neighbors
+R2	EventCause Arg1:E2 Arg2:E3	
+T6	Att_span 50 67	in the next house
+R3	Entity_att Arg1:T6 Arg2:T5	
+T7	Event 85 91	called
+E4	Event:T7 Head:T5
+T8	Non_Core_Event 95 104	interrupt
+E5	Non_Core_Event:T8 
+T9	Event 115 122	snoring
+E6	Event:T9 Head:T1
+T10	Event 127 144	continue sleeping
+E7	Event:T10 Head:T5
+R4	EventCause Arg1:E4 Arg2:E5	
+R5	NC2Event Arg1:E5 Arg2:E6	
+R6	EventCause Arg1:E6 Arg2:E7	

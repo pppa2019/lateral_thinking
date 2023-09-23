@@ -1,0 +1,7 @@
+T1	Head_End 0 2	He
+T2	Event 3 16	couldn't find
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 19 24	chair
+T4	Event 32 36	died
+E2	Event:T4 Head:T1
+R1	EventCause Arg1:E1 Arg2:E2	

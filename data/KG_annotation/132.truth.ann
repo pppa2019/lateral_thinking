@@ -1,0 +1,8 @@
+T1	Head_End 1 2	Q
+T2	Head_End 17 22	queue
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 36 39	she
+T4	Event 42 50	standing
+E1	Event:T4 Head:T3 End:T5
+T5	Head_End 51 58	in line
+R2	EntityEqual Arg1:T5 Arg2:T2	

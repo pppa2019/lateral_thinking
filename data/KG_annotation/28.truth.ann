@@ -1,0 +1,47 @@
+T1	Event 47 53	brings
+T2	Head_End 39 46	someone
+T3	Head_End 58 68	contraband
+T4	Event 90 95	hides
+T5	Head_End 105 126	air conditioning duct
+T7	Event 152 158	leaves
+T8	Head_End 149 151	he
+T9	Head_End 159 181	without the contraband
+T10	Event 190 204	passes through
+T11	Head_End 205 212	customs
+T12	Event 218 229	no trouble.
+T13	Event 128 137	returning
+T14	Event 254 257	has
+T15	Head_End 251 253	he
+T16	Head_End 262 272	same cabin
+T20	Event 345 355	go through
+T21	Head_End 326 328	he
+T22	Head_End 356 363	customs
+T23	Event 372 379	returns
+T25	Head_End 396 406	contraband
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 Head:T2 End:T3 Head2:T28 End2:T5
+E3	Event:T7 Head:T8 End:T9
+E4	Event:T10 Head:T8 End:T11
+E5	Event:T12 End:T8
+E6	Event:T13 End:T6 Head:T8
+E7	Event:T14 Head:T15 End:T16
+E9	Event:T20 Head:T21 End:T22
+E10	Event:T23 End:T21
+T27	Head_End 7 15	smuggler
+T28	Head_End 0 2	he
+R2	EntityEqual Arg1:T28 Arg2:T27	
+T6	Head_End 141 147	the us
+R1	EventTemporal Arg1:E1 Arg2:E2	
+R3	EventTemporal Arg1:E3 Arg2:E4	
+T29	Head_End 280 289	same ship
+R4	EntityPartof Arg1:T16 Arg2:T29	
+T17	Event 303 315	doesn't stop
+E8	Event:T17 End:T18
+T18	Head_End 316 324	anywhere
+T19	Att_span 329 344	doesn't have to
+R5	Event_att Arg1:T19 Arg2:E9	
+T24	Event 387 391	gets
+E12	Event:T24 Head:T21 End:T25
+R6	EventCause Arg1:E8 Arg2:E7	
+T26	Att_span 411 417	safely
+R7	Event_att Arg1:T26 Arg2:E12	

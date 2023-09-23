@@ -1,0 +1,30 @@
+T1	Head_End 4 7	man
+T2	Head_End 13 24	glassblower
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 27 38	His old age
+T4	Non_Core_Event 43 50	brought
+E1	Non_Core_Event:T4 Head:T3
+T5	Event 59 66	decline
+E2	Event:T5 
+R2	NC2Event Arg1:E1 Arg2:E2	
+T6	Att_span 67 80	in his vision
+R3	Event_att Arg1:T6 Arg2:E2	
+T7	Event 93 96	use
+E3	Event:T7 End:T8 Head:T1
+T8	Head_End 97 110	shorter pipes
+T9	Event 114 118	blow
+E4	Event:T9 Head:T8 End:T10
+T10	Head_End 119 124	glass
+R4	EventCause Arg1:E3 Arg2:E4	
+R5	EventCause Arg1:E2 Arg2:E3	
+T11	Event 130 134	gets
+E5	Event:T11 End:T12 Head:T1
+T12	Head_End 139 146	hiccups
+T13	Event 161 168	inhales
+E6	Event:T13 Head:T1 End:T14
+T14	Head_End 169 199	some hot vapors / molten glass
+T15	Event 204 209	burns
+E7	Event:T15 Head:T1 End:T16
+T16	Head_End 210 235	his mouth and throat area
+R6	EventCause Arg1:E6 Arg2:E7	
+R7	EventCause Arg1:E5 Arg2:E6	

@@ -1,0 +1,8 @@
+T1	Event 7 13	killed
+T2	Head_End 0 2	he
+T3	Event 14 21	because
+T4	Head_End 30 38	eyesight
+T5	Att_span 25 29	poor
+E1	Event:T1 End:T2
+E2	Event:T3 Head:T4
+R1	Entity_att Arg1:T5 Arg2:T4

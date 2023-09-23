@@ -1,0 +1,16 @@
+T1	Head_End 0 25	The number of the matches
+T2	Head_End 29 32	212
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 35 45	Each match
+T4	Event 51 58	produce
+E1	Event:T4 Head:T3 End:T5
+T5	Head_End 59 83	one winner and one loser
+T6	Head_End 85 93	Everyone
+T7	Event 94 99	loses
+E2	Event:T7 Head:T6
+T8	Att_span 100 112	exactly once
+R2	Event_att Arg1:T8 Arg2:E2	
+T9	Head_End 117 138	the number of matches
+T10	Event 150 161	the same as
+E3	Event:T10 Head:T9 End:T11
+T11	Head_End 162 182	the number of losers

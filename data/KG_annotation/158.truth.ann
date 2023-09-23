@@ -1,0 +1,7 @@
+T1	Head_End 8 13	game;
+T2	Att_span 2 7	chess
+T3	Event 21 26	takes
+T4	Head_End 14 20	knight
+T5	Head_End 27 31	pawn
+E1	Event:T3 Head:T4 End:T5
+R1	Entity_att Arg1:T2 Arg2:T1

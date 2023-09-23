@@ -1,0 +1,23 @@
+T1	Event 25 29	sees
+T2	Head_End 4 7	one
+T3	Event 12 17	looks
+T4	Head_End 18 24	around
+T5	Head_End 30 48	his own reflection
+T6	Head_End 96 107	companion's
+T7	Event 121 129	realizes
+T8	Head_End 118 120	he
+T9	Head_End 145 152	vampire
+T10	Event 180 186	killed
+T11	Head_End 134 139	other
+E1	Event:T1 Head:T2 End:T5 End2:T6
+E2	Event:T3 End:T4 Head:T2
+E3	Event:T7 Head:T8 End:T9
+E4	Event:T10 Head:T8 End:T11
+R1	EventTemporal Arg1:E2 Arg2:E1	
+T12	Att_span 49 62	in the window
+R2	Entity_att Arg1:T12 Arg2:T5	
+T13	Att_span 88 91	not
+R3	Entity_att Arg1:T13 Arg2:T6	
+R4	EventCause Arg1:E1 Arg2:E3	
+R5	EntityEqual Arg1:T9 Arg2:T11	
+R6	EventTemporal Arg1:E3 Arg2:E4	

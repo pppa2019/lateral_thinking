@@ -1,0 +1,66 @@
+T1	Event 37 41	went
+T2	Head_End 4 7	man
+T4	Head_End 90 110	dentist's assistants
+T5	Event 168 188	could not administer
+T6	Head_End 192 202	anesthetic
+T7	Non_Core_Event 212 220	insisted
+T8	Head_End 208 211	man
+T9	Event 245 252	operate
+T10	Head_End 230 237	dentist
+T11	Att_span 258 276	without anesthetic
+T13	Non_Core_Event 292 296	said
+T14	Event 319 324	strap
+T15	Event 358 362	done
+T16	Head_End 349 353	this
+T17	Event 381 389	suffered
+T18	Head_End 368 375	dentist
+T19	Head_End 392 404	heart attack
+T20	Event 409 413	died
+T21	Event 432 436	left
+T23	Event 437 445	strapped
+T24	Head_End 424 427	man
+T25	Att_span 419 423	poor
+T26	Event 463 477	unable to move
+T27	Head_End 496 503	weekend
+T28	Att_span 488 495	holiday
+T29	Event 517 525	reported
+T30	Head_End 508 516	no staff
+T31	Head_End 530 534	work
+E1	Event:T1 Head:T2 End:T34
+E3	Event:T5 Head:T4 End:T6
+E4	Non_Core_Event:T7 Head:T8
+E5	Event:T9 Head:T10
+E6	Non_Core_Event:T13 Head:T10
+E7	Event:T14 Head:T10 End:T8
+E8	Event:T15 End:T16
+E9	Event:T17 Head:T18 End:T19
+E10	Event:T20 End:T18
+E11	Event:T21 End:T24
+E12	Event:T23 End:T24
+E13	Event:T26 End:T24
+E14	Event:T29 Head:T30 End:T31
+R2	Entity_att Arg1:T25 Arg2:T24
+R3	Entity_att Arg1:T28 Arg2:T27
+T32	Event 8 11	had
+E15	Event:T32 Head:T2 End:T33
+T33	Head_End 14 29	nasty toothache
+R4	EventTemporal Arg1:E15 Arg2:E1	
+T34	Head_End 49 56	dentist
+T35	Att_span 57 85	at 5 pm on a friday evening.
+R5	Event_att Arg1:T35 Arg2:E1	
+T36	Event 147 151	gone
+E16	Event:T36 Head:T4
+T3	Head_End 126 137	anesthetist
+R6	EntityPartof Arg1:T3 Arg2:T4	
+T37	Head_End 160 167	dentist
+R1	Event_att Arg1:T11 Arg2:E5	
+T12	Att_span 333 347	into the chair
+R7	Event_att Arg1:T12 Arg2:E7	
+R8	EventTemporal Arg1:E7 Arg2:E9	
+R9	NC2Event Arg1:E4 Arg2:E5	
+R10	NC2Event Arg1:E6 Arg2:E7	
+R11	EventTemporal Arg1:E9 Arg2:E10	
+R12	EventSameTime Arg1:E11 Arg2:E12	
+R13	EventSameTime Arg1:E12 Arg2:E13	
+T22	Att_span 535 578	until 9 am on the following tuesday morning
+R14	Event_att Arg1:T22 Arg2:E14	

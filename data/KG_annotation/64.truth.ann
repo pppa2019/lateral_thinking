@@ -1,0 +1,95 @@
+T1	Event 15 24	going out
+T2	Head_End 8 11	boy
+T3	Att_span 2 7	young
+T4	Event 28 32	play
+T5	Event 69 78	stops off
+T6	Event 96 101	check
+T7	Head_End 109 122	ice cream bar
+T11	Event 161 166	keeps
+T12	Head_End 154 160	family
+T13	Event 190 193	new
+T14	Head_End 179 186	freezer
+T15	Event 205 210	empty
+T16	Att_span 198 204	almost
+T17	Event 237 241	prop
+T18	Head_End 226 229	boy
+T19	Event 268 273	reach
+T20	Head_End 283 289	bottom
+T21	Event 293 297	find
+T22	Head_End 302 311	ice cream
+T23	Event 317 322	loses
+T24	Head_End 314 316	he
+T25	Head_End 327 334	balance
+T26	Event 339 344	falls
+T28	Head_End 372 384	lid latching
+T29	Event 492 496	have
+T31	Head_End 487 491	they
+T32	Head_End 501 510	popsicles
+T33	Att_span 497 500	any
+T36	Event 534 538	says
+T37	Head_End 530 533	she
+T38	Head_End 539 541	no
+T39	Event 551 557	bought
+T40	Head_End 563 582	chocolate ice cream
+T44	Event 599 607	can have
+T45	Head_End 596 598	he
+T47	Non_Core_Event 627 633	wishes
+T48	Event 639 646	decides
+T49	Head_End 636 638	he
+T53	Event 697 704	goes up
+T54	Event 720 726	listen
+T55	Head_End 735 740	music
+E1	Event:T1 Head:T2
+E2	Event:T4 Head:T2
+E3	Event:T5 Head:T2 End:T56
+E4	Event:T6 Head:T2 End:T7
+E5	Event:T11 Head:T12 End:T14
+E6	Event:T13 End:T14
+E7	Event:T15 End:T14
+E8	Event:T17 Head:T18
+E9	Event:T19 Head:T18 End:T20
+E10	Event:T21 Head:T18 End:T22
+E11	Event:T23 Head:T24 End:T25
+E12	Event:T26 Head:T24 End:T9
+E14	Event:T29 Head:T31 End:T32
+E15	Event:T36 End:T38 Head:T37
+E16	Event:T39 Head:T37 End:T40
+E17	Event:T44 Head:T45
+E18	Non_Core_Event:T47 Head:T45
+E19	Event:T48 Head:T49
+E20	Event:T53 Head:T49 End:T43
+E21	Event:T54 Head:T49 End:T55
+R1	Entity_att Arg1:T3 Arg2:T2
+R4	Event_att Arg1:T16 Arg2:T15
+R5	Entity_att Arg1:T33 Arg2:T32
+R10	EventTemporal Arg1:E3 Arg2:E4	
+R11	EventTemporal Arg1:E1 Arg2:E2	
+T8	Att_span 123 149	in the large chest freezer
+R2	Event_att Arg1:T8 Arg2:E4	
+R3	EventTemporal Arg1:E8 Arg2:E10	
+T9	Head_End 354 361	freezer
+T10	Att_span 33 46	one afternoon
+R12	Event_att Arg1:T10 Arg2:E2	
+T30	Att_span 51 65	on his way out
+R13	Event_att Arg1:T30 Arg2:E3	
+T56	Head_End 86 94	garage t
+T27	Event 385 394	shut over
+E13	Event:T27 Head:T28 End:T24
+R14	EventTemporal Arg1:E12 Arg2:E13	
+T34	Head_End 423 436	older brother
+T35	Event 437 449	arrives home
+E22	Event:T35 Head:T34
+T57	Event 471 475	asks
+E23	Event:T57 End:T58 Head:T34
+T58	Head_End 480 483	mom
+R6	NC2Event Arg1:E23 Arg2:E14	
+T59	Att_span 511 524	in the freeze
+R15	Entity_att Arg1:T59 Arg2:T32	
+R7	NC2Event Arg1:E18 Arg2:E17	
+T41	Event 653 659	not in
+E24	Event:T41 End:T42
+R8	NC2Event Arg1:E19 Arg2:E24	
+T42	Head_End 673 692	chocolate ice cream
+R9	EventTemporal Arg1:E19 Arg2:E20	
+T43	Head_End 708 716	his room
+R16	EventTemporal Arg1:E20 Arg2:E21	

@@ -1,0 +1,28 @@
+T1	Event 3 7	tied
+T2	Head_End 0 2	he
+T3	Head_End 12 18	letter
+T4	Head_End 49 53	ball
+T5	Att_span 41 48	cricket
+T6	Non_Core_Event 108 111	had
+T7	Head_End 100 102	he
+T9	Head_End 112 114	it
+T10	Event 151 159	standing
+T11	Head_End 147 150	men
+E1	Event:T1 Head:T2 End:T3
+E2	Non_Core_Event:T6 Head:T7
+E3	Event:T10 End:T11
+R1	Entity_att Arg1:T5 Arg2:T4
+T14	Att_span 28 39	hollowed-ou
+R3	Entity_att Arg1:T14 Arg2:T4	
+T15	Event 70 83	the same size
+E4	Event:T15 Head:T4 End:T16
+T16	Head_End 89 98	baseball)
+T8	Event 115 121	thrown
+E5	Event:T8 End:T9
+R4	NC2Event Arg1:E2 Arg2:E5	
+T17	Att_span 122 137	from man to man
+R5	Event_att Arg1:T17 Arg2:E5	
+T18	Att_span 166 174	60 yards
+R6	Event_att Arg1:T18 Arg2:E3	
+T12	Att_span 193 213	along the entire way
+R2	Event_att Arg1:T12 Arg2:E3	

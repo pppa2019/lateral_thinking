@@ -1,0 +1,38 @@
+T1	Event 20 30	advertised
+T2	Head_End 10 19	something
+T5	Event 54 58	went
+T6	Head_End 2 5	man
+T7	Event 62 65	buy
+T8	Event 82 89	refused
+T9	Head_End 93 97	sell
+T10	Head_End 98 100	it
+T11	Event 128 137	could pay
+T12	Head_End 124 127	man
+T13	Head_End 142 161	other men and women
+T14	Non_Core_Event 199 203	glad
+T16	Head_End 213 221	purchase
+T17	Head_End 186 189	man
+T18	Event 251 258	refused
+T19	Head_End 248 250	he
+T20	Event 274 278	glad
+E1	Event:T1 End:T2
+E2	Event:T5 Head:T6
+E3	Event:T7 Head:T6 End:T2
+E4	Event:T8 End:T9 Head:T21
+E5	Event:T11 Head:T12
+E6	Non_Core_Event:T14 End:T17
+E7	Event:T18 End:T19
+E8	Event:T20 End:T19
+R2	Entity_att Arg1:T13 Arg2:T9
+T3	Att_span 36 49	certain price
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Non_Core_Event 6 9	saw
+E9	Non_Core_Event:T4 Head:T6
+R3	NC2Event Arg1:E9 Arg2:E1	
+R4	EventTemporal Arg1:E9 Arg2:E2	
+T21	Head_End 73 81	official
+T22	Event 167 171	sold
+E10	Event:T22 End:T13
+T15	Event 231 238	refused
+E11	Event:T15 End:T16
+R5	NC2Event Arg1:E6 Arg2:E11	

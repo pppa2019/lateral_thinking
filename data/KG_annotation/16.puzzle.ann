@@ -1,0 +1,13 @@
+T1	Head_End 0 12	Two brothers
+T2	Non_Core_Event 17 28	involved in
+E1	Non_Core_Event:T2 Head:T1
+T3	Event 31 37	murder
+E2	Event:T3 
+R1	NC2Event Arg1:E1 Arg2:E2	
+T4	Event 84 93	committed
+E3	Event:T4 Head:T6 End:T5
+T5	Head_End 98 103	crime
+T6	Head_End 63 66	one
+T7	Event 105 128	neither can be punished
+E4	Event:T7 Head:T6
+R2	EventEqual Arg1:E3 Arg2:E2	

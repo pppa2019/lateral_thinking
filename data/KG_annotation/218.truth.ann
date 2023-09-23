@@ -1,0 +1,9 @@
+T1	Head_End 0 4	They
+T2	Event 5 15	spread out
+E1	Event:T2 Head:T1
+T4	Head_End 37 42	river
+T5	Att_span 54 74	only six inches deep
+R1	Entity_att Arg1:T5 Arg2:T4	
+T3	Event 20 32	waded across
+E2	Event:T3 Head:T1 End:T4
+R2	EventTemporal Arg1:E1 Arg2:E2	

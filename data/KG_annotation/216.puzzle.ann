@@ -1,0 +1,9 @@
+T1	Head_End 27 50	the father of the bride
+T2	Non_Core_Event 51 56	found
+E1	Non_Core_Event:T2 Head:T1
+T3	Event 77 84	missing
+E2	Event:T3 Head:T4
+R1	NC2Event Arg1:E1 Arg2:E2	
+T4	Head_End 62 72	his wallet
+T5	Att_span 0 26	During a wedding reception
+R2	Event_att Arg1:T5 Arg2:E2	

@@ -1,0 +1,29 @@
+T1	Non_Core_Event 14 21	noticed
+T3	Head_End 31 34	man
+T4	Non_Core_Event 64 69	asked
+T5	Head_End 61 63	he
+T7	Head_End 83 87	knot
+T8	Event 116 120	tied
+T9	Head_End 93 96	man
+T10	Head_End 135 139	knot
+T11	Head_End 145 150	knots
+T12	Att_span 156 181	around the hands and feet
+E1	Non_Core_Event:T1 Head:T13
+E2	Non_Core_Event:T4 Head:T5
+E3	Event:T8 Head:T9 End:T10
+R1	Entity_att Arg1:T12 Arg2:T11
+T13	Head_End 4 13	inspector
+T2	Event 35 40	wrote
+E4	Event:T2 Head:T3
+R2	NC2Event Arg1:E1 Arg2:E4	
+T14	Att_span 41 59	with his left hand
+R3	Event_att Arg1:T14 Arg2:E4	
+T6	Event 77 80	tie
+E5	Event:T6 End:T7
+R4	NC2Event Arg1:E2 Arg2:E5	
+T15	Att_span 101 111	lefthanded
+R5	Entity_att Arg1:T15 Arg2:T9	
+T16	Att_span 123 134	left-handed
+R6	Entity_att Arg1:T16 Arg2:T10	
+T17	Head_End 201 219	right-handed knots
+R7	EntityEqual Arg1:T11 Arg2:T17	

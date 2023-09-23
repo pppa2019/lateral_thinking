@@ -1,0 +1,10 @@
+T1	Event 6 14	finishes
+T2	Head_End 2 5	man
+T3	Head_End 23 30	dressed
+T4	Event 32 36	lies
+T5	Event 46 50	dies
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 End:T2
+E3	Event:T5 End:T2
+R1	EventTemporal Arg1:E1 Arg2:E2	
+R2	EventTemporal Arg1:E2 Arg2:E3	

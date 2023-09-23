@@ -1,0 +1,15 @@
+T1	Head_End 2 5	man
+T2	Head_End 16 23	builder
+T3	Att_span 24 34	with plans
+R1	Entity_att Arg1:T3 Arg2:T1	
+T4	Event 35 64	for an extension to his house
+E1	Event:T4 Head:T1 End:T2
+T5	Head_End 66 70	They
+T6	Event 75 91	never met before
+E2	Event:T6 Head:T5
+R2	EntityPartof Arg1:T5 Arg2:T1	
+R3	EntityPartof Arg1:T5 Arg2:T2	
+T7	Event 108 137	agreed to build the extension
+E3	Event:T7 Head:T2 End:T1
+T8	Att_span 141 150	no charge
+R4	Event_att Arg1:T8 Arg2:E3	

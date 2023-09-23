@@ -1,0 +1,9 @@
+T1	Head_End 2 7	woman
+T2	Event 11 13	in
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 16 17	Q
+T4	Event 32 52	a flash of lightning
+E2	Event:T4 
+T5	Event 61 65	dies
+E3	Event:T5 Head:T1
+R1	EventSameTime Arg1:E2 Arg2:E3	

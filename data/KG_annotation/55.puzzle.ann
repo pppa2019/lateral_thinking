@@ -1,0 +1,35 @@
+T1	Head_End 4 8	king
+T2	Event 9 13	dies
+E1	Event:T2 Head:T1
+T3	Head_End 18 25	two men
+T4	Event 31 42	claim to be
+E2	Event:T4 Head:T3 End:T5
+T5	Head_End 43 60	his long-lost son
+T6	Head_End 63 89	One of the king's advisors
+T7	Non_Core_Event 90 98	proposes
+E3	Non_Core_Event:T7 Head:T6
+T9	Event 109 118	determine
+E5	Event:T9 
+T10	Event 119 134	the identity of
+E6	Event:T10 Head:T11
+T11	Head_End 139 148	true heir
+T8	Event 101 105	test
+E4	Event:T8 
+R1	NC2Event Arg1:E3 Arg2:E4	
+R2	EventCause Arg1:E4 Arg2:E5	
+R3	EventCause Arg1:E5 Arg2:E6	
+T12	Head_End 151 163	One claimant
+R4	EntityPartof Arg1:T12 Arg2:T3	
+T13	Non_Core_Event 164 170	agrees
+E7	Non_Core_Event:T13 Head:T12
+R5	NC2Event Arg1:E7 Arg2:E4	
+T14	Head_End 184 193	the other
+R6	EntityPartof Arg1:T14 Arg2:T3	
+T15	Non_Core_Event 194 201	refuses
+E8	Non_Core_Event:T15 Head:T14
+T16	Event 226 238	sent packing
+E9	Event:T16 Head:T12
+T17	Event 263 276	identified as
+E10	Event:T17 Head:T14 End:T18
+T18	Head_End 277 294	the rightful heir
+R7	EntityEqual Arg1:T18 Arg2:T5	

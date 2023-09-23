@@ -1,0 +1,58 @@
+T1	Event 35 46	pulled into
+T2	Head_End 2 7	woman
+T5	Head_End 81 89	gasoline
+T6	Non_Core_Event 112 119	noticed
+T7	Head_End 94 97	she
+T9	Head_End 122 130	stranger
+T10	Event 98 107	drove off
+T11	Event 159 164	tried
+T12	Head_End 155 158	she
+T13	Head_End 168 173	shake
+T14	Event 183 190	turning
+T15	Event 192 204	accelerating
+T16	Event 206 213	slowing
+T17	Event 237 248	turned into
+T18	Head_End 233 236	she
+T19	Head_End 258 265	station
+T20	Att_span 251 257	police
+T23	Head_End 298 304	follow
+T24	Event 365 371	faults
+T25	Head_End 381 384	car
+T26	Att_span 354 364	mechanical
+T27	Event 397 403	follow
+T28	Head_End 394 396	he
+E1	Event:T1 Head:T2 End:T30
+E2	Non_Core_Event:T6 Head:T7
+E3	Event:T10 Head:T7
+E4	Event:T11 Head:T12 End:T13
+E5	Event:T14 Head:T12
+E6	Event:T15 Head:T12
+E7	Event:T16 Head:T12
+E8	Event:T17 End:T18 End2:T19
+E10	Event:T24 End:T25
+E11	Event:T27 Head:T28
+R2	Entity_att Arg1:T20 Arg2:T19
+R3	Event_att Arg1:T26 Arg2:T24
+T3	Event 16 23	driving
+E12	Event:T3 Head:T2
+T29	Att_span 24 34	on her own
+R1	Event_att Arg1:T29 Arg2:E12	
+T30	Head_End 47 64	a filling station
+T4	Event 69 75	bought
+E13	Event:T4 End:T5
+R4	EventTemporal Arg1:E1 Arg2:E13	
+R5	EventTemporal Arg1:E3 Arg2:E2	
+T31	Att_span 131 139	in a car
+R6	Entity_att Arg1:T31 Arg2:T9	
+T8	Event 140 149	following
+E14	Event:T8 Head:T9 End:T7
+R7	EventTemporal Arg1:E2 Arg2:E4	
+T21	Non_Core_Event 279 286	shocked
+E9	Non_Core_Event:T21 Head:T18
+T22	Event 290 293	see
+E15	Event:T22 
+R8	NC2Event Arg1:E9 Arg2:E15	
+T32	Head_End 313 315	he
+T33	Event 316 323	was not
+E16	Event:T33 Head:T32 End:T34
+T34	Head_End 324 335	a policeman

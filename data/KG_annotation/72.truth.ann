@@ -1,0 +1,17 @@
+T1	Head_End 4 7	man
+T2	Event 8 13	opens
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 18 23	mouth
+T4	Head_End 30 41	killer bees
+T5	Event 57 73	prefer attacking
+E2	Event:T5 Head:T4 End:T6
+T6	Head_End 74 86	darker areas
+T7	Event 88 98	fly inside
+E3	Event:T7 End:T1 Head:T4
+T8	Event 103 108	sting
+E4	Event:T8 End:T1 Head:T4
+R1	EventTemporal Arg1:E3 Arg2:E4	
+T9	Head_End 118 140	swelling of his throat
+T10	Event 141 152	asphyxiates
+E5	Event:T10 Head:T9 End:T1
+R2	EventCause Arg1:E4 Arg2:E5	

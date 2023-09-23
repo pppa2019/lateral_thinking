@@ -1,0 +1,25 @@
+T1	Head_End 2 5	man
+T3	Head_End 55 74	Mercedes sports car
+T4	Att_span 31 54	beautiful and expensive
+R3	Entity_att Arg1:T4 Arg2:T3	
+T5	Head_End 84 86	he
+T6	Event 87 92	drove
+E1	Event:T6 Head:T5 End:T7
+T7	Head_End 99 123	an isolated parking area
+T8	Event 133 140	smashed
+E2	Event:T8 Head:T5 End:T9
+T9	Head_End 145 151	window
+T10	Event 153 162	scratched
+E3	Event:T10 Head:T5 End:T11
+T11	Head_End 167 172	doors
+T12	Event 178 188	ripped out
+E4	Event:T12 Head:T5 End:T13
+T13	Head_End 193 198	radio
+R4	EntityEqual Arg1:T5 Arg2:T1	
+R5	EventTemporal Arg1:E2 Arg2:E3	
+R6	EventTemporal Arg1:E3 Arg2:E4	
+R7	EntityPartof Arg1:T9 Arg2:T3	
+R8	EntityPartof Arg1:T11 Arg2:T3	
+R9	EntityPartof Arg1:T13 Arg2:T3	
+T2	Event 10 28	the proud owner of
+E5	Event:T2 Head:T1 End:T3

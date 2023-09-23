@@ -1,0 +1,21 @@
+T1	Head_End 4 7	men
+T2	Head_End 13 20	sailors
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T5	Att_span 64 77	on board ship
+T3	Event 31 44	often flogged
+E1	Event:T3 Head:T2
+R2	Event_att Arg1:T5 Arg2:E1	
+T4	Event 49 63	minor offenses
+E2	Event:T4 Head:T2
+R3	EventCause Arg1:E2 Arg2:E1	
+T6	Head_End 79 92	Some captains
+T7	Non_Core_Event 93 100	refused
+E3	Non_Core_Event:T7 Head:T6
+T8	Event 104 108	whip
+E4	Event:T8 End:T9 Head:T6
+R4	NC2Event Arg1:E3 Arg2:E4	
+T9	Head_End 109 121	a man's back
+T10	Event 128 135	carried
+E5	Event:T10 Head:T9 End:T11
+T11	Head_End 136 155	the image of Christ
+R5	EventCause Arg1:E5 Arg2:E3	

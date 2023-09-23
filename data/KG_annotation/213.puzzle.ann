@@ -1,0 +1,25 @@
+T1	Head_End 0 7	Bernard
+T2	Head_End 12 53	the president of a major Wall Street bank
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 72 74	he
+T4	Event 75 81	got on
+E1	Event:T4 Head:T3 End:T5
+T5	Head_End 92 97	train
+T6	Att_span 84 91	crowded
+R2	Entity_att Arg1:T6 Arg2:T5	
+R3	EntityEqual Arg1:T3 Arg2:T1	
+T7	Non_Core_Event 105 122	extremely worried
+E2	Non_Core_Event:T7 Head:T3
+T8	Att_span 55 66	One morning
+R4	Event_att Arg1:T8 Arg2:E1	
+T9	Event 139 146	stopped
+E3	Event:T9 Head:T5
+T10	Non_Core_Event 154 162	alighted
+E4	Non_Core_Event:T10 Head:T3
+R5	EventTemporal Arg1:E3 Arg2:E4	
+T11	Non_Core_Event 167 181	felt very sick
+E5	Non_Core_Event:T11 Head:T3
+T12	Non_Core_Event 193 212	not worried anymore
+E6	Non_Core_Event:T12 Head:T3
+R6	EventSameTime Arg1:E5 Arg2:E6	
+R7	EventSameTime Arg1:E3 Arg2:E5	

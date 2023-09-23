@@ -1,0 +1,48 @@
+T1	Event 63 67	trap
+T2	Head_End 43 56	advertisement
+T3	Event 83 87	used
+T4	Head_End 88 103	illegal devices
+T5	Event 107 110	tap
+T6	Head_End 133 141	circuits
+T7	Att_span 122 132	television
+T8	Att_span 116 121	cable
+T9	Event 179 185	owners
+T10	Head_End 210 217	network
+T11	Att_span 199 209	television
+T12	Att_span 193 198	cable
+T13	Event 165 171	placed
+T14	Head_End 158 160	it
+T15	Event 231 235	seen
+T17	Event 302 310	followed
+T18	Head_End 316 322	letter
+T19	Event 323 332	informing
+T20	Head_End 343 347	they
+T21	Event 353 363	committing
+T22	Head_End 374 379	crime
+T23	Att_span 366 373	federal
+T24	Event 384 392	imposing
+T25	Head_End 395 406	$2000 fine.
+E1	Event:T1 Head:T2
+E2	Event:T3 End:T4
+E3	Event:T5 End:T6
+E4	Event:T9 End:T10
+E5	Event:T13 End:T14
+E6	Event:T15 End:T14 Head:T16
+E7	Event:T17 End:T18 Head:T30
+E8	Event:T19 End:T20
+E9	Event:T21 Head:T20 End:T22
+E10	Event:T24 Head:T20 End:T25
+R1	Entity_att Arg1:T7 Arg2:T6
+R2	Entity_att Arg1:T8 Arg2:T7
+R3	Entity_att Arg1:T11 Arg2:T10
+R4	Entity_att Arg1:T12 Arg2:T11
+R6	Entity_att Arg1:T23 Arg2:T22
+T16	Head_End 244 250	people
+T28	Event 251 256	using
+E11	Event:T28 End:T29 Head:T16
+T29	Head_End 257 273	illegal decoders
+T30	Head_End 280 292	free t-shirt
+R5	EventTemporal Arg1:E9 Arg2:E10	
+T31	Head_End 411 421	recipients
+T26	Event 447 453	pay up
+E12	Event:T26 Head:T31

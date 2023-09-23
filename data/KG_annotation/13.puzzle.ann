@@ -1,0 +1,11 @@
+T2	Event 20 24	sees
+E1	Event:T2 Head:T1 End:T3
+T1	Head_End 8 19	birdwatcher
+T3	Head_End 39 43	bird
+T4	Att_span 3 7	avid
+R1	Entity_att Arg1:T4 Arg2:T1	
+T5	Att_span 28 38	unexpected
+R2	Entity_att Arg1:T5 Arg2:T3	
+T6	Event 56 60	dead
+E2	Event:T6 Head:T1
+R3	EventTemporal Arg1:E1 Arg2:E2	

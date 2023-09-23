@@ -1,0 +1,18 @@
+T1	Head_End 15 19	army
+T2	Event 27 32	cross
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 33 45	a wide river
+T4	Att_span 0 10	In wartime
+R1	Event_att Arg1:T4 Arg2:E1	
+T5	Att_span 58 66	no boats
+T6	Att_span 71 86	only one bridge
+R2	Entity_att Arg1:T5 Arg2:T3	
+R3	Entity_att Arg1:T6 Arg2:T3	
+T7	Att_span 98 109	very narrow
+R4	Entity_att Arg1:T7 Arg2:T3	
+T8	Event 111 130	Crossing the bridge
+E2	Event:T8 Head:T1
+T9	Event 152 169	sitting ducks for
+E3	Event:T9 End:T10 Head:T1
+T10	Head_End 170 183	enemy gunfire
+R5	EventCause Arg1:E2 Arg2:E3	

@@ -1,0 +1,18 @@
+T1	Head_End 2 5	man
+T2	Event 6 13	woke up
+E1	Event:T2 Head:T1
+T3	Att_span 14 43	on a beautiful summer morning
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Event 48 55	went to
+E2	Event:T4 End:T5 Head:T1
+T5	Head_End 60 66	window
+T6	Event 68 78	looked out
+E3	Event:T6 Head:T1
+T7	Att_span 79 88	in horror
+R2	EventTemporal Arg1:E2 Arg2:E3	
+R3	Event_att Arg1:T7 Arg2:E3	
+T8	Event 99 103	shot
+E4	Event:T8 Head:T1 End:T9
+T9	Head_End 104 111	himself
+R4	EntityEqual Arg1:T9 Arg2:T1	
+R5	EventTemporal Arg1:E3 Arg2:E4	

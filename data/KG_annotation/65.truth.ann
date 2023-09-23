@@ -1,0 +1,52 @@
+T1	Head_End 9 12	man
+T2	Att_span 15 32	fiftieth birthday
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Non_Core_Event 64 69	plans
+E1	Non_Core_Event:T3 Head:T1
+T4	Event 73 77	kill
+E2	Event:T4 End:T5
+T5	Head_End 82 86	wife
+T6	Att_span 38 52	in celebration
+R2	Entity_att Arg1:T6 Arg2:T1	
+R3	NC2Event Arg1:E1 Arg2:E2	
+T7	Event 93 97	take
+E3	Event:T7 End:T8
+T8	Head_End 102 107	money
+R4	EventTemporal Arg1:E2 Arg2:E3	
+T9	Event 113 122	embezzled
+E4	Event:T9 End:T8 Head:T1
+T10	Event 127 134	move on
+E5	Event:T10 End:T11
+T11	Head_End 138 148	a new life
+R5	EventTemporal Arg1:E4 Arg2:E5	
+T12	Head_End 172 176	wife
+T13	Event 177 182	takes
+E6	Event:T13 Head:T12 End:T14
+T14	Head_End 183 186	him
+T15	Event 194 199	dinne
+E7	Event:T15 
+R6	NC2Event Arg1:E6 Arg2:E7	
+T16	Head_End 234 236	he
+T17	Event 237 242	kills
+E8	Event:T17 Head:T16 End:T18
+T18	Head_End 243 246	her
+R7	EventTemporal Arg1:E7 Arg2:E8	
+T19	Event 252 256	open
+E9	Event:T19 Head:T20
+T20	Head_End 262 266	door
+T21	Event 268 276	dragging
+E10	Event:T21 End:T22
+T22	Head_End 281 285	body
+R8	EventTemporal Arg1:E9 Arg2:E10	
+R9	EventTemporal Arg1:E8 Arg2:E9	
+T23	Head_End 311 317	lights
+T24	Event 327 334	turn on
+E11	Event:T24 Head:T23
+T25	Head_End 350 361	his friends
+T26	Event 362 367	shout
+E12	Event:T26 Head:T25 End:T27
+T27	Head_End 369 377	surprise
+T28	Head_End 382 384	he
+T29	Event 385 390	kills
+E13	Event:T29 Head:T28 End:T30
+T30	Head_End 391 399	himself.

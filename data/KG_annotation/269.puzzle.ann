@@ -1,0 +1,24 @@
+T1	Event 50 58	finished
+T2	Head_End 8 15	program
+T3	Att_span 2 7	music
+T4	Head_End 21 49	well-respected radio station
+T6	Event 148 159	explanation
+T7	Head_End 169 176	mistake
+T9	Event 217 225	supposed
+T10	Head_End 209 216	program
+T11	Event 229 233	last
+E1	Event:T1 End:T2 End2:T5
+E2	Event:T6 End:T7
+E3	Event:T9 End:T10
+E4	Event:T11 End:T10
+R1	Entity_att Arg1:T3 Arg2:T2
+R2	EntityPartof Arg1:T2 Arg2:T4	
+T5	Head_End 67 87	eight minutes earlie
+T15	Att_span 89 110	than it was scheduled
+R4	Entity_att Arg1:T15 Arg2:T5	
+T16	Head_End 130 138	official
+T17	Att_span 118 129	embarrassed
+R5	Entity_att Arg1:T17 Arg2:T16	
+T18	Non_Core_Event 139 143	gave
+E6	Non_Core_Event:T18 Head:T16
+R6	NC2Event Arg1:E6 Arg2:E2	

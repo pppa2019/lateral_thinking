@@ -1,0 +1,18 @@
+T1	Head_End 2 5	man
+T2	Event 9 16	running
+E1	Event:T2 Head:T1
+T3	Att_span 17 33	along a corridor
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Att_span 34 67	with a piece of paper in his hand
+R2	Entity_att Arg1:T4 Arg2:T1	
+T5	Head_End 73 79	lights
+T6	Event 80 87	flicker
+E2	Event:T6 Head:T5
+T7	Event 100 108	drops to
+E3	Event:T7 Head:T1 End:T8
+T8	Head_End 109 118	his knees
+T9	Event 123 132	cries out
+E4	Event:T9 Head:T1 End:T10
+T10	Head_End 134 142	"Oh no!"
+R3	EventTemporal Arg1:E2 Arg2:E3	
+R4	EventSameTime Arg1:E3 Arg2:E4	

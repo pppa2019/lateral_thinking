@@ -1,0 +1,11 @@
+T1	Head_End 2 5	man
+T2	Event 6 15	walked up
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 18 22	hill
+T4	Event 23 31	carrying
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 34 41	blanket
+T6	Head_End 60 78	one hundred people
+T7	Event 79 83	died
+E3	Event:T7 Head:T6
+R1	EventCause Arg1:E1 Arg2:E3	

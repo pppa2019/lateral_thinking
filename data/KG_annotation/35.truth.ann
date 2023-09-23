@@ -1,0 +1,18 @@
+T1	Head_End 16 30	night watchman
+T3	Event 78 90	not dreaming
+T5	Event 97 102	tells
+T6	Head_End 93 96	(he
+T7	Head_End 122 127	dream
+T8	Event 135 142	concern
+T9	Head_End 151 158	safety)
+E1	Event:T3 
+E2	Event:T5 Head:T6 End:T7 End2:T11
+E3	Event:T8 Head:T9 End:T6
+T4	Head_End 4 7	man
+R2	EntityPartof Arg1:T1 Arg2:T4	
+T10	Event 35 57	should've been on duty
+E4	Event:T10 Head:T4
+R3	EventSameTime Arg1:E1 Arg2:E4	
+T2	Att_span 58 76	the previous night
+R1	Event_att Arg1:T2 Arg2:E4	
+T11	Head_End 107 111	boss

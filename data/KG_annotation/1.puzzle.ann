@@ -1,0 +1,15 @@
+T1	Head_End 2 5	man
+T2	Event 6 15	goes into
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 18 28	restaurant
+T4	Event 30 36	orders
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 37 44	abalone
+T6	Event 46 50	eats
+E3	Event:T6 Head:T1 End:T5
+T7	Att_span 51 59	one bite
+T8	Event 65 70	kills
+E4	Event:T8 Head:T1 End:T9
+T9	Head_End 71 78	himself
+R1	Event_att Arg1:T7 Arg2:E3	
+R2	EntityEqual Arg1:T9 Arg2:T1	

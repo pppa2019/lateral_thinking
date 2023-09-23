@@ -1,0 +1,38 @@
+T1	Event 8 17	walked up
+T2	Head_End 2 7	woman
+T3	Event 48 54	handed
+T4	Head_End 61 65	book
+T5	Event 70 79	looked at
+T6	Head_End 67 69	he
+T7	Head_End 80 82	it
+T8	Event 87 91	said
+T11	Event 124 128	paid
+T12	Head_End 120 123	she
+T13	Event 146 156	walked out
+T14	Event 186 191	leave
+T15	Head_End 175 177	he
+T16	Event 215 219	call
+T17	Att_span 224 228	back
+E1	Event:T1 Head:T2 End:T18
+E2	Event:T3 Head:T2 End:T4
+E3	Event:T5 Head:T6 End:T7
+E4	Event:T8 Head:T6 End:T10
+E5	Event:T11 Head:T12 End:T9
+E6	Event:T13 Head:T12
+E7	Event:T14 Head:T2
+E8	Event:T16 Head:T15
+R1	Event_att Arg1:T17 Arg2:T16
+T18	Head_End 21 26	a man
+R2	EventTemporal Arg1:E1 Arg2:E2	
+T19	Att_span 27 43	behind a counter
+R3	Entity_att Arg1:T19 Arg2:T18	
+T20	Att_span 55 58	him
+R4	Event_att Arg1:T20 Arg2:E2	
+T21	Non_Core_Event 178 181	saw
+E9	Non_Core_Event:T21 
+T22	Att_span 192 202	without it
+R5	Event_att Arg1:T22 Arg2:E7	
+T10	Head_End 104 116	four dollars
+T9	Head_End 129 136	the man
+T23	Att_span 157 173	without the book
+R6	Event_att Arg1:T23 Arg2:E6	

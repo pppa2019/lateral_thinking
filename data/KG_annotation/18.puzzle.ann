@@ -1,0 +1,9 @@
+T1	Head_End 2 5	man
+T2	Event 6 15	lies dead
+E1	Event:T2 Head:T1
+T3	Att_span 16 32	next to a cactus
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Head_End 47 53	cactus
+T6	Head_End 57 72	a slip of paper
+T5	Event 34 42	Stuck to
+E2	Event:T5 Head:T6 End:T4

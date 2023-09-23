@@ -1,0 +1,29 @@
+T1	Head_End 2 8	midget
+T2	Event 12 19	jealous
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 27 32	clown
+T4	Event 37 42	walks
+E2	Event:T4 Head:T3 End:T5
+T5	Head_End 43 52	on stilts
+R1	EventCause Arg1:E2 Arg2:E1	
+T6	Event 57 69	saws partway
+E3	Event:T6 Head:T8 End:T7
+T7	Head_End 82 88	stilts
+T8	Head_End 54 56	He
+T9	Head_End 94 99	clown
+T10	Event 100 111	walks along
+E4	Event:T10 Head:T9
+T11	Event 116 121	falls
+E5	Event:T11 Head:T9
+T12	Event 126 130	dies
+E6	Event:T12 Head:T9
+R2	EventTemporal Arg1:E4 Arg2:E5	
+R3	EventCause Arg1:E5 Arg2:E6	
+R4	EventCause Arg1:E3 Arg2:E5	
+R5	EntityEqual Arg1:T9 Arg2:T3	
+R6	EntityEqual Arg1:T8 Arg2:T1	
+T14	Head_End 136 140	they
+T13	Non_Core_Event 141 146	break
+E7	Non_Core_Event:T13 Head:T14
+R7	EventCause Arg1:E7 Arg2:E5	
+R8	EntityEqual Arg1:T14 Arg2:T7	

@@ -1,0 +1,13 @@
+T1	Event 89 93	died
+T2	Head_End 85 88	she
+E1	Event:T1 End:T2
+T3	Head_End 11 22	dead people
+T4	Head_End 28 33	woman
+R1	EntityPartof Arg1:T4 Arg2:T3	
+T5	Head_End 52 56	baby
+R2	EntityPartof Arg1:T5 Arg2:T3	
+T6	Event 68 79	given birth
+E2	Event:T6 Head:T4
+R3	EntityEqual Arg1:T4 Arg2:T2	
+T7	Att_span 94 107	in childbirth
+R4	Event_att Arg1:T7 Arg2:E1	

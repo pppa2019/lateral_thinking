@@ -1,0 +1,26 @@
+T1	Head_End 2 7	woman
+T2	Att_span 8 17	in France
+T3	Att_span 18 25	in 1959
+T4	Event 29 36	waiting
+E1	Event:T4 Head:T1 End:T9
+T5	Att_span 37 48	in her room
+R3	Event_att Arg1:T5 Arg2:E1	
+R1	Event_att Arg1:T2 Arg2:E1	
+R2	Event_att Arg1:T3 Arg2:E1	
+T6	Head_End 55 68	all the doors
+T7	Event 69 75	locked
+E2	Event:T7 Head:T6
+T8	Att_span 76 91	from the inside
+R4	Event_att Arg1:T8 Arg2:E2	
+T9	Head_End 97 108	her husband
+T10	Head_End 129 131	he
+T11	Event 132 139	arrives
+E3	Event:T11 Head:T10
+T12	Head_End 145 150	house
+T13	Event 155 161	burned
+E4	Event:T13 Head:T12
+T14	Head_End 180 183	she
+T15	Event 186 190	dead
+E5	Event:T15 Head:T14
+R5	EventSameTime Arg1:E3 Arg2:E4	
+R6	EventSameTime Arg1:E4 Arg2:E5	

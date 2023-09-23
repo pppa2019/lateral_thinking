@@ -1,0 +1,34 @@
+T1	Head_End 0 4	Pete
+T2	Non_Core_Event 5 15	challenged
+E1	Non_Core_Event:T2 Head:T1
+T3	Head_End 16 19	Jim
+T4	Event 23 37	a tennis match
+E2	Event:T4 End:T3
+R1	NC2Event Arg1:E1 Arg2:E2	
+T5	Att_span 38 53	for a large bet
+R2	Event_att Arg1:T5 Arg2:E1	
+T7	Event 59 62	won
+E4	Event:T7 Head:T3 End:T6
+T6	Head_End 63 83	the first set easily
+T8	Att_span 85 88	6-1
+R3	Event_att Arg1:T8 Arg2:E4	
+T9	Non_Core_Event 101 108	offered
+E3	Non_Core_Event:T9 Head:T1
+T10	Event 112 117	raise
+E5	Event:T10 Head:T11 End:T12
+T11	Head_End 122 128	stakes
+T12	Head_End 132 152	ten times the amount
+R4	NC2Event Arg1:E3 Arg2:E5	
+T13	Event 166 181	agreed but lost
+E6	Event:T13 Head:T3 End:T1
+T14	Att_span 182 199	the next two sets
+R5	Event_att Arg1:T14 Arg2:E6	
+T15	Att_span 208 211	6-1
+R6	Event_att Arg1:T15 Arg2:E6	
+T16	Non_Core_Event 223 233	tried hard
+E7	Non_Core_Event:T16 Head:T1
+T17	Att_span 234 254	throughout the match
+R7	Event_att Arg1:T17 Arg2:E7	
+T18	Event 259 275	never threw away
+E8	Event:T18 Head:T1 End:T19
+T19	Head_End 276 283	a point

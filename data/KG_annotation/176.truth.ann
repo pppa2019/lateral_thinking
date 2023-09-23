@@ -1,0 +1,28 @@
+T1	Head_End 4 7	man
+T2	Event 8 18	walks into
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 21 27	casino
+T4	Event 32 39	goes to
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 44 55	craps table
+R1	EventTemporal Arg1:E1 Arg2:E2	
+T6	Head_End 58 60	He
+T7	Event 61 65	bets
+E3	Event:T7 Head:T6 End:T8
+T8	Head_End 66 79	all the money
+R2	EntityEqual Arg1:T6 Arg2:T1	
+T9	Att_span 80 87	he owns
+R3	Entity_att Arg1:T9 Arg2:T8	
+T10	Event 93 99	shoots
+E4	Event:T10 Head:T6 End:T11
+T11	Head_End 100 105	craps
+T12	Head_End 114 116	he
+T13	Event 124 129	broke
+E5	Event:T13 Head:T12
+R4	EntityEqual Arg1:T12 Arg2:T6	
+T14	Event 142 152	despondent
+E6	Event:T14 Head:T12
+T15	Event 165 172	suicide
+E7	Event:T15 Head:T12
+R5	EventCause Arg1:E6 Arg2:E7	
+R6	EventCause Arg1:E3 Arg2:E5	

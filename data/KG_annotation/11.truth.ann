@@ -1,0 +1,25 @@
+T1	Head_End 4 7	man
+T2	Att_span 16 21	black
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Event 23 38	has car trouble
+E1	Event:T3 Head:T1
+T4	Event 46 56	in need of
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 59 68	telephone
+T6	Att_span 79 99	at the nearest house
+T7	Event 113 120	invited
+E3	Event:T7 
+R2	Event_att Arg1:T6 Arg2:E3	
+T8	Event 132 136	hang
+E4	Event:T8 Head:T10 End:T9
+T9	Head_End 141 145	coat
+T10	Head_End 71 73	He
+R3	EventTemporal Arg1:E3 Arg2:E4	
+T11	Non_Core_Event 160 167	notices
+E5	Non_Core_Event:T11 Head:T10
+T12	Event 204 217	in the closet
+E6	Event:T12 Head:T13
+R4	NC2Event Arg1:E5 Arg2:E6	
+T13	Head_End 168 183	the white robes
+T14	Att_span 187 203	the Ku Klux Klan
+R5	Entity_att Arg1:T14 Arg2:T13	

@@ -1,0 +1,13 @@
+T1	Event 9 14	found
+T2	Head_End 2 5	man
+E1	Event:T1 End:T2 End2:T3
+T3	Head_End 15 19	dead
+T4	Att_span 20 31	in an alley
+R1	Event_att Arg1:T4 Arg2:E1	
+T5	Event 32 37	lying
+E2	Event:T5 Head:T2 End:T6
+T7	Event 68 75	crossed
+E3	Event:T7 Head:T6
+T6	Head_End 57 67	two sticks
+T8	Att_span 76 90	near his head.
+R2	Event_att Arg1:T8 Arg2:E3	

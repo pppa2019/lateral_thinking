@@ -1,0 +1,23 @@
+T3	Non_Core_Event 64 69	tells
+T4	Head_End 48 54	letter
+T7	Head_End 101 108	disease
+T8	Event 136 143	burning
+T9	Head_End 126 135	cigarette
+T10	Event 200 211	killing off
+T11	Head_End 212 226	sensory nerves
+E1	Non_Core_Event:T3 Head:T4
+E2	Event:T8 End:T9
+E3	Event:T10 End:T11 Head:T5
+T12	Head_End 8 23	guard/attendant
+T13	Head_End 0 2	he
+R2	EntityEqual Arg1:T12 Arg2:T13	
+T1	Att_span 29 41	leper colony
+R1	Entity_att Arg1:T1 Arg2:T12	
+T2	Event 86 96	contracted
+E4	Event:T2 End:T7 Head:T13
+R3	NC2Event Arg1:E1 Arg2:E4	
+T5	Head_End 172 179	leprosy
+T6	Event 227 245	without destroying
+E5	Event:T6 End:T14 Head:T5
+T14	Head_End 246 259	motor ability
+R4	EventSameTime Arg1:E3 Arg2:E5	

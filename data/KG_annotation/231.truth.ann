@@ -1,0 +1,29 @@
+T1	Event 53 56	had
+T2	Head_End 57 75	different sabbaths
+E1	Event:T1 End:T2 Head:T3
+T3	Head_End 4 19	seven employees
+T4	Att_span 30 39	religious
+R1	Entity_att Arg1:T4 Arg2:T3	
+T5	Head_End 77 90	the christian
+T6	Event 91 99	took off
+E2	Event:T6 Head:T5
+T7	Att_span 100 109	on sunday
+R2	Event_att Arg1:T7 Arg2:E2	
+T8	Head_End 111 120	the greek
+T9	Att_span 121 127	monday
+R3	Entity_att Arg1:T9 Arg2:T8	
+T10	Head_End 129 140	the persian
+T11	Att_span 141 148	tuesday
+R4	Entity_att Arg1:T11 Arg2:T10	
+T12	Head_End 150 162	the assyrian
+T13	Att_span 163 172	wednesday
+R5	Entity_att Arg1:T13 Arg2:T12	
+T14	Head_End 174 186	the egyptian
+T15	Att_span 187 195	thursday
+R6	Entity_att Arg1:T15 Arg2:T14	
+T16	Head_End 197 215	the arabian muslim
+T17	Att_span 216 222	friday
+R7	Entity_att Arg1:T17 Arg2:T16	
+T18	Head_End 228 235	the jew
+T19	Att_span 236 244	saturday
+R8	Entity_att Arg1:T19 Arg2:T18	

@@ -1,0 +1,27 @@
+T1	Event 6 11	tells
+T2	Head_End 2 5	man
+T6	Non_Core_Event 71 76	dream
+T9	Event 120 125	crash
+T10	Head_End 109 114	plane
+T11	Event 137 141	die"
+T12	Head_End 96 99	you
+T13	Event 100 102	do
+T14	Event 153 158	fires
+T15	Head_End 148 152	boss
+T16	Head_End 163 166	man
+E1	Event:T1 Head:T2 End2:T17
+E3	Non_Core_Event:T6 Head:T2
+E4	Event:T9 End:T10
+E5	Event:T11 End:T12 Head:T12
+E6	Event:T13 Head:T12
+E7	Event:T14 Head:T15 End:T16
+T17	Head_End 16 20	boss
+T3	Event 23 33	don't take
+E8	Event:T3 Head:T17 End:T4
+T4	Head_End 39 53	planned flight
+T5	Att_span 77 87	last night
+R1	Event_att Arg1:T5 Arg2:E3	
+R2	EntityEqual Arg1:T12 Arg2:T17	
+R3	NC2Event Arg1:E3 Arg2:E6	
+R4	EventTemporal Arg1:E6 Arg2:E4	
+R5	EventTemporal Arg1:E4 Arg2:E5	

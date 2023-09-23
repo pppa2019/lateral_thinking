@@ -1,0 +1,32 @@
+T1	Head_End 4 7	man
+T2	Head_End 12 34	a secret service agent
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Event 43 58	recently killed
+E1	Event:T3 Head:T1 End:T4
+T4	Head_End 59 79	several enemy agents
+T5	Event 84 91	entered
+E2	Event:T5 End:T6 Head:T1
+T6	Head_End 92 118	a confessional in a church
+T7	Non_Core_Event 123 135	confessed to
+E3	Non_Core_Event:T7 Head:T1
+T9	Event 166 181	under suspicion
+E4	Event:T9 Head:T1
+T10	Event 190 203	been followed
+E5	Event:T10 Head:T1
+R3	EventSameTime Arg1:E4 Arg2:E5	
+T8	Event 140 148	killings
+E6	Event:T8 
+R2	NC2Event Arg1:E3 Arg2:E6	
+R4	EventEqual Arg1:E6 Arg2:E1	
+T11	Head_End 205 228	The man he confessed to
+T12	Event 233 236	not
+E7	Event:T12 Head:T11 End:T13
+T13	Head_End 239 245	priest
+T14	Head_End 250 264	an enemy agent
+R5	EntityEqual Arg1:T14 Arg2:T11	
+T15	Non_Core_Event 273 277	seen
+E8	Non_Core_Event:T15 Head:T14
+T16	Event 282 287	enter
+E9	Event:T16 Head:T1 End:T17
+R6	NC2Event Arg1:E8 Arg2:E9	
+T17	Head_End 292 298	church

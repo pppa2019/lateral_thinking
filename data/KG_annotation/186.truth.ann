@@ -1,0 +1,15 @@
+T1	Event 65 68	ate
+T2	Head_End 73 78	label
+T3	Event 90 94	knew
+T4	Head_End 83 89	no one
+T5	Event 26 34	suggests
+T6	Head_End 21 25	name
+E1	Event:T1 End:T2 Head:T8
+E2	Event:T3 Head:T4 End:T9
+E3	Event:T5 Head:T6
+T7	Head_End 40 46	a goat
+T8	Head_End 0 12	little billy
+R1	EntityEqual Arg1:T8 Arg2:T7	
+R2	EntityPartof Arg1:T6 Arg2:T8	
+T9	Head_End 95 122	where he was supposed to go
+R3	EventCause Arg1:E1 Arg2:E2	

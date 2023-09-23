@@ -1,0 +1,27 @@
+T1	Event 32 37	broke
+T2	Head_End 5 9	they
+T3	Head_End 47 51	cask
+T4	Event 55 59	find
+T5	Head_End 62 66	body
+T6	Event 10 18	finished
+T7	Head_End 23 26	rum
+T8	Event 137 149	shipped back
+T9	Head_End 119 125	bodies
+T10	Head_End 179 182	way
+T11	Att_span 174 178	this
+T12	Event 239 246	brought
+T13	Head_End 185 222	british admiral horatio nelson's body
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 Head:T2 End:T5
+E3	Event:T6 Head:T2 End:T7
+E4	Event:T8 End:T9
+E5	Event:T12 End:T13
+R1	Entity_att Arg1:T11 Arg2:T10
+R2	EventTemporal Arg1:E3 Arg2:E1	
+R3	EventTemporal Arg1:E1 Arg2:E2	
+T14	Att_span 153 160	england
+R4	Event_att Arg1:T14 Arg2:E4	
+T15	Att_span 252 262	to england
+R5	Event_att Arg1:T15 Arg2:E5	
+T16	Att_span 263 281	in a barrel of rum
+R6	Event_att Arg1:T16 Arg2:E5	

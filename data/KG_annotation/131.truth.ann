@@ -1,0 +1,8 @@
+T1	Head_End 0 2	He
+T2	Head_End 9 18	skywriter
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Event 31 43	crashed into
+E1	Event:T3 Head:T5 End:T4
+T4	Head_End 44 57	another plane
+T5	Head_End 25 30	plane
+R2	EntityPartof Arg1:T5 Arg2:T1	

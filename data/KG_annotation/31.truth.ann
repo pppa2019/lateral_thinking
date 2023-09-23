@@ -1,0 +1,6 @@
+T1	Event 3 9	pulled
+T2	Head_End 0 2	he
+T3	Att_span 23 45	instead of the ripcord
+E1	Event:T1 Head:T2 End:T4
+T4	Head_End 14 22	shoelace
+R1	Entity_att Arg1:T3 Arg2:T4	

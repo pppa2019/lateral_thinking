@@ -1,0 +1,27 @@
+T1	Head_End 2 15	blind swimmer
+T2	Event 16 20	sets
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 24 35	alarm clock
+T4	Non_Core_Event 39 43	tell
+E2	Non_Core_Event:T4 Head:T6
+T5	Event 75 86	go to shore
+E3	Event:T5 
+R1	NC2Event Arg1:E2 Arg2:E3	
+T6	Head_End 44 47	him
+T7	Head_End 89 103	The first bell
+T8	Head_End 109 113	buoy
+T9	Event 135 140	swims
+E4	Event:T9 Head:T12
+T10	Event 145 158	getting tired
+E5	Event:T10 Head:T12
+T11	Event 163 171	drowning
+E6	Event:T11 Head:T12
+R2	EntityEqual Arg1:T8 Arg2:T7	
+T12	Head_End 121 123	he
+T13	Att_span 124 134	mistakenly
+R3	Event_att Arg1:T13 Arg2:E4	
+T14	Head_End 183 194	alarm clock
+T15	Event 195 203	goes off
+E7	Event:T15 Head:T14
+R4	EventCause Arg1:E5 Arg2:E6	
+R5	EventTemporal Arg1:E6 Arg2:E7	

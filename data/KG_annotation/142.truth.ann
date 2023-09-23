@@ -1,0 +1,4 @@
+T1	Event 26 29	lit
+T2	Head_End 35 41	window
+T3	Head_End 18 22	room
+E1	Event:T1 Head:T2 End:T3

@@ -1,0 +1,10 @@
+T1	Head_End 2 5	man
+T2	Head_End 19 31	bowling ball
+T3	Event 6 16	lets go of
+E1	Event:T3 Head:T1 End:T2
+T4	Head_End 55 57	he
+T5	Event 61 70	rushed to
+E2	Event:T5 Head:T4 End:T6
+T6	Head_End 75 83	hospital
+T7	Att_span 34 53	A short while later
+R1	Event_att Arg1:T7 Arg2:E2	

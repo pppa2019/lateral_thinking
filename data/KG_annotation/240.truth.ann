@@ -1,0 +1,23 @@
+T1	Event 8 13	found
+T2	Head_End 4 7	vet
+T3	Head_End 14 31	two human fingers
+T5	Event 58 66	belonged
+T6	Head_End 53 57	they
+T7	Event 89 95	feared
+T8	Head_End 85 88	vet
+T10	Head_End 151 154	dog
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T5 Head:T6 End:T13
+E3	Event:T7 Head:T8 End:T10
+T4	Att_span 32 51	in the dog's throat
+R1	Entity_att Arg1:T4 Arg2:T3	
+T13	Head_End 72 79	burglar
+T12	Event 137 146	afraid of
+E5	Event:T12 Head:T11 End:T10
+T11	Head_End 105 112	burglar
+T14	Att_span 117 135	still in the house
+R2	Entity_att Arg1:T14 Arg2:T11	
+T9	Event 159 165	hiding
+E4	Event:T9 Head:T11 End:T15
+T15	Head_End 166 177	in a closet
+R3	EventTemporal Arg1:E5 Arg2:E4	

@@ -1,0 +1,37 @@
+T1	Head_End 4 7	men
+T2	Event 18 28	spelunking
+E1	Event:T2 Head:T1
+T3	Event 38 43	taken
+E2	Event:T3 Head:T1 End:T4
+T4	Head_End 47 65	Igloo brand cooler
+T5	Event 88 101	have a picnic
+E3	Event:T5 Head:T7
+T6	Att_span 107 119	in the caves
+R1	Event_att Arg1:T6 Arg2:E3	
+T7	Head_End 79 83	they
+R2	EntityEqual Arg1:T7 Arg2:T1	
+T8	Head_End 122 126	They
+R3	EntityEqual Arg1:T8 Arg2:T7	
+T9	Event 136 140	used
+E4	Event:T9 Head:T8 End:T10
+T10	Head_End 141 148	dry ice
+T11	Event 152 172	keep their beer cold
+E5	Event:T11 
+R4	EventCause Arg1:E4 Arg2:E5	
+T12	Non_Core_Event 174 187	not realizing
+E6	Non_Core_Event:T12 Head:T8
+T13	Event 320 329	suffocate
+E7	Event:T13 Head:T19
+T14	Event 265 269	push
+E8	Event:T14 Head:T15 End:T17
+R5	NC2Event Arg1:E6 Arg2:E8	
+T15	Head_End 200 207	dry ice
+T16	Event 208 216	sublimed
+E9	Event:T16 Head:T15
+R6	EventCause Arg1:E9 Arg2:E8	
+T17	Head_End 282 288	oxygen
+T18	Att_span 289 304	out of the cave
+R7	Event_att Arg1:T18 Arg2:E8	
+T19	Head_End 309 313	they
+R8	EntityEqual Arg1:T19 Arg2:T8	
+R9	EventCause Arg1:E8 Arg2:E7	

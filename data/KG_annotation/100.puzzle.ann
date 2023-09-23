@@ -1,0 +1,12 @@
+T1	Head_End 2 6	bell
+T2	Event 7 12	rings
+E1	Event:T2 Head:T1
+T3	Head_End 17 20	man
+T4	Event 21 25	dies
+E2	Event:T4 Head:T3
+T5	Event 35 40	rings
+E3	Event:T5 Head:T6
+R1	EventTemporal Arg1:E1 Arg2:E2	
+R2	EventTemporal Arg1:E2 Arg2:E3	
+T6	Head_End 30 34	bell
+R3	EntityEqual Arg1:T1 Arg2:T6	

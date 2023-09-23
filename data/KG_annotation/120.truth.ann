@@ -1,0 +1,44 @@
+T1	Event 62 69	injured
+T2	Head_End 4 7	man
+T3	Att_span 22 28	artist
+T4	Head_End 74 78	eyes
+T5	Event 93 101	bandaged
+T6	Head_End 85 89	head
+T7	Non_Core_Event 118 124	warned
+T10	Event 211 221	aggravated
+T11	Head_End 185 194	condition
+T14	Event 227 234	catches
+T15	Head_End 224 226	he
+T16	Head_End 239 244	train
+T17	Event 272 285	cannot resist
+T18	Head_End 286 293	peeking
+E1	Event:T1 Head:T2 End:T4
+E2	Event:T5 End:T6
+E3	Non_Core_Event:T7 Head:T2
+E4	Event:T10 End:T11
+E5	Event:T14 Head:T15 End:T16
+E6	Event:T17 Head:T15 End:T18
+R1	Entity_att Arg1:T3 Arg2:T2
+T9	Head_End 139 151	the bandages
+T8	Event 125 138	not to remove
+E12	Event:T8 End:T9
+R7	NC2Event Arg1:E3 Arg2:E12	
+T12	Att_span 158 175	any circumstances
+R2	Event_att Arg1:T12 Arg2:E12	
+T13	Event 176 180	lest
+E13	Event:T13 End:T11
+R8	EventCause Arg1:E13 Arg2:E12	
+R9	EventTemporal Arg1:E5 Arg2:E6	
+T19	Event 296 302	seeing
+E7	Event:T19 End:T20 Head:T15
+T20	Head_End 303 310	nothing
+T21	Non_Core_Event 322 329	assumes
+E8	Non_Core_Event:T21 Head:T15
+T22	Event 336 343	blinded
+E9	Event:T22 
+R3	NC2Event Arg1:E8 Arg2:E9	
+T23	Event 348 353	kills
+E10	Event:T23 End:T15
+R4	EventCause Arg1:E9 Arg2:E10	
+T24	Att_span 362 370	in grief
+R5	Event_att Arg1:T24 Arg2:E10	

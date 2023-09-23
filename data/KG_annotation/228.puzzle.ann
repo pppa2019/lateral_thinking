@@ -1,0 +1,17 @@
+T1	Event 13 22	kidnapped
+T2	Head_End 2 8	banker
+T3	Event 32 39	tied up
+T4	Event 44 55	blindfolded
+T5	Head_End 108 112	time
+T6	Att_span 103 107	this
+E1	Event:T1 End:T2 Head:T7
+E2	Event:T3 End:T2 Head:T7
+E3	Event:T4 End:T2 Head:T7
+R1	Entity_att Arg1:T6 Arg2:T5
+R2	EventTemporal Arg1:E1 Arg2:E2	
+T7	Head_End 61 77	single kidnapper
+R3	EventTemporal Arg1:E2 Arg2:E3	
+T8	Att_span 78 94	for several days
+R4	Event_att Arg1:T8 Arg2:E3	
+T9	Att_span 116 118	18
+R5	Entity_att Arg1:T9 Arg2:T7	

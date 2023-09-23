@@ -1,0 +1,23 @@
+T1	Event 19 27	going on
+E1	Event:T1 Head:T2
+T2	Head_End 2 15	baseball game
+T3	Head_End 34 45	base-runner
+T4	Head_End 55 62	catcher
+T5	Event 63 70	waiting
+E2	Event:T5 Head:T4
+T6	Event 46 50	sees
+E3	Event:T6 Head:T3 End:T4
+T7	Att_span 71 84	at home plate
+R1	Event_att Arg1:T7 Arg2:E2	
+T8	Att_span 85 98	with the ball
+R2	Entity_att Arg1:T8 Arg2:T4	
+T9	Non_Core_Event 107 114	decides
+E4	Non_Core_Event:T9 Head:T3
+T10	Event 118 122	stay
+E5	Event:T10 
+R3	NC2Event Arg1:E4 Arg2:E5	
+T11	Att_span 123 136	at third base
+R4	Event_att Arg1:T11 Arg2:E5	
+T12	Event 140 162	avoid being tagged out
+E6	Event:T12 
+R5	EventCause Arg1:E5 Arg2:E6	

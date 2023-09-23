@@ -1,0 +1,16 @@
+T1	Head_End 5 13	bicycles
+T2	Head_End 19 40	Bicycle playing cards
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 46 49	man
+T4	Event 54 62	cheating
+E1	Event:T4 Head:T3 End:T5
+T5	Head_End 63 71	at cards
+T6	Head_End 82 96	the extra card
+T7	Event 101 106	found
+E2	Event:T7 Head:T6
+T8	Event 115 121	killed
+E3	Event:T8 Head:T9 End:T10
+T9	Head_End 108 110	he
+T10	Head_End 125 142	the other players
+R2	EventCause Arg1:E1 Arg2:E2	
+R3	EventCause Arg1:E2 Arg2:E3	

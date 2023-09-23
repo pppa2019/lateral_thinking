@@ -1,0 +1,66 @@
+T1	Head_End 24 37	island nation
+T2	Event 46 55	landed on
+T3	Head_End 0 4	abel
+T4	Head_End 10 16	prince
+R1	EntityEqual Arg1:T3 Arg2:T4	
+E1	Event:T2 Head:T3 End:T1
+T5	Att_span 59 76	cruel and warlike
+T6	Head_End 77 83	prince
+R2	Entity_att Arg1:T5 Arg2:T6	
+T7	Event 88 93	waged
+E2	Event:T7 Head:T6 End:T8
+T8	Head_End 94 103	many land
+T9	Event 114 121	battles
+E3	Event:T9 Head:T6 End:T10
+T10	Head_End 133 152	his father the king
+R3	EventTemporal Arg1:E2 Arg2:E3	
+T11	Event 168 177	encounter
+E4	Event:T11 Head:T12
+T12	Head_End 162 167	naval
+T13	Head_End 185 189	ship
+T14	Event 190 194	sank
+E5	Event:T14 Head:T13
+R4	EventTemporal Arg1:E4 Arg2:E5	
+T15	Head_End 200 204	king
+T16	Event 205 209	died
+E6	Event:T16 Head:T15
+R5	EventTemporal Arg1:E5 Arg2:E6	
+T17	Head_End 219 225	prince
+T18	Event 226 230	swam
+E7	Event:T18 Head:T17 End:T19
+T19	Head_End 236 251	deserted island
+R6	EventTemporal Arg1:E6 Arg2:E7	
+T20	Event 261 281	spent several months
+E8	Event:T20 Head:T17
+T21	Event 282 290	building
+E9	Event:T21 End:T22 End2:T23
+R7	NC2Event Arg1:E8 Arg2:E9	
+T22	Head_End 293 297	raft
+T23	Head_End 301 311	small boat
+T24	Head_End 333 339	regent
+T25	Event 344 353	appointed
+E10	Event:T25 Head:T24 End:T26
+T26	Head_End 361 374	island nation
+T27	Event 383 390	brought
+E11	Event:T27 Head:T24 End:T28 End2:T29
+T28	Head_End 391 396	peace
+T29	Head_End 401 412	prosperity.
+T30	Head_End 426 430	abel
+T31	Event 431 439	returned
+E12	Event:T31 End:T32 Head:T30
+T32	Head_End 447 460	kingdom  cain
+R8	EventTemporal Arg1:E10 Arg2:E11	
+R9	EventTemporal Arg1:E11 Arg2:E12	
+T33	Event 482 490	realized
+E13	Event:T33 Head:T30 End:T34
+T34	Head_End 500 517	peace of the land
+R10	EventTemporal Arg1:E12 Arg2:E13	
+T35	Event 532 542	maintained
+E14	Event:T35 Head:T34
+T36	Event 551 567	did not reascend
+E15	Event:T36 Head:T30 End:T37
+T37	Head_End 575 581	throne
+T38	Event 587 593	killed
+E16	Event:T38 End:T39
+T39	Head_End 598 604	prince
+R11	EventSameTime Arg1:E15 Arg2:E16	

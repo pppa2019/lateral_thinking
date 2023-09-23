@@ -1,0 +1,26 @@
+T1	Event 6 12	wishes
+T2	Head_End 2 5	man
+T3	Head_End 16 21	reach
+T4	Head_End 26 32	island
+T5	Head_End 64 68	lake
+T6	Att_span 53 63	ornamental
+T7	Event 69 89	without getting wet.
+T8	Head_End 122 126	edge
+T9	Att_span 175 192	each 19 feet long
+T10	Event 160 163	has
+T11	Head_End 157 159	he
+T12	Head_End 168 174	planks
+T14	Event 206 216	get across
+T15	Head_End 203 205	he
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T7 End:T2
+E3	Event:T10 Head:T11 End:T12
+E4	Event:T14 Head:T15
+R1	Entity_att Arg1:T6 Arg2:T5
+R4	EntityPartof Arg1:T5 Arg2:T4	
+T16	Att_span 33 46	in the middle
+R5	Entity_att Arg1:T16 Arg2:T5	
+T17	Head_End 94 100	island
+T18	Event 104 116	20 feet from
+E5	Event:T18 Head:T17 End:T8
+R2	Entity_att Arg1:T9 Arg2:T12	

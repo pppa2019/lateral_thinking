@@ -1,0 +1,19 @@
+T1	Event 6 11	hired
+T2	Head_End 2 5	man
+T3	Event 66 73	noticed
+T4	Head_End 63 65	he
+E1	Event:T1 Head:T2 End:T8
+E2	Event:T3 Head:T4
+T8	Head_End 12 27	seven employees
+T9	Event 31 35	work
+E3	Event:T9 Head:T8
+T5	Head_End 79 87	only six
+R2	EntityPartof Arg1:T5 Arg2:T8	
+T10	Event 98 105	at work
+E4	Event:T10 Head:T5
+T6	Att_span 106 116	on any day
+R1	Event_att Arg1:T6 Arg2:E4	
+T7	Head_End 138 153	a different one
+T11	Event 154 171	failed to show up
+E5	Event:T11 Head:T7
+R3	EntityPartof Arg1:T7 Arg2:T8	

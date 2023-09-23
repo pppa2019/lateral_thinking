@@ -1,0 +1,33 @@
+T1	Event 11 19	drinking
+T2	Head_End 4 7	man
+T3	Head_End 25 31	shakes
+T4	Att_span 20 24	diet
+T5	Event 72 76	lose
+T6	Head_End 77 83	weight
+T7	Event 154 159	fired
+T8	Head_End 148 150	he
+T10	Event 249 254	wants
+T11	Head_End 262 266	lose
+T12	Head_End 277 279	he
+T13	Head_End 267 273	weight
+T14	Event 280 285	looks
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T5 Head:T2 End:T6
+E3	Event:T7 End:T8
+E4	Event:T10 End:T11
+E5	Event:T14 Head:T12
+R1	Entity_att Arg1:T4 Arg2:T3
+T15	Att_span 40 59	breakfast and lunch
+R2	Event_att Arg1:T15 Arg2:E1	
+R3	EventCause Arg1:E1 Arg2:E2	
+T16	Head_End 107 116	first job
+T17	Head_End 125 143	weight-loss clinic
+R4	EntityEqual Arg1:T17 Arg2:T16	
+T9	Event 164 175	patronizing
+E6	Event:T9 End:T18 Head:T8
+T18	Head_End 180 191	competition
+R5	EventCause Arg1:E6 Arg2:E3	
+T19	Head_End 198 208	second job
+T20	Head_End 217 234	health-food store
+R6	EntityEqual Arg1:T20 Arg2:T19	
+R7	EventCause Arg1:E5 Arg2:E4	

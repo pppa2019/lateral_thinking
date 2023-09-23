@@ -1,0 +1,34 @@
+T1	Head_End 2 5	man
+T2	Event 6 13	came to
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 16 21	river
+T4	Event 22 30	carrying
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 31 63	a fox, a duck, and a bag of corn
+T6	Head_End 77 81	boat
+T7	Event 82 84	in
+E3	Event:T7 Head:T6 End:T3
+T8	Head_End 91 93	he
+T9	Event 100 105	ferry
+E4	Event:T9 Head:T8 End:T10
+T10	Head_End 117 128	three items
+T11	Att_span 106 112	one of
+R1	Entity_att Arg1:T11 Arg2:T10	
+R2	EntityEqual Arg1:T10 Arg2:T5	
+T12	Event 129 135	across
+E5	Event:T12 Head:T8 End:T3
+R3	EventTemporal Arg1:E4 Arg2:E5	
+R4	EntityEqual Arg1:T8 Arg2:T1	
+T13	Event 190 200	alone with
+E6	Event:T13 Head:T15 End:T16
+T14	Att_span 172 181	not leave
+R5	Event_att Arg1:T14 Arg2:E6	
+T15	Head_End 186 189	fox
+T16	Head_End 205 209	duck
+T17	Event 224 234	alone with
+E7	Event:T17 Head:T16 End:T18
+T18	Head_End 239 243	corn
+R6	Event_att Arg1:T14 Arg2:E7	
+R7	EntityPartof Arg1:T15 Arg2:T5	
+R8	EntityPartof Arg1:T16 Arg2:T5	
+R9	EntityPartof Arg1:T18 Arg2:T5	

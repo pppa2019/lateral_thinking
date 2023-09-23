@@ -1,0 +1,12 @@
+T1	Event 0 4	Pick
+E1	Event:T1 End:T2
+T2	Head_End 5 15	one person
+T3	Head_End 17 18	A
+R1	EntityEqual Arg1:T3 Arg2:T2	
+T4	Event 29 52	cut a piece of the cake
+E2	Event:T4 Head:T3
+T5	Att_span 58 93	he would be happy with as his share
+R2	Event_att Arg1:T5 Arg2:E2	
+T6	Event 100 108	go round
+E3	Event:T6 
+R3	EventTemporal Arg1:E2 Arg2:E3	

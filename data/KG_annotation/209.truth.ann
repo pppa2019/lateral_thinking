@@ -1,0 +1,24 @@
+T1	Head_End 4 7	man
+T2	Event 21 25	left
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 26 34	his wife
+T4	Event 38 47	live with
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 48 60	his mistress
+R1	EventTemporal Arg1:E1 Arg2:E2	
+T6	Head_End 66 76	angry wife
+T7	Event 81 91	advertised
+E3	Event:T7 Head:T6 End:T8
+T8	Head_End 92 125	the man's prized stamp collection
+T9	Att_span 126 134	for sale
+R2	Event_att Arg1:T9 Arg2:E3	
+T10	Head_End 139 141	he
+T11	Event 150 156	bought
+E4	Event:T11 Head:T10 End:T12
+T12	Head_End 157 171	his own stamps
+T13	Event 175 200	stop anyone else doing so
+E5	Event:T13 Head:T10
+R3	EntityEqual Arg1:T12 Arg2:T8	
+R4	EventCause Arg1:E3 Arg2:E4	
+R5	EntityEqual Arg1:T10 Arg2:T1	
+R6	EntityPartof Arg1:T8 Arg2:T1	

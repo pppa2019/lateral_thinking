@@ -1,0 +1,8 @@
+T1	Head_End 3 10	old man
+T2	Event 11 15	gets
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 20 27	hiccups
+T4	Event 42 51	rushed to
+E2	Event:T4 End:T5 Head:T1
+T5	Head_End 56 64	hospital
+R1	EventTemporal Arg1:E1 Arg2:E2	

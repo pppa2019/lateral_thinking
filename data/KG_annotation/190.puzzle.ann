@@ -1,0 +1,7 @@
+T1	Event 10 18	drinking
+T2	Head_End 2 5	man
+T3	Head_End 28 31	tea
+T4	Event 53 60	blinded
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 End:T2
+R1	EventCause Arg1:E1 Arg2:E2	

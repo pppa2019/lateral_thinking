@@ -1,0 +1,30 @@
+T1	Head_End 0 13	The young man
+T2	Event 14 19	shook
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 20 28	his foot
+T4	Event 32 38	remove
+E2	Event:T4 End:T5 Head:T1
+T5	Head_End 43 48	stone
+R1	EventCause Arg1:E1 Arg2:E2	
+T6	Event 53 67	leaned against
+E3	Event:T6 End:T7 Head:T1
+T7	Head_End 68 86	a metal light pole
+T8	Head_End 88 99	Another guy
+T9	Event 100 109	came over
+E4	Event:T9 Head:T8
+T10	Non_Core_Event 114 121	thought
+E5	Non_Core_Event:T10 Head:T8
+T11	Event 145 156	electrified
+E6	Event:T11 Head:T1
+R2	NC2Event Arg1:E5 Arg2:E6	
+T12	Head_End 161 175	the second guy
+R3	EntityEqual Arg1:T12 Arg2:T8	
+T13	Event 176 187	rushed over
+E7	Event:T13 Head:T12
+T14	Event 192 199	punched
+E8	Event:T14 Head:T12 End:T15
+T15	Head_End 200 219	the first man's arm
+R4	EventTemporal Arg1:E7 Arg2:E8	
+R5	EventCause Arg1:E6 Arg2:E8	
+T16	Att_span 220 224	hard
+R6	Event_att Arg1:T16 Arg2:E8	

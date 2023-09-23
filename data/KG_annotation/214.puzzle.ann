@@ -1,0 +1,15 @@
+T1	Head_End 3 6	you
+T2	Event 7 12	liked
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 18 23	place
+T4	Event 41 45	stay
+E2	Event:T4 Head:T1
+T5	Att_span 46 67	for a day than a year
+R1	EventCause Arg1:E1 Arg2:E2	
+T6	Event 80 85	hated
+E3	Event:T6 Head:T1 End:T3
+T7	Event 106 110	stay
+E4	Event:T7 Head:T1
+R2	Event_att Arg1:T5 Arg2:E2	
+T8	Att_span 111 132	for a year than a day
+R3	Event_att Arg1:T8 Arg2:E4	

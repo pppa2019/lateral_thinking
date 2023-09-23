@@ -1,0 +1,34 @@
+T1	Event 11 18	grabbed
+T2	Head_End 23 32	fire hose
+T3	Event 51 55	used
+T4	Head_End 60 78	force of the water
+T6	Event 96 100	push
+T7	Head_End 105 109	mine
+T8	Event 170 177	explode
+T9	Head_End 153 161	pressure
+T10	Att_span 147 152	water
+T11	Head_End 199 204	mines
+T12	Event 205 212	contain
+T13	Non_Core_Event 236 240	make
+T14	Event 257 264	contact
+T15	Head_End 279 283	hull
+E1	Event:T1 End:T2 Head:T16
+E2	Event:T3 End:T4
+E3	Event:T6 End:T7
+E4	Event:T8 Head:T9 End:T11
+E5	Event:T12 Head:T11 End:T5
+E6	Event:T14 End:T15
+R1	Entity_att Arg1:T10 Arg2:T9
+T16	Head_End 4 10	sailor
+T17	Att_span 33 46	from the deck
+R2	Event_att Arg1:T17 Arg2:E1	
+R3	EventTemporal Arg1:E2 Arg2:E3	
+T5	Head_End 213 229	magnetic sensors
+E7	Non_Core_Event:T13 Head:T5
+T18	Event 246 253	explode
+E8	Event:T18 
+R4	NC2Event Arg1:E7 Arg2:E8	
+R5	EventTemporal Arg1:E8 Arg2:E6	
+T19	Head_End 124 140	hull of the ship
+T20	Event 110 119	away from
+E9	Event:T20 Head:T7 End:T19

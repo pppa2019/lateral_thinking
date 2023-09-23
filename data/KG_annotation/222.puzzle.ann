@@ -1,0 +1,18 @@
+T1	Non_Core_Event 15 21	states
+T3	Head_End 114 122	products
+T6	Event 49 53	told
+T7	Head_End 58 63	truth
+T8	Event 137 148	manufacture
+T9	Head_End 134 136	he
+E1	Non_Core_Event:T1 Head:T10
+E2	Event:T6 End:T7 Head:T11
+E3	Event:T8 Head:T9
+T10	Head_End 2 14	manufacturer
+T2	Event 84 88	sell
+E4	Event:T2 Head:T3
+R2	NC2Event Arg1:E1 Arg2:E4	
+T11	Head_End 30 48	middle-aged people
+T12	Att_span 64 74	more often
+R3	Event_att Arg1:T12 Arg2:E2	
+T4	Att_span 89 106	a great deal more
+R1	Event_att Arg1:T4 Arg2:E4	

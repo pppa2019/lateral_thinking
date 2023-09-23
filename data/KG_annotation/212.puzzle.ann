@@ -1,0 +1,26 @@
+T1	Head_End 2 5	man
+T2	Event 10 25	on the run from
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 30 36	police
+T4	Non_Core_Event 45 53	relaxing
+E2	Non_Core_Event:T4 Head:T1
+T5	Event 55 63	watching
+E3	Event:T5 End:T6 Head:T1
+R1	EventSameTime Arg1:E2 Arg2:E3	
+T6	Head_End 66 70	play
+T7	Att_span 71 91	in a crowded theatre
+R2	Event_att Arg1:T7 Arg2:E3	
+T8	Head_End 102 104	he
+T9	Non_Core_Event 105 112	noticed
+E4	Non_Core_Event:T9 Head:T8
+T10	Event 134 144	closing in
+E5	Event:T10 Head:T11 End:T8
+T11	Head_End 118 128	detectives
+R3	NC2Event Arg1:E4 Arg2:E5	
+R4	EntityEqual Arg1:T8 Arg2:T1	
+T12	Att_span 152 171	from all directions
+R5	Event_att Arg1:T12 Arg2:E5	
+T13	Event 181 189	covering
+E6	Event:T13 End:T14 Head:T11
+T14	Head_End 190 199	all exits
+R6	EventSameTime Arg1:E6 Arg2:E5	

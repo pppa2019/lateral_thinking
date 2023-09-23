@@ -1,0 +1,32 @@
+T1	Event 17 22	asked
+T2	Head_End 11 16	chief
+T3	Att_span 4 10	native
+T4	Head_End 37 61	the third baseman's name
+T6	Event 143 147	said
+T7	Head_End 121 124	man
+T8	Event 130 133	had
+T9	Head_End 134 141	no idea
+T10	Head_End 149 161	i don't know
+T11	Event 265 272	pointed
+T12	Head_End 196 198	he
+T13	Event 314 318	name
+T14	Head_End 291 313	the *second* baseman's
+T15	Event 234 239	known
+T16	Event 366 374	executed
+T17	Head_End 325 330	chief
+E1	Event:T1 Head:T2 End:T4
+E2	Event:T6 Head:T7 End:T10
+E3	Event:T8 End:T9 Head:T7
+E4	Event:T11 Head:T12
+E5	Event:T13 End:T14
+E6	Event:T15 Head:T12 End:T19
+E7	Event:T16 End:T17 End2:T12
+R1	Entity_att Arg1:T3 Arg2:T2
+T5	Att_span 62 95	in the abbot and costello routine
+R2	Entity_att Arg1:T5 Arg2:T4	
+T18	Head_End 205 219	major smartass
+R3	EntityEqual Arg1:T18 Arg2:T12	
+T19	Head_End 240 250	the answer
+R4	EventTemporal Arg1:E6 Arg2:E4	
+T20	Att_span 338 353	quite humorless
+R5	Entity_att Arg1:T20 Arg2:T17	

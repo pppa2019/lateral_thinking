@@ -1,0 +1,39 @@
+T1	Head_End 0 17	A bunch of people
+T2	Event 22 40	on an ocean voyage
+E1	Event:T2 Head:T1
+T3	Att_span 41 51	in a yacht
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Head_End 69 73	they
+T5	Non_Core_Event 78 84	decide
+E2	Non_Core_Event:T5 Head:T4
+T6	Event 91 99	swimming
+E3	Event:T6 
+R2	NC2Event Arg1:E2 Arg2:E3	
+T7	Head_End 104 108	they
+T8	Event 109 115	put on
+E4	Event:T8 Head:T7 End:T9
+T9	Head_End 116 125	swimsuits
+T11	Head_End 143 147	side
+T10	Event 130 138	dive off
+E5	Event:T10 Head:T7 End:T11
+T12	Event 148 152	into
+E6	Event:T12 Head:T7 End:T13
+T13	Head_End 157 162	water
+R3	EventTemporal Arg1:E4 Arg2:E5	
+R4	EventTemporal Arg1:E5 Arg2:E6	
+R5	EntityEqual Arg1:T7 Arg2:T4	
+T14	Non_Core_Event 185 191	forget
+E7	Non_Core_Event:T14 Head:T4
+T15	Event 195 201	set up
+E8	Event:T15 End:T16
+R6	NC2Event Arg1:E7 Arg2:E8	
+T16	Head_End 204 210	ladder
+T17	Att_span 211 234	on the side of the boat
+R7	Entity_att Arg1:T17 Arg2:T16	
+T18	Event 266 279	climb back in
+E9	Event:T18 Head:T4
+T19	Att_span 247 253	no way
+R8	Event_att Arg1:T19 Arg2:E9	
+T20	Event 290 295	drown
+E10	Event:T20 Head:T4
+R9	EventCause Arg1:E9 Arg2:E10	

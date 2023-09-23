@@ -1,0 +1,23 @@
+T3	Head_End 2 5	man
+T6	Event 65 69	lies
+T7	Head_End 61 64	gun
+T9	Event 81 86	reach
+T10	Event 126 132	closed
+T11	Head_End 114 121	windows
+T12	Att_span 106 109	all
+T13	Event 151 157	locked
+T14	Head_End 141 146	doors
+E2	Event:T6 End:T7
+E3	Event:T9 Head:T3 End:T7
+E4	Event:T10 End:T11
+E5	Event:T13 End:T14
+R3	Entity_att Arg1:T12 Arg2:T11
+T1	Event 15 28	shot to death
+E1	Event:T1 End:T3
+T2	Att_span 36 57	front seat of his car
+R1	Event_att Arg1:T2 Arg2:E1	
+T4	Att_span 87 103	in the back seat
+R2	Event_att Arg1:T4 Arg2:E3	
+T5	Event 169 184	no bullet holes
+E6	Event:T5 Head:T8
+T8	Head_End 194 204	in the car

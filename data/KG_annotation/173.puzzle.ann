@@ -1,0 +1,15 @@
+T1	Head_End 2 11	newspaper
+T2	Non_Core_Event 12 20	reported
+E1	Non_Core_Event:T2 Head:T1
+T6	Head_End 26 40	Jacques Dubois
+T7	Event 41 49	finished
+E3	Event:T7 Head:T6 End:T8
+T8	Head_End 50 55	first
+T9	Att_span 56 65	in a race
+R2	Event_att Arg1:T9 Arg2:E3	
+T3	Att_span 71 80	in France
+R1	Event_att Arg1:T3 Arg2:E3	
+R3	NC2Event Arg1:E1 Arg2:E3	
+T4	Head_End 83 100	His average speed
+T5	Head_End 126 140	19,475 km/hour
+R4	EntityEqual Arg1:T5 Arg2:T4	

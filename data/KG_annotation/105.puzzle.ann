@@ -1,0 +1,12 @@
+T1	Event 8 12	buys
+T2	Head_End 2 7	woman
+T3	Head_End 27 32	shoes
+T4	Event 42 46	work
+T5	Event 52 56	dies
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 Head:T2
+E3	Event:T5 End:T2
+T6	Att_span 15 18	new
+R1	Entity_att Arg1:T6 Arg2:T3	
+R2	EventTemporal Arg1:E1 Arg2:E2	
+R3	EventTemporal Arg1:E2 Arg2:E3	

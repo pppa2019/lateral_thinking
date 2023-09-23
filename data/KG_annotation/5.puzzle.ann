@@ -1,0 +1,22 @@
+T1	Head_End 0 5	Emily
+T2	Event 6 22	regularly visits
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 23 40	the twelfth floor
+T4	Event 41 43	of
+E2	Event:T4 Head:T3 End:T5
+T5	Head_End 44 65	an apartment building
+T6	Event 69 77	going to
+E3	Event:T6 End:T7 Head:T1
+T7	Head_End 78 93	the tenth floor
+T8	Event 98 108	walking up
+E4	Event:T8 End:T9 Head:T1
+T9	Head_End 109 130	two flights of stairs
+R1	EventTemporal Arg1:E3 Arg2:E4	
+R2	EventCause Arg1:E4 Arg2:E1	
+T10	Head_End 142 145	she
+T11	Event 151 171	took the elevator to
+E5	Event:T11 Head:T10 End:T12
+T12	Head_End 172 187	the ninth floor
+T13	Att_span 132 141	Last year
+R3	Event_att Arg1:T13 Arg2:E5	
+R4	EntityEqual Arg1:T10 Arg2:T1	

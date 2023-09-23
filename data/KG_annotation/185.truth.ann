@@ -1,0 +1,27 @@
+T1	Event 14 17	see
+T2	Head_End 4 7	vet
+T3	Head_End 40 45	dying
+T4	Head_End 27 35	goldfish
+T5	Head_End 53 56	age
+T6	Att_span 49 52	old
+T7	Event 96 106	dashed out
+T8	Event 111 117	bought
+T9	Head_End 140 144	fish
+T10	Att_span 120 125	young
+T12	Event 149 157	disposed
+T13	Event 63 68	spare
+T14	Head_End 84 92	feelings
+T15	Head_End 77 83	lady's
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T7 Head:T2
+E3	Event:T8 Head:T2 End:T9
+E5	Event:T12 Head:T2 End:T16
+E6	Event:T13 Head:T2 End:T14
+R1	Entity_att Arg1:T6 Arg2:T5
+R2	Entity_att Arg1:T10 Arg2:T9
+R3	Entity_att Arg1:T6 Arg2:T9
+R4	Entity_att Arg1:T6 Arg2:T15
+R5	EventTemporal Arg1:E2 Arg2:E3	
+T11	Att_span 130 139	identical
+R6	Entity_att Arg1:T11 Arg2:T9	
+T16	Head_End 161 172	the old one

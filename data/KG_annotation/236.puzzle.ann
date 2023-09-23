@@ -1,0 +1,38 @@
+T1	Event 17 22	doing
+T2	Head_End 42 45	job
+T3	Event 31 41	renovation
+T4	Head_End 56 69	english house
+T5	Att_span 52 55	old
+T6	Event 76 93	could not believe
+T7	Head_End 71 75	they
+T8	Head_End 100 104	luck
+T9	Event 115 124	came upon
+T10	Head_End 125 157	a cask of excellent jamaican rum
+T11	Event 164 172	indulged
+T12	Head_End 159 163	they
+T13	Head_End 199 202	rum
+T14	Att_span 194 198	this
+T15	Event 230 238	ran out.
+T16	Att_span 219 226	finally
+T17	Event 249 252	got
+T18	Head_End 239 243	they
+T19	Head_End 261 269	surprise
+T20	Att_span 255 260	nasty
+E1	Event:T1 End:T2 Head:T21
+E2	Event:T3 End:T4
+E3	Event:T6 Head:T7 End:T8
+E4	Event:T9 Head:T7 End:T10
+E5	Event:T11 Head:T12 End:T13
+E6	Event:T15 End:T13
+E7	Event:T17 Head:T18 End:T19
+R1	Entity_att Arg1:T5 Arg2:T4
+R2	Entity_att Arg1:T14 Arg2:T13
+R3	Event_att Arg1:T16 Arg2:T15
+R4	Entity_att Arg1:T20 Arg2:T19
+T21	Head_End 0 11	two workmen
+R5	EntityEqual Arg1:T7 Arg2:T21	
+T22	Att_span 203 212	every day
+R6	Event_att Arg1:T22 Arg2:E5	
+R7	EventTemporal Arg1:T15 Arg2:E7	
+R8	EventTemporal Arg1:E5 Arg2:E6	
+R9	EventTemporal Arg1:E1 Arg2:E4	

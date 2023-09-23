@@ -1,0 +1,31 @@
+T1	Head_End 20 48	contemporary classical music
+T4	Event 86 92	played
+T5	Head_End 75 81	record
+T6	Head_End 108 118	speed5 rpm
+T7	Event 210 217	noticed
+T8	Head_End 194 201	mistake
+T10	Event 228 231	end
+T11	Head_End 239 251	transmission
+T13	Head_End 162 187	nature of the composition
+T14	Att_span 153 161	esoteric
+T15	Event 310 316	lasted
+T16	Head_End 290 297	program
+E1	Event:T4 End:T5
+E2	Event:T7 End:T8 End2:T11
+E3	Event:T10 End:T11
+E5	Event:T15 Head:T16 End:T17
+R5	Entity_att Arg1:T14 Arg2:T13
+T17	Head_End 317 331	thirty minutes
+T18	Event 270 280	calculated
+E6	Event:T18 End:T16
+T9	Head_End 9 16	program
+R1	EntityPartof Arg1:T9 Arg2:T1	
+T2	Event 49 55	played
+E7	Event:T2 Head:T3 End:T1
+T3	Head_End 61 69	a record
+T19	Att_span 100 105	wrong
+R2	Entity_att Arg1:T19 Arg2:T6	
+T20	Event 119 129	instead of
+E8	Event:T20 End:T21
+R3	NC2Event Arg1:E1 Arg2:E8	
+T21	Head_End 130 136	33 rpm

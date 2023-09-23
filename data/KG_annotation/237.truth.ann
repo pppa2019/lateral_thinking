@@ -1,0 +1,29 @@
+T2	Head_End 0 35	he and a number of other passengers
+T6	Non_Core_Event 78 85	attempt
+T8	Head_End 103 110	country
+T9	Event 131 135	lose
+T10	Head_End 116 123	balloon
+T11	Head_End 136 142	weight
+T12	Event 146 150	stop
+T13	Head_End 159 167	crashing
+T14	Event 172 176	drew
+T15	Head_End 169 171	he
+T16	Head_End 181 192	short match
+T17	Event 204 208	jump
+E2	Non_Core_Event:T6 
+E3	Event:T9 Head:T10 End:T11
+E4	Event:T12 Head:T10 End:T13
+E5	Event:T14 Head:T15 End:T16
+E6	Event:T17 Head:T15
+R2	EventTemporal Arg1:E5 Arg2:E6	
+T3	Event 41 47	making
+E7	Event:T3 Head:T2 End:T1
+T1	Head_End 50 62	balloon trip
+T4	Att_span 63 77	in a desperate
+R1	Event_att Arg1:T4 Arg2:E7	
+R3	EventTemporal Arg1:E7 Arg2:E2	
+T5	Event 89 95	escape
+E1	Event:T5 End:T8
+R4	NC2Event Arg1:E2 Arg2:E1	
+R5	EventCause Arg1:E3 Arg2:E4	
+R6	EntityPartof Arg1:T15 Arg2:T2	

@@ -1,0 +1,6 @@
+T1	Head_End 4 7	sun
+T2	Event 11 18	shining
+E1	Event:T2 Head:T1
+T3	Event 28 35	no rain
+E2	Event:T3 
+R1	EventSameTime Arg1:E1 Arg2:E2	

@@ -1,0 +1,9 @@
+T1	Head_End 2 10	dead man
+T2	Event 11 15	lies
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 32 43	post office
+T4	Att_span 16 29	in front of t
+R1	Entity_att Arg1:T4 Arg2:T3	
+T5	Head_End 62 68	parcel
+T6	Event 45 52	next to
+E2	Event:T6 Head:T1 End:T5

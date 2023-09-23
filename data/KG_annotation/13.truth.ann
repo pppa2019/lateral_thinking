@@ -1,0 +1,15 @@
+T1	Head_End 8 17	passenger
+T2	Head_End 0 2	He
+R1	EntityEqual Arg1:T1 Arg2:T2	
+T4	Event 37 41	sees
+E1	Event:T4 Head:T2 End:T5
+T5	Head_End 46 50	bird
+T6	Event 55 66	sucked into
+E2	Event:T6 Head:T5 End:T7
+T7	Head_End 70 76	engine
+T8	Att_span 77 91	at 20,000 feet
+R3	Event_att Arg1:T8 Arg2:E2	
+T9	Head_End 24 32	airplane
+R4	EntityPartof Arg1:T7 Arg2:T9	
+T3	Event 18 20	in
+E3	Event:T3 Head:T1 End:T9

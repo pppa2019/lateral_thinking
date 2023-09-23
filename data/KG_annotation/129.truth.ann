@@ -1,0 +1,49 @@
+T1	Head_End 17 31	bungee jumpers
+T2	Head_End 4 11	two men
+R1	EntityEqual Arg1:T1 Arg2:T2	
+T3	Event 39 44	found
+E1	Event:T3 Head:T5 End:T4
+T4	Head_End 45 69	a secluded wooden bridge
+T5	Head_End 34 38	They
+T6	Non_Core_Event 74 81	decided
+E2	Non_Core_Event:T6 Head:T5
+T7	Event 85 95	bungee off
+E3	Event:T7 
+R2	NC2Event Arg1:E2 Arg2:E3	
+R3	EntityEqual Arg1:T5 Arg2:T2	
+T8	Head_End 104 107	One
+T9	Event 112 122	jumped off
+E4	Event:T9 Head:T8
+T10	Event 129 154	being tied to  the bridge
+E5	Event:T10 
+R4	EventTemporal Arg1:E5 Arg2:E4	
+T11	Head_End 190 196	bridge
+T12	Event 197 205	gave out
+E6	Event:T12 Head:T11
+T13	Att_span 160 184	at the nadir of his fall
+R5	Event_att Arg1:T13 Arg2:E6	
+T14	Head_End 212 215	man
+T15	Att_span 220 226	jumped
+R6	Entity_att Arg1:T15 Arg2:T14	
+R7	EntityEqual Arg1:T14 Arg2:T8	
+T16	Event 227 233	landed
+E7	Event:T16 Head:T14 End:T17
+T17	Head_End 234 247	on the ground
+T19	Head_End 261 263	he
+T18	Non_Core_Event 275 293	close to the earth
+E8	Non_Core_Event:T18 Head:T19
+R8	EventCause Arg1:E8 Arg2:E7	
+T20	Event 321 328	fell on
+E9	Event:T20 Head:T21 End:T22
+T21	Head_End 303 320	collapsing bridge
+T22	Head_End 336 339	him
+R9	EntityEqual Arg1:T22 Arg2:T14	
+T23	Head_End 346 351	other
+T24	Event 356 360	fell
+E10	Event:T24 Head:T23 End:T25
+T25	Head_End 361 382	along with the bridge
+T26	Event 390 395	death
+E11	Event:T26 
+R10	EventCause Arg1:E10 Arg2:E11	
+R11	EntityPartof Arg1:T23 Arg2:T2	
+R12	EntityPartof Arg1:T8 Arg2:T2	

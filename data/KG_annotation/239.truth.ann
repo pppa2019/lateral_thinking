@@ -1,0 +1,48 @@
+T8	Event 108 114	played
+T9	Head_End 103 107	band
+T10	Event 125 132	crossed
+T11	Head_End 121 124	she
+T12	Non_Core_Event 171 177	signal
+T14	Event 191 198	reached
+T15	Head_End 203 218	end of the wire
+T16	Event 229 242	safely alight
+T18	Event 152 159	stopped
+T19	Head_End 146 151	music
+T20	Head_End 302 313	last minute
+T27	Head_End 393 398	music
+T29	Head_End 358 381	mportance of the timing
+T32	Event 427 438	stepped off
+T33	Head_End 423 426	she
+E3	Event:T8 Head:T9
+E4	Event:T10 Head:T11
+E5	Non_Core_Event:T12 
+E6	Event:T14 Head:T11 End:T15
+E7	Event:T16 Head:T11
+E9	Event:T18 End:T19
+E12	Event:T32 Head:T33 Head2:T21
+T34	Head_End 0 3	she
+T1	Head_End 10 33	circus tightrope walker
+R1	EntityEqual Arg1:T1 Arg2:T34	
+T2	Att_span 86 97	blindfolded
+T3	Event 62 79	cross a high wire
+E1	Event:T3 Head:T34
+R6	Event_att Arg1:T2 Arg2:E1	
+R7	EventSameTime Arg1:E3 Arg2:E4	
+R8	NC2Event Arg1:E5 Arg2:E6	
+R9	EventEqual Arg1:E9 Arg2:E5	
+R10	EventEqual Arg1:E6 Arg2:E7	
+T4	Head_End 271 280	conductor
+T5	Event 285 294	taken ill
+E2	Event:T5 Head:T4 End:T20
+T6	Head_End 322 340	stand-in conductor
+T7	Event 342 352	unaware of
+E8	Event:T7 Head:T6 End:T29
+T13	Event 383 388	ended
+E10	Event:T13 End:T27
+R2	EventTemporal Arg1:E8 Arg2:E10	
+T17	Att_span 404 421	a little too soon
+R3	Event_att Arg1:T17 Arg2:E10	
+T21	Head_End 443 447	wire
+T22	Event 455 460	death
+E11	Event:T22 
+R4	EventCause Arg1:E12 Arg2:E11	

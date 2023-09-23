@@ -1,0 +1,29 @@
+T1	Head_End 4 14	man's wife
+T2	Head_End 19 42	an habitual sleepwalker
+R1	EntityEqual Arg1:T1 Arg2:T2	
+T3	Event 63 69	opened
+E1	Event:T3 Head:T1 End:T5
+T4	Att_span 52 62	previously
+R2	Event_att Arg1:T4 Arg2:E1	
+T5	Head_End 70 84	the front door
+T6	Att_span 85 97	in her sleep
+R3	Event_att Arg1:T6 Arg2:E1	
+T7	Event 102 117	walked out into
+E2	Event:T7 Head:T1 End:T8
+T8	Head_End 122 126	road
+T9	Head_End 128 130	He
+T10	Event 131 137	placed
+E3	Event:T10 Head:T9 End:T11
+T11	Head_End 138 145	the key
+T12	Att_span 146 173	in the bucket of cold water
+R4	Event_att Arg1:T12 Arg2:E3	
+T13	Event 249 254	waken
+E4	Event:T13 Head:T14 End:T1
+T14	Head_End 224 242	the cold sensation
+T15	Event 190 202	reached into
+E5	Event:T15 Head:T1 End:T16
+T16	Head_End 207 212	water
+T17	Event 216 219	get
+E6	Event:T17 Head:T1 End:T11
+R5	EventTemporal Arg1:E5 Arg2:E6	
+R6	EventCause Arg1:E6 Arg2:E4	

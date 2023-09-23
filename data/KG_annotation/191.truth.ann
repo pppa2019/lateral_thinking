@@ -1,0 +1,14 @@
+T1	Event 12 20	counting
+T2	Head_End 4 7	man
+T3	Head_End 25 29	pins
+T4	Event 36 43	removed
+T5	Event 85 91	missed
+T6	Head_End 82 84	he
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 Head:T2 End:T3
+E3	Event:T5 Head:T6 End:T8
+R1	EventSameTime Arg1:E1 Arg2:E2	
+T7	Att_span 49 66	from a new shirt.
+R2	Event_att Arg1:T7 Arg2:E2	
+T8	Head_End 92 95	one
+R3	EntityPartof Arg1:T8 Arg2:T3	

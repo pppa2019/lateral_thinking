@@ -1,0 +1,44 @@
+T2	Head_End 104 107	him
+T3	Event 77 80	put
+T4	Event 99 103	send
+T7	Event 232 239	secured
+T8	Head_End 210 215	label
+T9	Att_span 204 209	large
+T10	Event 264 274	indicating
+T11	Head_End 275 287	billy's name
+T12	Event 331 338	efforts
+T13	Head_End 367 372	staff
+T14	Att_span 359 366	railway
+E2	Event:T3 End:T2 Head:T1
+E3	Event:T4 End:T2
+E5	Event:T7 End:T8
+E6	Event:T10 End:T11 End2:T25
+E7	Event:T12 Head:T13
+R1	Entity_att Arg1:T9 Arg2:T8
+R2	Entity_att Arg1:T14 Arg2:T13
+T15	Head_End 0 12	little billy
+T16	Att_span 17 31	four years old
+R3	Entity_att Arg1:T16 Arg2:T15	
+T17	Head_End 41 52	his parents
+T18	Event 58 62	dead
+E8	Event:T18 Head:T17
+T1	Head_End 68 76	guardian
+R4	EventTemporal Arg1:E2 Arg2:E3	
+T19	Att_span 111 121	a new home
+R5	Event_att Arg1:T19 Arg2:E3	
+T20	Head_End 138 143	billy
+T21	Event 144 156	could neithe
+E1	Event:T21 Head:T20 End:T22 End2:T23 End3:T24
+T22	Head_End 158 162	read
+T23	Head_End 167 172	write
+T24	Head_End 177 197	remember the address
+T5	Att_span 216 227	on a string
+R6	Entity_att Arg1:T5 Arg2:T8	
+T6	Att_span 240 255	around his neck
+R7	Event_att Arg1:T6 Arg2:E5	
+R8	EventCause Arg1:E5 Arg2:E6	
+T25	Head_End 292 304	destination.
+T26	Head_End 374 379	billy
+T27	Event 380 393	never arrived
+E4	Event:T27 Head:T26 End:T28
+T28	Head_End 401 409	new home

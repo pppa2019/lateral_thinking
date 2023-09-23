@@ -1,0 +1,10 @@
+T1	Head_End 0 8	His home
+T2	Head_End 14 23	houseboat
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 28 30	he
+T4	Event 35 45	run out of
+E1	Event:T4 Head:T3 End:T5
+T5	Head_End 46 51	water
+T6	Event 58 79	on an extended cruise
+E2	Event:T6 
+R2	EventSameTime Arg1:E2 Arg2:E1	

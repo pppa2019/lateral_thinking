@@ -1,0 +1,42 @@
+T1	Event 19 25	blind;
+T2	Head_End 4 7	man
+T3	Event 35 44	returning
+T6	Event 73 81	restored
+T7	Head_End 86 91	sight
+T8	Event 99 104	spent
+T9	Head_End 94 96	he
+T10	Head_End 113 118	money
+T11	Att_span 105 108	all
+T12	Event 222 228	thinks
+T14	Head_End 239 244	blind
+T15	Att_span 245 250	again
+T16	Head_End 149 154	train
+T17	Event 162 165	has
+T18	Head_End 166 186	no internal lighting
+T19	Event 262 269	decides
+T20	Head_End 273 285	kill himself
+T21	Att_span 255 261	almost
+T22	Event 350 359	convinces
+T24	Head_End 303 330	the light of the cigarettes
+T25	Event 382 385	see
+T26	Att_span 376 381	still
+E1	Event:T1 End:T2
+E2	Event:T3 Head:T2 End:T4
+E4	Event:T6 End:T7
+E5	Event:T8 Head:T9 End:T10
+E6	Event:T12 Head:T9 End2:T14
+E7	Event:T17 End:T18
+E8	Event:T19 Head:T9 End:T20
+E9	Event:T22 End:T24 Head:T2
+E10	Event:T25 
+R1	Entity_att Arg1:T11 Arg2:T10
+R3	Event_att Arg1:T21 Arg2:T19
+R4	Event_att Arg1:T26 Arg2:T25
+T4	Head_End 53 66	eye operation
+R5	EventTemporal Arg1:E2 Arg2:E4	
+R2	Entity_att Arg1:T15 Arg2:T14	
+T5	Event 188 200	goes through
+E3	Event:T5 Head:T16 End:T13
+T13	Head_End 201 209	a tunnel
+R6	EventTemporal Arg1:E6 Arg2:T19	
+E11	Event:T25 Head:T2

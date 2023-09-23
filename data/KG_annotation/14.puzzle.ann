@@ -1,0 +1,5 @@
+T1	Head_End 0 2	He
+T2	Event 7 13	killed
+E1	Event:T2 Head:T1
+T3	Att_span 14 26	by breakfast
+R1	Event_att Arg1:T3 Arg2:E1	

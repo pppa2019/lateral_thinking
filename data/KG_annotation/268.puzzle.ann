@@ -1,0 +1,8 @@
+T7	Head_End 8 21	these animals
+T8	Event 27 36	in common
+E1	Event:T8 Head:T7 End:T1 End2:T3 End3:T9 End4:T10 End5:T5
+T9	Head_End 63 80	firefly  silkworm
+T10	Head_End 82 92	jackrabbit
+T5	Head_End 94 104	guinea pig
+T3	Head_End 50 61	prairie dog
+T1	Head_End 38 48	koala bear

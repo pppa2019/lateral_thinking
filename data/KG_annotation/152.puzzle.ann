@@ -1,0 +1,30 @@
+T1	Event 16 21	hires
+T2	Head_End 7 15	rich man
+T5	Event 36 41	clean
+T6	Head_End 46 50	wing
+T7	Head_End 70 78	domicile
+T8	Att_span 58 69	extravagant
+T9	Event 127 133	cleans
+T10	Head_End 89 92	man
+T11	Att_span 84 88	poor
+T12	Non_Core_Event 94 101	wanting
+T14	Head_End 145 150	house
+T15	Att_span 138 144	entire
+T16	Event 172 177	quits
+T17	Head_End 168 171	man
+T18	Head_End 182 185	job
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T5 Head:T2 End:T6 Head2:T3
+E3	Event:T9 Head:T10 End:T14
+E4	Non_Core_Event:T12 
+E5	Event:T16 Head:T17 End:T18
+R3	Entity_att Arg1:T8 Arg2:T7
+R4	Entity_att Arg1:T11 Arg2:T10
+R5	Entity_att Arg1:T15 Arg2:T14
+T3	Head_End 24 32	poor man
+R1	EntityPartof Arg1:T6 Arg2:T7	
+T4	Head_End 113 125	his new boss
+T13	Event 105 112	impress
+E6	Event:T13 End:T4
+R2	NC2Event Arg1:E4 Arg2:E6	
+R6	EntityEqual Arg1:T4 Arg2:T2	

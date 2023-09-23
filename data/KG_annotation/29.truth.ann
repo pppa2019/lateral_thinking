@@ -1,0 +1,56 @@
+T1	Event 3 6	was
+T2	Head_End 0 2	he
+T3	Head_End 32 47	hot air balloon
+T5	Event 48 56	crossing
+T6	Head_End 61 67	desert
+T7	Event 86 95	punctured
+T8	Head_End 74 81	balloon
+T9	Non_Core_Event 105 110	began
+T10	Head_End 100 104	they
+T12	Head_End 119 127	altitude
+T13	Event 135 141	tossed
+T14	Head_End 130 134	they
+T15	Head_End 189 206	clothing and food
+T16	Head_End 152 166	non-essentials
+T17	Att_span 142 145	all
+T19	Event 232 237	crash
+T20	Att_span 217 222	still
+T21	Event 284 288	drew
+T22	Head_End 279 283	they
+T23	Head_End 289 296	matches
+T24	Non_Core_Event 300 303	see
+T26	Event 363 367	lost
+T27	Head_End 359 362	man
+T28	Att_span 354 358	this
+T29	Event 393 396	add
+T30	Head_End 413 417	nude
+E1	Event:T1 End2:T31 Head:T2
+E2	Event:T5 End:T6 Head:T3
+E3	Event:T7 End:T8
+E4	Non_Core_Event:T9 Head:T10
+E5	Event:T13 Head:T14 End:T15
+E6	Event:T19 End:T14
+E7	Event:T21 Head:T22 End:T23
+E8	Non_Core_Event:T24 Head:T22
+E9	Event:T26 Head:T27
+E10	Event:T29 End:T30
+R2	Entity_att Arg1:T17 Arg2:T16
+R5	Entity_att Arg1:T28 Arg2:T27
+T31	Head_End 7 26	with several others
+R1	EventCause Arg1:E3 Arg2:E4	
+T4	Event 114 118	lose
+E11	Event:T4 End:T12
+R6	NC2Event Arg1:E4 Arg2:E11	
+R7	EventCause Arg1:E11 Arg2:E5	
+R3	Event_att Arg1:T20 Arg2:T19	
+T11	Att_span 238 264	in the middle of the deser
+R8	Event_att Arg1:T11 Arg2:T19	
+R4	EventTemporal Arg1:E7 Arg2:E8	
+T18	Event 314 323	jump over
+E12	Event:T18 Head:T32
+R9	NC2Event Arg1:E8 Arg2:E12	
+T32	Head_End 304 307	who
+T25	Event 337 341	save
+E13	Event:T25 End:T33
+R10	NC2Event Arg1:E8 Arg2:E13	
+T33	Head_End 342 352	the others

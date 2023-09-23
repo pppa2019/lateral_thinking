@@ -1,0 +1,7 @@
+T1	Event 15 19	dead
+T2	Head_End 2 5	man
+E1	Event:T1 End:T2
+T5	Att_span 20 32	on the floor
+R2	Event_att Arg1:T5 Arg2:E1	
+T3	Att_span 40 51	living room
+R1	Event_att Arg1:T3 Arg2:E1	

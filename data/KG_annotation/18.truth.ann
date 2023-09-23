@@ -1,0 +1,48 @@
+T1	Head_End 4 7	man
+T2	Event 12 16	lost
+E1	Event:T2 Head:T1
+T3	Att_span 17 30	in the desert
+T4	Att_span 31 39	for days
+R1	Event_att Arg1:T3 Arg2:E1	
+R2	Event_att Arg1:T4 Arg2:E1	
+T5	Head_End 42 44	He
+T6	Event 45 58	couldn't find
+E2	Event:T6 Head:T5 End:T7
+T7	Head_End 63 72	landmarks
+R3	EntityEqual Arg1:T1 Arg2:T5	
+T8	Event 88 96	sticking
+E3	Event:T8 Head:T5 End:T9
+T9	Head_End 97 111	slips of paper
+T10	Att_span 112 123	to cactuses
+R4	Event_att Arg1:T10 Arg2:E3	
+R5	EventCause Arg1:E2 Arg2:E3	
+T11	Event 141 163	another day of walking
+E4	Event:T11 
+T13	Event 195 206	came across
+E6	Event:T13 Head:T14 End:T15
+T14	Head_End 192 194	he
+T15	Head_End 212 218	cactus
+T12	Att_span 226 245	had a slip of paper
+R6	Entity_att Arg1:T12 Arg2:T15	
+T16	Att_span 177 190	no water left
+R7	Entity_att Arg1:T16 Arg2:T14	
+R8	EntityEqual Arg1:T14 Arg2:T1	
+R9	EntityEqual Arg1:T14 Arg2:T5	
+R10	EventSameTime Arg1:E4 Arg2:E6	
+T17	Event 281 288	walking
+E5	Event:T17 
+T18	Att_span 289 299	in circles
+R11	Event_att Arg1:T18 Arg2:E5	
+T19	Non_Core_Event 264 268	knew
+E7	Non_Core_Event:T19 Head:T14
+R12	NC2Event Arg1:E7 Arg2:E5	
+T20	Event 316 327	wait to die
+E8	Event:T20 Head:T14
+T21	Event 331 337	thirst
+E9	Event:T21 
+R13	EventCause Arg1:E9 Arg2:E8	
+T22	Event 341 345	shot
+E10	Event:T22 Head:T14 End:T23
+R14	EventCause Arg1:E8 Arg2:E10	
+T23	Head_End 346 353	himself
+R15	EntityEqual Arg1:T23 Arg2:T14	

@@ -1,0 +1,22 @@
+T1	Head_End 0 3	Pat
+T2	Event 4 13	went into
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 14 28	a luggage shop
+T4	Event 32 35	buy
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 36 46	a suitcase
+R1	EventTemporal Arg1:E1 Arg2:E2	
+T6	Head_End 52 61	assistant
+T7	Non_Core_Event 62 66	said
+E3	Non_Core_Event:T7 Head:T6
+T8	Event 91 94	buy
+E4	Event:T8 End:T5
+T9	Att_span 75 87	most unusual
+R2	Event_att Arg1:T9 Arg2:E4	
+T10	Head_End 107 110	You
+T11	Event 118 122	rent
+E5	Event:T11 Head:T10 End:T12
+T12	Head_End 123 126	one
+R3	EntityEqual Arg1:T10 Arg2:T1	
+T13	Att_span 127 155	like all our other customers
+R4	Event_att Arg1:T13 Arg2:E5	

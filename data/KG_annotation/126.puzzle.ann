@@ -1,0 +1,9 @@
+T1	Head_End 2 5	man
+T2	Event 9 13	dead
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 14 23	in a room
+T4	Att_span 24 59	with a small pile of pieces of wood
+R1	Entity_att Arg1:T4 Arg2:T1	
+T5	Event 64 71	sawdust
+E2	Event:T5 Head:T1 End:T6
+T6	Head_End 72 85	in one corner

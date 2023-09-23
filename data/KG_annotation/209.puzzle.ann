@@ -1,0 +1,26 @@
+T1	Head_End 0 22	A keen stamp collector
+T4	Event 54 57	saw
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 61 74	advertisement
+T6	Event 75 83	offering
+E3	Event:T6 Head:T5 End:T7
+T7	Head_End 108 119	U.S. stamps
+T8	Att_span 84 107	a complete set of early
+T2	Att_span 27 53	specialized in U.S. stamps
+R1	Entity_att Arg1:T2 Arg2:T1	
+R2	Entity_att Arg1:T8 Arg2:T7	
+T3	Att_span 124 155	a fraction of what it was worth
+R3	Event_att Arg1:T3 Arg2:E3	
+T9	Head_End 157 159	He
+T10	Event 168 174	bought
+E1	Event:T10 Head:T9 End:T11
+T11	Head_End 175 177	it
+R4	EntityEqual Arg1:T9 Arg2:T1	
+R5	EntityEqual Arg1:T11 Arg2:T7	
+T12	Head_End 197 244	genuine, splendid collection and a real bargain
+R6	EntityEqual Arg1:T11 Arg2:T12	
+T13	Event 249 258	was angry
+E4	Event:T13 Head:T9
+T14	Event 260 271	not pleased
+E5	Event:T14 
+R7	EventSameTime Arg1:E5 Arg2:E4	

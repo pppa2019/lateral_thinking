@@ -1,0 +1,21 @@
+T1	Event 49 58	assistant
+T2	Head_End 36 41	woman
+T3	Event 85 89	sees
+T4	Head_End 81 84	she
+T5	Head_End 94 99	going
+T6	Event 133 140	decides
+T9	Head_End 213 219	knives
+T10	Event 154 168	having trouble
+T11	Head_End 178 182	eyes
+E1	Event:T1 End:T2
+E2	Event:T3 Head:T4 End:T5
+E3	Event:T6 Head:T4
+E4	Event:T10 End:T11 Head:T12
+T12	Head_End 4 11	husband
+T13	Head_End 17 30	knife-thrower
+R1	EntityEqual Arg1:T12 Arg2:T13	
+T8	Event 204 212	throwing
+E5	Event:T8 End:T9 Head:T12
+T7	Non_Core_Event 187 199	doesn't want
+E6	Non_Core_Event:T7 Head:T2
+R2	NC2Event Arg1:E6 Arg2:E5	

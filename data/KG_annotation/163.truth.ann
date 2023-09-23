@@ -1,0 +1,10 @@
+T1	Head_End 0 2	He
+T2	Head_End 7 13	priest
+T3	Head_End 15 17	he
+T4	Event 21 29	marrying
+E1	Event:T4 Head:T5 End:T6
+T5	Head_End 30 34	them
+T6	Head_End 38 50	other people
+T7	Non_Core_Event 18 20	is
+E2	Non_Core_Event:T7 Head:T3
+R1	NC2Event Arg1:E2 Arg2:E1	

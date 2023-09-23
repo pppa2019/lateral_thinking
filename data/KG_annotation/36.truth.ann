@@ -1,0 +1,44 @@
+T1	Head_End 21 27	spider
+T2	Att_span 11 20	poisonous
+T3	Event 72 76	puts
+T4	Head_End 69 71	he
+T5	Head_End 88 93	shoes
+T6	Head_End 62 68	things
+T7	Att_span 57 61	last
+T8	Event 104 110	bitten
+T9	Head_End 96 98	he
+T10	Event 112 117	feels
+T11	Head_End 118 121	ill
+T12	Event 123 127	lies
+T13	Event 154 158	dies
+T14	Head_End 206 212	spider
+T15	Att_span 196 205	poisonous
+T16	Event 261 265	kill
+T17	Head_End 275 280	human
+T18	Att_span 269 274	adult
+E1	Event:T3 Head:T4 End:T5
+E2	Event:T8 End:T9
+E3	Event:T10 Head:T9 End:T11
+E4	Event:T12 End:T9
+E5	Event:T13 End:T9
+E6	Event:T16 End:T17 Head:T20
+R1	Entity_att Arg1:T2 Arg2:T1
+R2	Entity_att Arg1:T7 Arg2:T6
+R3	Entity_att Arg1:T15 Arg2:T14
+R4	Entity_att Arg1:T18 Arg2:T17
+T21	Event 28 30	in
+E8	Event:T21 Head:T1 End:T22
+T22	Head_End 31 51	the toe of his shoe.
+R5	EntityEqual Arg1:T6 Arg2:T5	
+R6	EventTemporal Arg1:E2 Arg2:E3	
+R7	EventTemporal Arg1:E3 Arg2:E4	
+T23	Att_span 133 143	on his bed
+R8	Event_att Arg1:T23 Arg2:E4	
+R9	EventTemporal Arg1:E4 Arg2:E5	
+T24	Att_span 166 172	poison
+R10	Event_att Arg1:T24 Arg2:E5	
+T19	Head_End 223 244	australian funnel-web
+R11	EntityPartof Arg1:T19 Arg2:T14	
+T20	Head_End 252 256	bite
+T25	Att_span 281 293	in 5 minutes
+R12	Event_att Arg1:T25 Arg2:E6	

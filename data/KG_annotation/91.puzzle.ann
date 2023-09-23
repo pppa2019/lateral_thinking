@@ -1,0 +1,24 @@
+T1	Head_End 0 5	Mr. H
+T2	Head_End 12 17	Mr. X
+T3	Event 6 11	meets
+E1	Event:T3 Head:T1 End:T2
+T4	Head_End 21 32	a hotel bar
+T5	Non_Core_Event 18 20	in
+E2	Non_Core_Event:T5 Head:T4
+T6	Event 40 59	a heated discussion
+E3	Event:T6 
+T7	Event 66 71	leave
+E4	Event:T7 Head:T8 End:T4
+T8	Head_End 61 65	they
+R1	NC2Event Arg1:E1 Arg2:E2	
+T9	Event 98 106	clutches
+E5	Event:T9 Head:T2 End:T10
+T10	Head_End 111 116	chest
+T11	Event 123 130	punches
+E6	Event:T11 Head:T2 End:T1
+T12	Non_Core_Event 137 139	in
+E7	Non_Core_Event:T12 Head:T13
+T13	Head_End 144 148	face
+R2	NC2Event Arg1:E6 Arg2:E7	
+R3	EntityPartof Arg1:T1 Arg2:T8	
+R4	EntityPartof Arg1:T2 Arg2:T8	

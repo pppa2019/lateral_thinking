@@ -1,0 +1,16 @@
+T1	Event 6 13	digging
+E1	Event:T1 Head:T3 End:T6
+T2	Event 32 41	unearthed
+E2	Event:T2 Head:T3 End:T4
+T3	Head_End 26 31	woman
+T4	Head_End 42 59	a large metal box
+T5	Att_span 60 89	filled with money and jewelry
+R1	Entity_att Arg1:T5 Arg2:T4	
+T6	Head_End 16 22	garden
+T7	Event 95 106	seven years
+E3	Event:T7 
+T8	Event 112 116	died
+E4	Event:T8 Head:T9
+T9	Head_End 108 111	she
+R2	EntityEqual Arg1:T9 Arg2:T3	
+R3	EventTemporal Arg1:E3 Arg2:E4	

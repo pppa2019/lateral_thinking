@@ -1,0 +1,7 @@
+T1	Head_End 22 27	fish;
+T3	Event 71 76	broke
+T4	Head_End 37 45	baseball
+T5	Head_End 83 87	tank
+E1	Event:T3 Head:T4 End:T5
+T6	Head_End 0 12	tom and jean
+R2	EntityEqual Arg1:T1 Arg2:T6	

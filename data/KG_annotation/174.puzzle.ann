@@ -1,0 +1,10 @@
+T1	Head_End 21 24	sea
+T2	Att_span 3 16	the bottom of
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Event 31 35	lies
+E1	Event:T3 Head:T4 End:T1
+T4	Head_End 49 68	millions of dollars
+T5	Att_span 36 42	a ship
+R2	Entity_att Arg1:T5 Arg2:T4	
+T6	Event 79 97	never be recovered
+E2	Event:T6 Head:T4

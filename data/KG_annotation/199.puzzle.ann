@@ -1,0 +1,60 @@
+T1	Event 55 62	started
+T2	Head_End 51 54	one
+T3	Head_End 63 70	walking
+T4	Head_End 99 104	other
+T5	Head_End 113 120	cycling
+T6	Event 170 177	stopped
+T7	Head_End 165 169	them
+T8	Att_span 157 161	each
+T9	Event 194 197	ran
+T10	Head_End 179 183	they
+T11	Att_span 189 193	each
+T12	Event 249 256	started
+T13	Head_End 239 243	they
+T14	Att_span 244 248	both
+T15	Event 290 294	kept
+T16	Head_End 295 302	heading
+T17	Event 340 353	never changed
+T18	Head_End 354 360	course
+T19	Event 364 370	rested
+T20	Event 411 429	arrived at point b
+T21	Head_End 401 405	they
+T22	Att_span 406 410	both
+E1	Event:T1 Head:T2 End:T3 Head:T4 End:T5
+E2	Event:T6 Head:T7
+E3	Event:T9 Head:T10
+E4	Event:T12 Head:T13
+E5	Event:T15 Head:T13 End:T16
+E6	Event:T17 Head:T13 End:T18
+E7	Event:T19 Head:T13
+E8	Event:T20 End:T21
+R1	Entity_att Arg1:T8 Arg2:T7
+R2	Entity_att Arg1:T11 Arg2:T10
+R3	Entity_att Arg1:T14 Arg2:T13
+R4	Entity_att Arg1:T14 Arg2:T13
+R5	Entity_att Arg1:T22 Arg2:T21
+T23	Head_End 11 30	two keen sportsmen.
+T24	Att_span 71 90	at 4 miles per hour
+R6	Entity_att Arg1:T24 Arg2:T3	
+T25	Att_span 121 141	at 12 miles per hour
+R7	Entity_att Arg1:T25 Arg2:T5	
+R8	EntityPartof Arg1:T2 Arg2:T23	
+R9	EntityPartof Arg1:T4 Arg2:T23	
+T26	Att_span 143 156	after an hour
+R10	Event_att Arg1:T26 Arg2:E2	
+R11	EntityEqual Arg1:T7 Arg2:T23	
+R12	EntityEqual Arg1:T10 Arg2:T23	
+T27	Att_span 202 217	fifteen minutes
+T28	Att_span 221 238	8 miles per hour.
+R13	Event_att Arg1:T27 Arg2:E3	
+R14	Event_att Arg1:T28 Arg2:E3	
+T29	Att_span 257 276	from the same place
+R15	Event_att Arg1:T29 Arg2:E4	
+T30	Event 105 112	started
+E9	Event:T30 Head:T4 End:T5
+T31	Att_span 306 324	the same direction
+R16	Entity_att Arg1:T31 Arg2:T16	
+T32	Att_span 430 447	at the same time.
+R17	Event_att Arg1:T32 Arg2:E8	
+T33	Att_span 371 399	during the entire 45 minutes
+R18	Event_att Arg1:T33 Arg2:E7	

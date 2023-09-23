@@ -1,0 +1,17 @@
+T1	Head_End 2 5	man
+T2	Non_Core_Event 6 12	wishes
+E1	Non_Core_Event:T2 Head:T1
+T3	Event 16 21	cross
+E2	Event:T3 Head:T1 End:T4
+R1	NC2Event Arg1:E1 Arg2:E2	
+T4	Head_End 35 40	river
+T5	Att_span 24 28	wide
+R2	Entity_att Arg1:T5 Arg2:T4	
+T6	Att_span 30 34	deep
+R3	Entity_att Arg1:T6 Arg2:T4	
+T7	Att_span 51 60	no bridge
+T8	Att_span 62 69	no boat
+T9	Att_span 78 89	cannot swim
+R4	Entity_att Arg1:T9 Arg2:T1	
+R5	Entity_att Arg1:T7 Arg2:T4	
+R6	Entity_att Arg1:T8 Arg2:T4	

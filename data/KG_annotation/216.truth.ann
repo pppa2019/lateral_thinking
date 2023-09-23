@@ -1,0 +1,22 @@
+T1	Att_span 0 15	Two weeks later
+T2	Head_End 26 32	couple
+T3	Event 33 62	returned from their honeymoon
+E1	Event:T3 Head:T2
+R1	Event_att Arg1:T1 Arg2:E1	
+T4	Head_End 68 80	whole family
+T5	Event 81 98	sat down to watch
+E2	Event:T5 Head:T4 End:T6
+T6	Head_End 99 123	the video of the wedding
+R2	EntityPartof Arg1:T2 Arg2:T4	
+T7	Head_End 179 184	groom
+T8	Event 185 198	going through
+E3	Event:T8 Head:T7 End:T9
+T9	Head_End 199 226	his father-in-law's pockets
+T10	Event 231 239	stealing
+E4	Event:T10 Head:T7 End:T11
+T11	Head_End 240 250	his wallet
+R3	EventTemporal Arg1:E3 Arg2:E4	
+T12	Event 153 162	caught on
+E5	Event:T12 End:T13
+T13	Head_End 167 173	camera
+R4	EventSameTime Arg1:E4 Arg2:E5	

@@ -1,0 +1,13 @@
+T1	Head_End 2 5	man
+T2	Event 15 22	hanging
+E1	Event:T2 Head:T1
+T3	Att_span 23 39	in a locked room
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Head_End 45 62	a puddle of water
+T5	Non_Core_Event 40 44	with
+E2	Non_Core_Event:T5 Head:T4
+R2	NC2Event Arg1:E2 Arg2:E1	
+T6	Non_Core_Event 63 68	under
+E3	Non_Core_Event:T6 Head:T7
+T7	Head_End 69 77	his feet
+R3	NC2Event Arg1:E3 Arg2:E1	

@@ -1,0 +1,30 @@
+T1	Event 28 34	get up
+T2	Head_End 18 20	he
+T4	Event 80 87	worried
+T5	Head_End 94 106	oversleeping
+T6	Non_Core_Event 179 183	knew
+T7	Head_End 176 178	he
+T9	Head_End 193 201	sunlight
+T10	Event 145 152	opening
+T11	Head_End 157 165	curtains
+T12	Event 231 247	no longer worrie
+T13	Event 253 264	fell asleep
+E1	Event:T1 End:T2
+E3	Event:T4 Head:T5 End:T2
+E4	Non_Core_Event:T6 Head:T7
+E5	Event:T10 Head:T7 End:T11
+E6	Event:T12 Head:T7
+E7	Event:T13 End:T7
+T15	Head_End 58 65	meeting
+T3	Att_span 21 27	had to
+R1	Event_att Arg1:T3 Arg2:E1	
+T16	Att_span 48 57	important
+R2	Entity_att Arg1:T16 Arg2:T15	
+T17	Event 115 137	could not get to sleep
+E2	Event:T17 
+R3	EventCause Arg1:E3 Arg2:E2	
+T8	Event 208 219	wake him up
+E9	Event:T8 Head:T9
+R4	NC2Event Arg1:E4 Arg2:E9	
+R5	EventCause Arg1:E4 Arg2:E6	
+R6	EventTemporal Arg1:E6 Arg2:E7	

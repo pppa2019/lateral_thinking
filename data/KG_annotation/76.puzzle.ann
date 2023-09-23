@@ -1,0 +1,6 @@
+T1	Event 28 35	stopped
+T2	Head_End 22 27	music
+E1	Event:T1 End:T2
+T3	Head_End 0 7	charlie
+T4	Event 8 12	died
+E2	Event:T4 Head:T3

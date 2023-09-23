@@ -1,0 +1,8 @@
+T1	Event 8 12	died
+T2	Head_End 4 7	man
+T3	Event 18 24	eating
+T4	Head_End 36 44	popsicle
+E1	Event:T1 End:T2
+E2	Event:T3 Head:T2 End:T4
+T5	Att_span 27 35	poisoned
+R1	Entity_att Arg1:T5 Arg2:T4	

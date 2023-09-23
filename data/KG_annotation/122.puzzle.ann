@@ -1,0 +1,18 @@
+T1	Event 12 21	kidnapped
+E1	Event:T1 Head:T2 End:T3
+T2	Head_End 0 7	Two men
+T3	Head_End 37 58	in the trunk of a car
+T4	Event 97 103	opened
+E2	Event:T4 Head:T5
+R1	EventTemporal Arg1:E1 Arg2:E2	
+T5	Head_End 88 93	trunk
+T6	Head_End 105 108	one
+T7	Head_End 126 135	the other
+T8	Event 116 121	alive
+E3	Event:T8 Head:T6
+T9	Event 139 143	dead
+E4	Event:T9 Head:T7
+R2	EventTemporal Arg1:E2 Arg2:E3	
+R3	EventTemporal Arg1:E2 Arg2:E4	
+R4	EntityPartof Arg1:T6 Arg2:T2	
+R5	EntityPartof Arg1:T7 Arg2:T2	

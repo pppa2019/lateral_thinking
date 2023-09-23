@@ -1,0 +1,12 @@
+T1	Event 11 14	bit
+T4	Event 25 32	swatted
+T6	Event 50 56	landed
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 Head:T3 End:T2
+E3	Event:T6 Head:T2 End:T5
+T2	Head_End 2 10	mosquito
+T3	Head_End 23 24	i
+T5	Head_End 60 70	my ceiling
+T7	Head_End 79 84	blood
+R1	EntityPartof Arg1:T7 Arg2:T3	
+R2	EntityPartof Arg1:T7 Arg2:T2	

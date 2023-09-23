@@ -1,0 +1,9 @@
+T1	Head_End 2 5	man
+T2	Event 6 13	marries
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 14 26	twenty women
+T4	Att_span 27 41	in his village
+R1	Event_att Arg1:T4 Arg2:E1	
+T5	Event 46 59	isn't charged
+E2	Event:T5 Head:T1 End:T6
+T6	Head_End 65 73	polygamy

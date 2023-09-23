@@ -1,0 +1,110 @@
+T1	Event 60 70	broke down
+T2	Head_End 49 59	rental car
+T4	Head_End 77 79	he
+T5	Event 80 83	was
+T6	Head_End 96 103	village
+T7	Att_span 89 95	little
+T8	Event 123 127	pull
+T9	Non_Core_Event 152 157	asked
+T10	Head_End 149 151	he
+T11	Event 171 175	find
+T12	Head_End 176 183	someone
+T13	Event 187 192	drive
+T14	Event 235 239	said
+T15	Head_End 217 220	man
+T16	Head_End 249 253	been
+T17	Event 274 278	sure
+T20	Event 309 314	lives
+T21	Head_End 306 308	he
+T22	Head_End 332 337	house
+T23	Att_span 322 331	big white
+T24	Event 406 414	answered
+T25	Head_End 419 423	door
+T26	Event 435 440	drive
+T27	Head_End 431 434	you
+T28	Event 478 486	answered
+T29	Head_End 473 475	no
+T30	Non_Core_Event 500 509	explained
+T32	Head_End 526 529	car
+T33	Att_span 522 525	old
+T34	Event 594 601	offered
+T35	Head_End 591 593	he
+T36	Head_End 610 614	room
+T37	Event 672 679	shocked
+T39	Head_End 701 706	eagle
+T40	Att_span 689 693	huge
+T41	Att_span 694 700	golden
+T42	Event 784 790	direct
+T43	Head_End 766 769	man
+E1	Event:T1 End:T2
+E3	Event:T5 Head:T4 End:T6
+E4	Event:T8 Head:T4 End:T2
+E5	Non_Core_Event:T9 Head:T10
+E6	Event:T11 Head:T10 End:T12
+E7	Event:T13 End:T10
+E8	Event:T14 Head:T15 End:T16
+E9	Event:T17 Head:T15 End:T18
+E10	Event:T20 Head:T21 End:T22
+E11	Event:T24 End:T25 Head:T53
+E12	Event:T26 Head:T27 Head2:T50
+E13	Event:T28 End:T29 Head:T53
+E14	Non_Core_Event:T30 
+E15	Event:T34 Head:T35 End:T36
+E16	Event:T37 Head2:T57
+E17	Event:T42 Head:T43 End:T62
+R1	Entity_att Arg1:T7 Arg2:T6
+R2	Entity_att Arg1:T23 Arg2:T22
+R3	Entity_att Arg1:T33 Arg2:T32
+R4	Entity_att Arg1:T40 Arg2:T39
+R5	Entity_att Arg1:T41 Arg2:T39
+T44	Head_End 0 5	chuck
+T45	Head_End 13 21	american
+R6	EntityPartof Arg1:T45 Arg2:T44	
+T46	Event 22 32	on holiday
+E18	Event:T46 Head:T44 Head2:T47
+T47	Head_End 33 43	in ireland
+T3	Att_span 128 141	into a garage
+R7	Event_att Arg1:T3 Arg2:E4	
+R8	NC2Event Arg1:E5 Arg2:E6	
+R9	NC2Event Arg1:E6 Arg2:E7	
+T48	Att_span 197 211	back to dublin
+R10	Event_att Arg1:T48 Arg2:E7	
+T49	Att_span 221 234	at the garage
+R11	Entity_att Arg1:T49 Arg2:T15	
+T18	Head_End 284 292	milligan
+T19	Head_End 296 305	your man.
+R12	EntityEqual Arg1:T18 Arg2:T19	
+T50	Head_End 366 371	chuck
+T51	Event 372 379	went up
+E2	Event:T51 Head:T50 End:T52
+T52	Head_End 383 392	the house
+T53	Head_End 397 405	milligan
+R13	EventTemporal Arg1:E2 Arg2:E11	
+R14	EventTemporal Arg1:E10 Arg2:E2	
+T54	Att_span 447 453	dublin
+R15	Event_att Arg1:T54 Arg2:E12	
+R16	EventTemporal Arg1:E13 Arg2:E14	
+T31	Event 533 544	never drove
+E19	Event:T31 
+R17	NC2Event Arg1:E14 Arg2:E19	
+T55	Att_span 545 566	outside the vicinity.
+R18	Event_att Arg1:T55 Arg2:E19	
+T56	Event 641 646	awoke
+E20	Event:T56 Head:T57
+T57	Head_End 635 640	chuck
+T58	Att_span 616 629	or the night.
+R19	Event_att Arg1:T58 Arg2:E15	
+T59	Att_span 647 663	the next morning
+R20	Event_att Arg1:T59 Arg2:E20	
+T38	Event 683 686	see
+E21	Event:T38 End:T39
+R21	NC2Event Arg1:E16 Arg2:E21	
+T60	Att_span 707 733	on the top of his wardrobe
+R22	Entity_att Arg1:T60 Arg2:T39	
+T61	Event 734 745	gazing down
+E22	Event:T61 Head:T39 End:T57
+T62	Head_End 791 796	chuck
+T63	Att_span 770 783	at the garage
+R23	Entity_att Arg1:T63 Arg2:T43	
+T64	Att_span 797 808	to milligan
+R24	Event_att Arg1:T64 Arg2:E17	

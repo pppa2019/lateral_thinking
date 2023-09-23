@@ -1,0 +1,38 @@
+T1	Head_End 4 9	woman
+T2	Head_End 15 31	tightrope walker
+R1	EntityEqual Arg1:T1 Arg2:T2	
+T3	Head_End 50 53	act
+T4	Event 54 65	consists of
+E1	Event:T4 Head:T3 End:T5
+T5	Head_End 66 73	walking
+T6	Att_span 74 94	the rope blindfolded
+R2	Entity_att Arg1:T6 Arg2:T5	
+T7	Att_span 96 116	accompanied by music
+R3	Entity_att Arg1:T7 Arg2:T5	
+T8	Head_End 134 146	the musician
+T9	Non_Core_Event 201 212	supposed to
+E2	Non_Core_Event:T9 Head:T8
+T10	Event 213 217	stop
+E3	Event:T10 Head:T11
+R4	NC2Event Arg1:E2 Arg2:E3	
+T11	Head_End 218 225	playing
+T12	Event 235 242	reaches
+E4	Event:T12 End:T13 Head:T1
+R5	EventSameTime Arg1:E3 Arg2:E4	
+T13	Head_End 247 262	end of the rope
+T14	Event 264 271	telling
+E5	Event:T14 Head:T15
+T15	Head_End 286 302	safe to step off
+R6	EventSameTime Arg1:E3 Arg2:E5	
+T16	Head_End 372 374	he
+T17	Event 375 380	stops
+E6	Event:T17 Head:T16 End:T18
+T18	Head_End 385 390	music
+T19	Att_span 348 370	with murderous intent)
+R7	Entity_att Arg1:T19 Arg2:T16	
+T20	Event 406 415	steps off
+E7	Event:T20 Head:T1 End:T21
+T21	Head_End 420 424	rope
+T22	Event 432 437	death
+E8	Event:T22 
+R8	EventCause Arg1:E7 Arg2:E8	

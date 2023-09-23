@@ -1,0 +1,14 @@
+T1	Head_End 2 5	man
+T2	Event 6 12	killed
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 13 20	himself
+R1	EntityEqual Arg1:T3 Arg2:T1	
+T4	Head_End 26 28	he
+T5	Non_Core_Event 29 34	konws
+E2	Non_Core_Event:T5 Head:T4
+T6	Event 43 49	orderd
+E3	Event:T6 Head:T4 End:T7
+R2	NC2Event Arg1:E2 Arg2:E3	
+T7	Head_End 53 74	the soup of albatross
+R3	EventSameTime Arg1:E3 Arg2:E1	
+R4	EntityEqual Arg1:T4 Arg2:T1	

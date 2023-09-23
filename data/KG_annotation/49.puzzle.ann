@@ -1,0 +1,8 @@
+T1	Head_End 0 12	Mr. Browning
+T2	Event 16 20	glad
+E1	Event:T2 Head:T1
+T3	Event 29 39	ran out of
+E2	Event:T3 Head:T4 End:T5
+T4	Head_End 25 28	car
+T5	Head_End 40 43	gas
+R1	EventCause Arg1:E2 Arg2:E1	

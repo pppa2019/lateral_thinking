@@ -1,0 +1,30 @@
+T1	Head_End 0 34	bob and carol and romeo and juliet
+T2	Att_span 35 38	all
+T3	Event 39 43	live
+E1	Event:T3 End:T4 Head:T1
+R1	Event_att Arg1:T2 Arg2:E1	
+T4	Head_End 51 61	same house
+T5	Head_End 64 77	bob and carol
+T6	Event 78 84	go out
+E2	Event:T6 Head:T5 End:T7
+T7	Head_End 90 95	movie
+R2	EventTemporal Arg1:E1 Arg2:E2	
+R3	EntityPartof Arg1:T5 Arg2:T1	
+T8	Event 111 117	return
+E3	Event:T8 Head:T5
+T9	Head_End 118 123	romeo
+T10	Event 127 137	lying dead
+E4	Event:T10 Head:T9
+T11	Att_span 138 150	on the floor
+T12	Att_span 151 181	in a puddle of water and glass
+R4	Event_att Arg1:T11 Arg2:E4	
+R5	Event_att Arg1:T12 Arg2:E4	
+T13	Head_End 203 209	juliet
+T14	Event 210 216	killed
+E5	Event:T14 Head:T13 End:T9
+T15	Event 235 249	not prosecuted
+E6	Event:T15 End:T13
+T16	Event 253 270	severely punished
+E7	Event:T16 End:T13
+R6	EventSameTime Arg1:E6 Arg2:E7	
+R7	EventTemporal Arg1:E5 Arg2:E6	

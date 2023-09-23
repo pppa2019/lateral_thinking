@@ -1,0 +1,10 @@
+T1	Head_End 2 7	woman
+T2	Event 8 13	meets
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 18 22	king
+T4	Event 24 29	cries
+E2	Event:T4 Head:T1
+T5	Att_span 30 37	"Pain!"
+R1	Event_att Arg1:T5 Arg2:E2	
+T6	Event 43 62	loses consciousness
+E3	Event:T6 Head:T1

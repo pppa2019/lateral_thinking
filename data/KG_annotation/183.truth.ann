@@ -1,0 +1,8 @@
+T3	Event 55 61	frozen
+T4	Head_End 47 51	lake
+E2	Event:T3 End:T4
+T5	Head_End 23 37	lake's surface
+T1	Att_span 5 9	easy
+T2	Event 13 17	walk
+E1	Event:T2 End:T5
+R1	Event_att Arg1:T1 Arg2:E1	

@@ -1,0 +1,7 @@
+T1	Head_End 2 7	woman
+T2	Event 8 18	walks into
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 19 31	a small room
+T4	Event 36 43	screams
+E2	Event:T4 Head:T1
+R1	EventTemporal Arg1:E1 Arg2:E2	

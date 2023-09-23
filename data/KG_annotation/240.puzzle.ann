@@ -1,0 +1,39 @@
+T1	Event 8 17	came home
+T2	Head_End 2 7	woman
+T3	Event 21 25	find
+T5	Head_End 30 33	dog
+T6	Event 59 65	rushed
+T7	Head_End 55 58	she
+T8	Head_End 70 73	dog
+T9	Event 94 103	went home
+T10	Event 113 121	examined
+T11	Head_End 86 89	vet
+T12	Event 167 174	ringing
+T13	Head_End 157 162	phone
+T14	Event 140 152	arrived home
+T15	Head_End 136 139	she
+T16	Event 191 198	warning
+T17	Head_End 187 190	vet
+T18	Head_End 206 226	get out of the house
+E1	Event:T1 Head:T2
+E2	Event:T3 Head:T2
+E3	Event:T6 Head:T7 End:T8
+E4	Event:T9 Head:T7
+E5	Event:T10 Head:T11 End:T8
+E6	Event:T12 End:T13
+E7	Event:T14 End:T15
+E8	Event:T16 Head:T17 End:T18
+R2	EventTemporal Arg1:E1 Arg2:E2	
+T4	Event 34 41	choking
+E9	Event:T4 End:T5
+R3	NC2Event Arg1:E2 Arg2:E9	
+T20	Att_span 42 53	in the hall
+R4	Event_att Arg1:T20 Arg2:E9	
+R5	EntityEqual Arg1:T7 Arg2:T2	
+R6	EventTemporal Arg1:E3 Arg2:E4	
+R7	EventTemporal Arg1:E7 Arg2:E6	
+R8	EventSameTime Arg1:E4 Arg2:E5	
+R9	EventTemporal Arg1:E5 Arg2:E7	
+R10	EventTemporal Arg1:E6 Arg2:E8	
+T19	Att_span 227 234	at once
+R1	Entity_att Arg1:T19 Arg2:T18	

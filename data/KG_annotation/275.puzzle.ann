@@ -1,0 +1,28 @@
+T1	Event 7 13	robbed
+T2	Head_End 2 6	gang
+T3	Head_End 16 20	bank
+T4	Event 27 34	tied up
+T5	Head_End 22 26	they
+T6	Event 64 68	left
+T7	Head_End 73 77	bank
+T10	Event 120 123	did
+T11	Head_End 124 133	something
+T12	Event 159 171	apprehension
+T13	Head_End 179 183	gang
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 Head:T5 End:T14
+E3	Event:T6 Head:T5 End:T7
+E5	Event:T10 End:T11
+E6	Event:T12 End:T13
+T14	Head_End 39 44	staff
+R1	EventTemporal Arg1:E2 Arg2:E3	
+T9	Event 101 110	struggled
+E7	Event:T9 Head:T8
+T15	Att_span 111 115	free
+R2	Event_att Arg1:T15 Arg2:E7	
+T8	Head_End 79 100	one of the bank staff
+R3	EntityPartof Arg1:T8 Arg2:T14	
+R4	EventTemporal Arg1:E7 Arg2:E5	
+T16	Non_Core_Event 148 154	led to
+E4	Non_Core_Event:T16 
+R5	NC2Event Arg1:E4 Arg2:E6	

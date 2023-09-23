@@ -1,0 +1,31 @@
+T1	Non_Core_Event 7 11	seen
+T2	Head_End 0 2	he
+T5	Event 61 65	paid
+T6	Head_End 42 53	woman's car
+T7	Head_End 82 89	station
+T8	Att_span 73 81	gasoline
+T9	Event 94 102	followed
+T10	Head_End 91 93	he
+T11	Event 110 114	warn
+T12	Event 127 134	pleased
+T15	Head_End 167 174	station
+T16	Att_span 160 166	police
+E1	Non_Core_Event:T1 Head:T2
+E2	Event:T5 Head:T6 End:T7
+E3	Event:T9 Head:T10
+E4	Event:T11 Head:T10
+E5	Event:T12 End:T10
+R1	Entity_att Arg1:T8 Arg2:T7
+R2	Entity_att Arg1:T16 Arg2:T15
+T3	Event 18 22	hide
+E6	Event:T3 Head:T4 End:T6
+R3	NC2Event Arg1:E1 Arg2:E6	
+T4	Head_End 12 17	a man
+R4	EventTemporal Arg1:E3 Arg2:E5	
+T14	Event 146 155	pull into
+E7	Event:T14 End:T15 Head:T17
+T17	Head_End 142 145	her
+T13	Event 138 141	see
+E8	Event:T13 
+R5	NC2Event Arg1:E5 Arg2:E8	
+R6	NC2Event Arg1:E8 Arg2:E7	

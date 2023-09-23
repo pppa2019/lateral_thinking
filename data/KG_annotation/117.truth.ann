@@ -1,0 +1,27 @@
+T1	Head_End 33 53	hit-and-run accident
+T3	Event 60 69	paralyzed
+T4	Head_End 74 80	victim
+T5	Non_Core_Event 98 104	manage
+T6	Head_End 87 93	victim
+T8	Head_End 116 136	license plate number
+T11	Event 184 191	tracked
+T12	Event 201 207	driver
+T13	Head_End 144 148	car;
+T14	Event 212 216	shot
+T15	Event 221 227	killed
+E1	Event:T3 End:T4 Head:T1
+E2	Non_Core_Event:T5 Head:T6
+E3	Event:T11 Head:T6
+E4	Event:T12 End:T13
+E5	Event:T14 Head:T6
+E6	Event:T15 Head:T6
+T2	Head_End 4 12	dead man
+T16	Head_End 21 27	driver
+R1	EntityEqual Arg1:T16 Arg2:T2	
+R2	EntityPartof Arg1:T8 Arg2:T13	
+T7	Event 108 111	get
+E7	Event:T7 End:T8
+R3	NC2Event Arg1:E2 Arg2:E7	
+R4	EventTemporal Arg1:E7 Arg2:E3	
+R5	EventTemporal Arg1:E3 Arg2:E5	
+R6	EventTemporal Arg1:E5 Arg2:E6	

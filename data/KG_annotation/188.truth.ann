@@ -1,0 +1,6 @@
+T1	Head_End 0 24	the hair on a man's head
+T2	Event 58 63	older
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 73 94	hair in his moustache
+T4	Att_span 45 57	twenty years
+R1	Event_att Arg1:T4 Arg2:E1	

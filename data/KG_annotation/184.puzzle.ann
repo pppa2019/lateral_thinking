@@ -1,0 +1,15 @@
+T1	Event 4 10	drives
+T2	Head_End 15 18	car
+T3	Event 92 98	facing
+T4	Head_End 85 88	car
+T5	Head_End 99 103	east
+T6	Event 74 79	stops
+T7	Head_End 70 73	she
+E1	Event:T1 End:T2 Head:T8
+E2	Event:T3 Head:T4 End:T5
+E3	Event:T6 Head:T7
+T8	Head_End 0 3	amy
+T9	Att_span 23 27	west
+T10	Att_span 48 63	without turning
+R1	Entity_att Arg1:T9 Arg2:T2	
+R2	Entity_att Arg1:T10 Arg2:T2	

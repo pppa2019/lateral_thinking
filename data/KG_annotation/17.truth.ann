@@ -1,0 +1,30 @@
+T1	Head_End 4 11	hot sun
+T2	Event 12 26	reflected from
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 27 51	the woman's large mirror
+T4	Event 56 62	heated
+E2	Event:T4 End:T5
+T5	Head_End 67 75	lingerie
+R1	EventCause Arg1:E1 Arg2:E2	
+T6	Att_span 76 91	she was wearing
+R2	Entity_att Arg1:T6 Arg2:T5	
+T7	Head_End 115 118	She
+T8	Event 123 134	absorbed in
+E3	Event:T8 Head:T7 End:T9
+T9	Head_End 137 141	book
+T10	Non_Core_Event 158 171	didn't notice
+E4	Non_Core_Event:T10 Head:T7
+T11	Event 204 209	afire
+E5	Event:T11 Head:T12
+T12	Head_End 187 199	her clothing
+R3	EntityEqual Arg1:T12 Arg2:T5	
+R4	NC2Event Arg1:E4 Arg2:E5	
+T13	Head_End 251 260	her doors
+T14	Event 266 272	locked
+E6	Event:T14 Head:T13
+T15	Att_span 273 288	from the inside
+R5	Event_att Arg1:T15 Arg2:E6	
+T16	Event 224 242	get to her to help
+E7	Event:T16 Head:T17
+R6	EventCause Arg1:E6 Arg2:E7	
+T17	Head_End 211 217	Nobody

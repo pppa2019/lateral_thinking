@@ -1,0 +1,24 @@
+T1	Event 23 30	started
+T2	Head_End 13 22	sportsmen
+T3	Att_span 8 12	keen
+T4	Head_End 48 52	club
+T5	Att_span 40 47	fitness
+T6	Event 173 176	run
+T7	Head_End 157 161	they
+E1	Event:T1 Head:T2 End:T4
+E2	Event:T6 Head:T7
+R1	Entity_att Arg1:T3 Arg2:T2
+R2	Entity_att Arg1:T5 Arg2:T4
+T8	Head_End 54 57	one
+R3	EntityPartof Arg1:T8 Arg2:T2	
+T9	Event 58 80	on the cycling machine
+E3	Event:T9 Head:T8
+T10	Head_End 85 94	the other
+T11	Event 95 117	on the walking machine
+E4	Event:T11 Head:T10
+R4	EntityPartof Arg1:T10 Arg2:T2	
+T12	Head_End 182 202	distance from a to b
+T13	Head_End 206 213	2 miles
+R5	EntityEqual Arg1:T13 Arg2:T12	
+T14	Att_span 119 156	after half an hour of indoor exercise
+R6	Event_att Arg1:T14 Arg2:E2	

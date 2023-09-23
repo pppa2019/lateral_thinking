@@ -1,0 +1,21 @@
+T1	Event 10 17	brought
+T2	Head_End 2 5	man
+T3	Event 45 50	asked
+T4	Head_End 57 65	question
+T5	Event 118 122	died
+T6	Head_End 70 72	he
+T7	Event 77 82	known
+T8	Event 140 145	lived
+T9	Head_End 125 127	he
+E1	Event:T1 End:T2
+E2	Event:T3 End:T4 Head:T10
+E3	Event:T5 End:T6
+E4	Event:T7 Head:T6 End:T12
+E5	Event:T8 Head:T9
+T10	Head_End 27 39	tribal chief
+R1	EventTemporal Arg1:E2 Arg2:E1	
+T11	Event 128 134	didn't
+E6	Event:T11 Head:T9
+R2	EventTemporal Arg1:E6 Arg2:E5	
+T12	Head_End 87 93	answer
+R3	EventCause Arg1:E4 Arg2:E3	

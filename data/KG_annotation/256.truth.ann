@@ -1,0 +1,30 @@
+T1	Head_End 17 28	a small gap
+T2	Att_span 29 55	at the top of the envelope
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Head_End 62 70	the flap
+T4	Event 80 91	folded over
+E1	Event:T4 Head:T3
+T5	Head_End 97 101	wife
+T6	Event 102 128	inserted a knitting needle
+E2	Event:T6 Head:T5 End:T7
+T7	Head_End 141 177	gap and under the fold of the letter
+T8	Event 182 190	rotating
+E3	Event:T8 End:T9 Head:T5
+T9	Head_End 195 201	needle
+T10	Event 206 211	wound
+E4	Event:T10 Head:T5 End:T11
+T11	Head_End 216 222	letter
+T12	Att_span 223 237	tightly around
+R2	Event_att Arg1:T12 Arg2:E4	
+R3	EntityPartof Arg1:T1 Arg2:T7	
+R4	EntityPartof Arg1:T3 Arg2:T7	
+T13	Event 251 258	removed
+E5	Event:T13 Head:T5 End:T9
+R5	EventTemporal Arg1:E4 Arg2:E5	
+T14	Event 263 267	read
+E6	Event:T14 End:T11 Head:T5
+T15	Event 306 313	actions
+E7	Event:T15 Head:T5
+T16	Att_span 314 324	in reverse
+R6	Event_att Arg1:T16 Arg2:E7	
+R7	EventTemporal Arg1:E5 Arg2:E6	

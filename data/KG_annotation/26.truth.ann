@@ -1,0 +1,30 @@
+T1	Event 4 9	opens
+T2	Head_End 0 3	she
+T3	Head_End 14 18	door
+T4	Non_Core_Event 23 27	sees
+T6	Head_End 37 54	handle of her cup
+T7	Head_End 69 91	back of the microwave.
+T8	Event 102 106	sets
+T9	Head_End 93 96	she
+T10	Head_End 111 115	oven
+T11	Event 164 168	turn
+T12	Head_End 149 158	turntable
+T13	Event 197 202	reach
+T14	Head_End 207 217	cup-handle
+T15	Event 222 227	avoid
+T16	Head_End 228 235	burning
+E1	Event:T1 Head:T2 End:T3
+E2	Non_Core_Event:T4 Head:T2
+E3	Event:T8 Head:T9 End:T10
+E4	Event:T11 End:T12
+E5	Event:T13 Head:T9 End:T14
+E6	Event:T15 Head:T9 End:T16
+T5	Event 58 64	facing
+E7	Event:T5 Head:T6 End:T7
+R1	NC2Event Arg1:E2 Arg2:E7	
+T17	Att_span 116 136	for two more seconds
+R2	Event_att Arg1:T17 Arg2:E3	
+T18	Att_span 169 180	180 degrees
+R3	Event_att Arg1:T18 Arg2:E4	
+R4	EventCause Arg1:E4 Arg2:E5	
+R5	EventCause Arg1:E5 Arg2:E6	

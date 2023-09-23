@@ -1,0 +1,12 @@
+T1	Event 3 9	divide
+E1	Event:T1 Head:T2 End:T4
+T2	Head_End 12 16	cake
+T3	Att_span 17 24	equally
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Head_End 25 45	among several people
+T5	Event 50 61	let one cut
+E2	Event:T5 Head:T6 End:T2
+T6	Head_End 46 49	you
+T7	Head_End 66 75	the other
+T8	Event 76 82	choose
+E3	Event:T8 Head:T7 End:T2

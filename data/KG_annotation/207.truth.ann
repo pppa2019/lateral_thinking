@@ -1,0 +1,8 @@
+T1	Head_End 2 6	duck
+T2	Event 7 14	grabbed
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 19 24	brick
+T4	Att_span 25 37	in its mouth
+T5	Event 42 55	flew off with
+E2	Event:T5 Head:T1
+R1	Entity_att Arg1:T4 Arg2:T3	

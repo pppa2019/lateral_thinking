@@ -1,0 +1,32 @@
+T1	Head_End 4 11	two men
+T2	Event 17 27	working in
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 28 40	a small room
+T4	Event 41 53	protected by
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 54 99	a carbon dioxide gas fire extinguisher system
+T6	Event 113 122	broke out
+E3	Event:T6 Head:T7
+T7	Head_End 108 112	fire
+T8	Att_span 123 143	in an adjoining room
+R2	Event_att Arg1:T8 Arg2:E3	
+R3	EventSameTime Arg1:E3 Arg2:E1	
+T9	Head_End 146 164	One of the men ran
+T10	Event 165 172	through
+E4	Event:T10 Head:T9 End:T7
+T11	Event 186 193	escaped
+E5	Event:T11 Head:T9 End:T7
+T12	Att_span 194 215	with only minor burns
+R4	Event_att Arg1:T12 Arg2:E5	
+T13	Head_End 218 231	The other one
+T14	Event 232 241	stayed in
+E6	Event:T14 Head:T13 End:T3
+T16	Head_End 257 279	the fire extinguishers
+T17	Event 280 289	kicked in
+E7	Event:T17 Head:T16 End:T7
+T18	Event 295 299	died
+E8	Event:T18 Head:T13
+T19	Event 303 320	oxygen starvation
+E9	Event:T19 
+R6	EventCause Arg1:E9 Arg2:E8	
+R7	EventSameTime Arg1:E6 Arg2:E7	

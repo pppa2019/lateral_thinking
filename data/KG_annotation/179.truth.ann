@@ -1,0 +1,15 @@
+T1	Head_End 4 7	man
+T2	Head_End 14 23	astronaut
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Event 28 43	on a space walk
+E1	Event:T3 Head:T1
+T4	Head_End 51 65	radiation suit
+T5	Head_End 71 75	suit
+T6	Event 80 86	broken
+E2	Event:T6 Head:T5
+T7	Event 103 106	die
+E3	Event:T7 
+R2	EventCause Arg1:E2 Arg2:E3	
+T8	Att_span 107 121	from radiation
+R3	Event_att Arg1:T8 Arg2:E3	
+R4	EntityEqual Arg1:T5 Arg2:T4	

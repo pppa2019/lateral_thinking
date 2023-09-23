@@ -1,0 +1,7 @@
+T1	Event 24 32	midnight
+E1	Event:T1 
+T2	Att_span 0 11	in 72 hours
+R1	Event_att Arg1:T2 Arg2:E1	
+T3	Event 46 76	could not be "bright and sunny
+E2	Event:T3 
+R2	EventCause Arg1:E1 Arg2:E2	

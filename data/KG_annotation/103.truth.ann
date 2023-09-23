@@ -1,0 +1,25 @@
+T1	Event 5 11	allows
+T2	Head_End 0 4	this
+T3	Head_End 16 24	herrings
+T4	Event 25 34	involving
+T5	Head_End 39 47	homonyms
+T6	Event 97 100	use
+T7	Head_End 117 120	you
+T8	Head_End 106 113	wording
+T9	Att_span 101 105	this
+T10	Att_span 92 96	only
+T11	Non_Core_Event 121 125	want
+T13	Head_End 156 164	audience
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 End:T5
+E3	Event:T6 Head:T7 End:T8
+E4	Non_Core_Event:T11 Head:T7
+R1	Entity_att Arg1:T9 Arg2:T8
+R2	Event_att Arg1:T10 Arg2:T6
+T14	Head_End 49 52	boy
+T15	Head_End 59 64	buoy"
+R3	EntityPartof Arg1:T3 Arg2:T14	
+R4	EntityPartof Arg1:T3 Arg2:T15	
+T12	Event 143 150	confuse
+E5	Event:T12 End:T13
+R5	NC2Event Arg1:E4 Arg2:E5	

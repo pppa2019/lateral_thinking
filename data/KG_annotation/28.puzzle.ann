@@ -1,0 +1,36 @@
+T1	Event 6 11	takes
+T2	Head_End 2 5	man
+T3	Head_End 23 29	cruise
+T5	Head_End 141 146	ports
+T6	Att_span 135 140	other
+T7	Att_span 131 134	any
+T8	Event 70 79	gets back
+T9	Event 152 157	stays
+T10	Head_End 149 151	he
+T11	Head_End 192 199	cruises
+T12	Att_span 187 191	both
+T13	Head_End 179 183	time
+T14	Att_span 171 174	all
+T15	Event 218 223	makes
+T16	Head_End 215 217	he
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T8 End:T2
+E3	Event:T9 End:T10 End2:T13 End3:T11
+E4	Event:T15 Head:T16 End:T22
+R1	Entity_att Arg1:T6 Arg2:T5
+R2	Entity_att Arg1:T7 Arg2:T6
+R3	Entity_att Arg1:T12 Arg2:T11
+T4	Att_span 14 22	two-week
+R5	Entity_att Arg1:T4 Arg2:T3	
+T17	Att_span 30 39	to mexico
+R6	Entity_att Arg1:T17 Arg2:T3	
+T18	Att_span 40 51	from the us
+R7	Entity_att Arg1:T18 Arg2:T3	
+T19	Event 84 89	takes
+E5	Event:T19 End:T20 Head:T2
+T20	Head_End 90 108	a three-day cruise
+T21	Event 115 127	doesn't stop
+E6	Event:T21 Head:T20 End:T5
+R8	EntityEqual Arg1:T10 Arg2:T2	
+R4	Entity_att Arg1:T14 Arg2:T13	
+T22	Head_End 224 233	$250 000.

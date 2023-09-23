@@ -1,0 +1,16 @@
+T1	Head_End 0 11	A dying man
+T2	Att_span 32 36	gift
+T3	Event 12 17	gives
+E1	Event:T3 Head:T1 End:T4
+T4	Head_End 18 29	another man
+R1	Event_att Arg1:T2 Arg2:E1	
+T5	Event 61 65	dies
+E2	Event:T5 Head:T1
+T6	Head_End 86 100	the second man
+T7	Event 101 105	dies
+E3	Event:T7 Head:T6
+T8	Att_span 67 80	Shortly after
+R2	Event_att Arg1:T8 Arg2:E3	
+R3	EntityEqual Arg1:T6 Arg2:T4	
+R4	EventTemporal Arg1:E2 Arg2:E3	
+R5	EventTemporal Arg1:E1 Arg2:E2	

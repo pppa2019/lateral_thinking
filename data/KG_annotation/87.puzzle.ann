@@ -1,0 +1,6 @@
+T1	Head_End 2 5	man
+T2	Event 9 31	sitting suspended over
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 32 58	two pressurized containers
+T4	Event 73 77	dies
+E2	Event:T4 Head:T1

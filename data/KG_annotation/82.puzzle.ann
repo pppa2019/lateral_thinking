@@ -1,0 +1,18 @@
+T1	Head_End 3 28	ordinary American citizen
+T2	Att_span 35 46	no passport
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Event 48 54	visits
+E1	Event:T3 Head:T1 End:T4
+T4	Head_End 55 84	over thirty foreign countries
+T5	Att_span 85 95	in one day
+R2	Event_att Arg1:T5 Arg2:E1	
+T6	Event 104 112	welcomed
+E2	Event:T6 Head:T1
+T7	Att_span 113 128	in each country
+R3	Event_att Arg1:T7 Arg2:E2	
+T8	Event 134 140	leaves
+E3	Event:T8 Head:T1 End:T9
+T9	Head_End 141 149	each one
+R4	EntityEqual Arg1:T9 Arg2:T4	
+T10	Att_span 153 167	his own accord
+R5	Event_att Arg1:T10 Arg2:E3	

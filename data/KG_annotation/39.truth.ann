@@ -1,0 +1,43 @@
+T1	Event 5 12	leaving
+T2	Head_End 15 23	hospital
+T3	Event 64 76	life-support
+T4	Head_End 43 47	wife
+T5	Att_span 58 63	heavy
+T6	Non_Core_Event 107 112	knows
+T7	Head_End 104 106	he
+T8	Event 117 127	can't live
+T9	Head_End 113 116	she
+T11	Event 94 102	goes out
+T12	Head_End 88 93	power
+T13	Event 165 172	assumes
+T15	Head_End 230 238	elevator
+T16	Event 217 224	working
+T17	Head_End 202 211	generator
+T18	Att_span 195 201	backup
+T19	Att_span 185 194	emergency
+T20	Event 287 299	satisfactory
+T21	Head_End 265 271	aspect
+E1	Event:T1 End:T2 Head:T24
+E2	Event:T3 End:T4
+E3	Non_Core_Event:T6 Head:T7
+E4	Event:T8 Head:T9
+E5	Event:T11 End:T12
+E6	Event:T13 Head:T7
+E7	Event:T16 End:T17
+E8	Event:T20 Head:T21 End:T22
+R1	Event_att Arg1:T5 Arg2:T3
+R2	Entity_att Arg1:T18 Arg2:T17
+R3	Entity_att Arg1:T19 Arg2:T17
+T23	Event 30 38	visiting
+E9	Event:T23 Head:T24 End:T4
+T24	Head_End 0 2	he
+R5	EventTemporal Arg1:E1 Arg2:E9	
+R6	EventSameTime Arg1:E5 Arg2:E3	
+R7	NC2Event Arg1:E3 Arg2:E4	
+T10	Att_span 128 160	without the life-support systems
+R8	Event_att Arg1:T10 Arg2:E4	
+T14	Event 239 258	wouldn't lose power
+E10	Event:T14 Head:T15
+R9	EventCause Arg1:E7 Arg2:E10	
+R10	NC2Event Arg1:E6 Arg2:E7	
+T22	Head_End 331 338	at home

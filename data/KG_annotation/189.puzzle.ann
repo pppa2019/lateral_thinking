@@ -1,0 +1,50 @@
+T1	Event 21 28	walking
+T2	Head_End 4 15	naturalists
+T3	Head_End 36 43	country
+T4	Non_Core_Event 60 64	keen
+T5	Head_End 45 49	they
+T6	Att_span 55 59	both
+T7	Head_End 108 127	nature and wildlife
+T8	Event 68 75	protect
+T9	Head_End 80 91	environment
+T10	Event 99 107	conserve
+T11	Non_Core_Event 133 137	said
+T12	Head_End 129 132	one
+T14	Head_End 176 179	way
+T15	Event 189 192	hit
+T16	Head_End 185 188	you
+T17	Head_End 198 203	bird"
+T18	Att_span 193 197	that
+T19	Event 238 242	good
+T20	Head_End 231 233	it
+T21	Head_End 274 278	bird
+T22	Att_span 268 273	large
+T23	Att_span 263 267	that
+T24	Event 288 291	hit
+T25	Head_End 284 287	you
+T26	Event 318 331	talking about
+T27	Head_End 313 317	they
+E1	Event:T1 Head:T2 End:T3
+E2	Non_Core_Event:T4 Head:T5
+E3	Event:T8 Head:T5 End:T9
+E4	Event:T10 Head:T5 End:T7
+E5	Non_Core_Event:T11 Head:T12
+E6	Event:T15 Head:T16 End:T17
+E7	Event:T19 End:T20
+E8	Event:T24 Head:T25 End:T21
+E9	Event:T26 Head:T27
+R1	Entity_att Arg1:T6 Arg2:T5
+R2	Entity_att Arg1:T18 Arg2:T17
+R3	Entity_att Arg1:T22 Arg2:T21
+R4	Entity_att Arg1:T23 Arg2:T21
+R5	NC2Event Arg1:E2 Arg2:E3	
+T28	Event 248 262	not as good as
+E10	Event:T28 End:T21
+R6	EventSameTime Arg1:E7 Arg2:E10	
+T13	Event 159 168	impressed
+E11	Event:T13 Head:T14
+R7	NC2Event Arg1:E5 Arg2:E11	
+R8	NC2Event Arg1:E11 Arg2:E6	
+T29	Event 216 223	replied
+E12	Event:T29 
+R9	EventTemporal Arg1:E5 Arg2:E12	

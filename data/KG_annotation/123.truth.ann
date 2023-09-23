@@ -1,0 +1,18 @@
+T1	Event 3 11	urinated
+E2	Event:T1 Head:T4 End:T2
+T2	Head_End 12 29	on the third rail
+T3	Att_span 30 52	in the New York subway
+T4	Head_End 0 2	He
+R1	Entity_att Arg1:T3 Arg2:T2	
+T5	Event 58 70	knocked onto
+E1	Event:T5 Head:T4 End:T7
+T6	Event 104 110	hit by
+E3	Event:T6 Head:T4 End:T9
+T7	Head_End 71 81	the tracks
+T8	Att_span 82 94	by the shock
+R2	Event_att Arg1:T8 Arg2:E1	
+T9	Head_End 113 118	train
+T10	Event 123 129	killed
+E4	Event:T10 Head:T4
+R3	EventCause Arg1:E3 Arg2:E4	
+R4	EventCause Arg1:E1 Arg2:E3	

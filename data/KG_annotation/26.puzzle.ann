@@ -1,0 +1,26 @@
+T1	Event 11 18	heating
+T2	Head_End 2 7	woman
+T3	Head_End 23 29	coffee
+T7	Event 62 66	puts
+T8	Head_End 58 61	she
+T9	Head_End 67 69	it
+T10	Event 108 113	opens
+T11	Head_End 99 102	she
+T12	Head_End 118 122	door
+T13	Event 124 130	closes
+T14	Event 140 145	heats
+T15	Head_End 150 156	coffee
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T7 Head:T8 End:T9
+E3	Event:T10 Head:T11 End:T12
+E4	Event:T13 Head:T11 End:T12
+E5	Event:T14 Head:T11 End:T15
+T4	Att_span 30 56	in a small microwave oven.
+R1	Entity_att Arg1:T4 Arg2:T3	
+R2	EntityEqual Arg1:T8 Arg2:T2	
+T5	Att_span 73 96	for exactly two minutes
+R3	Event_att Arg1:T5 Arg2:E2	
+R4	EventTemporal Arg1:E3 Arg2:E4	
+R5	EventTemporal Arg1:E4 Arg2:E5	
+T6	Att_span 161 177	two more seconds
+R6	Event_att Arg1:T6 Arg2:E5	

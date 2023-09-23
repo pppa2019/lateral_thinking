@@ -1,0 +1,45 @@
+T1	Head_End 2 5	man
+T2	Event 6 11	lives
+E1	Event:T2 Head:T1
+T3	Att_span 12 57	on the twelfth floor of an apartment building
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Head_End 74 76	he
+T5	Event 77 100	takes the elevator down
+E2	Event:T5 Head:T4
+T6	Att_span 104 113	the lobby
+T7	Event 118 124	leaves
+E3	Event:T7 Head:T4 End:T8
+T8	Head_End 129 137	building
+R2	Event_att Arg1:T6 Arg2:E2	
+R3	EntityEqual Arg1:T4 Arg2:T1	
+T9	Att_span 60 73	Every morning
+R4	Event_att Arg1:T9 Arg2:E2	
+T10	Att_span 140 154	In the evening
+T11	Event 159 181	gets into the elevator
+E4	Event:T11 Head:T4
+R5	Event_att Arg1:T10 Arg2:E4	
+T12	Event 191 228	there is someone else in the elevator
+E5	Event:T12 
+T13	Event 235 258	it was raining that day
+E6	Event:T13 
+T14	Event 262 271	goes back
+E7	Event:T14 Head:T4 End:T15
+T15	Head_End 275 284	his floor
+R6	EventCause Arg1:E5 Arg2:E7	
+R7	EventCause Arg1:E6 Arg2:E7	
+T16	Att_span 285 293	directly
+R8	Event_att Arg1:T16 Arg2:E7	
+T17	Event 308 344	there is nobody else in the elevator
+E8	Event:T17 
+T18	Event 349 365	it hasn't rained
+E9	Event:T18 
+T19	Event 370 377	goes to
+E10	Event:T19 Head:T4 End:T20
+T20	Head_End 378 393	the tenth floor
+T21	Event 398 406	walks up
+E11	Event:T21 Head:T4 End:T22
+T22	Head_End 407 428	two flights of stairs
+R9	EventCause Arg1:E8 Arg2:E10	
+R10	EventCause Arg1:E9 Arg2:E10	
+T23	Att_span 429 440	to his room
+R11	Event_att Arg1:T23 Arg2:E11	

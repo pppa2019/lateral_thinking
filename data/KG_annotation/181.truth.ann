@@ -1,0 +1,17 @@
+T1	Head_End 30 35	train
+T2	Att_span 24 29	model
+T3	Event 51 63	left running
+T4	Event 64 74	unattended
+T5	Event 102 110	derailed
+T6	Head_End 81 87	kitten
+T7	Head_End 111 113	it
+E1	Event:T3 End:T1
+E2	Event:T4 End:T1
+E3	Event:T5 Head:T6 End:T7
+R1	Entity_att Arg1:T2 Arg2:T1
+T8	Head_End 4 18	orient express
+R2	EntityEqual Arg1:T1 Arg2:T8	
+R3	EventSameTime Arg1:E1 Arg2:E2	
+R4	EntityEqual Arg1:T7 Arg2:T8	
+T9	Att_span 88 101	has playfully
+R5	Event_att Arg1:T9 Arg2:E3	

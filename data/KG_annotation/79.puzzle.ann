@@ -1,0 +1,16 @@
+T1	Head_End 2 5	man
+T2	Event 6 11	sends
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 14 21	package
+T4	Att_span 25 42	someone in europe
+R1	Event_att Arg1:T4 Arg2:E1	
+T5	Event 47 51	gets
+E2	Event:T5 Head:T1 End:T6
+T6	Head_End 54 58	note
+T7	Head_End 73 81	hank you
+T8	Event 64 70	saying
+E3	Event:T8 Head:T6 End:T7
+T9	Head_End 84 85	i
+T10	Event 86 94	received
+E4	Event:T10 Head:T9 End:T11
+T11	Head_End 95 97	it

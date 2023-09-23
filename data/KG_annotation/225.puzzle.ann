@@ -1,0 +1,17 @@
+T3	Event 50 62	never worked
+T4	Head_End 43 45	he
+T6	Event 117 122	given
+T7	Head_End 175 178	job
+T8	Att_span 147 158	prestigious
+E2	Event:T3 Head:T4
+E4	Event:T6 End:T7 End2:T9
+R1	Entity_att Arg1:T8 Arg2:T7
+T9	Head_End 0 3	tom
+T10	Event 4 10	cannot
+E5	Event:T10 Head:T9 End:T11 Head2:T1
+T11	Head_End 11 24	read or write
+T1	Head_End 28 42	tie his shoes.
+T2	Att_span 126 145	extremely important
+T5	Att_span 164 174	well- paid
+R2	Entity_att Arg1:T5 Arg2:T7	
+R3	Entity_att Arg1:T2 Arg2:T7	

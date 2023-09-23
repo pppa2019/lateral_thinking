@@ -1,0 +1,4 @@
+T1	Head_End 0 4	They
+T2	Event 12 22	remains of
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 23 39	a melted snowman

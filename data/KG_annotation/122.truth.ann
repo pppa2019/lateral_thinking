@@ -1,0 +1,12 @@
+T1	Head_End 0 3	One
+T2	Event 12 22	suffocated
+E1	Event:T2 Head:T1
+T3	Head_End 24 33	the other
+T4	Event 34 39	lived
+E2	Event:T4 Head:T3
+T5	Non_Core_Event 43 52	breathing
+E3	Non_Core_Event:T5 Head:T6
+R1	NC2Event Arg1:E3 Arg2:E2	
+T6	Head_End 57 60	air
+T7	Att_span 61 93	from the spare tire in the trunk
+R2	Entity_att Arg1:T7 Arg2:T6	

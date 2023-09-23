@@ -1,0 +1,11 @@
+T1	Head_End 0 11	Four people
+T2	Att_span 16 41	on a grass-covered island
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Head_End 44 50	A fire
+T4	Event 51 56	burns
+E1	Event:T4 Head:T3 End:T5
+T5	Head_End 57 96	from one end of the island to the other
+T6	Head_End 102 108	no one
+T7	Event 109 113	gets
+E2	Event:T7 Head:T6 End:T8
+T8	Head_End 114 128	severely burnt

@@ -1,0 +1,42 @@
+T1	Head_End 2 5	man
+T2	Non_Core_Event 6 13	commits
+E1	Non_Core_Event:T2 Head:T1
+T3	Event 14 29	a heinous crime
+E2	Event:T3 
+R1	NC2Event Arg1:E1 Arg2:E2	
+T4	Non_Core_Event 31 42	claiming as
+E3	Non_Core_Event:T4 Head:T5
+T5	Head_End 43 52	his alibi
+T6	Event 65 72	onboard
+E4	Event:T6 Head:T7 End:T8
+R2	NC2Event Arg1:E3 Arg2:E4	
+T7	Head_End 58 60	he
+T8	Head_End 73 87	a certain ship
+T9	Event 118 138	a lighthouse failure
+E5	Event:T9 
+T10	Non_Core_Event 98 104	learns
+E6	Non_Core_Event:T10 Head:T14
+T11	Event 153 160	wrecked
+E7	Event:T11 Head:T12
+R3	NC2Event Arg1:E6 Arg2:E7	
+R4	EventCause Arg1:E5 Arg2:E7	
+T12	Head_End 144 148	ship
+T13	Event 161 189	without reaching port safely
+E8	Event:T13 
+R5	EventCause Arg1:E8 Arg2:E7	
+R6	EventEqual Arg1:E8 Arg2:E5	
+T14	Head_End 95 97	he
+R7	EntityEqual Arg1:T14 Arg2:T1	
+T15	Non_Core_Event 194 202	realizes
+E9	Non_Core_Event:T15 Head:T14
+T16	Event 221 230	disproven
+E10	Event:T16 Head:T17
+T17	Head_End 208 217	his alibi
+R8	NC2Event Arg1:E9 Arg2:E10	
+T18	Event 243 250	suicide
+E11	Event:T18 
+R9	EventTemporal Arg1:E6 Arg2:E9	
+R10	EventCause Arg1:E10 Arg2:E11	
+T19	Event 254 280	avoid being sent to prison
+E12	Event:T19 
+R11	EventCause Arg1:E11 Arg2:E12	

@@ -1,0 +1,5 @@
+T1	Head_End 0 6	Beulah
+T2	Head_End 11 16	Craig
+T3	Head_End 22 32	hurricanes
+R1	EntityEqual Arg1:T2 Arg2:T3	
+R2	EntityEqual Arg1:T1 Arg2:T3	

@@ -1,0 +1,17 @@
+T1	Head_End 4 11	husband
+T2	Event 12 18	killed
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 19 26	himself
+R1	EntityEqual Arg1:T3 Arg2:T1	
+T4	Att_span 27 38	a while ago
+R2	Event_att Arg1:T4 Arg2:E1	
+T5	Head_End 45 54	his ashes
+T6	Event 55 57	in
+E2	Event:T6 Head:T5 End:T7
+T7	Head_End 61 64	urn
+T8	Event 65 67	on
+E3	Event:T8 Head:T7 End:T9
+T9	Head_End 72 83	mantelpiece
+T10	Head_End 93 97	wife
+T11	Event 98 106	looks at
+E4	Event:T11 Head:T10 End:T7

@@ -1,0 +1,18 @@
+T1	Head_End 2 5	man
+T2	Att_span 15 31	severely injured
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Event 9 14	lying
+E1	Event:T3 Head:T1
+T4	Att_span 32 43	in the road
+R2	Event_att Arg1:T4 Arg2:E1	
+T5	Event 71 82	stepped out
+E2	Event:T5 Head:T1
+T6	Att_span 83 100	from the sidewalk
+R3	Event_att Arg1:T6 Arg2:E2	
+T7	Head_End 115 127	motorcyclist
+T8	Event 136 139	hit
+E3	Event:T8 Head:T7 End:T1
+T9	Event 101 112	in front of
+E4	Event:T9 Head:T1 End:T7
+T10	Att_span 52 70	quite deliberately
+R4	Event_att Arg1:T10 Arg2:E2	

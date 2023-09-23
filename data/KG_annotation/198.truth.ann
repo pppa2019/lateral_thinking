@@ -1,0 +1,7 @@
+T1	Event 3 7	lays
+T2	Head_End 0 2	he
+T3	Head_End 12 18	planks
+T4	Head_End 36 43	diagram
+T5	Att_span 31 35	this
+E1	Event:T1 Head:T2 End:T3
+R1	Entity_att Arg1:T5 Arg2:T4

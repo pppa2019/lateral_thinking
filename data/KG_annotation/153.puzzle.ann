@@ -1,0 +1,6 @@
+T1	Event 20 25	lying
+T2	Head_End 11 19	dead man
+E1	Event:T1 End:T2 End2:T4
+T3	Att_span 26 39	in the desert
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Head_End 40 54	next to a rock

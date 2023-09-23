@@ -1,0 +1,22 @@
+T1	Head_End 2 5	man
+T2	Non_Core_Event 6 11	tries
+E1	Non_Core_Event:T2 Head:T1
+T3	Event 15 18	buy
+E2	Event:T3 End:T4 Head:T1
+T4	Head_End 19 25	poison
+T5	Event 29 33	kill
+E3	Event:T5 Head:T1 End:T6
+T6	Head_End 34 42	his wife
+R1	NC2Event Arg1:E1 Arg2:E2	
+T7	Head_End 49 59	pharmacist
+T8	Event 60 71	figures out
+E4	Event:T8 Head:T7 End:T9
+T9	Head_End 72 87	what he's up to
+T10	Non_Core_Event 92 97	finds
+E5	Non_Core_Event:T10 Head:T7
+T11	Event 98 103	a way
+E6	Event:T11 
+T12	Event 122 132	can't kill
+E7	Event:T12 Head:T1 End:T6
+R2	NC2Event Arg1:E5 Arg2:E6	
+R3	EventCause Arg1:E6 Arg2:E7	

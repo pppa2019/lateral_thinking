@@ -1,0 +1,36 @@
+T1	Event 9 17	watching
+T2	Head_End 18 28	television
+T3	Non_Core_Event 79 88	forecast:
+T4	Head_End 71 78	weather
+T8	Att_span 204 209	again
+T9	Event 232 239	correct
+T10	Head_End 225 227	he
+T11	Event 255 259	know
+E1	Event:T1 End:T2 Head:T12
+E2	Non_Core_Event:T3 End:T4
+E3	Event:T9 End:T10
+E4	Event:T11 Head:T10
+T12	Head_End 0 4	john
+T5	Att_span 35 52	after the midnigh
+R1	Event_att Arg1:T5 Arg2:E2	
+T6	Event 97 104	raining
+E5	Event:T6 
+R3	NC2Event Arg1:E2 Arg2:E5	
+T13	Att_span 105 108	now
+R4	Event_att Arg1:T13 Arg2:E5	
+T14	Event 113 122	will rain
+E6	Event:T14 
+T15	Att_span 123 144	for the next two days
+R5	Event_att Arg1:T15 Arg2:E6	
+R6	EventTemporal Arg1:E5 Arg2:E6	
+T16	Event 178 194	bright and sunny
+E7	Event:T16 
+T17	Att_span 155 166	in 72 hours
+R7	Event_att Arg1:T17 Arg2:E7	
+R8	EventTemporal Arg1:E6 Arg2:E7	
+T18	Non_Core_Event 211 218	snorted
+E8	Non_Core_Event:T18 Head:T12
+T7	Event 198 203	wrong
+E9	Event:T7 
+R2	Event_att Arg1:T8 Arg2:E9	
+R9	NC2Event Arg1:E8 Arg2:E9	

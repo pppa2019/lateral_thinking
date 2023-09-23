@@ -1,0 +1,12 @@
+T2	Att_span 15 23	Monopoly
+T3	Head_End 29 38	car token
+T4	Event 39 48	passes Go
+E1	Event:T4 Head:T3
+T5	Head_End 57 63	player
+T6	Event 64 72	collects
+E2	Event:T6 Head:T5 End:T7
+T7	Head_End 73 77	$200
+R2	EventCause Arg1:E1 Arg2:E2	
+T1	Event 7 11	game
+E3	Event:T1 
+R1	Event_att Arg1:T2 Arg2:E3	

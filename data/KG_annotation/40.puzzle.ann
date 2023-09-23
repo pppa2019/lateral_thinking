@@ -1,0 +1,6 @@
+T1	Event 10 15	stops
+T2	Head_End 4 9	music
+T3	Event 28 32	dies
+T4	Head_End 22 27	woman
+E1	Event:T1 End:T2
+E2	Event:T3 End:T4

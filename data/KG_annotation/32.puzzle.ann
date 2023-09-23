@@ -1,0 +1,11 @@
+T1	Head_End 2 5	man
+T2	Head_End 13 17	pack
+T3	Att_span 25 29	back
+T4	Event 30 36	enters
+E1	Event:T4 End:T5 Head:T1
+T6	Event 49 53	dies
+E3	Event:T6 
+T5	Head_End 39 44	field
+R1	Entity_att Arg1:T3 Arg2:T2	
+R2	EntityPartof Arg1:T2 Arg2:T1	
+R3	EventTemporal Arg1:E1 Arg2:E3	

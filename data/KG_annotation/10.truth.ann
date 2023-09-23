@@ -1,0 +1,36 @@
+T1	Head_End 0 10	Both women
+T2	Att_span 15 20	white
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Head_End 26 29	one
+T4	Att_span 65 71	single
+R2	Entity_att Arg1:T4 Arg2:T3	
+T5	Head_End 92 107	the other woman
+T6	Head_End 74 81	A black
+T7	Event 82 91	friend of
+E1	Event:T7 Head:T6 End:T5
+T10	Head_End 113 116	one
+T11	Event 158 164	killed
+E3	Event:T11 Head:T6 End:T12
+R3	EntityEqual Arg1:T5 Arg2:T10	
+T12	Head_End 184 187	KKK
+T8	Att_span 117 143	who goes into the bathroom
+R4	Entity_att Arg1:T8 Arg2:T10	
+T9	Event 227 236	discovers
+E2	Event:T9 Head:T10 End:T13
+T13	Head_End 237 260	a bloodstained KKK robe
+T14	Event 261 263	in
+E4	Event:T14 Head:T13 End:T15
+T15	Head_End 276 290	laundry hamper
+T16	Att_span 268 275	other's
+R5	Entity_att Arg1:T16 Arg2:T15	
+R6	Entity_att Arg1:T16 Arg2:T3	
+T17	Event 292 297	picks
+E5	Event:T17 Head:T10 End:T18
+T18	Head_End 301 312	a nail file
+T19	Event 377 385	goes out
+E6	Event:T19 Head:T10 End:T22
+T20	Event 390 395	kills
+E7	Event:T20 End:T21 Head:T10
+T21	Head_End 396 405	the other
+T22	Head_End 218 226	bathroom
+R7	EntityEqual Arg1:T21 Arg2:T3	

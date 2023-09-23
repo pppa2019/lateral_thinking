@@ -1,0 +1,21 @@
+T1	Event 7 11	left
+T2	Head_End 0 2	he
+T3	Head_End 16 24	teaspoon
+T4	Head_End 32 35	cup
+T5	Att_span 39 42	tea
+T6	Event 97 102	poked
+T7	Head_End 81 96	teaspoon handle
+T8	Head_End 114 117	eye
+T9	Event 131 139	blinding
+T10	Event 52 58	raised
+T11	Head_End 49 51	he
+T12	Head_End 63 66	cup
+T13	Event 70 75	drink
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T6 Head:T7 End:T8
+E3	Event:T9 End:T8
+E4	Event:T10 Head:T11 End:T12
+E5	Event:T13 Head:T11 End:T12
+R1	Entity_att Arg1:T5 Arg2:T4
+R2	EventCause Arg1:E2 Arg2:E3	
+R3	EventTemporal Arg1:E1 Arg2:E4	

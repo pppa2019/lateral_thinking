@@ -1,0 +1,30 @@
+T1	Non_Core_Event 12 22	discovered
+T4	Head_End 75 95	freshly minted coins
+T6	Event 122 129	alerted
+T7	Head_End 101 116	shops and banks
+T8	Att_span 97 100	all
+T9	Event 133 142	watch out
+T10	Head_End 147 153	anyone
+T11	Event 154 160	trying
+T13	Head_End 190 194	coin
+T15	Att_span 173 186	large amounts
+T16	Event 212 219	reduced
+T17	Head_End 203 207	gang
+T18	Event 223 230	playing
+T19	Head_End 231 244	slot machines
+E1	Non_Core_Event:T1 Head:T21
+E2	Event:T6 End:T7
+E3	Event:T9 Head:T7 End:T10
+E4	Event:T11 Head:T10
+E5	Event:T16 End:T17
+E6	Event:T18 Head:T17 End:T19
+R2	Entity_att Arg1:T8 Arg2:T7
+T21	Head_End 4 11	robbers
+T3	Head_End 48 56	currency
+T2	Event 57 66	consisted
+E7	Event:T2 Head:T3 Head2:T4
+R5	NC2Event Arg1:E1 Arg2:E7	
+T5	Event 164 172	exchange
+E8	Event:T5 Head:T13
+R1	NC2Event Arg1:E4 Arg2:E8	
+R3	Entity_att Arg1:T15 Arg2:T13	

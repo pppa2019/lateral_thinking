@@ -1,0 +1,16 @@
+T1	Event 21 27	killed
+T2	Head_End 46 50	boat
+T3	Event 59 67	suffered
+T4	Head_End 52 54	he
+T5	Head_End 76 80	blow
+T7	Att_span 70 75	heavy
+E1	Event:T1 Head:T8
+E2	Event:T3 Head:T4 End:T5
+R1	Entity_att Arg1:T7 Arg2:T5
+T8	Head_End 3 16	expert sailor
+T9	Event 34 41	sailing
+E3	Event:T9 Head:T8 End:T2
+R2	EventSameTime Arg1:E3 Arg2:E1	
+R3	EntityEqual Arg1:T4 Arg2:T8	
+T6	Att_span 81 92	to the head
+R4	Event_att Arg1:T6 Arg2:E2	

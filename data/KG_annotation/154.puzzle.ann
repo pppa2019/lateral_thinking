@@ -1,0 +1,6 @@
+T1	Event 8 13	opens
+T2	Head_End 2 7	woman
+T3	Head_End 17 25	envelope
+T4	Event 30 34	dyes
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 Head:T2

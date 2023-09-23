@@ -1,0 +1,22 @@
+T1	Head_End 2 5	man
+T2	Event 6 16	walks into
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 19 22	bar
+T4	Event 27 35	asks for
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 38 43	drink
+R1	EventTemporal Arg1:E1 Arg2:E2	
+T6	Head_End 50 59	bartender
+T7	Event 60 69	pulls out
+E3	Event:T7 Head:T6 End:T8
+T8	Head_End 72 75	gun
+T9	Event 80 92	points it at
+E4	Event:T9 Head:T6 End:T1
+R2	EventTemporal Arg1:E3 Arg2:E4	
+T10	Event 107 111	says
+E5	Event:T10 Head:T1 End:T11
+T11	Head_End 113 124	"Thank you"
+R3	EventTemporal Arg1:E4 Arg2:E5	
+T12	Event 130 139	walks out
+E6	Event:T12 Head:T1 End:T3
+R4	EventTemporal Arg1:E5 Arg2:E6	

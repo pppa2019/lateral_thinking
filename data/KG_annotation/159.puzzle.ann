@@ -1,0 +1,18 @@
+T1	Event 51 58	sitting
+T2	Head_End 39 46	priests
+T3	Event 94 101	attacks
+T4	Head_End 88 93	queen
+T5	Event 129 133	rise
+T6	Head_End 121 128	priests
+T7	Event 135 140	shake
+T8	Head_End 141 146	hands
+T9	Event 152 157	leave
+T10	Head_End 162 166	room
+E1	Event:T1 End:T2 End2:T11
+E2	Event:T3 Head:T4 End:T12
+E3	Event:T5 End:T6
+E4	Event:T7 Head:T6 End:T8
+E5	Event:T9 Head:T6 End:T10
+T11	Head_End 66 82	castle's chapel.
+T12	Head_End 106 111	king.
+R1	EventTemporal Arg1:E4 Arg2:E5	

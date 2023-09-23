@@ -1,0 +1,16 @@
+T1	Non_Core_Event 8 12	sees
+T2	Head_End 2 7	woman
+T4	Head_End 44 61	place of business
+T5	Att_span 36 43	certain
+T6	Non_Core_Event 66 73	insists
+T8	Head_End 94 105	partnership
+E1	Non_Core_Event:T1 Head:T2
+E2	Non_Core_Event:T6 Head:T2
+R1	Entity_att Arg1:T5 Arg2:T4
+T9	Head_End 13 24	her husband
+T3	Event 25 33	entering
+E3	Event:T3 Head:T9 End:T4
+R2	NC2Event Arg1:E1 Arg2:E3	
+T7	Event 77 87	dissolving
+E4	Event:T7 End:T8
+R3	NC2Event Arg1:E2 Arg2:E4	

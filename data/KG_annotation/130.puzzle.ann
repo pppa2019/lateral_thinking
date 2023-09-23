@@ -1,0 +1,19 @@
+T1	Head_End 2 8	writer
+T2	Att_span 9 37	with an audience of millions
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Non_Core_Event 38 46	insisted
+E1	Non_Core_Event:T3 Head:T1
+T4	Event 71 82	interrupted
+E2	Event:T4 
+R2	NC2Event Arg1:E1 Arg2:E2	
+T5	Att_span 83 96	while writing
+R3	Event_att Arg1:T5 Arg2:E2	
+T6	Head_End 118 120	he
+T7	Event 134 145	interrupted
+E3	Event:T7 Head:T6
+T8	Att_span 99 112	After the day
+R4	Event_att Arg1:T8 Arg2:E3	
+T9	Event 150 167	never wrote again
+E4	Event:T9 Head:T6
+R5	EventCause Arg1:E3 Arg2:E4	
+R6	EntityEqual Arg1:T6 Arg2:T1	

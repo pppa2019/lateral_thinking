@@ -1,0 +1,24 @@
+T1	Event 4 7	was
+T2	Head_End 0 3	she
+T3	Event 47 53	caught
+T4	Head_End 38 42	hair
+T5	Event 80 86	ripped
+T7	Head_End 103 108	scalp
+T8	Event 117 121	bled
+T9	Head_End 113 116	she
+T10	Event 140 144	says
+T11	Head_End 158 163	based
+T12	Head_End 145 149	this
+T13	Att_span 153 157	also
+E1	Event:T1 End:T2
+E2	Event:T3 End:T4 End2:T15
+E3	Event:T5 End:T7 Head:T15
+E4	Event:T8 End:T9
+E5	Event:T10 End:T11 Head:T6
+R1	Entity_att Arg1:T13 Arg2:T11
+T14	Att_span 8 23	on a motorcycle
+R2	Event_att Arg1:T14 Arg2:E1	
+T15	Head_End 61 74	car's antenna
+R3	EventTemporal Arg1:E1 Arg2:E2	
+R4	EventTemporal Arg1:E2 Arg2:E3	
+T6	Head_End 132 139	andreas

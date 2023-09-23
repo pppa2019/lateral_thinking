@@ -1,0 +1,78 @@
+T1	Event 45 51	agreed
+T2	Head_End 40 44	they
+T3	Head_End 55 62	survive
+T5	Head_End 78 83	other
+T6	Att_span 73 77	each
+T9	Event 125 132	gave up
+T10	Head_End 152 156	they
+T12	Head_End 136 139	arm
+T14	Event 188 195	rescued
+T18	Event 207 215	demanded
+T19	Head_End 198 202	they
+T20	Att_span 203 206	all
+T22	Head_End 230 233	man
+T23	Att_span 225 229	last
+T25	Head_End 249 265	end of the deal.
+T28	Event 279 285	killed
+T29	Head_End 276 278	he
+T30	Head_End 288 291	bum
+T31	Event 296 300	sent
+T32	Head_End 311 314	arm
+T33	Event 341 348	"prove"
+T35	Head_End 375 382	bargain
+T36	Event 404 408	sees
+T37	Head_End 392 403	one of them
+T39	Head_End 471 473	he
+T40	Head_End 453 457	ring
+T41	Att_span 444 452	overhead
+T42	Event 485 492	cut off
+T43	Event 504 512	realizes
+T44	Head_End 498 503	other
+T46	Head_End 527 530	man
+T47	Att_span 522 526	last
+T48	Event 544 549	kills
+E1	Event:T1 Head:T2 End:T3
+E3	Event:T9 Head:T10 End:T12
+E4	Event:T14 End:T10
+E6	Event:T18 Head:T19 End:T22
+E8	Event:T28 Head:T29 End:T30
+E9	Event:T31 Head:T29 End:T32
+E10	Event:T33 Head:T29
+E11	Event:T36 Head:T37
+E12	Event:T42 Head:T39
+E13	Event:T43 Head:T44
+E14	Event:T48 Head:T44 End:T39
+R1	Entity_att Arg1:T6 Arg2:T5
+R6	Entity_att Arg1:T20 Arg2:T19
+R7	Entity_att Arg1:T23 Arg2:T22
+R8	Entity_att Arg1:T41 Arg2:T40
+R9	Entity_att Arg1:T47 Arg2:T46
+T49	Head_End 0 11	several men
+T50	Event 17 28	shipwrecked
+E15	Event:T50 Head:T49
+T4	Event 66 72	eating
+E2	Event:T4 End:T5
+T7	Att_span 84 91	a piece
+R2	Event_att Arg1:T7 Arg2:E2	
+R10	NC2Event Arg1:E1 Arg2:E2	
+T8	Att_span 157 176	got to the last man
+R3	Entity_att Arg1:T8 Arg2:T10	
+T11	Event 234 244	live up to
+E5	Event:T11 End:T25
+R4	NC2Event Arg1:E6 Arg2:E5	
+R5	EventTemporal Arg1:E8 Arg2:E9	
+T13	Att_span 315 328	to the others
+R11	Event_att Arg1:T13 Arg2:E9	
+T15	Event 361 370	fulfilled
+E7	Event:T15 End:T35 Head:T29
+R12	NC2Event Arg1:E10 Arg2:E7	
+R13	EntityPartof Arg1:T37 Arg2:T49	
+T16	Event 428 440	holding onto
+E16	Event:T16 Head:T22 End:T40
+R14	NC2Event Arg1:E11 Arg2:E16	
+T17	Att_span 458 470	with the arm
+R15	Event_att Arg1:T17 Arg2:E16	
+T21	Event 531 538	cheated
+E17	Event:T21 Head:T46
+R16	NC2Event Arg1:E13 Arg2:E17	
+R17	EventTemporal Arg1:E13 Arg2:E17	

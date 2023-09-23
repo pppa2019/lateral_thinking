@@ -1,0 +1,16 @@
+T1	Head_End 4 7	man
+T2	Head_End 12 36	a paleontologist working
+T3	Att_span 37 79	with the Archaeological Research Institute
+R1	Entity_att Arg1:T3 Arg2:T2	
+R2	EntityEqual Arg1:T2 Arg2:T1	
+T4	Event 89 97	reviving
+E1	Event:T4 End:T5 Head:T1
+T5	Head_End 98 118	a triceratops frozen
+T6	Att_span 119 133	in the ice age
+R3	Event_att Arg1:T6 Arg2:E1	
+T7	Event 142 154	came to life
+E2	Event:T7 Head:T5
+T8	Event 159 165	killed
+E3	Event:T8 End:T1 Head:T5
+R4	EventCause Arg1:E1 Arg2:E2	
+R5	EventCause Arg1:E2 Arg2:E3	

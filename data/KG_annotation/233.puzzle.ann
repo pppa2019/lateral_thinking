@@ -1,0 +1,48 @@
+T1	Event 6 9	met
+T2	Head_End 2 5	man
+T3	Head_End 22 27	woman
+T4	Non_Core_Event 62 68	agreed
+T5	Head_End 57 61	they
+T7	Event 116 121	awoke
+T8	Head_End 113 115	he
+T9	Event 149 156	drugged
+T10	Event 161 168	checked
+T11	Head_End 158 160	he
+T12	Head_End 173 179	wallet
+T13	Head_End 198 203	cards
+T14	Att_span 191 197	credit
+T15	Event 208 213	found
+T17	Head_End 219 223	none
+T18	Event 261 271	discovered
+T19	Head_End 258 260	he
+T20	Head_End 272 281	something
+T21	Event 288 292	gave
+T22	Head_End 299 313	terrible shock
+E1	Event:T1 Head:T2 End:T3
+E2	Non_Core_Event:T4 Head:T5
+E3	Event:T7 End:T8
+E4	Event:T9 End:T8
+E5	Event:T10 Head:T11 End:T12 End2:T27 End3:T13
+E6	Event:T15 Head:T11
+E7	Event:T18 Head:T19 End:T20
+E8	Event:T21 End:T22 Head:T20
+R1	Entity_att Arg1:T14 Arg2:T13
+T23	Att_span 12 21	beautiful
+R2	Entity_att Arg1:T23 Arg2:T3	
+T24	Event 50 56	drinks
+E9	Event:T24 
+R3	EventTemporal Arg1:E9 Arg2:E2	
+T6	Event 72 79	go back
+E10	Event:T6 End:T25
+R4	NC2Event Arg1:E2 Arg2:E10	
+T25	Head_End 83 96	her apartment
+R5	EntityEqual Arg1:T8 Arg2:T2	
+T26	Att_span 122 136	in an alleyway
+R6	Event_att Arg1:T26 Arg2:E3	
+T27	Head_End 181 186	watch
+R7	EventTemporal Arg1:E5 Arg2:E6	
+T16	Event 229 236	missing
+E11	Event:T16 Head:T17
+R8	NC2Event Arg1:E6 Arg2:E11	
+T28	Att_span 238 257	a few minutes later
+R9	Event_att Arg1:T28 Arg2:E7	

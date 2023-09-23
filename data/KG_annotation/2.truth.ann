@@ -1,0 +1,41 @@
+T1	Head_End 4 7	man
+T2	Att_span 12 25	in a lifeboat
+R1	Entity_att Arg1:T2 Arg2:T1	
+T4	Event 46 50	died
+E1	Event:T4 Head:T5
+T3	Head_End 53 55	He
+T5	Head_End 32 40	his wife
+T6	Event 27 31	with
+E2	Event:T6 Head:T1 End:T5
+T7	Event 56 68	hallucinated
+E3	Event:T7 Head:T3 End:T8
+T8	Head_End 72 81	albatross
+T9	Att_span 82 100	landing in the boa
+R2	Entity_att Arg1:T9 Arg2:T8	
+T10	Event 111 117	caught
+E4	Event:T10 Head:T3 End:T8
+T11	Event 122 128	killed
+E5	Event:T11 Head:T3 End:T8
+T12	Event 133 136	ate
+E6	Event:T12 Head:T3 End:T8
+R3	EventCause Arg1:E3 Arg2:E4	
+R4	EventCause Arg1:E3 Arg2:E5	
+R5	EventCause Arg1:E3 Arg2:E6	
+R6	EventTemporal Arg1:E4 Arg2:E5	
+R7	EventTemporal Arg1:E5 Arg2:E6	
+T13	Non_Core_Event 141 148	thought
+E7	Non_Core_Event:T13 Head:T3
+T14	Event 172 178	washed
+E8	Event:T14 Head:T16
+R8	NC2Event Arg1:E7 Arg2:E8	
+T16	Head_End 154 162	his wife
+T17	Att_span 179 188	overboard
+R9	Event_att Arg1:T17 Arg2:E8	
+T19	Event 199 212	actually eats
+E9	Event:T19 Head:T3 End:T8
+R10	EntityEqual Arg1:T3 Arg2:T1	
+T15	Non_Core_Event 227 236	discovers
+E10	Non_Core_Event:T15 Head:T3
+T18	Event 258 263	eaten
+E11	Event:T18 Head:T3 End:T5
+R11	NC2Event Arg1:E10 Arg2:E11	

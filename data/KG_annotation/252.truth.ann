@@ -1,0 +1,19 @@
+T1	Head_End 21 24	boy
+T2	Event 25 37	climbed onto
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 38 65	the roof of the man's house
+T4	Event 70 76	placed
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 77 92	a plank of wood
+T6	Att_span 93 109	over the chimney
+R1	Event_att Arg1:T6 Arg2:E2	
+T7	Head_End 115 118	man
+T8	Event 128 139	been asleep
+E3	Event:T8 Head:T7
+T9	Att_span 140 153	in his parlor
+R2	Event_att Arg1:T9 Arg2:E3	
+T10	Event 159 169	suffocated
+E4	Event:T10 Head:T7
+T11	Att_span 170 192	by fumes from his fire
+R3	Event_att Arg1:T11 Arg2:E4	
+R4	EventCause Arg1:E2 Arg2:E4	

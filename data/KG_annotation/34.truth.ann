@@ -1,0 +1,81 @@
+T3	Head_End 89 102	archaeologist
+T4	Att_span 81 88	elderly
+T5	Event 111 116	found
+T6	Head_End 128 136	skeleton
+T7	Att_span 124 127	old
+T13	Event 288 292	have
+T14	Head_End 304 310	dinner
+T15	Att_span 295 303	business
+T16	Event 373 386	keeps talking
+T17	Head_End 370 372	he
+T19	Event 349 354	calls
+T20	Head_End 345 348	she
+T21	Event 358 364	invite
+T22	Event 443 447	says
+T23	Head_End 451 467	bring her along.
+E2	Event:T5 End:T6 Head:T26
+E4	Event:T13 End:T14
+E5	Event:T16 Head:T17 End:T32
+E6	Event:T19 Head:T20
+E7	Event:T21 Head:T20 End:T17
+E8	Event:T22 End:T23
+R1	Entity_att Arg1:T4 Arg2:T3
+R2	Entity_att Arg1:T7 Arg2:T6
+R5	Entity_att Arg1:T15 Arg2:T14
+T1	Head_End 11 14	she
+T24	Head_End 25 29	suzy
+R6	EntityEqual Arg1:T1 Arg2:T24	
+T2	Head_End 36 40	they
+T25	Head_End 52 66	harry and jane
+R7	EntityEqual Arg1:T25 Arg2:T2	
+T26	Head_End 69 74	harry
+R8	EntityPartof Arg1:T26 Arg2:T25	
+R9	EntityEqual Arg1:T26 Arg2:T3	
+T27	Head_End 157 161	jane
+T28	Head_End 170 174	lucy
+R10	EntityEqual Arg1:T28 Arg2:T27	
+R11	EntityEqual Arg1:T27 Arg2:T6	
+T29	Head_End 179 183	suzy
+T8	Head_End 189 194	buyer
+R12	EntityEqual Arg1:T8 Arg2:T29	
+T9	Att_span 201 207	museum
+R13	Entity_att Arg1:T9 Arg2:T8	
+T11	Non_Core_Event 215 223	supposed
+E1	Non_Core_Event:T11 Head:T29
+T10	Event 245 253	purchase
+E3	Event:T10 
+R3	NC2Event Arg1:E1 Arg2:E3	
+T12	Att_span 254 264	from harry
+R4	Event_att Arg1:T12 Arg2:E3	
+T30	Non_Core_Event 273 280	invites
+E9	Non_Core_Event:T30 Head:T29
+R14	NC2Event Arg1:E9 Arg2:E4	
+T31	Att_span 321 336	at a restaurant
+R15	Event_att Arg1:T31 Arg2:E4	
+R16	EventTemporal Arg1:E7 Arg2:E5	
+R17	EventCause Arg1:E3 Arg2:E9	
+T32	Head_End 394 398	jane
+T18	Head_End 404 408	suzy
+T33	Non_Core_Event 409 416	assumes
+E10	Non_Core_Event:T33 Head:T18
+T34	Head_End 422 426	jane
+T35	Event 427 429	is
+E11	Event:T35 Head:T34 End:T36
+T36	Head_End 434 438	wife
+R18	NC2Event Arg1:E10 Arg2:E11	
+R19	EventCause Arg1:E10 Arg2:E8	
+T37	Head_End 469 474	harry
+T38	Non_Core_Event 476 484	offended
+E12	Non_Core_Event:T38 Head:T37
+T39	Event 486 491	calls
+E13	Event:T39 End:T40
+T40	Head_End 492 503	suzy's boss
+T41	Event 508 517	complains
+E14	Event:T41 
+R20	NC2Event Arg1:E12 Arg2:E13	
+R21	EventTemporal Arg1:E13 Arg2:E14	
+T42	Head_End 525 529	suzy
+T43	Event 530 545	should've known
+E15	Event:T43 Head:T42 End:T44
+T44	Head_End 550 554	jane
+R22	EventCause Arg1:E15 Arg2:E14	

@@ -1,0 +1,9 @@
+T1	Head_End 2 21	total of 213 people
+T2	Event 22 27	enter
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 28 56	a knockout tennis tournament
+T4	Head_End 66 93	the least number of matches
+T6	Head_End 58 62	What
+R1	EntityEqual Arg1:T6 Arg2:T4	
+T5	Att_span 104 141	be played to decide an overall winner
+R2	Entity_att Arg1:T5 Arg2:T4	

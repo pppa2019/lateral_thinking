@@ -1,0 +1,27 @@
+T1	Event 41 49	sweep up
+T2	Head_End 2 11	clergyman
+T3	Head_End 66 74	confetti
+T5	Att_span 50 62	vast amounts
+T6	Head_End 116 123	wedding
+T7	Att_span 110 115	every
+T8	Event 16 27	exasperated
+T9	Event 128 135	decreed
+T10	Head_End 125 127	he
+T11	Head_End 178 196	throwing something
+T14	Event 166 174	insisted
+T15	Event 258 265	suggest
+T16	Head_End 255 257	he
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T8 End:T2
+E3	Event:T9 Head:T10 End:T11
+E4	Event:T14 End:T11 Head:T17
+E5	Event:T15 Head:T16
+R2	Entity_att Arg1:T7 Arg2:T6
+R1	Entity_att Arg1:T5 Arg2:T3	
+T4	Att_span 75 103	from the front of his church
+R4	Event_att Arg1:T4 Arg2:E1	
+T17	Head_End 159 165	people
+T12	Event 224 229	throw
+E6	Event:T12 Head:T13 Head2:T17
+T13	Head_End 230 244	something else
+R3	EventSameTime Arg1:E4 Arg2:E6	

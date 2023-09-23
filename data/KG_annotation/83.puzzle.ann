@@ -1,0 +1,14 @@
+T1	Head_End 2 5	man
+T2	Event 9 19	sitting in
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 20 23	bed
+T4	Event 29 47	makes a phone call
+E2	Event:T4 Head:T1
+T5	Event 49 55	saying
+E3	Event:T5 Head:T1
+T6	Att_span 56 63	nothing
+R1	Event_att Arg1:T6 Arg2:E3	
+R2	EventTemporal Arg1:E2 Arg2:E3	
+T7	Event 74 87	goes to sleep
+E4	Event:T7 Head:T1
+R3	EventTemporal Arg1:E3 Arg2:E4	

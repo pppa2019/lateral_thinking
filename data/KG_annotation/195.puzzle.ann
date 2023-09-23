@@ -1,0 +1,13 @@
+T2	Head_End 23 35	truck driver
+T3	Event 44 49	going
+T4	Head_End 50 63	the wrong way
+T5	Event 91 102	did not try
+T6	Head_End 106 115	stop him.
+E2	Event:T3 End:T4 Head:T2
+E3	Event:T5 End:T6
+T7	Head_End 2 16	police officer
+T8	Event 17 20	saw
+E4	Event:T8 Head:T7 End:T2
+T1	Att_span 71 85	one-way street
+R1	Entity_att Arg1:T1 Arg2:T4	
+R2	EventTemporal Arg1:E4 Arg2:E3	

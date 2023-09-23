@@ -1,0 +1,20 @@
+T1	Head_End 0 3	One
+T2	Event 8 21	tried to open
+E1	Event:T2 Head:T1
+T3	Head_End 22 47	the front door of his van
+T4	Event 52 61	could not
+E2	Event:T4 Head:T1 End:T3
+T5	Event 73 91	the water pressure
+E3	Event:T5 
+R1	EventCause Arg1:E3 Arg2:E2	
+T6	Head_End 97 102	other
+T7	Event 107 119	climbed into
+E4	Event:T7 Head:T6 End:T8
+T8	Head_End 120 139	the back of the van
+T9	Event 148 154	opened
+E5	Event:T9 Head:T6 End:T10
+T10	Head_End 155 171	the sliding door
+T11	Event 185 192	escaped
+E6	Event:T11 Head:T6
+R2	EventTemporal Arg1:E4 Arg2:E5	
+R3	EventCause Arg1:E5 Arg2:E6	

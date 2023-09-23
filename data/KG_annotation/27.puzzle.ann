@@ -1,0 +1,15 @@
+T1	Event 6 11	tries
+T2	Head_End 2 5	man
+T3	Head_End 20 27	cologne
+T4	Event 68 76	goes out
+T5	Head_End 65 67	he
+T6	Event 80 83	get
+T7	Head_End 89 93	food
+T8	Event 102 108	killed
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 Head:T5
+E3	Event:T6 Head:T5 End:T7
+E4	Event:T8 End:T5
+T9	Att_span 28 62	his wife gave him for his birthday
+R1	Entity_att Arg1:T9 Arg2:T3	
+R2	EventTemporal Arg1:E3 Arg2:E4	

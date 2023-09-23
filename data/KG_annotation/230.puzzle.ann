@@ -1,0 +1,10 @@
+T1	Event 90 99	delivered
+T2	Head_End 107 115	messages
+T3	Att_span 100 106	urgent
+T4	Event 43 52	invention
+E1	Event:T1 End:T2 Head:T7
+E2	Event:T4 End:T5 End2:T6
+R1	Entity_att Arg1:T3 Arg2:T2
+T5	Head_End 60 65	train
+T6	Head_End 73 81	motorcar
+T7	Head_End 83 89	people

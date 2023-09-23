@@ -1,0 +1,9 @@
+T1	Head_End 2 5	man
+T2	Event 9 13	born
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 14 21	in 1972
+T4	Event 26 30	dies
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 31 38	in 1952
+T6	Att_span 39 55	at the age of 25
+R1	Entity_att Arg1:T6 Arg2:T5	

@@ -1,0 +1,24 @@
+T1	Event 73 79	robbed
+T2	Head_End 97 107	masked man
+T3	Head_End 7 16	messenger
+T4	Att_span 2 6	bank
+T5	Event 18 26	carrying
+T6	Head_End 29 32	bag
+T7	Event 33 43	containing
+T8	Head_End 44 67	one thousand $100 bills
+T9	Event 117 121	took
+T10	Head_End 113 116	man
+T11	Head_End 126 129	bag
+T12	Event 167 172	burnt
+T13	Event 140 155	without looking
+T14	Head_End 156 162	inside
+E1	Event:T1 Head:T2 End:T8
+E2	Event:T5 End:T6 Head:T3
+E3	Event:T7 End:T8 Head:T6
+E4	Event:T9 Head:T10 End:T11 End2:T16
+E5	Event:T12 Head:T10 End:T11
+E6	Event:T13 Head:T10 End:T14
+R1	Entity_att Arg1:T4 Arg2:T3
+T15	Att_span 80 91	at gunpoint
+R2	Event_att Arg1:T15 Arg2:E1	
+T16	Head_End 130 134	home

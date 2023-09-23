@@ -1,0 +1,14 @@
+T1	Event 18 25	talking
+T2	Head_End 0 12	tim and greg
+T3	Event 32 36	said
+T4	Head_End 42 58	terror of flight
+T5	Event 67 71	said
+T6	Head_End 77 96	gloom of the grave"
+E1	Event:T1 Head:T2
+E2	Event:T3 End:T4 Head:T7
+E3	Event:T5 End:T6 Head:T8
+T7	Head_End 28 31	tim
+T8	Head_End 62 66	greg
+T9	Head_End 99 103	greg
+T10	Event 108 116	arrested
+E4	Event:T10 End:T9

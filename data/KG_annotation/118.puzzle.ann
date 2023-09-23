@@ -1,0 +1,24 @@
+T1	Event 6 12	winter
+E1	Event:T1 
+T2	Head_End 30 34	snow
+T3	Event 35 39	lies
+E2	Event:T3 Head:T2
+T4	Att_span 40 50	everywhere
+R1	EventTemporal Arg1:E1 Arg2:E2	
+T5	Head_End 52 75	two sets of tire tracks
+T6	Event 77 86	lead into
+E3	Event:T6 Head:T5 End:T7
+T7	Head_End 87 95	a garage
+R2	Event_att Arg1:T4 Arg2:E2	
+T8	Head_End 103 110	one set
+R3	EntityPartof Arg1:T8 Arg2:T5	
+T9	Event 111 120	leads out
+E4	Event:T9 Head:T8
+T10	Head_End 128 133	a man
+T11	Event 134 138	lies
+E5	Event:T11 Head:T10
+T12	Event 139 143	dead
+E6	Event:T12 Head:T10
+T13	Att_span 144 150	inside
+R4	EventSameTime Arg1:E5 Arg2:E6	
+R5	Event_att Arg1:T13 Arg2:E6	

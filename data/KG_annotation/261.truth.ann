@@ -1,0 +1,12 @@
+T1	Event 6 11	broke
+T2	Head_End 12 27	a pane of glass
+T3	Event 46 52	starts
+T4	Head_End 29 45	a crack in glass
+T6	Event 70 77	travels
+E1	Event:T1 End:T2 Head:T8
+E2	Event:T3 End:T4 End2:T5
+E3	Event:T6 Head:T4
+T8	Head_End 0 5	harry
+T5	Head_End 53 65	in one place
+T7	Att_span 109 151	over 3000 miles (4800 kilometres) per hour
+R1	Event_att Arg1:T7 Arg2:E3	

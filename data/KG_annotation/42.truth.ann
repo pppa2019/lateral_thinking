@@ -1,0 +1,46 @@
+T1	Head_End 9 31	a safe full of jewelry
+T2	Att_span 32 44	on the train
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Head_End 50 56	victim
+T4	Head_End 58 65	Schmidt
+T5	Head_End 70 104	the conductor who guards the cargo
+T6	Head_End 106 108	He
+T7	Event 109 115	robbed
+E1	Event:T7 Head:T6 End:T8
+T8	Head_End 120 124	safe
+R2	EntityEqual Arg1:T6 Arg2:T5	
+R3	EntityEqual Arg1:T5 Arg2:T4	
+R4	EntityEqual Arg1:T4 Arg2:T3	
+R5	EntityEqual Arg1:T8 Arg2:T1	
+T9	Non_Core_Event 129 133	made
+E2	Non_Core_Event:T9 Head:T3
+T10	Head_End 137 147	accomplice
+T11	Event 148 154	travel
+E3	Event:T11 Head:T10
+T12	Att_span 155 167	on the train
+R6	NC2Event Arg1:E2 Arg2:E3	
+R7	Event_att Arg1:T12 Arg2:E3	
+T13	Att_span 168 186	under a false name
+R8	Entity_att Arg1:T13 Arg2:T10	
+T14	Event 199 205	remove
+E4	Event:T14 End:T15
+T15	Head_End 210 214	loot
+R9	EntityEqual Arg1:T15 Arg2:T1	
+R10	EventCause Arg1:E3 Arg2:E4	
+T16	Event 227 231	kill
+E5	Event:T16 Head:T10 End:T4
+T17	Event 243 247	keep
+E6	Event:T17 End:T18 Head:T10
+T18	Head_End 248 257	his share
+R11	EventCause Arg1:E6 Arg2:E5	
+T19	Event 267 279	did not know
+E7	Event:T19 End:T20 Head:T4
+T20	Head_End 280 311	the pseudonym of his accomplice
+T21	Event 319 329	wrote down
+E8	Event:T21 End:T22 Head:T4
+T22	Head_End 330 361	the murderer's berth number, 11
+T23	Event 379 402	spelled the number into
+E9	Event:T23 End:T24 Head:T4
+T24	Head_End 403 411	one word
+T25	Att_span 412 441	in his native German language
+R12	Entity_att Arg1:T25 Arg2:T24	

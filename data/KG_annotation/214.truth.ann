@@ -1,0 +1,7 @@
+T1	Head_End 4 9	place
+T2	Head_End 13 18	Venus
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 26 31	a day
+T4	Head_End 47 53	a year
+T5	Event 35 46	longer than
+E1	Event:T5 Head:T3 End:T4

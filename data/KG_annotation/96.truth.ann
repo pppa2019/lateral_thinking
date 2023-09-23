@@ -1,0 +1,26 @@
+T1	Head_End 0 4	They
+T2	Event 10 19	skydiving
+E1	Event:T2 
+T3	Head_End 22 24	He
+T4	Event 25 30	broke
+E2	Event:T4 Head:T3 End:T5
+T5	Head_End 31 38	his arm
+T6	Event 45 51	jumped
+E3	Event:T6 Head:T3
+T7	Att_span 52 66	from the plane
+R1	Event_att Arg1:T7 Arg2:E3	
+T8	Event 70 77	hitting
+E4	Event:T8 Head:T5
+T9	Att_span 81 98	on the plane door
+R2	Event_att Arg1:T9 Arg2:E4	
+T10	Head_End 103 107	ring
+T11	Head_End 111 130	the engagement ring
+R3	EntityEqual Arg1:T11 Arg2:T10	
+T12	Event 139 143	gave
+E5	Event:T12 Head:T3 End:T13
+T13	Head_End 144 147	her
+T14	Event 155 166	calling off
+E6	Event:T14 End:T15 Head:T16
+T15	Head_End 171 181	engagement
+T16	Head_End 149 152	She
+R4	EntityEqual Arg1:T16 Arg2:T13	

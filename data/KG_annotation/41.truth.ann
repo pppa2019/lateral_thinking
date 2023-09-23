@@ -1,0 +1,22 @@
+T1	Head_End 0 2	He
+T2	Event 5 12	leaving
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 15 23	hospital
+T4	Event 30 38	visiting
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 39 47	his wife
+T6	Non_Core_Event 55 76	on heavy life-support
+E3	Non_Core_Event:T6 Head:T5
+R1	EventTemporal Arg1:E2 Arg2:E1	
+T7	Head_End 88 93	power
+T8	Event 94 102	goes out
+E4	Event:T8 Head:T7
+T9	Non_Core_Event 107 112	knows
+E5	Non_Core_Event:T9 Head:T1
+T10	Event 117 127	can't live
+E6	Event:T10 Head:T5
+R2	NC2Event Arg1:E5 Arg2:E6	
+T11	Non_Core_Event 128 135	without
+E7	Non_Core_Event:T11 Head:T12
+T12	Head_End 136 160	the life-support systems
+R3	EventCause Arg1:E7 Arg2:E6	

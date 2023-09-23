@@ -1,0 +1,7 @@
+T1	Event 10 17	stopped
+T2	Head_End 4 9	music
+T3	Event 30 34	died
+T4	Head_End 26 29	man
+E1	Event:T1 End:T2
+E2	Event:T3 End:T4
+R1	EventTemporal Arg1:E1 Arg2:E2	

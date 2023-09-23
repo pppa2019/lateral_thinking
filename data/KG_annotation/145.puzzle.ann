@@ -1,0 +1,8 @@
+T1	Head_End 0 12	tom and jean
+T2	Event 13 21	lay dead
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 22 42	in a puddle of water
+T4	Att_span 43 70	with broken pieces of glass
+T5	Att_span 75 92	a baseball nearby
+R1	Entity_att Arg1:T4 Arg2:T3	
+R2	Entity_att Arg1:T5 Arg2:T3	

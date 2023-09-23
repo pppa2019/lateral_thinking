@@ -1,0 +1,19 @@
+T1	Event 9 17	turn off
+T2	Head_End 30 35	light
+T3	Att_span 22 29	bedroom
+E1	Event:T1 End:T2 Head:T10
+R1	Entity_att Arg1:T3 Arg2:T2
+T10	Head_End 0 4	elsa
+T4	Att_span 36 47	at the door
+R2	Entity_att Arg1:T4 Arg2:T2	
+T5	Event 82 88	acroos
+E2	Event:T5 Head:T2 End:T6
+T6	Head_End 93 97	room
+T7	Event 102 106	into
+E3	Event:T7 End:T8 Head:T2
+T8	Head_End 107 110	bed
+R3	EventSameTime Arg1:E2 Arg2:E3	
+T9	Head_End 122 126	room
+T11	Event 127 137	gets dark.
+E4	Event:T11 Head:T9
+R4	EventTemporal Arg1:E3 Arg2:E4	

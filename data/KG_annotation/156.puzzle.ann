@@ -1,0 +1,15 @@
+T1	Event 6 11	rides
+T2	Head_End 2 5	man
+T3	Event 37 42	stays
+T4	Head_End 34 36	he
+T5	Event 57 63	leaves
+E1	Event:T1 Head:T2 End:T6
+E2	Event:T3 End:T4
+E3	Event:T5 Head:T4
+T6	Head_End 17 21	town
+T7	Att_span 43 52	one night
+R1	Event_att Arg1:T7 Arg2:E2	
+T8	Att_span 64 73	on friday
+R2	Event_att Arg1:T8 Arg2:E3	
+T9	Att_span 22 31	on friday
+R3	Event_att Arg1:T9 Arg2:E1	

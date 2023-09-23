@@ -1,0 +1,22 @@
+T1	Head_End 0 7	Two men
+T2	Event 12 19	digging
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 22 28	trench
+T4	Event 36 40	look
+E2	Event:T4 Head:T1
+T5	Event 68 73	argue
+E3	Event:T5 Head:T1
+R1	EventTemporal Arg1:E2 Arg2:E3	
+T6	Event 81 98	make a phone call
+E4	Event:T6 Head:T1
+T7	Event 109 115	leaves
+E5	Event:T7 Head:T10 End:T8
+T8	Head_End 120 124	home
+T9	Event 147 163	continues to dig
+E6	Event:T9 Head:T11
+T10	Head_End 101 104	One
+T11	Head_End 129 138	the other
+T12	Att_span 139 146	angrily
+R2	Event_att Arg1:T12 Arg2:E6	
+R3	EntityPartof Arg1:T10 Arg2:T1	
+R4	EntityPartof Arg1:T11 Arg2:T1	

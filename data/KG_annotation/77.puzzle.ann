@@ -1,0 +1,18 @@
+T1	Head_End 0 4	abel
+T2	Event 5 17	walks out of
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 22 28	ocean.
+T4	Head_End 30 34	cain
+T5	Event 35 39	asks
+E2	Event:T5 Head:T4 End:T6
+T6	Head_End 40 43	him
+T7	Att_span 44 53	who he is
+R1	Event_att Arg1:T7 Arg2:E2	
+T8	Head_End 59 63	abel
+T9	Event 64 71	answers
+E3	Event:T9 Head:T8
+R2	EventTemporal Arg1:E2 Arg2:E3	
+T10	Event 79 84	kills
+E4	Event:T10 Head:T11 End:T12
+T11	Head_End 74 78	cain
+T12	Head_End 85 90	abel.

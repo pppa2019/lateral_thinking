@@ -1,0 +1,8 @@
+T1	Non_Core_Event 11 20	suggested
+T2	Head_End 4 10	cleric
+T4	Head_End 39 56	colored bird seed
+E1	Non_Core_Event:T1 Head:T2
+T5	Head_End 26 32	people
+T3	Event 33 38	throw
+E2	Event:T3 Head:T5 End:T4
+R1	NC2Event Arg1:E1 Arg2:E2	

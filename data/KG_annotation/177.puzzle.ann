@@ -1,0 +1,28 @@
+T1	Head_End 0 6	Adults
+T2	Event 11 18	holding
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 19 27	children
+T4	Event 29 36	waiting
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 37 47	their turn
+T6	Head_End 54 62	children
+T7	Event 67 77	handed  to
+E3	Event:T7 Head:T6 End:T8
+T8	Head_End 80 83	man
+T9	Head_End 108 113	woman
+T10	Event 114 120	shoots
+E4	Event:T10 Head:T9 End:T11
+T11	Head_End 121 125	them
+R1	EntityEqual Arg1:T11 Arg2:T1	
+T12	Head_End 135 140	child
+T13	Event 144 150	crying
+E5	Event:T13 Head:T12
+T14	Event 169 184	stop the crying
+E6	Event:T14 Head:T15
+R2	EventCause Arg1:E5 Arg2:E6	
+T15	Head_End 156 159	man
+T16	Head_End 196 201	child
+T17	Event 205 209	shot
+E7	Event:T17 Head:T16
+R3	EventTemporal Arg1:E6 Arg2:E7	
+R4	EntityEqual Arg1:T15 Arg2:T8	

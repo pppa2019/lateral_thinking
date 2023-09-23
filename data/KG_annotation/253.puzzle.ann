@@ -1,0 +1,27 @@
+T1	Head_End 2 5	man
+T2	Event 9 17	visiting
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 18 32	a young couple
+T4	Event 37 41	have
+E2	Event:T4 Head:T3 End:T5
+T5	Head_End 42 65	a one-year-old daughter
+T6	Head_End 67 69	He
+T7	Event 70 75	takes
+E3	Event:T7 Head:T6 End:T8
+T8	Head_End 80 84	baby
+T9	Att_span 85 96	on his knee
+R1	Event_att Arg1:T9 Arg2:E3	
+R2	EntityEqual Arg1:T6 Arg2:T1	
+R3	EntityEqual Arg1:T8 Arg2:T5	
+T10	Event 138 160	recite a nursery rhyme
+E4	Event:T10 Head:T1 End:T11
+T11	Head_End 170 175	child
+R4	EventTemporal Arg1:E3 Arg2:E4	
+R5	EntityEqual Arg1:T11 Arg2:T8	
+T12	Att_span 102 126	with the parents present
+R6	Event_att Arg1:T12 Arg2:E4	
+T13	Att_span 177 197	Within a few moments
+T14	Event 214 241	cringing with embarrassment
+E5	Event:T14 Head:T1
+R7	Event_att Arg1:T13 Arg2:E5	
+R8	EventTemporal Arg1:E4 Arg2:E5	

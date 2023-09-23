@@ -1,0 +1,41 @@
+T1	Head_End 4 7	man
+T2	Head_End 11 25	a blind midget
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 27 43	the shortest one
+T4	Att_span 44 57	in the circus
+R2	Entity_att Arg1:T4 Arg2:T3	
+R3	EntityEqual Arg1:T3 Arg2:T2	
+T5	Head_End 59 73	Another midget
+T6	Non_Core_Event 75 82	jealous
+E1	Non_Core_Event:T6 Head:T5
+T7	Event 91 108	he's not as short
+E2	Event:T7 
+R4	EventCause Arg1:E2 Arg2:E1	
+T8	Event 119 142	sawing small pieces off
+E3	Event:T8 End:T9 Head:T5
+T9	Head_End 162 166	cane
+T10	Att_span 146 161	the first one's
+R5	Entity_att Arg1:T10 Arg2:T9	
+T11	Att_span 167 178	every night
+R6	Event_att Arg1:T11 Arg2:E3	
+T12	Head_End 198 200	he
+T13	Non_Core_Event 201 207	thinks
+E4	Non_Core_Event:T13 Head:T12
+T14	Event 213 219	taller
+E5	Event:T14 
+R7	NC2Event Arg1:E4 Arg2:E5	
+T15	Head_End 228 243	his only income
+T16	Non_Core_Event 247 251	from
+E6	Non_Core_Event:T16 Head:T15
+T17	Event 252 273	being a circus midget
+E7	Event:T17 
+R8	NC2Event Arg1:E6 Arg2:E7	
+R9	EntityEqual Arg1:T12 Arg2:T1	
+R10	EntityPartof Arg1:T15 Arg2:T12	
+T18	Non_Core_Event 278 285	decides
+E8	Non_Core_Event:T18 Head:T12
+T19	Event 289 293	kill
+E9	Event:T19 End:T12
+R11	NC2Event Arg1:E8 Arg2:E9	
+T20	Att_span 302 323	when he gets too tall
+R12	Event_att Arg1:T20 Arg2:E9	

@@ -1,0 +1,23 @@
+T1	Event 22 30	concerns
+T2	Head_End 5 10	story
+T3	Att_span 0 4	this
+T4	Event 71 75	told
+T5	Head_End 84 87	lie
+T7	Head_End 101 104	dog
+T8	Att_span 97 100	pet
+T9	Event 133 139	induce
+T10	Head_End 140 162	real sadness and tears
+T11	Head_End 175 180	scene
+T12	Att_span 169 174	movie
+E1	Event:T1 Head:T2 End:T13
+E2	Event:T4 End:T5 Head:T14
+E3	Event:T9 End:T10
+R1	Entity_att Arg1:T3 Arg2:T2
+R2	Entity_att Arg1:T8 Arg2:T7
+R3	Entity_att Arg1:T12 Arg2:T11
+T13	Head_End 35 58	youthful shirley temple
+T14	Head_End 64 70	mother
+T6	Event 114 120	killed
+E4	Event:T6 End:T7
+R4	EventCause Arg1:E4 Arg2:E3	
+R5	EntityPartof Arg1:T10 Arg2:T11	

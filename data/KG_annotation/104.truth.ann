@@ -1,0 +1,7 @@
+T1	Head_End 0 3	joe
+T2	Head_End 9 12	kid
+T3	Event 22 39	trick-or-treating
+E1	Event:T3 Head:T1
+T4	Att_span 44 53	halloween
+R1	EntityEqual Arg1:T1 Arg2:T2	
+R2	Event_att Arg1:T4 Arg2:E1	

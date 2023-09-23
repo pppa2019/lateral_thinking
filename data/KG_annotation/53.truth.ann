@@ -1,0 +1,71 @@
+T1	Head_End 4 7	man
+T2	Head_End 12 17	blind
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 19 28	Elevators
+T4	Event 46 63	work electrically
+E1	Event:T4 Head:T3
+T5	Event 29 32	use
+E2	Event:T5 Head:T3 End:T6
+T6	Head_End 33 40	buttons
+R2	EventCause Arg1:E2 Arg2:E1	
+T7	Att_span 64 80	through the skin
+R3	Entity_att Arg1:T7 Arg2:T6	
+T8	Event 96 105	activated
+E3	Event:T8 Head:T6
+T9	Att_span 106 128	at the slightest touch
+R4	Event_att Arg1:T9 Arg2:E3	
+T10	Non_Core_Event 130 136	making
+E4	Non_Core_Event:T10 
+T11	Event 153 156	run
+E5	Event:T11 Head:T3
+R5	NC2Event Arg1:E4 Arg2:E5	
+R6	EventCause Arg1:E3 Arg2:E4	
+T12	Event 161 169	got into
+E6	Event:T12 Head:T1 End:T3
+T13	Att_span 183 199	on his first day
+R7	Event_att Arg1:T13 Arg2:E6	
+T14	Event 201 208	wearing
+E7	Event:T14 Head:T1 End:T15
+T15	Head_End 209 215	gloves
+R8	EventSameTime Arg1:E7 Arg2:E6	
+T16	Event 237 243	remove
+E8	Event:T16 End:T15 Head:T1
+T17	Non_Core_Event 254 258	make
+E9	Non_Core_Event:T17 
+T18	Event 271 275	work
+E10	Event:T18 Head:T6
+R9	EventCause Arg1:E9 Arg2:E10	
+R10	EventCause Arg1:E8 Arg2:E9	
+T20	Event 320 325	found
+E12	Event:T20 End:T21 Head:T22
+T21	Head_End 326 341	the tenth floor
+T19	Head_End 347 364	his ungloved hand
+T22	Head_End 317 319	he
+R11	EntityEqual Arg1:T22 Arg2:T1	
+T23	Event 365 373	stroking
+E11	Event:T23 Head:T19 End:T6
+R12	EventCause Arg1:E11 Arg2:E12	
+T24	Head_End 387 402	all the buttons
+T25	Event 408 417	activated
+E13	Event:T25 Head:T24
+T26	Event 435 445	stopped on
+E14	Event:T26 Head:T3 End:T27
+R13	EventCause Arg1:E13 Arg2:E14	
+T27	Head_End 446 456	all floors
+T28	Event 480 487	carried
+E15	Event:T28 Head:T22 End:T15
+R14	EventCause Arg1:E14 Arg2:E15	
+T29	Event 513 520	entered
+E16	Event:T29 Head:T22 End:T3
+T30	Event 538 547	put it on
+E17	Event:T30 Head:T22 End:T15
+R15	EventSameTime Arg1:E16 Arg2:E17	
+T31	Event 549 554	found
+E18	Event:T31 End:T32 Head:T33
+T32	Head_End 555 571	the right button
+R16	EventTemporal Arg1:E17 Arg2:E18	
+T33	Head_End 577 592	his gloved hand
+T34	Event 598 605	pressed
+E19	Event:T34 End:T35 Head:T19
+T35	Head_End 606 635	the button on the tenth floor
+R17	EventTemporal Arg1:E18 Arg2:E19	

@@ -1,0 +1,6 @@
+T1	Head_End 0 5	alice
+T2	Head_End 11 19	goldfish
+T3	Head_End 21 24	ted
+T4	Head_End 30 33	cat
+R1	EntityEqual Arg1:T4 Arg2:T3	
+R2	EntityEqual Arg1:T2 Arg2:T1	

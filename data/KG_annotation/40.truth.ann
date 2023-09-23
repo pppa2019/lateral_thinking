@@ -1,0 +1,12 @@
+T1	Event 13 21	confined
+T2	Head_End 4 9	woman
+T3	Event 56 63	playing
+T4	Head_End 47 52	music
+T5	Event 99 107	goes out
+T6	Head_End 93 98	power
+E1	Event:T1 End:T2 End2:T7
+E2	Event:T3 Head:T4 End:T8
+E3	Event:T5 End:T6
+T7	Head_End 28 37	iron lung
+T8	Head_End 71 86	radio or stereo
+R1	EventTemporal Arg1:E2 Arg2:E3	

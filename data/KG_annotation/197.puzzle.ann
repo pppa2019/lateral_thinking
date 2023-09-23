@@ -1,0 +1,15 @@
+T1	Event 67 74	tackled
+T2	Head_End 79 85	priest
+T3	Event 94 104	conducting
+T4	Head_End 21 29	ceremony
+T5	Att_span 9 20	christening
+T6	Event 119 126	knocked
+T7	Event 141 147	rolled
+E1	Event:T1 End:T2 Head:T11
+E2	Event:T3 End:T4
+E3	Event:T6 End:T2 Head:T11
+E4	Event:T7 End:T2 Head:T11
+R1	Entity_att Arg1:T5 Arg2:T4
+T11	Head_End 35 57	godmother of the child
+T12	Att_span 157 170	on the ground
+R2	Event_att Arg1:T12 Arg2:E4	

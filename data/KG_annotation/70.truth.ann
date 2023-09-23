@@ -1,0 +1,49 @@
+T1	Non_Core_Event 39 51	goes outside
+T2	Head_End 35 38	man
+T3	Event 55 58	get
+T4	Head_End 59 68	something
+T5	Event 141 148	forgets
+T6	Head_End 155 159	room
+T8	Event 109 123	set apart from
+T9	Head_End 94 105	parking lot
+T10	Event 196 201	honks
+T11	Head_End 193 195	he
+T12	Head_End 210 214	horn
+T13	Att_span 206 209	car
+T14	Event 223 232	waking up
+T15	Head_End 233 241	everyone
+T16	Att_span 242 246	else
+T17	Event 297 304	turn on
+T18	Head_End 316 323	lights;
+T19	Att_span 311 315	room
+T20	Event 337 344	returns
+T21	Head_End 328 331	man
+E1	Non_Core_Event:T1 Head:T2
+E2	Event:T3 Head:T2 End:T4
+E3	Event:T5 Head:T2 End:T6
+E5	Event:T8 End2:T23 Head:T9
+E6	Event:T10 Head:T11 End:T12
+E7	Event:T14 End:T15
+E8	Event:T17 End:T18 Head:T27
+E9	Event:T20 End:T21 Head:T29
+R1	Entity_att Arg1:T13 Arg2:T12
+R2	Entity_att Arg1:T16 Arg2:T15
+R3	Entity_att Arg1:T19 Arg2:T18
+T22	Att_span 9 29	middle of the night.
+R4	Event_att Arg1:T22 Arg2:E1	
+R5	NC2Event Arg1:E1 Arg2:E2	
+T7	Att_span 69 81	from his car
+R6	Event_att Arg1:T7 Arg2:E2	
+T23	Head_End 128 136	building
+T24	Att_span 160 170	he was in.
+R7	Entity_att Arg1:T24 Arg2:T6	
+T25	Head_End 176 180	wife
+T26	Att_span 184 188	deaf
+R8	Entity_att Arg1:T26 Arg2:T25	
+R9	EventCause Arg1:E6 Arg2:E7	
+T27	Head_End 262 281	the other residents
+T28	Event 286 292	get up
+E4	Event:T28 Head:T27
+R10	EventTemporal Arg1:E4 Arg2:E8	
+T29	Head_End 356 365	dark room
+R11	EventTemporal Arg1:E6 Arg2:E9	

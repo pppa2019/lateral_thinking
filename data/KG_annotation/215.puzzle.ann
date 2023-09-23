@@ -1,0 +1,22 @@
+T1	Head_End 2 5	boy
+T2	Att_span 6 24	at boarding school
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Event 25 43	ran short of money
+E1	Event:T3 Head:T1
+T4	Event 50 55	wrote
+E2	Event:T4 Head:T1 End:T5
+R2	EventCause Arg1:E1 Arg2:E2	
+T5	Head_End 59 74	his grandmother
+T6	Event 75 85	asking for
+E3	Event:T6 Head:T1 End:T7
+T7	Head_End 86 106	a small contribution
+R3	EventTemporal Arg1:E2 Arg2:E3	
+T8	Head_End 112 120	response
+T9	Head_End 127 133	letter
+R4	EntityEqual Arg1:T9 Arg2:T8	
+T10	Head_End 145 183	a lecture on the evils of extravagance
+T12	Head_End 188 208	no money of any kind
+T13	Event 222 234	very pleased
+E5	Event:T13 Head:T1
+R6	EntityPartof Arg1:T10 Arg2:T9	
+R5	EntityPartof Arg1:T12 Arg2:T9	

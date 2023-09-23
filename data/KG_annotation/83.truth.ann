@@ -1,0 +1,37 @@
+T1	Head_End 0 2	He
+T2	Event 6 8	in
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 11 16	hotel
+T4	Event 25 40	unable to sleep
+E2	Event:T4 Head:T1
+T5	Head_End 53 56	man
+T6	Event 57 59	in
+E3	Event:T6 Head:T5 End:T7
+T7	Head_End 60 77	the adjacent room
+T8	Event 81 88	snoring
+E4	Event:T8 Head:T5
+R1	EventCause Arg1:E4 Arg2:E2	
+T9	Event 94 99	calls
+E5	Event:T9 Head:T1
+T10	Head_End 100 118	the room next door
+R2	EntityEqual Arg1:T7 Arg2:T10	
+T11	Event 133 141	wakes up
+E6	Event:T11 Head:T12
+T12	Head_End 126 132	snorer
+R3	EntityEqual Arg1:T12 Arg2:T5	
+T13	Event 143 150	answers
+E7	Event:T13 Head:T12 End:T14
+T14	Head_End 151 160	the phone
+T15	Event 169 177	hangs up
+E8	Event:T15 Head:T1
+T16	Att_span 178 201	without saying anything
+R4	Event_att Arg1:T16 Arg2:E8	
+T17	Event 206 219	goes to sleep
+E9	Event:T17 
+R5	EventTemporal Arg1:E8 Arg2:E9	
+T18	Event 238 256	gets back to sleep
+E10	Event:T18 Head:T12
+T19	Event 261 281	starts snoring again
+E11	Event:T19 Head:T12
+R6	EventTemporal Arg1:E10 Arg2:E11	
+R7	EventTemporal Arg1:E9 Arg2:E11	

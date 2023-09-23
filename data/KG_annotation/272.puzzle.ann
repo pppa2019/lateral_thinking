@@ -1,0 +1,21 @@
+T1	Event 21 36	unable to sleep
+T2	Head_End 2 5	man
+T3	Event 41 47	got up
+T4	Head_End 38 40	he
+T5	Event 49 55	opened
+T6	Head_End 60 73	window drapes
+T8	Event 75 84	went back
+T9	Event 96 107	fell asleep
+E1	Event:T1 Head:T2
+E2	Event:T3 End:T4
+E3	Event:T5 Head:T4 End:T6
+E4	Event:T8 End:T4 Head:T7
+E5	Event:T9 End:T4
+T11	Att_span 6 16	in a hotel
+R1	Entity_att Arg1:T11 Arg2:T2	
+R2	EventTemporal Arg1:E2 Arg2:E3	
+T7	Head_End 88 91	bed
+R3	EventTemporal Arg1:E3 Arg2:E4	
+R4	EventTemporal Arg1:E4 Arg2:E5	
+T10	Att_span 108 114	easily
+R5	Event_att Arg1:T10 Arg2:E5	

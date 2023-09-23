@@ -1,0 +1,18 @@
+T1	Event 7 12	agree
+T2	Head_End 67 70	and
+T3	Event 42 66	impossible to look north
+T5	Head_End 25 35	north pole
+T6	Head_End 78 88	south pole
+T7	Event 156 158	be
+T8	Head_End 152 155	you
+T9	Event 172 176	look
+T10	Head_End 177 192	north and south
+T11	Head_End 212 224	east or west
+E1	Event:T1 End:T2
+E2	Event:T3 Head:T5
+E3	Event:T7 End:T8
+E4	Event:T9 Head:T8 End:T10
+T4	Event 95 119	impossible to look south
+E5	Event:T4 Head:T6
+T12	Event 197 211	could not look
+E6	Event:T12 Head:T11

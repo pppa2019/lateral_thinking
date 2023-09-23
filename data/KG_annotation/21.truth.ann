@@ -1,0 +1,25 @@
+T1	Event 42 49	driving
+T2	Head_End 53 72	opposite directions
+T3	Event 95 100	stuck
+T4	Head_End 107 112	heads
+T5	Event 113 133	out of their windows
+T6	Event 144 147	see
+T7	Head_End 166 170	line
+T8	Att_span 159 165	center
+T12	Event 185 188	hit
+T13	Head_End 179 184	heads
+T14	Head_End 223 227	them
+T15	Event 215 222	killing
+E1	Event:T1 End:T2 Head:T9
+E2	Event:T3 End:T4
+E3	Event:T5 End:T4
+E4	Event:T6 End:T7
+E6	Event:T12 Head:T13 End:T14
+E7	Event:T15 End:T14
+R1	Entity_att Arg1:T8 Arg2:T7
+T9	Head_End 31 41	two people
+T10	Event 20 29	heavy fog
+E5	Event:T10 
+R2	EventCause Arg1:E5 Arg2:E2	
+T11	Att_span 200 213	at high speed
+R3	Event_att Arg1:T11 Arg2:E6	

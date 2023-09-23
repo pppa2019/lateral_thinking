@@ -1,0 +1,16 @@
+T1	Head_End 2 5	man
+T2	Event 6 15	goes into
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 18 28	restaurant
+T4	Event 30 36	orders
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 37 46	albatross
+R1	EventTemporal Arg1:E1 Arg2:E2	
+T6	Event 48 52	eats
+E3	Event:T6 Head:T1 End:T5
+T7	Att_span 53 61	one bite
+R2	Event_att Arg1:T7 Arg2:E3	
+T8	Event 67 72	kills
+E4	Event:T8 Head:T1 End:T9
+T9	Head_End 73 80	himself
+R3	EntityEqual Arg1:T9 Arg2:T1	

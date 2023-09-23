@@ -1,0 +1,50 @@
+T1	Head_End 0 21	Mr. and Mrs. Browning
+T2	Event 31 45	gotten married
+E1	Event:T2 Head:T1
+T3	Head_End 48 61	Mrs. Browning
+T4	Event 66 84	subject to fits of
+E2	Event:T4 Head:T3 End:T5
+T5	Head_End 85 95	depression
+T6	Head_End 98 102	They
+T7	Event 103 124	had their first fight
+E3	Event:T7 Head:T6
+T8	Att_span 130 153	after they were married
+R1	Event_att Arg1:T8 Arg2:E3	
+R2	EntityEqual Arg1:T6 Arg2:T1	
+T9	Head_End 155 167	Mr. Browning
+T10	Event 168 182	stormed out of
+E4	Event:T10 Head:T9 End:T11
+T11	Head_End 187 192	house
+T12	Event 212 221	went into
+E5	Event:T12 Head:T3 End:T13
+T13	Head_End 226 232	garage
+T14	Event 237 247	started up
+E6	Event:T14 Head:T3 End:T15
+T15	Head_End 252 255	car
+R3	EventTemporal Arg1:E5 Arg2:E6	
+T16	Non_Core_Event 257 266	intending
+E7	Non_Core_Event:T16 Head:T3
+T17	Event 270 274	kill
+E8	Event:T17 Head:T3 End:T18
+R4	NC2Event Arg1:E7 Arg2:E8	
+T18	Head_End 275 282	herself
+R5	EntityEqual Arg1:T18 Arg2:T3	
+T19	Event 286 321	filling the garage with car exhaust
+E9	Event:T19 
+R6	EventCause Arg1:E9 Arg2:E8	
+T20	Head_End 332 335	car
+T21	Event 336 346	ran out of
+E10	Event:T21 Head:T20 End:T22
+T22	Head_End 347 350	gas
+T23	Att_span 351 358	quickly
+R7	Event_att Arg1:T23 Arg2:E10	
+T24	Event 378 392	returning home
+E11	Event:T24 Head:T9
+T25	Event 422 426	find
+E12	Event:T25 End:T3
+T26	Non_Core_Event 434 438	stop
+E13	Non_Core_Event:T26 Head:T9
+T27	Event 439 452	this accident
+E14	Event:T27 
+R8	NC2Event Arg1:E13 Arg2:E14	
+R9	EventEqual Arg1:E14 Arg2:E8	

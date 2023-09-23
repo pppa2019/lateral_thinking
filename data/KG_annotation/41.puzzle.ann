@@ -1,0 +1,38 @@
+T1	Head_End 2 5	man
+T2	Event 6 11	lives
+E1	Event:T2 
+T3	Att_span 12 57	in a high-rise apartment building in the city
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Head_End 79 81	he
+T5	Event 82 89	gets up
+E2	Event:T5 Head:T4
+T6	Event 91 104	has breakfast
+E3	Event:T6 Head:T4
+T7	Event 106 113	showers
+E4	Event:T7 Head:T4
+T8	Event 115 122	dresses
+E5	Event:T8 Head:T4
+T9	Event 124 130	kisses
+E6	Event:T9 Head:T4 End:T10
+T10	Head_End 131 139	his wife
+T11	Event 154 169	leaves for work
+E7	Event:T11 Head:T4
+R2	EventTemporal Arg1:E2 Arg2:E3	
+R3	EventTemporal Arg1:E3 Arg2:E4	
+R4	EventTemporal Arg1:E4 Arg2:E5	
+R5	EventTemporal Arg1:E5 Arg2:E6	
+R6	EventTemporal Arg1:E6 Arg2:E7	
+R7	EntityEqual Arg1:T4 Arg2:T1	
+T12	Event 175 201	walks down the corridor to
+E8	Event:T12 Head:T4 End:T13
+T13	Head_End 202 214	the elevator
+T14	Event 222 230	standing
+E9	Event:T14 Head:T4
+T15	Att_span 237 249	for a minute
+R8	Event_att Arg1:T15 Arg2:E9	
+T16	Non_Core_Event 260 268	realizes
+E10	Non_Core_Event:T16 Head:T4
+T17	Event 281 285	dead
+E11	Event:T17 Head:T18
+R9	NC2Event Arg1:E10 Arg2:E11	
+T18	Head_End 269 277	his wife

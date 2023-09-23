@@ -1,0 +1,4 @@
+T1	Event 7 11	game
+E1	Event:T1 
+T2	Att_span 15 23	Monopoly
+R1	Event_att Arg1:T2 Arg2:E1	

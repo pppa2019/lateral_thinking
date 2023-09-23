@@ -1,0 +1,14 @@
+T1	Event 13 17	sent
+T2	Head_End 21 28	invoice
+T3	Event 112 116	scam
+T4	Head_End 99 101	it
+E1	Event:T1 End:T2 Head:T5 End2:T6
+E2	Event:T3 End:T4
+T5	Head_End 4 12	criminal
+T6	Head_End 32 43	a blind man
+T7	Att_span 52 66	recently died.
+R1	Entity_att Arg1:T7 Arg2:T6	
+T8	Head_End 71 76	widow
+T9	Event 89 93	knew
+E3	Event:T9 Head:T8
+R2	NC2Event Arg1:E3 Arg2:E2	

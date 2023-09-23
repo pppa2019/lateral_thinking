@@ -1,0 +1,8 @@
+T1	Head_End 0 3	She
+T2	Event 4 11	grabbed
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 12 20	his ring
+T4	Event 22 31	pulled on
+E2	Event:T4 Head:T1 End:T3
+T5	Event 40 47	dropped
+E3	Event:T5 Head:T1 End:T3

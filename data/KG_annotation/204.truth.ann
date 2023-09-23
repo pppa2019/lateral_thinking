@@ -1,0 +1,14 @@
+T1	Head_End 4 7	man
+T2	Event 8 12	tied
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 17 21	duck
+T4	Att_span 22 57	to the back of the boat with a rope
+R1	Event_att Arg1:T4 Arg2:E1	
+T5	Head_End 63 67	duck
+T6	Event 68 72	swam
+E2	Event:T6 Head:T5
+T7	Att_span 73 94	along behind the boat
+R2	Event_att Arg1:T7 Arg2:E2	
+T8	Event 106 113	ferried
+E3	Event:T8 Head:T1 End:T9
+T9	Head_End 118 130	fox and corn

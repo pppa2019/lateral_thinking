@@ -1,0 +1,1306 @@
+[
+    {
+        "puzzle": "A woman had a pet goldfish which she loved very dearly. One day she noticed that it was swimming feebly in its bowl and it looked very unwell. She rushed to the vet with her prized pet and he told her to come back in an hour. When she returned she found the goldfish swimming strongly and looking healthy again. How had the vet managed this?",
+        "question_list": [
+            "Did the vet change the water?",
+            "Did he give the fish any medication, food, or tonic?",
+            "Had the woman had the goldfish for a long time?"
+        ],
+        "answer_list": [
+            "No.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "The vet could see that the goldfish was dying of old age so to spare the old lady's feelings he dashed out and bought a young but identical fish and disposed of the old one."
+    },
+    {
+        "puzzle": "Little Billy was four years old and both his parents were dead. His guardian put him on a train to send him to a new home in the country. Billy could neither read nor write nor remember the address, so a large label on a string was secured around his neck clearly indicating Billy's name and destination. However, despite the best efforts and kindness of the railway staff, Billy never arrived at his new home. Why?",
+        "question_list": [
+            "Did someone deliberately harm or abduct Billy?",
+            "Was his label removed in some way?",
+            "Was Billy a little boy?",
+            "Did Billy destroy the name tag?"
+        ],
+        "answer_list": [
+            "No.",
+            "A Yes.",
+            "No.",
+            "Yes. (He ate it!)"
+        ],
+        "final_answer": "Little Billy, as his name suggests, was a goat who unfortunately ate his label, so no one knew where he was supposed to go!"
+    },
+    {
+        "puzzle": "A woman walked up to a man behind a counter and handed him a book. He looked at it and said, That w\u027d be four dollars/' She paid the man and then walked out without the book. He saw her leave without it but did not call her back. How come?",
+        "question_list": [
+            "Was he surprised that she left without the book?"
+        ],
+        "answer_list": [
+            "A No."
+        ],
+        "final_answer": "She was returning an overdue library book."
+    },
+    {
+        "puzzle": "Why is it that, in general, the hair on a man's head goes grey before the hair in his moustache does?",
+        "question_list": [
+            "Is this to do with the way the hair is cut, brushed, washed, or treated in any way?",
+            "Is it to do with eating, drinking, thinking, or talking?",
+            "Is it to do with timing?"
+        ],
+        "answer_list": [
+            "No.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "The hair on a man's head is usually at least twenty years older than the hair in his moustache. (This solution is not guaranteed to be biologically correct but it does have an inherent plausibility.)"
+    },
+    {
+        "puzzle": "Two naturalists were walking in the country. They were both keen to protect the environment and to conserve nature and wildlife. One said to the other, \"I was impressed by the way that you hit that bird.\" The second replied, \"Yes, it was good, but not as good as that large bird that you hit earlier.\" What were they talking about?",
+        "question_list": [
+            "Had they each physically hit something?",
+            "Had they hit living or dead creatures?",
+            "Had one of them hit an eagle?"
+        ],
+        "answer_list": [
+            "A Yes.",
+            "No, neither.",
+            "Yes."
+        ],
+        "final_answer": "They were two golfers. In golf parlance, one had hit a \"birdie (one under par) and the other an eagle (two under par)."
+    },
+    {
+        "puzzle": "A man was drinking a cup of tea when he was suddenly blinded. How?",
+        "question_list": [
+            "Was there a flash of light or some other external occurrence?",
+            "Was the man physically normal?",
+            "Did something go into his eye?",
+            "Did this go into his eye because he was drinking the cup of tea?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "Yes.",
+            "Yes."
+        ],
+        "final_answer": "He had left his teaspoon in his cup of tea. When he raised the cup to drink, the teaspoon handle poked him in the eye, temporarily blinding him."
+    },
+    {
+        "puzzle": "John was watching television. Just after the midnight news there was a weather forecast: /?It is raining now and will rain for the next two days. However, in 72 hours it will be bright and sunny.\" \"Wrong again/7 snorted John. He was correct but how did he know?",
+        "question_list": [
+            "Was John some kind of weather expert?",
+            "Did he have some special knowledge or insight into the future?",
+            "Is this to do with timing?"
+        ],
+        "answer_list": [
+            "No.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "In 72 hours it would be midnight again, so it could not be \"bright and sunny.,z"
+    },
+    {
+        "puzzle": "Let us agree that at the North Pole it is impossible to look north and at the South Pole it is impossible to look south. Then, where in the world would you be if you could look north and south but could not look east or west?",
+        "question_list": [
+            "Is there a place where it would be impossible to look east or west?",
+            "Is this because east and west are meaningless terms at this place?",
+            "Has anyone ever been there?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes.",
+            "No."
+        ],
+        "final_answer": "At the exact center of the earth it is impossible to look east or west but you could look north or south."
+    },
+    {
+        "puzzle": "A blind beggar had a brother who died. What relation was the blind beggar to the brother who died? (\"Brother\" is not the answer.)",
+        "question_list": [
+            "Were the blind beggar and the brother both humans?"
+        ],
+        "answer_list": [
+            "Yes."
+        ],
+        "final_answer": "The blind beggar was the sister of her brother who died."
+    },
+    {
+        "puzzle": "A police officer saw a truck driver clearly going the wrong way down a one-way street, but did not try to stop him. Why not?",
+        "question_list": [
+            "Did the police officer and the truck driver both know that it was against the law to drive the wrong way down a one-way street?"
+        ],
+        "answer_list": [
+            "Yes."
+        ],
+        "final_answer": "The truck driver was walking."
+    },
+    {
+        "puzzle": "You are seated next to the pilot of a small plane at an altitude of one mile. Huge mountains loom directly ahead. The pilot does not change speed, direction, or elevation, yet you survive. How come?",
+        "question_list": [
+            "Does the pilot have control of the aircraft throughout?",
+            "Is there a tunnel or hole or other way through the mountains?",
+            "Were you at any time in serious danger?",
+            "Did you fly over, around, or past the mountains?"
+        ],
+        "answer_list": [
+            "A Yes.",
+            "No.",
+            "No.",
+            "No."
+        ],
+        "final_answer": "The plane is sitting on the ground at the airport in Denver, Colorado."
+    },
+    {
+        "puzzle": "During a christening ceremony, the godmother of the child suddenly tackled the priest who was conducting the ceremony, knocked him down, and rolled him over on the ground. Why did she do this?",
+        "question_list": [
+            "Was this a normal priest conducting a normal christening?",
+            "Was there a good reason for her actions?",
+            "Did she act to protect or help the baby?",
+            "Did she act to help or protect the priest?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "The priest's surplice had caught fire from one of the candles."
+    },
+    {
+        "puzzle": "There were two keen sportsmen. One evening at 6 p.m. one started walking at 4 miles per hour and the other started cycling at 12 miles per hour. After an hour each of them stopped. They then each ran for fifteen minutes at 8 miles per hour. They both started from the same place, A. They both kept heading in the same direction throughout and never changed course or rested during the entire 45 minutes. They both arrived at point B at the same time. How could this be and how far was it from A to B?",
+        "question_list": [
+            "Did the sportsmen travel in a circle?",
+            "Does this involve going backwards, sideways, up, or down?",
+            "Did they both travel exactly the same distance?",
+            "Was it a normal bicycle?"
+        ],
+        "answer_list": [
+            "No. They travelled in a straight line from A to B.",
+            "No.",
+            "A Yes.",
+            "No."
+        ],
+        "final_answer": "The two keen sportsmen started at their fitness club, one on the cycling machine and the other on the walking machine. After half an hour of indoor exercise they went for a run. The distance from A to B is 2 miles."
+    },
+    {
+        "puzzle": "A detective was lying in bed one Sunday morning listening to the local church bells ringing. Suddenly he realized that he was listening to a recording. How did he know?",
+        "question_list": [
+            "Was it just the sound of the bells which indicated to him that it was a recording?",
+            "Was it to do with the number of times that the bells chimed?",
+            "Did he hear some additional sound which should not have been there?",
+            "Was the clue the absence of something which should have been heard?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "No.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "The final chime ended abruptly and without the reverberation of the other chimes."
+    },
+    {
+        "puzzle": "One night the vicar noticed that the old clock in the church tower struck 13 times at midnight. It did the same thing the following night so he had the mechanism investigated. It was found to be in perfect order, yet the clock struck 13 again that night. Why?",
+        "question_list": [
+            "Did it strike 13 at midday?"
+        ],
+        "answer_list": [
+            "A No. It struck 12."
+        ],
+        "final_answer": "There was a joker living in a nearby house. Each night, using his rifle and a silencer, he fired a bullet at the bell after the twelfth stroke."
+    },
+    {
+        "puzzle": "When this book first came out it was read only by a handful of very rich people. Now almost everyone has a copy and reads it frequently. But you cannot buy it in a bookstore or borrow it from a library. What is it?",
+        "question_list": [
+            "Do people read it frequently?",
+            "Do people read it from start to finish?",
+            "Does it contain a lot of useful information?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "The book is a telephone directory."
+    },
+    {
+        "puzzle": "Bill and Ben are identical twins. They are physically very alike, fit and healthy. They are both good runners and always run at the same speed. Each runs against the clock on the same track under the same conditions. Yet Ben takes ten times longer to finish than Bill. Why?",
+        "question_list": [
+            "Does Bill run exactly as fast as Ben?",
+            "Do they both start in the same place and finish in the same place?",
+            "Does Ben run further than Bill?",
+            "Is the course somehow more difficult for Ben?",
+            "Is it a normal racetrack?"
+        ],
+        "answer_list": [
+            "A Yes.",
+            "Yes.",
+            "Yes.",
+            "Yes.",
+            "No."
+        ],
+        "final_answer": "Bill and Ben are laboratory rats. Bill has run through a certain maze many times and has learned to complete it quickly. When Ben is introduced to the course for the first time, it takes him ten times as long."
+    },
+    {
+        "puzzle": "Note: This puzzle and the one that follows it are products of the same cruel and devious mind.",
+        "question_list": [
+            "In solving this problem, does anything about the house, the brick, the couple, or the other people involved matter?"
+        ],
+        "answer_list": [
+            "No."
+        ],
+        "final_answer": "A duck grabbed the brick in its mouth and flew off with it!"
+    },
+    {
+        "puzzle": "A small plane was flying from Albany to New York some years ago. Seated beside each other were a grumpy old man smoking a foul pipe and a grumpy old lady with a noisy pet duck on her lap. Each spent most of the journeycomplaining about the other. Finally a compromise was reached. The old man agreed to throw his pipe out of the window if the old lady would throw her duck out. This was done. Just as the plane was about to land, the lady was pleased to see the duck flying alongside the plane. What did the duck have in its mouth?",
+        "question_list": [
+            "Did the duck have the pipe in its mouth?",
+            "Did the duck have something else in its mouth?",
+            "Does anything about the old man, the old lady, or the plane matter?",
+            "Does what happened before matter?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "The duck had a brick in its mouth (see previous puzzle)!"
+    },
+    {
+        "puzzle": "A keen stamp collector who specialized in U.S. stamps saw an advertisement offering a complete set of early U.S. stamps for a fraction of what it was worth. He quickly bought it. Although it was a genuine, splendid collection and a real bargain, he was angry, not pleased. What was going on?",
+        "question_list": [
+            "Did he recognize the collection?",
+            "Was it a genuine stamp collection worth a lot of money?",
+            "Had he previously sold it or given it away?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes.",
+            "No."
+        ],
+        "final_answer": "The man had recently left his wife to live with his mistress. The angry wife had advertised the man's prized stamp collection for sale, so he quickly bought his own stamps to stop anyone else doing so."
+    },
+    {
+        "puzzle": "On a cold winter's day, drivers found that sheep from the fields nearby kept coming onto the road. There was no snow and the road was not warmer than the fields but whenever the sheep were ushered back to the fields they quickly returned to the road. Why?",
+        "question_list": [
+            "Did the sheep come onto the road in order to be warmer or better protected than in the fields?",
+            "Did they come onto the road in order to get away from something in the fields?",
+            "Was there something which attracted them to the road?",
+            "Does this happen only in very cold weather?"
+        ],
+        "answer_list": [
+            "No.",
+            "No.",
+            "Yes.",
+            "Yes,"
+        ],
+        "final_answer": "The sheep kept coming to the road because they liked to eat the salt put on the road to stop it freezing."
+    },
+    {
+        "puzzle": "Pete challenged Jim to a tennis match for a large bet. Jim won the first set easily (6-1). Pete then offered to raise the stakes to ten times the amount. Jim readily agreed but lost the next two sets to Pete 6-1, 6-1. Pete tried hard throughout the match and never threw away a point. How did he manage to suddenly beat Jim easily?",
+        "question_list": [
+            "Did they both use the same court, net, balls, and rackets for the three sets?",
+            "Did Pete's game improve or Jim's deteriorate?",
+            "To an outside observer, would Pete have appeared to have been trying his hardest during the first set?",
+            "Did Pete change something which caused his play to dramatically improve?"
+        ],
+        "answer_list": [
+            "Yes. Nothing about the environment or equipment changed.",
+            "Pete's game improved. Jim's play stayed the same.",
+            "Yes.",
+            "Yes."
+        ],
+        "final_answer": "Pete could play tennis with either hand but he was better as a left-hander. He started off playing right-handed but switched after the first set."
+    },
+    {
+        "puzzle": "A man was on the run from the police. He was relaxing, watching a play in a crowded theatre. Suddenly he noticed that detectives were closing in on him from all directions and were covering all exits. How did he escape?",
+        "question_list": [
+            "Had the detectives seen him and were they intent on arresting him?",
+            "Did he escape across the stage?",
+            "Did he use the audience to help him escape?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "A No.",
+            "Yes."
+        ],
+        "final_answer": "The fugitive leapt up and shouted, Fire, fire!\" Pandemonium broke out and the audience all rushed for the exits. He easily escaped in the confusion."
+    },
+    {
+        "puzzle": "Bernard was the president of a major Wall Street bank. One morning when he got on a crowded train he was extremely worried. When the train stopped and he alighted, he felt very sick but he was not worried anymore. Why not?",
+        "question_list": [
+            "Was Bernard worried about business?",
+            "Was he worried about his safety?",
+            "Was any kidnapping, robbery, or criminal activity involved or the cause of his worry?",
+            "Was he normally worried on trains?",
+            "Was anyone with him?",
+            "Was the nephew worried?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "No.",
+            "No. He travelled to work on one every day.",
+            "Yes. His nephew.",
+            "No. He was happy."
+        ],
+        "final_answer": "The train was a roller-coaster. The banker had promised to take his nephew for a ride but hated the experience. He was relieved it was over."
+    },
+    {
+        "puzzle": "If you liked this place you would rather stay for a day than a year, but if you hated it you would rather stay for a year than a day. Why?",
+        "question_list": [
+            "Is it a town or a building?",
+            "Is this a real or an imaginary place?",
+            "Is it a pleasant place to be?",
+            "Is it a dangerous place?",
+            "Has anyone ever been there for a day?"
+        ],
+        "answer_list": [
+            "No.",
+            "A real place.",
+            "No.",
+            "A Yes (but irrelevant).",
+            "No."
+        ],
+        "final_answer": "The place is Venus, where a day is longer than a year."
+    },
+    {
+        "puzzle": "A boy at boarding school ran short of money so he wrote to his grandmother asking for a small contribution. The response was a letter containing a lecture on the evils of extravagance but no money of any kind. Never th elessz the boy was very pleased. Why?",
+        "question_list": [
+            "Was the stamp or the envelope valuable?",
+            "Was there something of value in the envelope?",
+            "Was he pleased because he somehow got some money?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "Yes."
+        ],
+        "final_answer": "The boy's grandmother was Queen Victoria. In this true incident the boy sold the letter for five pounds sterling (over $20 in those days)."
+    },
+    {
+        "puzzle": "During a wedding reception the father of the bride found that his wallet was missing. How did he find out who had taken it?",
+        "question_list": [
+            "Did he somehow manage to get everybody to empty their pockets?",
+            "Was it anything to do with the contents of the wallet?",
+            "Did he discover the culprit immediately or sometime later?"
+        ],
+        "answer_list": [
+            "No.",
+            "No.",
+            "Sometime later."
+        ],
+        "final_answer": "Two weeks later, when the couple returned from their honeymoon, the whole family sat down to watch the video of the wedding. They were horrified to see, caught on the camera, the groom going through his father-in-law's pockets and stealing his wallet."
+    },
+    {
+        "puzzle": "A man went to a builder with plans for an extension to his house. They had never met before but the builder agreed to build the extension at no charge to the man. Why?",
+        "question_list": [
+            "Did the builder gain some benefit from this whole process?",
+            "Were the two men related or was there an existing business relationship between them?",
+            "Did the man subsequently provide some service, reward, or payment to the builder?",
+            "Was the man famous?"
+        ],
+        "answer_list": [
+            "Yes. Definitely.",
+            "No.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "It is a true story and the man was Picasso. The builder wisely decided that by building the extension he would be able to retain Picasso's rough sketch of the plans, which would be worth far more than the cost of the construction work. He was right."
+    },
+    {
+        "puzzle": "In wartime, an army had to cross a wide river. There were no boats and only one bridge, which was very narrow. Crossing the bridge would have made them sitting ducks for enemy gunfire. How did the entire army cross the river in relative safety?",
+        "question_list": [
+            "Did they cross at night?",
+            "Did they use the bridge?",
+            "Did they swim across?",
+            "Did they get wet?"
+        ],
+        "answer_list": [
+            "No.",
+            "No.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "They spread out and waded across the river, which was only six inches deep."
+    },
+    {
+        "puzzle": "While digging a garden, a woman unearthed a large metal box filled with money and jewelry. For seven years she 16",
+        "question_list": [
+            "Did the woman wait in order to avoid observation by the police or criminals?",
+            "Was the money and jewelry stolen?",
+            "Would she have liked to have spent the money earlier?",
+            "Was she somehow physically prevented from spending the money?",
+            "Was she in prison?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes (but irrelevant).",
+            "Yes!",
+            "Yes.",
+            "No."
+        ],
+        "final_answer": "The woman had been shipwrecked. She found a pirate's treasure but was not rescued for seven years."
+    },
+    {
+        "puzzle": "A patient on the operating table is coming round after an operation. Suddenly he jumps up and strikes the surgeon as hard as he can. Why does he do this?",
+        "question_list": [
+            "Did the patient have some grievance against the surgeon?",
+            "Was the surgeon a genuine surgeon who had carried out a proper surgical operation on the patient?",
+            "Does the nature of the operation matter?",
+            "Does the profession of the patient matter?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "The patient is a boxer. The last thing he heard was the anesthetist counting 1, 2, 3, 4, and as he comes round he automatically tries to beat the count and resume the fight against his opponent."
+    },
+    {
+        "puzzle": "A clergyman was exasperated at having to sweep up vast amounts of confetti from the front of his church after every wedding. He decreed that in the future, if people insisted on throwing something at the married couple they throw something else. What did he suggest?",
+        "question_list": [
+            "Did the cleric suggest something which would not need to be cleared up?",
+            "Is it something which is non-polluting and disappears in a short time?",
+            "Does it involve water in some form?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes.",
+            "No."
+        ],
+        "final_answer": "The cleric suggested that people throw colored bird seed."
+    },
+    {
+        "puzzle": "A manufacturer states that if middle-aged people told the truth more often he would sell a great deal more of his products. What does he manufacture?",
+        "question_list": [
+            "Does he manufacture something used by people of all ages?",
+            "Is his product in common use?",
+            "Would he sell more if middle-aged people were more honest about their appearance, health, size, or weight?",
+            "Would he sell more if middle-aged people were more honest about their age?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "He made the candles that go on birthday cakes."
+    },
+    {
+        "puzzle": "In a sports shop there is a soccer ball containing a quantity of dried peas. Why are they there?",
+        "question_list": [
+            "Do customers buy the ball containing the dried peas for a specific purpose?",
+            "Do the purchasers play soccer with this ball?",
+            "Do they keep the peas inside the ball, or take them out?",
+            "Do they play a special game with this ball?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes.",
+            "The peas stay inside the ball.",
+            "No. They play regular soccer as well as they can."
+        ],
+        "final_answer": "The dried peas are inside soccer balls for the use of blind people, to enable them to hear the ball."
+    },
+    {
+        "puzzle": "A mother told her six-year-old daughter that her pet dog had been hit by a car and killed. The little girl burst into tears. Half an hour later, the mother said that the dog was quite well and that it was all a mistake. Why did she do this?",
+        "question_list": [
+            "Was the girl's dog unharmed throughout?",
+            "Had the mother been misinformed?",
+            "Did the mother deliberately lie to her daughter?",
+            "Did she do this out of spite or malice, or to punish or threaten her daughter?",
+            "Did she do this for a particular reason and was she successful in her aim?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "No.",
+            "Yes.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "This story reportedly concerns the youthful Shirley Temple. Her mother told her the lie that her pet dog had been killed in order to induce real sadness and tears for a movie scene which was about to be filmed."
+    },
+    {
+        "puzzle": "Tom cannot read or write or tie his shoes. He has never worked a day in his life. Despite these shortcomings, Tom is given an extremely important, prestigious, and well- paid job. How come?",
+        "question_list": [
+            "Was Tom chosen for a specific reason?",
+            "Does Tom have some particular skill or aptitude?",
+            "Could anyone be given this job?",
+            "Was the previous holder of the job able to read, write, etc.?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "No.",
+            "No.",
+            "Yes, he was very accomplished."
+        ],
+        "final_answer": "Tom is an infant who is crown prince of his country. Tom's father, the king, has just died leaving a very inexperienced new head of state."
+    },
+    {
+        "puzzle": "A woman who was driving on her own pulled into a filling station and bought some gasoline. As she drove off she noticed a stranger in a car following her. She tried to shake him o by turning, accelerating, slowing down, etc. Finally she turned into a police station, but she was shocked to see him follow her in. He was not a policeman and there were no mechanical faults with her car. Why did he follow her?",
+        "question_list": [
+            "Was he a danger to her?",
+            "Was he trying to help her?",
+            "Had he seen something wrong with her car?"
+        ],
+        "answer_list": [
+            "A No.",
+            "Yes.",
+            "No."
+        ],
+        "final_answer": "He had seen a man hide in the back of the woman's car as she paid at the gasoline station. He followed her to warn her and was pleased to see her pull into the police station."
+    },
+    {
+        "puzzle": "A bank messenger, carrying a bag containing one thousand $100 bills, was robbed at gunpoint by a masked man. The man took the bag home and, without looking inside, he burnt it. Why?",
+        "question_list": [
+            "Does this involve some kind of insurance claim?",
+            "Did the robber know what was in the bag?",
+            "Was the messenger part of the plot?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "50"
+        ],
+        "final_answer": "The robber's mother was a widow who owed the bank $100,000. The bank had threatened to repossess her house so her son devised a plan. He forged $100,000 and she gave it to the bank messenger, who signed for it. The forgeries were good enough to fool the messenger but would never fool the bank so the son had to rob the messenger before he got back to the bank."
+    },
+    {
+        "puzzle": "A banker was kidnapped and held tied up and blindfolded by a single kidnapper for several days. During this time he 18",
+        "question_list": [
+            "Was the banker able to give any due about the kidnapper?",
+            "Did the suspect have a physical or mental disability?",
+            "Did he have some trait or characteristic which indicated that he had not committed this crime?",
+            "Was it something you would immediately see or hear or recognize if you met him?",
+            "Was it something which you would recognize if you watched him over a period of time?"
+        ],
+        "answer_list": [
+            "No.",
+            "No.",
+            "Yes.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "The inspector noticed that the man wrote with his left hand. He asked him to tie a knot. The man was lefthanded and tied a left-handed knot. The knots tied around the hands and feet of the victim were right-handed knots."
+    },
+    {
+        "puzzle": "In a factory in Buckinghamshire, England, in the nineteenth century, a bungling employee ruined an entire batch of the factory output. However, his employer was very pleased. Why?",
+        "question_list": [
+            "Did the employee save the company from some disaster or major cost?",
+            "Was the employee rewarded or punished?",
+            "Was it an accident?",
+            "Was the ruined output somehow more valuable?",
+            "What sort of products did the factory produce?"
+        ],
+        "answer_list": [
+            "No.",
+            "Rewarded.",
+            "Yes.",
+            "Yes.",
+            "Paper."
+        ],
+        "final_answer": "The employee discovered an important new product. He left out a primary ingredient in the batch of paper he was making. He was thus responsible for accidentally producing the first blotting paper!"
+    },
+    {
+        "puzzle": "In the eighteenth century, long before the invention of the train or the motorcar, people delivered urgent messages",
+        "question_list": [
+            "Did he actually have a letter transported that distance in 45 minutes?",
+            "Did he use cannons, guns, gunpowder, or explosives?",
+            "Was the starting point somewhere unusual, such as the top of a mountain or cliff?",
+            "Did he use horses or some other running animal?",
+            "Did his method involve considerable preparation and help?"
+        ],
+        "answer_list": [
+            "A; Yes.",
+            "No.",
+            "No. His method would work in any open country.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "He tied the letter inside a hollowed-out cricket ball (which is about the same size as a baseball). He then had it thrown from man to man with the men standing about 60 yards (55 metres) apart along the entire way."
+    },
+    {
+        "puzzle": "A man hired seven employees to work for him. After a few weeks he noticed that only six were ever at work on any day and that on each day a different one failed to show up for work. Why?",
+        "question_list": [
+            "Did the employees deliberately collaborate in order for each to have a day off?",
+            "Was there some connection or association between the employees other than their work?",
+            "Did each one always take the same day of the week off?",
+            "Does the type or place of work matter?",
+            "Were they similar in culture or nationality?"
+        ],
+        "answer_list": [
+            "No.",
+            "A; No.",
+            "Yes.",
+            "No.",
+            "No. They were quite different."
+        ],
+        "final_answer": "All seven employees were very religious and they all had different Sabbaths. The Christian took off on Sunday, the Greek Monday, the Persian Tuesday, the Assyrian Wednesday, the Egyptian Thursday, the Arabian Muslim Friday, and the Jew Saturday."
+    },
+    {
+        "puzzle": "Chuck was an American on holiday in Ireland. His rental car broke down while he was in a little village and he was able to pull into a garage. There he asked how he could find someone to drive him back to Dublin. The man at the garage said, haven't been here long but I am sure that Milligan is your man. He lives in the big white house at the end of the village/'\tChuck went up to the house and Milligan answered the door. \"Can you drive me to Dublin?,/ asked Chuck. \"No,\" answered Milligan and explained that in his old car he never drove outside the vicinity. However, as it was late he offered Chuck a room for the night. When Chuck awoke the next morning, he was shocked to see a huge golden eagle on the top of his wardrobe gazing down at him. Why did the man at the garage direct Chuck to Milligan?",
+        "question_list": [
+            "Did the man at the garage know Milligan personally or have any connection with him?",
+            "Did Milligan ever drive anybody anywhere?",
+            "Was the eagle a genuine eagle?",
+            "Was it alive?",
+            "Is Milligan's profession important?"
+        ],
+        "answer_list": [
+            "No.",
+            "No.",
+            "Yes.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "Milligan stuffed animals. The man in the garage had heard that Milligan was a famous local taxidermist and thought that he ran some kind of taxi service!"
+    },
+    {
+        "puzzle": "A man met a beautiful woman in a bar. After a few drinks they agreed to go back to her apartment. In the morning he awoke in an alleyway having been drugged. He checked his wallet, watch and credit cards and found that none were missing. A few minutes later he discovered something which gave him a terrible shock. What was it?",
+        "question_list": [
+            "Had he been deceived and robbed?",
+            "Was anything missing from his wallet or pockets, or his jewelry or clothes?",
+            "Did he find something new which gave him the shock?",
+            "Was it on his body?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "No.",
+            "Yes.",
+            "A Yes."
+        ],
+        "final_answer": "He had a pain in his back and when he felt it he found a recently stitched incision. The woman was a lure for a crooked surgeon who removed healthy human organs and sold them to rich people needing organ transplants. On examination by X-ray the man found that one of his kidneys was gone!"
+    },
+    {
+        "puzzle": "A strong woman is about to start her cleaning job when she collapses in a faint. Why?",
+        "question_list": [
+            "Was her cleaning job in a shop, office, school, or factory?",
+            "Was her fainting caused by something she saw?",
+            "Was it a body or part of a body?",
+            "Was it a surprise for her to see a body?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "Yes.",
+            "No."
+        ],
+        "final_answer": "The woman works at a teaching hospital as an orderly. It is her job to clean bodies and get them ready for student lectures. She collapses when she sees that the body awaiting her is the body of her brother, who had earlier died in an accident. She did not know that he had left his body to science."
+    },
+    {
+        "puzzle": "An expert sailor was killed while sailing his boat. He had suffered a heavy blow to the head. How had it happened?",
+        "question_list": [
+            "Was his death an accident?",
+            "Was anyone else on the boat at the time of his death?",
+            "Had he been hit by anything on or part of the boat?",
+            "Was any bird, fish, or marine mammal involved?",
+            "Had he been hit by something which fell out of the sky?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "No.",
+            "No.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "He had been hit by a block of frozen toilet waste ejected by"
+    },
+    {
+        "puzzle": "Two workmen were doing a major renovation job on an old English house. They could not believe their luck when they came upon a cask of excellent Jamaican rum. They indulged in a glass or two of this rum every day until finally it ran out. They then got a nasty surprise. What was it?",
+        "question_list": [
+            "Was the rum poisoned in some way?",
+            "Was it genuine rum?",
+            "Did the cask contain something other than the rum? A Yes."
+        ],
+        "answer_list": [
+            "No.",
+            "A Yes.",
+            ""
+        ],
+        "final_answer": "When they finished the rum they broke open the cask to find a body inside. In the eighteenth and nineteenth centuries, bodies were often shipped back to England from Jamaica this way. (British admiral Horatio Nelson's body I was reputedly brought home to England in a barrel of rum after the battle of Trafalgar.)"
+    },
+    {
+        "puzzle": "A man is found dead in a field. He is clutching a broken match. What happened?",
+        "question_list": [
+            "Was the match instrumental in the man's death?",
+            "Was he trying to light something with the match prior to his death?",
+            "Was he alone in the field?"
+        ],
+        "answer_list": [
+            "A Yes.",
+            "No.",
+            "A Yes."
+        ],
+        "final_answer": "He and a number of other passengers were making a balloon trip in a desperate attempt to escape from a country. The balloon had to lose weight to stop it from crashing. He drew the short match and had to jump."
+    },
+    {
+        "puzzle": "A man is peeling potatoes when he cuts his finger. He immediately puts his hand into water and leaves it there for 30 seconds. However, when he pulls his hand out the cut has entirely disappeared. How can this have happened?",
+        "question_list": [
+            "Was the cut healed?",
+            "Did he put his hand into a sink or a bowl?",
+            "Was he outdoors when this happened?",
+            "Was he pleased when he drew his hand out of the water?"
+        ],
+        "answer_list": [
+            "No.",
+            "No.",
+            "Yes.",
+            "No."
+        ],
+        "final_answer": "This incident took place in South America. The unfortunate man was camping by a river. When he put his hand in the river the blood attracted piranha fish, which removed his finger including the cut!"
+    },
+    {
+        "puzzle": "The music stopped. She died. Explain.",
+        "question_list": [
+            "Did she die because the music stopped?",
+            "Was the music some kind of signal?",
+            "Was she doing something dangerous?",
+            "Was it some kind of entertainment?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes.",
+            "Yes.",
+            "Yes."
+        ],
+        "final_answer": "She was a circus tightrope walker. Her most daring act was to cross a high wire while blindfolded. The band played while she crossed and when the music stopped it was the signal that she had reached the end of the wire and could safely alight. Unfortunately, one day the conductor was taken ill at the last minute and the stand-in conductor, unaware of the importance of the timing, ended the music just a little too soon. She stepped off the wire to her death."
+    },
+    {
+        "puzzle": "A woman came home to find her dog choking in the hall. She rushed the dog to a nearby vet and went home while he examined the dog. When she arrived home the phone was ringing. It was the vet warning her to get out of the house at once. Why?",
+        "question_list": [
+            "Was the dog a guard dog?",
+            "Had the vet found evidence of poison or gas?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "A No."
+        ],
+        "final_answer": "The vet found two human fingers in the dog's throat. They belonged to a burglar. The vet feared that the burglar was still in the house, afraid of the dog and hiding in a closet."
+    },
+    {
+        "puzzle": "Tom and Joe went to a movie. There were many other people there. During a quiet scene, Tom drew a gun. Joe screamed, Don't shoot! but Tom shot him. Tom then left. Many people saw Tom leave and they restrained him. The police arrived and quickly released Tom. Why?",
+        "question_list": [
+            "Were they in a normal cinema?",
+            "Did any of the other people there notice the murder?",
+            "Did the police release Tom because he was innocent of any crime?",
+            "Did Tom shoot Joe in self-defense?",
+            "Were the people who restrained Tom angry with him?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes. Everyone did.",
+            "Yes.",
+            "No.",
+            "No."
+        ],
+        "final_answer": "Tom and Joe were the stars of the movie. Tom shot Joe in I a sequence in the movie. When Tom left he was mobbed by fans seeking his autograph."
+    },
+    {
+        "puzzle": "A man was the proud owner of a beautiful and expensive Mercedes sports car. One day he drove it to an isolated parking area and then smashed the window, scratched the doors, and ripped out the radio. Why?",
+        "question_list": [
+            "Did he do this to claim on insurance?",
+            "Did he deliberately and voluntarily damage his own car?",
+            "Was there a monetary reason for doing this?",
+            "Did he set out that day intending to damage his car?",
+            "Did something happen which caused him to damage his car?",
+            "Did he do it because he wanted to avoid some worse consequence?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "No.",
+            "No.",
+            "Yes.",
+            "Yes."
+        ],
+        "final_answer": "A few minutes earlier, the man had been the driver in a fatal hit-and-run accident. He drove to the isolated area and made it look as though the car had been stolen and vandalized. He then phoned the police to report his car stolen. (This is a true incident. He was later caught and sent to prison.)"
+    },
+    {
+        "puzzle": "A man is lying severely injured in the road. He had quite deliberately stepped out from the sidewalk in front of a motorcyclist who had hit him. Why had the man done this?",
+        "question_list": [
+            "Was the man trying to injure or kill himself?",
+            "Did he know the motorcyclist who hit him?",
+            "Did he expect the motorcyclist to stop?",
+            "Was the motorcyclist expecting the man to step out in front of him?",
+            "Did the man's profession have something to do with motorcycling?"
+        ],
+        "answer_list": [
+            "No.",
+            "No.",
+            "Yes.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "The man was an examiner testing a motorcyclist. He instructed the motorcyclist to go round the block and then to do an emergency stop when the examiner stepped out from the sidewalk. Unfortunately, another motorcyclist of similar appearance came by first. Knowing nothing of the arrangement, he hit the examiner."
+    },
+    {
+        "puzzle": "Deep in the forest, a forest ranger found the body of man dressed only in swimming trunks, snorkel, and facemask. The nearest lake was 8 miles away and the sea was 100 miles away. How did he die?",
+        "question_list": [
+            "Did he die at the spot where he was found?",
+            "Had he previously been swimming?",
+            "Was he taken to the forest against his will?",
+            "Was he taken deliberately?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes.",
+            "Yes.",
+            "No, accidentally."
+        ],
+        "final_answer": "During a forest fire some months earlier, a fire-fighting plane had scooped up water from the lake to drop on the fire. The plane had accidentally picked up the unfortunate swimmer."
+    },
+    {
+        "puzzle": "A man walked into a small, dark room in a large building. After a few minutes he emerged from the dark room and left the building. A man then walked up to him and shot",
+        "question_list": [
+            "Would the man have been shot if he had not entered the dark room?",
+            "Did he do something in the dark room which directly led to his being shot?",
+            "Did this happen during a war?",
+            "Were either of the men in uniform?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "It could have happened in peacetime or war but is more likely during a war.",
+            "No."
+        ],
+        "final_answer": "The man was a secret service agent who had recently killed several enemy agents. He entered a confessional in a church and confessed to the killings. However, he was under suspicion and had been followed. The man he confessed to was not a priest but an enemy agent who had seen him enter the church."
+    },
+    {
+        "puzzle": "In a bizarre accident, two identical vans simultaneously plunged over a dockside and into thirty feet of water. They both landed upright. Each van had a driver who was fit, uninjured by the fall, and conscious. One drowned but the other easily escaped. Why?",
+        "question_list": [
+            "Can we consider the vans, their situations, and the fitness and skills of the drivers to be identical at the time of this accident?",
+            "Was one able to open a door and escape and the other not?",
+            "Did one of them do something different (and smarter) than the other?",
+            "If they had been driving cars rather than vans would the outcome have been different?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes.",
+            "Yes.",
+            "Yes. They would probably both have drowned."
+        ],
+        "final_answer": "One man tried to open the front door of his van but could not because of the water pressure. The other man climbed into the back of the van, easily opened the sliding door, and thereby escaped."
+    },
+    {
+        "puzzle": "A man wakes up in a dark room. He switches on the light.",
+        "question_list": [
+            "Did some noise or action wake him?",
+            "Did he commit suicide because something happened which caused him to realize something?",
+            "Did he see something which caused the realization?",
+            "Did he hear something which caused the realization?",
+            "Was there anyone else in the house?",
+            "Was it a special kind of house?"
+        ],
+        "answer_list": [
+            "No. He awoke naturally.",
+            "Yes.",
+            "No.",
+            "Yes.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "The man is a lighthouse-keeper. He woke up in the darkness with a nagging feeling that he had forgotten something. He turned on the radio and heard a report that a ship had crashed onto rocks with great loss of life. He realized that it happened because he forgot to start the light that night."
+    },
+    {
+        "puzzle": "Susan watched as her husband boarded the 8:15 p.m. Air Canada flight from Toronto to Chicago. She then drove home from the airport and proceeded to watch a movie. About one hour into the movie there was a news flash; the 8:15 p.m. Air Canada flight from Toronto to Chicago had crashed with no survivors. Susan did not react. She just continued to watch the movie. How come?",
+        "question_list": [
+            "Was the news flash a genuine one or was it part of the movie?",
+            "Was the news flash accurate: had the plane crashed with no survivors?",
+            "Had the woman's husband got off the flight before it left?",
+            "Had she planned the plane crash or did she know it would happen?",
+            "Did she know that her husband had not been killed?"
+        ],
+        "answer_list": [
+            "It was a genuine news flash.",
+            "Yes.",
+            "No.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "The movie had been shown a week earlier. Susan had taped it then on her videocassette recorder to watch that evening."
+    },
+    {
+        "puzzle": "A man woke up on a beautiful summer morning. He went to the window, looked out in horror, and then shot himself. Why?",
+        "question_list": [
+            "Did the man see something unusual, terrible, or frightening from the window?",
+            "Did he commit suicide because it was a beautiful morning?",
+            "Had he done something terrible which he now regretted?",
+            "Is his profession important?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "Yes.",
+            "Yes. He was a preacher."
+        ],
+        "final_answer": "The man was the leader of a religious cult. Believing that the world would end that night he had offered his followers the choice of taking poison or seeing the destruction of the world. Many, including his own children, had chosen"
+    },
+    {
+        "puzzle": "A man walked up a hill carrying a blanket. Because of this, one hundred people died. How?",
+        "question_list": [
+            "Did the man inadvertently cause an accident?",
+            "Did he somehow deliberately cause the deaths of the people?",
+            "Did he kill them or did he have accomplices who killed them?",
+            "Were the people who died travelling when this happened?",
+            "Could this have happened recently?"
+        ],
+        "answer_list": [
+            "No.",
+            "He deliberately caused their deaths.",
+            "His accomplices killed them.",
+            "Yes.",
+            "No. It happened during the nineteenth century."
+        ],
+        "final_answer": "He was an Indian brave who sent smoke signals alerting a war party to the approach of a cavalry troop."
+    },
+    {
+        "puzzle": "A woman gave a man something to eat. It caused him to die. It was not poisoned or poisonous. Why did he die?",
+        "question_list": [
+            "Did she know it was dangerous?",
+            "Did the man know it was dangerous?",
+            "Did the food contain some medical or physical danger?",
+            "Did he die soon afterwards?",
+            "What kind of food was it?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes.",
+            "No.",
+            "No. He died many years afterwards.",
+            "Fruit."
+        ],
+        "final_answer": "The woman was Eve, who gave Adam the forbidden fruit from the tree in the Garden of Eden. By breaking God's instruction, Adam became mortal and died."
+    },
+    {
+        "puzzle": "A man sitting at home was killed by a little boy who was outside. How?",
+        "question_list": [
+            "Did the boy take some deliberate action which resulted in the man's death?",
+            "Does this involve firearms, electricity, or water?",
+            "Did the boy mean to kill the man?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "No.",
+            "No."
+        ],
+        "final_answer": "Out of mischief, the boy climbed onto the roof of the man's house and placed a plank of wood over the chimney. The man, who had been asleep in his parlor, was suffocated by fumes from his fire."
+    },
+    {
+        "puzzle": "A man is visiting a young couple who have a one-year-old daughter. He takes the baby on his knee and, with the parents present, begins to recite a nursery rhyme with the child. Within a few moments, however, he is cringing with embarrassment. Why?",
+        "question_list": [
+            "Did the baby do something on him?",
+            "Was the choice of nursery rhyme inappropriate?",
+            "Did he discover something about the baby in the course of reciting the rhyme?"
+        ],
+        "answer_list": [
+            "No. The baby was as good as gold.",
+            "Yes, very.",
+            "Yes."
+        ],
+        "final_answer": "The man recites the nursery rhyme \"This little piggy went to market, this little piggy stayed home . . while wiggling each of the baby's toes. But there is one toe too many! To his embarrassment, he finds that the baby has six toes on one foot."
+    },
+    {
+        "puzzle": "One day, Kerry celebrated her birthday. Two days later, her older twin brother, Terry, celebrated his birthday. How come?",
+        "question_list": [
+            "Were Kerry and Terry genuine human twins, born of the same mother of the same pregnancy?",
+            "Was Terry, the older twin, born before Kerry?",
+            "Was her birthday always before his?",
+            "Does where the births took place matter?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes.",
+            "Yes.",
+            "A Yes."
+        ],
+        "final_answer": "At the time she went into labor, the twins' mother was travelling from Guam to Hawaii. The older twin, Terry, was born on March 1st. Shortly afterwards, the mother crossed the International Date Line and Kerry, the younger twin, was born. The date was February 28th. In leap years, the younger twin celebrates her birthday two days before the older twin, since February 28 is two days before March 1st."
+    },
+    {
+        "puzzle": "To divide a cake equally between two people you let one cut and the other choose. How could you divide a cake",
+        "question_list": [
+            "Does the solution involve weighing or measuring?",
+            "Does the solution involve cutting the cake and letting people choose?",
+            "Is the cake cut one piece at a time?",
+            "Is the system fair\u04bbthat is, no one can complain that someone else has received too large a piece or that they themselves have received too small a piece?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "Yes.",
+            "Yes."
+        ],
+        "final_answer": "Suppose there are a number of people. Pick one person, A, by lot if necessary. Ask A to cut a piece of the cake that he would be happy with as his share. Now go round the"
+    },
+    {
+        "puzzle": "One morning a jealous wife found in the mail a letter addressed to her husband. How did she remove the letter from the sealed envelope without breaking the seal or tearing the envelope and then put it back in the envelope so that her husband did not know that the letter had been read?",
+        "question_list": [
+            "Did the wife somehow open and then re-seal the envelope?"
+        ],
+        "answer_list": [
+            "No."
+        ],
+        "final_answer": "There is usually a small gap at the top of the envelope where the flap has been folded over. The wife inserted a knitting needle through the gap and under the fold of the letter. By rotating the needle she wound the letter tightly around it. She then removed it, read the letter, and replaced it using the actions in reverse."
+    },
+    {
+        "puzzle": "Why did a significant number of people have a Crucifixion scene tattooed on their bodies? These people did not share any particular religious beliefs.",
+        "question_list": [
+            "Were they trying to identify themselves in some way?"
+        ],
+        "answer_list": [
+            "No."
+        ],
+        "final_answer": "The men were sailors, who were often flogged for minor offenses on board ship. Some captains refused to whip a man's back if it carried the image of Christ."
+    },
+    {
+        "puzzle": "Pat went into a luggage shop to buy a suitcase. The assistant said, \"It is most unusual to buy a suitcase. Why don't you rent one like all our other customers?7' Why should this be so?",
+        "question_list": [
+            "Was the shop a rental-only shop?",
+            "Did most customers at this shop choose to rent their suitcases rather than buy them?",
+            "Did this have anything to do with price, or insurance, or choice of style?",
+            "Did people rent because of convenience?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "No.",
+            "Yes."
+        ],
+        "final_answer": "Pat was a Westerner in Tokyo. Houses there are small and, in order to save space, people tend to rent any large item which they might use only occasionally. Most Japanese rent the suitcases they take on holiday."
+    },
+    {
+        "puzzle": "Every night before he went to bed, a man carefully locked all the doors of his house. Then he placed the front-door key inside a bucket of cold water. In the morning he retrieved the key from the bucket in order to open the door. Why did he do this?",
+        "question_list": [
+            "Was this a regular man in a regular house with a regular key?",
+            "Did he put the key in the bucket of water to prevent some person or some creature getting it?",
+            "Does this involve criminal intent or the prevention of criminal action?",
+            "Did he do this to protect the safety of himself or his wife?",
+            "Was it to protect against a likely accident?"
+        ],
+        "answer_list": [
+            "A Yes.",
+            "No.",
+            "No.",
+            "Yes.",
+            "Yes."
+        ],
+        "final_answer": "The man's wife was an habitual sleepwalker, She had previously opened the front door in her sleep and walked out into the road. He placed the key in the bucket of cold water so that, if she reached into the water to get it, the cold sensation would waken her."
+    },
+    {
+        "puzzle": "While Harry was working in his garage he made something travel at over 3000 miles (4800 kilometers) per hour. What on earth was it?",
+        "question_list": [
+            "Does this involve gases, atoms, or tiny particles?",
+            "Did Harry have special equipment or skills?",
+            "Did he intend to do this?",
+            "Did whatever travelled at that high speed make a very loud noise?",
+            "Did it travel very far?"
+        ],
+        "answer_list": [
+            "No.",
+            "No. Anyone can do this.",
+            "No.",
+            "It made a noise, but not a very loud noise.",
+            "No, only about two feet."
+        ],
+        "final_answer": "Harry broke a pane of glass. A crack in glass starts in one place and travels across the glass at a speed of over 3000 miles (4800 kilometres) per hour."
+    },
+    {
+        "puzzle": "A man walked into a bar and asked for a certain drink. The bartender apologized that he had run out of that particular drink but he offered the man any other drink in the house free. The man refused and walked out. Why?",
+        "question_list": [
+            "Did the two men know each other?",
+            "Was the man thirsty?",
+            "Did he really want the drink?",
+            "Was it some kind of signal or message?",
+            "What kind of drink was it?"
+        ],
+        "answer_list": [
+            "No.",
+            "No.",
+            "Yes.",
+            "A No.",
+            "Wine."
+        ],
+        "final_answer": "The man was a priest conducting a communion service in a nearby church when they ran short of altar wine. Only red wine would do."
+    },
+    {
+        "puzzle": "A man sat perfectly still for 88 hours. Why?",
+        "question_list": [
+            "Did he sit still voluntarily?",
+            "Was he physically restrained in the chair?"
+        ],
+        "answer_list": [
+            "No. He sat down voluntarily but thereafter he would have preferred to get up.",
+            "Yes."
+        ],
+        "final_answer": "The man had a nasty toothache and he went to the dentist at 5 p.m. on a Friday evening. The dentist's assistants, including the anesthetist, had all gone and the dentist could not administer an anesthetic. The man insisted that the dentist should operate even without anesthetic so the dentist said that he would have to strap the man into the chair. This was done. The dentist then suffered a heart attack and died. The poor man was left strapped in the chair and unable to move. It was a holiday weekend and no staff reported for work until 9 a.m. on the following Tuesday morning88 hours later."
+    },
+    {
+        "puzzle": "In Australia a perfectly good building was demolished and an almost identical one erected on exactly the same site. The original building was in good condition, it had no defects and there was no issue of safety or planning permission. Why was it demolished?",
+        "question_list": [
+            "Did the original building have some flaw or defect which made it necessary for it to be replaced?",
+            "Was the new building significantly better in some way?",
+            "Were both new and old buildings used for the same purpose?",
+            "Is that purpose relevant to the solution of this puzzle?",
+            "Did the building contain something of value?"
+        ],
+        "answer_list": [
+            "No.",
+            "No.",
+            "Yes.",
+            "Yes.",
+            "Yes."
+        ],
+        "final_answer": "The building was the Australian National Mint. Over many years, so much gold dust had been absorbed into the fabric of the building that it was well worthwhile to demolish the building, extract the gold, and rebuild."
+    },
+    {
+        "puzzle": "A terse weather report once stated that the temperature in a certain place at midnight on June 1st was a certain number of degrees. Where was the place?",
+        "question_list": [
+            "Is it possible to deduce where this is from the information given?",
+            "Did the weather report give any other details?",
+            "Did the weather report state whether the temperature was in degrees Fahrenheit or Celsius?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "No.",
+            "No."
+        ],
+        "final_answer": "Since the weather report did not specify degrees in Fahrenheit or Celsius/centigrade, the temperature must have been the same in both scales. Only a temperature of -40 degrees is the same in both Fahrenheit and Celsius/ centigrade. That temperature for June would certainly make the place Antarctica."
+    },
+    {
+        "puzzle": "A music program on a well-respected radio station finished exactly eight minutes earlier than it was scheduled to. An embarrassed official gave the explanation for this mistake. What was it? How long was the program supposed to last? (It is possible to work this out.)",
+        "question_list": [
+            "Was this a live concert which finished early?",
+            "Did the program producer or presenter make a mistake?",
+            "Did they play all of the music they intended to play?",
+            "Was the music on tape or compact disc?"
+        ],
+        "answer_list": [
+            "No. It was recorded.",
+            "Yes.",
+            "Yes.",
+            "No."
+        ],
+        "final_answer": "It was a program of contemporary classical music played from a record. The record was played at the wrong I speed5 rpm instead of 33 rpm. Because of the esoteric nature of the composition, this mistake was not noticed until the end of the transmission. It can easily be calculated that the program should have lasted thirty minutes."
+    },
+    {
+        "puzzle": "How did a change in state traffic regulations lead to an increase in trade for local sex shops? (The answer is not obscene!)",
+        "question_list": [
+            "Did the change in traffic regulations mean that more cars passed the area where the sex shops were located?",
+            "Did the change in regulations cause a change in people's sexual behavior?",
+            "Did the change in regulations have to do with speeding or parking?",
+            "Did people buy something from the sex shops which helped them to comply with or evade the new regulations?"
+        ],
+        "answer_list": [
+            "No.",
+            "No.",
+            "No.",
+            "A Yes."
+        ],
+        "final_answer": "A new traffic regulation, designed to encourage car sharing, stated that only cars carrying two or more passengers could use certain lanes of the freeway. This led to motorists buying blow-up dolls to give the appearance that they were carrying passengers!"
+    },
+    {
+        "puzzle": "A rather nasty criminal developed a seemingly foolproof way of extracting money from bereaved families. He would scan the obituary columns in order to choose the name of a wealthy man who had recently died. Then he sent an invoice for pornographic books addressed to the man and claiming payment for goods previously despatched. To avoid any scandal the family would invariably pay. How was he eventually caught out?",
+        "question_list": [
+            "Did the criminal send an invoice to someone who had not died?"
+        ],
+        "answer_list": [
+            "No."
+        ],
+        "final_answer": "The criminal sent an invoice to a blind man who had recently died. His widow immediately knew that it must be a scam."
+    },
+    {
+        "puzzle": "A man in a hotel was unable to sleep. He got up, opened the window drapes, went back to bed and fell asleep easily. How come?",
+        "question_list": [
+            "Was it a normal hotel?",
+            "Were the drapes normal curtains, used to exclude light at the window?",
+            "Was sound or light stopping him from getting to sleep?",
+            "Was there something abnormal about the man?",
+            "Was it nighttime?",
+            "Was anyone else involved?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes.",
+            "No.",
+            "Yes.",
+            "Yes.",
+            "No."
+        ],
+        "final_answer": "The man was deaf. He had to get up early for an important meeting and he was so worried about oversleeping that he could not get to sleep. After opening the curtains, however, he knew that the sunlight would wake him up, so he was no longer worried and fell asleep easily."
+    },
+    {
+        "puzzle": "A man saw something advertised at a certain price and went to buy it. An official refused to sell it to him even though the man could pay and other men and women were sold it. Later the man was very glad that his purchase had been refused. Why was he refused and why was he glad?",
+        "question_list": [
+            "Was it a dangerous item which was for sale?",
+            "Was it a service rather than a product?",
+            "Was there anything about the man which made it wrong or inappropriate for him to use this service?",
+            "Was the official acting correctly or in the man's best interests?",
+            "When did this happen?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "No.",
+            "A No.",
+            "A:In 1912,"
+        ],
+        "final_answer": "The man wanted to buy a first-class ticket on the maiden voyage of the luxury liner Titanic in 1912. He was refused because he was black. The Titanic sank with great loss of life."
+    },
+    {
+        "puzzle": "A man was watching television when he saw an advertisement offering free T-shirts to the first 100 viewers who phoned in. He called the number given, stated his size, and received his free T-shirt in a few days. Later he very much regretted doing this. Why?",
+        "question_list": [
+            "Did ordering and receiving the T-shirt damage his health in some way?",
+            "Did it result in financial loss?",
+            "Was the T-shirt offer some kind of scam by criminals?",
+            "Was the T-shirt offer a genuine offer?",
+            "Was the T-shirt harmless?",
+            "Was the man himself breaking the law?",
+            "Was his name on a wanted list?"
+        ],
+        "answer_list": [
+            "No.",
+            "Yes.",
+            "No.",
+            "No. It had some ulterior purpose.",
+            "Yes.",
+            "Yes.",
+            "No."
+        ],
+        "final_answer": "This is a true story from Connecticut. The advertisement was a trap for people who used illegal devices to tap into cable television circuits without paying. It was placed by the owners of the cable television network and could be seen only by people using illegal decoders.The \"free T-shirt was soon followed by a letter informing them that they were committing a federal crime and imposing a $2000 fine. The recipients had little choice but to pay up."
+    },
+    {
+        "puzzle": "A gang robbed a bank. They tied up the staff and then hurriedly left the bank. One of the bank staff struggled free and did something which quickly led to the apprehension of the gang. What was it?",
+        "question_list": [
+            "Did the bank employee alert the police?",
+            "Did the gang get out of the bank?",
+            "Did they get into their getaway car?",
+            "Could this have happened in any bank?"
+        ],
+        "answer_list": [
+            "Not immediately. He did something more important first.",
+            "Yes.",
+            "No.",
+            "No."
+        ],
+        "final_answer": "The bank was on the sixth floor of a tall building. The staff member who struggled free pressed a security button which froze all the elevators. The gang was trapped inside the elevator until the police came to arrest them."
+    },
+    {
+        "puzzle": "A gang stole a bank security van containing over $700,000. Their plan was executed perfectly and they got clean away. The police had no trace of them and the gang were free to divide and spend the loot. However, they were extremely frustrated. Why?",
+        "question_list": [
+            "Were the robbers frustrated because they could not spend or convert the money they had stolen?",
+            "Did they steal valid currency which could be spent?"
+        ],
+        "answer_list": [
+            "Yes.",
+            "Yes."
+        ],
+        "final_answer": "The robbers discovered to their horror that the currency consisted only of freshly minted coins. All shops and banks were alerted to watch out for anyone trying to exchange large amounts of coin, so the gang was reduced to playing slot machines!"
+    },
+    {
+        "puzzle": "Four rational and reasonable people were seated around a table. Suddenly three of them jumped up and viciously beat the fourth one senseless. Why?",
+        "question_list": [
+            "Were any of the four criminals?"
+        ],
+        "answer_list": [
+            "No."
+        ],
+        "final_answer": "They had been trying to solve a lateral thinking problem this one in fact. When the one posing the problem re- 92"
+    }
+]

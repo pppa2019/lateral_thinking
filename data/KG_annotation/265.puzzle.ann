@@ -1,0 +1,27 @@
+T1	Event 43 53	demolished
+T2	Head_End 30 38	building
+T3	Event 82 89	erected
+T4	Head_End 68 81	identical one
+T5	Att_span 61 67	almost
+T7	Att_span 93 100	exactly
+T8	Head_End 129 137	building
+T9	Att_span 120 128	original
+T10	Event 164 178	had no defects
+T11	Event 193 234	no issue of safety or planning permission
+T13	Event 247 257	demolished
+T14	Head_End 244 246	it
+E1	Event:T1 End:T2
+E2	Event:T3 End:T2 End2:T6 Head:T4
+E3	Event:T10 End:T8
+E4	Event:T11 Head:T8
+E5	Event:T13 End:T14
+R1	Entity_att Arg1:T5 Arg2:T4
+R3	Entity_att Arg1:T9 Arg2:T8
+T6	Head_End 105 115	same site.
+T15	Att_span 13 29	a perfectly good
+R2	Entity_att Arg1:T15 Arg2:T2	
+T16	Att_span 0 12	in australia
+R4	Entity_att Arg1:T16 Arg2:T2	
+T12	Att_span 145 159	good condition
+R5	Entity_att Arg1:T12 Arg2:T8	
+R6	EntityEqual Arg1:T14 Arg2:T8	

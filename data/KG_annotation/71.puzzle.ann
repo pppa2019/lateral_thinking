@@ -1,0 +1,19 @@
+T1	Event 65 74	go around
+T2	Head_End 3 4	i
+T5	Event 5 10	drive
+T6	Event 14 18	work
+T7	Event 175 177	go
+T8	Head_End 124 125	i
+T9	Event 178 184	faster
+E1	Event:T1 End:T2
+E3	Event:T5 Head:T2
+E4	Event:T6 Head:T2
+E5	Event:T7 Head:T8
+T10	Att_span 25 35	motorcycle
+R2	Event_att Arg1:T10 Arg2:E4	
+T11	Att_span 107 121	rainy or sunny
+R3	Event_att Arg1:T11 Arg2:E1	
+T3	Att_span 75 93	at a certain speed
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Att_span 132 154	cloudy but not raining
+R4	Event_att Arg1:T4 Arg2:E5	

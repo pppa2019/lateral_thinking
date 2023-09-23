@@ -1,0 +1,10 @@
+T1	Head_End 2 5	man
+T2	Event 6 10	sees
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 11 18	sawdust
+T4	Non_Core_Event 23 30	chooses
+E2	Non_Core_Event:T4 Head:T1
+T5	Event 34 40	living
+E3	Event:T5 
+R1	NC2Event Arg1:E2 Arg2:E3	
+R2	EventTemporal Arg1:E1 Arg2:E3	

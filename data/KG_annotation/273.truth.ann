@@ -1,0 +1,28 @@
+T1	Non_Core_Event 8 14	wanted
+T2	Head_End 4 7	man
+T4	Head_End 24 42	first-class ticket
+T5	Event 57 63	voyage
+T6	Head_End 78 83	liner
+T7	Att_span 71 77	luxury
+T8	Event 108 115	refused
+T9	Head_End 101 103	he
+T11	Head_End 131 136	black
+T12	Event 166 170	loss
+T13	Head_End 174 178	life
+E1	Non_Core_Event:T1 Head:T2
+E2	Event:T5 Head:T6
+E3	Event:T8 End:T9
+E5	Event:T12 End:T13
+R1	Entity_att Arg1:T7 Arg2:T6	
+T14	Head_End 84 91	titanic
+R2	EntityEqual Arg1:T14 Arg2:T6	
+T15	Att_span 92 99	in 1912
+R3	Entity_att Arg1:T15 Arg2:T14	
+T3	Event 18 21	buy
+E6	Event:T3 End:T4
+R4	NC2Event Arg1:E1 Arg2:E6	
+T10	Event 127 130	was
+E4	Event:T10 End:T11 Head:T9
+R5	EventCause Arg1:E3 Arg2:E4	
+T16	Event 150 154	sank
+E7	Event:T16 Head:T14

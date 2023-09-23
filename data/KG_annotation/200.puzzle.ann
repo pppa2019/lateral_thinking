@@ -1,0 +1,24 @@
+T1	Event 16 21	lying
+T2	Head_End 2 11	detective
+T3	Non_Core_Event 48 57	listening
+T5	Head_End 78 83	bells
+T6	Non_Core_Event 105 113	realized
+T7	Head_End 102 104	he
+T9	Event 163 167	know
+T10	Head_End 160 162	he
+E1	Event:T1 End:T2
+E2	Non_Core_Event:T3 Head:T2
+E3	Non_Core_Event:T6 Head:T7
+E4	Event:T9 Head:T10
+T4	Event 84 91	ringing
+E5	Event:T4 Head:T5
+R1	NC2Event Arg1:E2 Arg2:E5	
+T8	Event 126 135	listening
+E6	Event:T8 End:T11
+R2	NC2Event Arg1:E3 Arg2:E6	
+T11	Head_End 141 150	recording
+R3	EventTemporal Arg1:E1 Arg2:E3	
+T12	Att_span 22 28	in bed
+R4	Event_att Arg1:T12 Arg2:E1	
+T13	Att_span 29 47	one sunday morning
+R5	Event_att Arg1:T13 Arg2:E1	

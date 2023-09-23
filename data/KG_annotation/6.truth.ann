@@ -1,0 +1,31 @@
+T1	Head_End 4 7	man
+T2	Head_End 13 25	travel agent
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 28 30	He
+T4	Event 31 39	had sold
+E1	Event:T4 Head:T3 End:T6
+T6	Head_End 48 79	two tickets for an ocean voyage
+T5	Head_End 81 95	one round-trip
+T7	Head_End 100 111	one one-way
+R2	EntityPartof Arg1:T5 Arg2:T6	
+R3	EntityPartof Arg1:T7 Arg2:T6	
+T8	Head_End 135 138	man
+T9	Event 143 149	bought
+E2	Event:T9 Head:T8 End:T6
+T11	Event 165 176	the same as
+E3	Event:T11 
+T10	Head_End 198 203	woman
+T12	Non_Core_Event 114 130	The last name of
+E4	Non_Core_Event:T12 Head:T8
+T13	Non_Core_Event 181 193	last name of
+E5	Non_Core_Event:T13 Head:T10
+R4	EventEqual Arg1:E4 Arg2:E5	
+T14	Event 208 224	"fell" overboard
+E6	Event:T14 Head:T10
+T15	Event 229 236	drowned
+E7	Event:T15 Head:T10 End:T16
+T16	Head_End 237 255	on the same voyage
+T17	Head_End 266 292	the subject of the article
+T18	Event 298 305	reading
+E8	Event:T18 End:T17 Head:T1
+R5	EntityEqual Arg1:T3 Arg2:T1	

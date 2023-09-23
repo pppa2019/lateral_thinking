@@ -1,0 +1,9 @@
+T1	Head_End 0 2	He
+T2	Event 3 11	stood on
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 12 26	a block of ice
+T4	Event 30 34	hang
+E2	Event:T4 Head:T1 End:T5
+R1	EventTemporal Arg1:E1 Arg2:E2	
+T5	Head_End 35 42	himself
+R2	EntityEqual Arg1:T5 Arg2:T1	

@@ -1,0 +1,17 @@
+T1	Head_End 0 12	Bill and Ben
+T2	Head_End 17 32	identical twins
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Att_span 43 81	physically very alike, fit and healthy
+R2	Entity_att Arg1:T3 Arg2:T1	
+T4	Head_End 97 109	good runners
+R3	EntityEqual Arg1:T4 Arg2:T1	
+T5	Head_End 83 87	They
+T6	Event 121 124	run
+E1	Event:T6 Head:T5
+T7	Att_span 125 142	at the same speed
+R4	Event_att Arg1:T7 Arg2:E1	
+R5	EntityEqual Arg1:T5 Arg2:T1	
+T8	Head_End 221 224	Ben
+T9	Event 225 262	takes ten times longer to finish than
+E2	Event:T9 Head:T8 End:T10
+T10	Head_End 263 267	Bill

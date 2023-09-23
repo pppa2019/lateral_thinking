@@ -1,0 +1,18 @@
+T1	Head_End 2 5	man
+T2	Event 9 22	lying dead in
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 25 29	room
+T6	Event 73 75	on
+E2	Event:T6 End:T7 Head:T4
+T7	Head_End 80 85	floor
+T4	Head_End 57 72	gold and jewels
+T5	Att_span 41 56	a large pile of
+R1	Entity_att Arg1:T5 Arg2:T4	
+T8	Head_End 89 99	chandelier
+T9	Event 100 108	attached
+E3	Event:T9 Head:T8 End:T10
+T10	Head_End 116 123	ceiling
+T11	Head_End 158 162	rays
+T13	Event 144 151	through
+E5	Event:T13 Head:T11 End:T12
+T12	Head_End 129 143	a large window

@@ -1,0 +1,25 @@
+T1	Event 13 23	discovered
+T2	Head_End 41 48	product
+T3	Event 53 61	left out
+T4	Head_End 50 52	he
+T5	Head_End 72 82	ingredient
+T6	Att_span 64 71	primary
+T7	Event 112 118	making
+T8	Non_Core_Event 132 143	responsible
+T9	Head_End 120 122	he
+T11	Head_End 171 195	the first blotting paper
+E1	Event:T1 End:T2 Head:T13
+E2	Event:T3 Head:T4 End:T5
+E3	Event:T7 Head:T4
+E4	Non_Core_Event:T8 Head:T9
+R1	Entity_att Arg1:T6 Arg2:T5
+T13	Head_End 4 12	employee
+T14	Att_span 27 40	important new
+R3	Entity_att Arg1:T14 Arg2:T2	
+T15	Att_span 83 104	in the batch of paper
+R4	Event_att Arg1:T15 Arg2:E2	
+T12	Att_span 148 160	accidentally
+T10	Event 161 170	producing
+E5	Event:T10 Head:T11
+R2	NC2Event Arg1:E4 Arg2:E5	
+R5	Event_att Arg1:T12 Arg2:E5	

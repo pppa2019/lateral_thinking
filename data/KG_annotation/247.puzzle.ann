@@ -1,0 +1,8 @@
+T1	Head_End 2 5	man
+T2	Event 6 14	wakes up
+E1	Event:T2 Head:T1
+T3	Att_span 15 29	in a dark room
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Event 34 45	switches on
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 50 55	light

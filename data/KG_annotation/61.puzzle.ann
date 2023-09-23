@@ -1,0 +1,17 @@
+T1	Event 10 20	discovered
+T2	Head_End 2 6	body
+T3	Event 70 73	has
+T4	Head_End 67 69	it
+T5	Head_End 74 91	a fractured skull
+T6	Head_End 107 119	broken bones
+T9	Head_End 148 159	hypothermia
+E1	Event:T1 End:T2
+E2	Event:T3 Head:T4 End:T5 End2:T6
+T10	Att_span 21 30	in a park
+T11	Att_span 31 41	in chicago
+T12	Att_span 42 65	in the middle of summer
+R2	Event_att Arg1:T10 Arg2:E1	
+R3	Event_att Arg1:T11 Arg2:E1	
+R4	Event_att Arg1:T12 Arg2:E1	
+T7	Head_End 129 143	cause of death
+R1	EntityEqual Arg1:T7 Arg2:T9	

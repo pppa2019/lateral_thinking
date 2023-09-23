@@ -1,0 +1,38 @@
+T1	Non_Core_Event 9 13	told
+T3	Event 66 69	hit
+T4	Head_End 53 56	dog
+T5	Att_span 49 52	pet
+T6	Event 83 89	killed
+T7	Event 107 112	burst
+T8	Head_End 102 106	girl
+T9	Att_span 95 101	little
+T10	Head_End 118 123	tears
+T11	Non_Core_Event 156 160	said
+T13	Event 184 188	well
+T14	Head_End 170 173	dog
+T15	Event 211 218	mistake
+T16	Head_End 198 200	it
+T17	Att_span 205 208	all
+T18	Event 232 234	do
+T19	Head_End 228 231	she
+T20	Head_End 235 239	this
+E1	Non_Core_Event:T1 Head:T21 End2:T22
+E2	Event:T3 End:T4 Head:T2
+E3	Event:T6 End:T4
+E4	Event:T7 Head:T8 End:T10
+E5	Non_Core_Event:T11 Head:T21
+E6	Event:T13 End:T14
+E7	Event:T15 End:T16
+E8	Event:T18 Head:T19 End:T20
+R1	Entity_att Arg1:T5 Arg2:T4
+R2	Entity_att Arg1:T9 Arg2:T8
+R3	Entity_att Arg1:T17 Arg2:T16
+T21	Head_End 0 8	a mother
+T22	Head_End 31 39	daughter
+T23	Att_span 18 30	six-year-old
+R4	Entity_att Arg1:T23 Arg2:T22	
+T2	Head_End 75 78	car
+R5	NC2Event Arg1:E1 Arg2:E2	
+R6	EventCause Arg1:E2 Arg2:E3	
+R7	NC2Event Arg1:E5 Arg2:E6	
+R8	EventCause Arg1:E5 Arg2:E7	

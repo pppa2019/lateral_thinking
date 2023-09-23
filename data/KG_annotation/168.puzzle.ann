@@ -1,0 +1,8 @@
+T1	Head_End 0 5	Bruce
+T2	Event 6 10	wins
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 15 19	race
+T4	Head_End 25 27	he
+T5	Att_span 28 42	gets no trophy
+R1	Entity_att Arg1:T5 Arg2:T4	
+R2	EntityEqual Arg1:T4 Arg2:T1	

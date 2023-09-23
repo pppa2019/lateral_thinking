@@ -1,0 +1,27 @@
+T1	Event 38 42	down
+T2	Head_End 30 33	top
+T3	Head_End 53 74	sunroof  or something
+T4	Att_span 75 79	else
+T5	Att_span 46 48	or
+T6	Att_span 87 94	neither
+T7	Event 127 131	shot
+T8	Head_End 118 126	murderer
+T9	Event 145 152	dropped
+T10	Head_End 157 160	gun
+T11	Head_End 175 179	seat
+T12	Att_span 170 174	back
+E1	Event:T1 End:T2
+E2	Event:T7 Head:T8 End:T16
+E3	Event:T9 End:T10 End2:T11
+R1	Entity_att Arg1:T4 Arg2:T3
+R2	Entity_att Arg1:T5 Arg2:T3
+R3	Entity_att Arg1:T6 Arg2:T5
+R4	Entity_att Arg1:T12 Arg2:T11
+T13	Head_End 4 7	car
+T14	Att_span 13 24	convertible
+R5	Entity_att Arg1:T14 Arg2:T13	
+R6	EntityPartof Arg1:T2 Arg2:T13	
+T15	Head_End 95 110	window nor door
+R7	Entity_att Arg1:T6 Arg2:T15	
+T16	Head_End 132 135	him
+R8	EventTemporal Arg1:E2 Arg2:E3	

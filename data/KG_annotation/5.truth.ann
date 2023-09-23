@@ -1,0 +1,13 @@
+T1	Head_End 0 5	Emily
+T2	Head_End 11 16	child
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 18 21	she
+T4	Event 22 36	can only reach
+E1	Event:T4 Head:T3 End:T5
+T5	Head_End 37 59	the tenth-floor button
+R2	EntityEqual Arg1:T3 Arg2:T1	
+T6	Att_span 65 74	last year
+T7	Event 79 95	could only reach
+E2	Event:T7 End:T8 Head:T3
+T8	Head_End 96 118	the ninth-floor button
+R3	Event_att Arg1:T6 Arg2:E2	

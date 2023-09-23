@@ -1,0 +1,11 @@
+T1	Head_End 2 5	man
+T2	Event 9 27	alone on an island
+E1	Event:T2 Head:T1
+T3	Att_span 33 40	no food
+T4	Att_span 45 53	no water
+R1	Entity_att Arg1:T3 Arg2:T1	
+R2	Entity_att Arg1:T4 Arg2:T1	
+T5	Head_End 59 61	he
+T6	Event 62 75	does not fear
+E2	Event:T6 Head:T5 End:T7
+T7	Head_End 80 88	his life

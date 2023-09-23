@@ -1,0 +1,18 @@
+T1	Event 17 26	assistant
+T2	Head_End 4 9	woman
+T3	Event 83 87	have
+T4	Head_End 77 82	shoes
+T5	Head_End 88 100	higher heels
+T7	Event 119 124	wears
+T8	Head_End 106 109	she
+T9	Event 146 155	misjudges
+T10	Head_End 160 163	aim
+T11	Event 186 191	kills
+T12	Head_End 179 185	knives
+E1	Event:T1 Head:T2 End:T13
+E2	Event:T3 Head:T4 End:T5
+E4	Event:T7 Head:T8
+E5	Event:T9 End:T10
+E6	Event:T11 Head:T12 End:T8
+T13	Head_End 53 66	knife-thrower
+R1	EventCause Arg1:E2 Arg2:E5	

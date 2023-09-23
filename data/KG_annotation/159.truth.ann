@@ -1,0 +1,12 @@
+T1	Event 20 27	playing
+T2	Head_End 4 15	two priests
+T3	Head_End 28 34	chess;
+T4	Event 61 67	moving
+T5	Head_End 72 77	queen
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 Head:T2 End:T5
+T6	Head_End 35 46	one of them
+R1	EntityPartof Arg1:T6 Arg2:T2	
+T7	Non_Core_Event 52 57	mated
+E3	Non_Core_Event:T7 Head:T6
+R2	NC2Event Arg1:E3 Arg2:E2	

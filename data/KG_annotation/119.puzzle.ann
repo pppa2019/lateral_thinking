@@ -1,0 +1,15 @@
+T1	Event 9 18	returning
+T2	Head_End 2 5	man
+T3	Event 97 101	died
+T4	Head_End 50 52	he
+T5	Event 57 61	been
+E1	Event:T1 End:T2
+E2	Event:T3 End:T4
+E3	Event:T5 End:T4
+T6	Att_span 67 82	non-smoking car
+R1	Event_att Arg1:T6 Arg2:E3	
+R2	EventCause Arg1:E3 Arg2:E2	
+T7	Att_span 19 35	from switzerland
+T8	Att_span 36 44	by train
+R3	Event_att Arg1:T7 Arg2:E1	
+R4	Event_att Arg1:T8 Arg2:E1	

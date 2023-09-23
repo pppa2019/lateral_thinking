@@ -1,0 +1,24 @@
+T1	Head_End 0 3	Pat
+T2	Head_End 8 19	a Westerner
+T3	Att_span 20 28	in Tokyo
+R1	Entity_att Arg1:T3 Arg2:T2	
+R2	EntityEqual Arg1:T2 Arg2:T1	
+T4	Event 30 52	Houses there are small
+E1	Event:T4 
+R3	Event_att Arg1:T3 Arg2:E1	
+T5	Event 70 80	save space
+E2	Event:T5 
+R4	EventCause Arg1:E1 Arg2:E2	
+T6	Head_End 82 88	people
+T7	Event 89 101	tend to rent
+E3	Event:T7 Head:T6 End:T8
+T8	Head_End 102 116	any large item
+T9	Att_span 128 155	might use only occasionally
+R5	Entity_att Arg1:T9 Arg2:T8	
+R6	EventCause Arg1:E2 Arg2:E3	
+T10	Head_End 157 170	Most Japanese
+T11	Event 171 175	rent
+E4	Event:T11 Head:T10 End:T12
+T12	Head_End 180 189	suitcases
+T13	Att_span 195 210	take on holiday
+R7	Event_att Arg1:T13 Arg2:E4	

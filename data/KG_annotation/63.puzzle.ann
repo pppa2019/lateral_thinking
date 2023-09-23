@@ -1,0 +1,7 @@
+T1	Head_End 0 9	three men
+T2	Event 10 13	die
+E1	Event:T2 Head:T1
+T3	Head_End 23 31	pavement
+T4	Head_End 36 66	pieces of ice and broken glass
+T5	Event 16 18	on
+E2	Event:T5 Head:T4 End:T3

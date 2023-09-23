@@ -1,0 +1,23 @@
+T1	Head_End 0 4	Bill
+T2	Head_End 9 12	Ben
+T3	Head_End 17 32	laboratory rats
+R1	EntityEqual Arg1:T2 Arg2:T3	
+R2	EntityEqual Arg1:T1 Arg2:T3	
+T4	Event 43 54	run through
+E1	Event:T4 Head:T1 End:T5
+T5	Head_End 55 69	a certain maze
+T6	Att_span 70 80	many times
+R3	Event_att Arg1:T6 Arg2:E1	
+T7	Event 85 108	has learned to complete
+E2	Event:T7 Head:T1
+T8	Att_span 112 119	quickly
+R4	Event_att Arg1:T8 Arg2:E2	
+T9	Event 133 157	introduced to the course
+E3	Event:T9 Head:T2
+T10	Att_span 158 176	for the first time
+R5	Event_att Arg1:T10 Arg2:E3	
+T11	Event 181 186	takes
+E4	Event:T11 
+T12	Att_span 191 200	ten times
+R6	Event_att Arg1:T12 Arg2:E4	
+R7	EventCause Arg1:E3 Arg2:E4	

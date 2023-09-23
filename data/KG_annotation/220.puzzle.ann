@@ -1,0 +1,17 @@
+T1	Head_End 2 9	patient
+T2	Att_span 10 32	on the operating table
+T3	Event 36 48	coming round
+E1	Event:T3 Head:T1
+T4	Att_span 49 67	after an operation
+R1	Event_att Arg1:T2 Arg2:E1	
+R2	Event_att Arg1:T4 Arg2:E1	
+T5	Head_End 78 80	he
+T6	Event 81 89	jumps up
+E2	Event:T6 Head:T5
+T7	Event 94 101	strikes
+E3	Event:T7 Head:T5 End:T8
+R3	EventTemporal Arg1:E2 Arg2:E3	
+T8	Head_End 106 113	surgeon
+T9	Att_span 114 131	as hard as he can
+R4	Event_att Arg1:T9 Arg2:E3	
+R5	EntityEqual Arg1:T5 Arg2:T1	

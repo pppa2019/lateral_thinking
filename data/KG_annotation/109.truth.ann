@@ -1,0 +1,56 @@
+T1	Event 15 17	do
+T2	Head_End 0 14	hans and fritz
+T3	Head_End 18 28	everything
+T4	Event 52 59	filling
+T5	Head_End 87 91	form
+T6	Att_span 66 86	personal-information
+T7	Event 104 109	write
+T8	Head_End 121 130	birthdays
+T9	Att_span 29 34	right
+T10	Event 311 315	note
+T11	Head_End 336 343	problem
+T12	Att_span 329 333	only
+T15	Head_End 352 356	they
+T16	Head_End 371 390	returning americans
+T17	Event 430 433	use
+T18	Head_End 416 423	nations
+T19	Att_span 410 415	other
+T20	Head_End 448 456	ordering
+T21	Att_span 434 447	the same date
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 Head:T2 End:T5
+E3	Event:T7 Head:T2 End:T8
+E4	Event:T10 End:T11
+E6	Event:T17 Head:T18 End:T20
+R1	Entity_att Arg1:T6 Arg2:T5
+R2	Event_att Arg1:T9 Arg2:T1
+R3	Entity_att Arg1:T12 Arg2:T11
+R4	Entity_att Arg1:T19 Arg2:T18
+R5	EventTemporal Arg1:E2 Arg2:E3	
+T22	Head_End 132 147	fritz' birthday
+T23	Head_End 157 163	july 7
+T24	Event 152 155	say
+E7	Event:T24 End:T23 Head:T22
+T25	Head_End 168 170	he
+T26	Event 171 182	writes down
+E8	Event:T26 Head:T25 End:T27
+T27	Head_End 183 189	7/7/15
+T28	Head_End 192 196	hans
+R6	EventCause Arg1:E7 Arg2:E8	
+T29	Event 220 223	say
+E9	Event:T29 Head:T28 End:T30
+T30	Head_End 225 232	june 20
+T31	Event 240 251	writes down
+E10	Event:T31 End:T32 Head:T28
+T32	Head_End 252 259	20/6/18
+T33	Head_End 301 308	6/20/18
+T34	Att_span 279 299	american would write
+R7	Entity_att Arg1:T34 Arg2:T33	
+R8	EntityEqual Arg1:T32 Arg2:T33	
+R9	EventTemporal Arg1:E10 Arg2:E4	
+R10	Event_att Arg1:T21 Arg2:E6	
+T13	Non_Core_Event 358 363	claim
+E5	Non_Core_Event:T13 Head:T15
+T14	Event 368 370	be
+E11	Event:T14 End:T16
+R11	NC2Event Arg1:E5 Arg2:E11	

@@ -1,0 +1,7 @@
+T1	Head_End 2 5	man
+T2	Event 6 10	lies
+E1	Event:T2 Head:T1
+T3	Att_span 16 33	next to a feather
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Event 11 15	dead
+E2	Event:T4 Head:T1

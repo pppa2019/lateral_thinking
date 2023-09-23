@@ -1,0 +1,6 @@
+T1	Head_End 4 12	dead man
+T2	Head_End 16 25	superman;
+T3	Head_End 30 34	rock
+T4	Head_End 38 54	green kryptonite
+R1	EntityEqual Arg1:T3 Arg2:T4	
+R2	EntityEqual Arg1:T1 Arg2:T2	

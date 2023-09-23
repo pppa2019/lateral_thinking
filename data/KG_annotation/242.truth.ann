@@ -1,0 +1,26 @@
+T1	Head_End 27 30	man
+T2	Head_End 44 50	driver
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Event 51 82	in a fatal hit-and-run accident
+E1	Event:T3 Head:T2
+T4	Head_End 84 86	He
+T5	Event 87 92	drove
+E2	Event:T5 Head:T4 End:T6
+T6	Head_End 100 113	isolated area
+R2	EntityEqual Arg1:T4 Arg2:T1	
+T7	Event 158 179	stolen and vandalized
+E3	Event:T7 Head:T8
+T8	Head_End 145 148	car
+T9	Non_Core_Event 118 133	made it look as
+E4	Non_Core_Event:T9 
+R3	NC2Event Arg1:E4 Arg2:E3	
+R4	EventTemporal Arg1:E2 Arg2:E4	
+T10	Event 189 195	phoned
+E5	Event:T10 End:T11 Head:T4
+T11	Head_End 200 206	police
+T12	Non_Core_Event 210 216	report
+E6	Non_Core_Event:T12 Head:T4
+T13	Event 225 231	stolen
+E7	Event:T13 Head:T14
+T14	Head_End 217 224	his car
+R5	NC2Event Arg1:E7 Arg2:E6	

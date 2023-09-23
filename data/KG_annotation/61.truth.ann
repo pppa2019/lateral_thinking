@@ -1,0 +1,39 @@
+T1	Event 40 45	wants
+T2	Head_End 7 14	peasant
+T3	Att_span 2 6	poor
+T4	Head_End 61 74	get to the us
+T5	Event 109 119	stows away
+T6	Head_End 106 108	he
+T7	Event 76 86	not having
+T8	Head_End 87 92	money
+T9	Event 166 170	dies
+T10	Head_End 163 165	he
+T11	Event 205 210	falls
+T12	Event 249 254	opens
+T13	Head_End 224 248	landing gear compartment
+T15	Event 284 292	approach
+T16	Head_End 262 267	plane
+T17	Att_span 278 283	final
+E1	Event:T1 Head:T2 End:T4
+E2	Event:T5 Head:T6
+E3	Event:T7 Head:T6 End:T8
+E4	Event:T9 End:T10
+E5	Event:T11 End:T10
+E6	Event:T12 End:T13
+R1	Entity_att Arg1:T3 Arg2:T2
+R3	Event_att Arg1:T17 Arg2:T15
+T18	Att_span 30 39	in europe
+R4	Entity_att Arg1:T18 Arg2:T2	
+T19	Att_span 46 57	desperately
+R5	Event_att Arg1:T19 Arg2:E1	
+R6	EventSameTime Arg1:E1 Arg2:E3	
+T20	Att_span 93 104	for airfare
+R7	Entity_att Arg1:T20 Arg2:T8	
+T21	Att_span 127 160	landing gear compartment of a jet
+R8	Event_att Arg1:T21 Arg2:E2	
+T22	Event 174 187	hypothermia i
+E7	Event:T22 
+R9	EventCause Arg1:E7 Arg2:E4	
+R10	EventTemporal Arg1:E4 Arg2:E5	
+E8	Event:T15 Head:T16
+R2	EventSameTime Arg1:E6 Arg2:E8	

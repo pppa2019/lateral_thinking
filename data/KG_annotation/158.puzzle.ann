@@ -1,0 +1,10 @@
+T1	Event 8 13	jumps
+T2	Head_End 2 7	horse
+T3	Event 31 36	lands
+E1	Event:T1 Head:T2 End:T4
+E2	Event:T3 Head:T2 End:T5
+T4	Head_End 19 26	a tower
+T5	Head_End 40 45	a man
+T6	Event 51 61	disappears
+E3	Event:T6 Head:T5
+R1	EventTemporal Arg1:E1 Arg2:E2	

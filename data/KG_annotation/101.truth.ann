@@ -1,0 +1,42 @@
+T1	Head_End 9 17	survivor
+T3	Att_span 4 8	sole
+T4	Event 78 83	blind
+T5	Head_End 71 73	he
+T7	Head_End 107 117	freshwater
+T8	Event 147 153	rigged
+T10	Head_End 165 169	bell
+T11	Head_End 181 188	drifted
+T12	Att_span 203 208	also)
+T13	Att_span 86 93	luckily
+T14	Event 245 249	rang
+T15	Head_End 240 244	bell
+T16	Event 263 272	directing
+T18	Event 334 338	find
+T19	Head_End 293 295	he
+T20	Head_End 339 344	water
+T21	Att_span 345 350	again
+T22	Event 300 308	becalmed
+T23	Event 362 366	died
+E2	Event:T4 End:T5
+E3	Event:T8 End:T10 Head:T26
+E4	Event:T14 Head:T15 End:T17
+E6	Event:T18 Head:T19 End:T20
+E7	Event:T22 End:T19
+E8	Event:T23 End:T19
+R3	Entity_att Arg1:T12 Arg2:T11
+R4	Event_att Arg1:T13 Arg2:T8
+R5	Event_att Arg1:T21 Arg2:T18
+R1	Entity_att Arg1:T3 Arg2:T1	
+T2	Event 33 40	reached
+E1	Event:T2 Head:T1 End:T25
+T25	Head_End 41 54	a desert isle
+R6	EntityEqual Arg1:T5 Arg2:T1	
+T6	Event 118 124	spring
+E9	Event:T6 Head:T7 End:T9
+T9	Head_End 125 138	on the island
+T26	Head_End 144 146	he
+T17	Head_End 250 261	in the wind
+E5	Event:T16 Head:T15 End:T26
+T24	Event 370 376	thirst
+E10	Event:T24 
+R2	EventCause Arg1:E10 Arg2:E8	

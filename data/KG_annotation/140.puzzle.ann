@@ -1,0 +1,4 @@
+T1	Head_End 10 12	51
+T2	Head_End 24 26	53
+T3	Event 13 23	instead of
+E1	Event:T3 Head:T1 End:T2

@@ -1,0 +1,8 @@
+T1	Head_End 0 6	Johnny
+T2	Head_End 12 15	bee
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 21 24	man
+T4	Head_End 42 51	beekeeper
+T5	Att_span 25 36	in the mask
+R2	Entity_att Arg1:T5 Arg2:T3	
+R3	EntityEqual Arg1:T4 Arg2:T3	

@@ -1,0 +1,9 @@
+T1	Head_End 2 5	man
+T2	Event 14 18	hang
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 23 27	coat
+T4	Non_Core_Event 32 40	realizes
+E2	Non_Core_Event:T4 Head:T1
+T5	Event 49 52	die
+E3	Event:T5 Head:T1
+R1	NC2Event Arg1:E2 Arg2:E3	

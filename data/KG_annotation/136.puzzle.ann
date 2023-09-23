@@ -1,0 +1,13 @@
+T1	Head_End 2 5	man
+T2	Event 6 12	pushes
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 15 18	car
+T4	Att_span 27 32	hotel
+R1	Event_att Arg1:T4 Arg2:E1	
+T5	Non_Core_Event 37 42	tells
+E2	Non_Core_Event:T5 Head:T1
+T6	Event 58 66	bankrupt
+E3	Event:T6 Head:T7
+R2	NC2Event Arg1:E2 Arg2:E3	
+T7	Head_End 47 52	owner
+R3	Entity_att Arg1:T4 Arg2:T7	

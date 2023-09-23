@@ -1,0 +1,38 @@
+T1	Event 9 13	pain
+T2	Head_End 21 25	back
+T3	Event 49 54	found
+T4	Head_End 0 2	he
+T5	Head_End 57 83	recently stitched incision
+T6	Event 38 42	felt
+T7	Event 101 105	lure
+T8	Head_End 89 94	woman
+T9	Event 132 139	removed
+T10	Head_End 154 159	organ
+T11	Att_span 148 153	human
+T12	Att_span 140 147	healthy
+T13	Event 165 169	sold
+T14	Event 190 197	needing
+T15	Head_End 198 216	organ transplants.
+T16	Non_Core_Event 249 254	found
+T17	Head_End 245 248	man
+E1	Event:T1 End:T2 Head:T4
+E2	Event:T3 Head:T4 End:T5
+E3	Event:T6 Head:T4
+E4	Event:T7 Head:T8 Head2:T18
+E5	Event:T9 End:T10
+E6	Event:T13 End:T10
+E7	Event:T14 End:T15 Head:T20
+E8	Non_Core_Event:T16 Head:T17
+R1	Entity_att Arg1:T11 Arg2:T10
+R2	Entity_att Arg1:T12 Arg2:T10
+R3	EventSameTime Arg1:E3 Arg2:E2	
+T18	Head_End 112 127	crooked surgeon
+T19	Att_span 175 189	to rich people
+R4	Event_att Arg1:T19 Arg2:E6	
+T20	Head_End 178 189	rich people
+T21	Head_End 260 278	one of his kidneys
+T22	Event 283 287	gone
+E9	Event:T22 Head:T21
+R5	NC2Event Arg1:E8 Arg2:E9	
+T23	Att_span 217 240	on examination by x-ray
+R6	Event_att Arg1:T23 Arg2:E8	

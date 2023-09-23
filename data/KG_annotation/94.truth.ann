@@ -1,0 +1,48 @@
+T1	Head_End 0 2	He
+T2	Event 3 9	worked
+E1	Event:T2 Head:T1 End:T5
+T3	Head_End 15 17	DJ
+R1	EntityEqual Arg1:T3 Arg2:T1	
+T4	Non_Core_Event 18 20	at
+E2	Non_Core_Event:T4 Head:T5
+R2	NC2Event Arg1:E1 Arg2:E2	
+T5	Head_End 21 36	a radio station
+T6	Non_Core_Event 42 49	decided
+E3	Non_Core_Event:T6 Head:T1
+T7	Event 53 57	kill
+E4	Event:T7 End:T8 Head:T1
+T8	Head_End 58 66	his wife
+R3	NC2Event Arg1:E3 Arg2:E4	
+T9	Event 78 84	put on
+E5	Event:T9 Head:T1 End:T10
+T10	Head_End 85 96	a long tape
+T11	Event 101 114	quickly drove
+E6	Event:T11 End:T12 Head:T1
+T12	Head_End 115 119	home
+T13	Event 124 130	killed
+E7	Event:T13 End:T8 Head:T1
+R4	EventTemporal Arg1:E5 Arg2:E6	
+R5	EventTemporal Arg1:E6 Arg2:E7	
+T14	Non_Core_Event 136 144	figuring
+E8	Non_Core_Event:T14 Head:T1
+T15	Non_Core_Event 148 151	had
+E9	Non_Core_Event:T15 Head:T1
+T16	Event 152 167	a perfect alibi
+E10	Event:T16 
+R6	NC2Event Arg1:E8 Arg2:E9	
+R7	NC2Event Arg1:E9 Arg2:E10	
+T17	Event 179 186	at work
+E11	Event:T17 Head:T1
+R8	EventEqual Arg1:E10 Arg2:E11	
+T18	Event 189 204	On the way back
+E12	Event:T18 
+T19	Event 208 216	turns on
+E13	Event:T19 End:T20 Head:T1
+T20	Head_End 217 225	his show
+R9	EventSameTime Arg1:E12 Arg2:E13	
+T21	Non_Core_Event 227 235	discover
+E14	Non_Core_Event:T21 Head:T1
+T22	Event 253 261	breaking
+E15	Event:T22 Head:T23
+T23	Head_End 245 249	tape
+R10	NC2Event Arg1:E14 Arg2:E15	

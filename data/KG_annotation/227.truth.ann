@@ -1,0 +1,40 @@
+T1	Event 73 83	threatened
+T2	Head_End 64 68	bank
+T4	Head_End 101 106	house
+T5	Event 118 125	devised
+T6	Head_End 128 132	plan
+T7	Event 137 143	forged
+T8	Head_End 134 136	he
+T9	Event 161 165	gave
+T10	Head_End 157 160	she
+T12	Head_End 176 190	bank messenger
+T15	Head_End 215 224	forgeries
+T16	Head_End 289 293	bank
+T17	Event 230 234	good
+T18	Event 312 315	rob
+T19	Head_End 254 263	messenger
+E1	Event:T1 Head:T2
+E2	Event:T5 End:T6
+E3	Event:T7 Head:T8 End:T24
+E4	Event:T9 Head:T10 End:T12
+E7	Event:T17 End:T15
+E8	Event:T18 End:T19
+T20	Head_End 4 19	robber's mother
+T21	Head_End 26 31	widow
+R1	EntityEqual Arg1:T21 Arg2:T20	
+T22	Event 36 40	owed
+E9	Event:T22 Head:T20 End:T23
+T23	Head_End 50 58	$100 000
+R2	EventCause Arg1:E1 Arg2:E2	
+T3	Event 87 96	repossess
+E10	Event:T3 End:T4
+R3	NC2Event Arg1:E1 Arg2:E10	
+T24	Head_End 144 152	$100 000
+R4	EventTemporal Arg1:E3 Arg2:E4	
+T11	Event 245 249	fool
+E5	Event:T11 Head:T15 End:T19
+T14	Event 274 284	never fool
+E11	Event:T14 Head:T15 End:T16
+T13	Event 340 348	got back
+E6	Event:T13 Head:T19
+R5	EventTemporal Arg1:E6 Arg2:E8	

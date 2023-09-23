@@ -1,0 +1,16 @@
+T1	Head_End 2 7	cabin
+T2	Att_span 9 34	on the side of a mountain
+T3	Event 36 42	locked
+E1	Event:T3 Head:T1
+T4	Att_span 43 58	from the inside
+R1	Event_att Arg1:T4 Arg2:E1	
+R2	Entity_att Arg1:T2 Arg2:T1	
+T5	Event 63 69	opened
+E2	Event:T5 Head:T1
+R3	EventTemporal Arg1:E1 Arg2:E2	
+T6	Head_End 75 84	30 people
+T7	Event 89 99	found dead
+E3	Event:T7 Head:T6
+T8	Event 114 117	had
+E4	Event:T8 Head:T6 End:T9
+T9	Head_End 128 142	food and water

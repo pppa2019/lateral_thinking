@@ -1,0 +1,32 @@
+T1	Event 9 16	sitting
+T2	Head_End 2 5	man
+T3	Event 43 49	enters
+T4	Head_End 36 42	person
+T5	Att_span 28 35	another
+T6	Event 51 59	carrying
+T7	Head_End 79 82	box
+T8	Att_span 69 78	cardboard
+T9	Event 88 97	sits down
+T10	Event 176 181	knows
+T11	Head_End 123 126	man
+T12	Event 127 132	can't
+T13	Event 163 171	contents
+T14	Head_End 157 160	box
+E1	Event:T1 End:T2
+E2	Event:T3 Head:T4
+E3	Event:T6 End:T7
+E4	Event:T9 End:T4
+E5	Event:T10 Head:T11 End:T20
+E6	Event:T12 Head:T11 End:T19 End2:T15 End3:T16
+E7	Event:T13 Head:T14
+R1	Entity_att Arg1:T5 Arg2:T4
+R2	Entity_att Arg1:T8 Arg2:T7
+T17	Att_span 17 26	in a room
+R3	Event_att Arg1:T17 Arg2:E1	
+R4	EventSameTime Arg1:E2 Arg2:E3	
+T18	Att_span 62 68	closed
+R5	Entity_att Arg1:T18 Arg2:T7	
+T19	Head_End 133 136	see
+T15	Head_End 138 142	hear
+T16	Head_End 147 152	smell
+T20	Head_End 182 199	what's in the box

@@ -1,0 +1,32 @@
+T1	Head_End 4 7	man
+T2	Event 12 25	the leader of
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 26 42	a religious cult
+T5	Non_Core_Event 44 53	Believing
+E2	Non_Core_Event:T5 Head:T1
+T4	Event 59 78	the world would end
+E3	Event:T4 
+R1	NC2Event Arg1:E2 Arg2:E3	
+T6	Att_span 79 89	that night
+R2	Event_att Arg1:T6 Arg2:E3	
+T7	Head_End 90 92	he
+T8	Event 133 146	taking poison
+E4	Event:T8 Head:T9
+T9	Head_End 105 118	his followers
+T10	Non_Core_Event 97 104	offered
+E5	Non_Core_Event:T10 Head:T7
+R3	NC2Event Arg1:E5 Arg2:E4	
+T11	Non_Core_Event 150 185	seeing the destruction of the world
+E6	Non_Core_Event:T11 Head:T9
+R4	NC2Event Arg1:E5 Arg2:E6	
+T12	Head_End 187 191	Many
+T13	Head_End 203 219	his own children
+T14	Non_Core_Event 225 231	chosen
+E7	Non_Core_Event:T14 Head:T12
+T15	Event 250 254	died
+E8	Event:T15 Head:T12
+T16	Event 232 245	taking poison
+E9	Event:T16 
+R5	EntityPartof Arg1:T13 Arg2:T12	
+R6	NC2Event Arg1:E7 Arg2:E9	
+R7	EventCause Arg1:E9 Arg2:E8	

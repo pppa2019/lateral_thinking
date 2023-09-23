@@ -1,0 +1,35 @@
+T1	Event 10 15	works
+T2	Head_End 4 9	woman
+T3	Head_End 45 52	orderly
+T4	Event 71 76	clean
+T5	Head_End 77 83	bodies
+T6	Event 97 102	ready
+T7	Event 129 138	collapses
+T8	Head_End 125 128	she
+T9	Event 148 152	sees
+T10	Head_End 162 166	body
+T11	Event 212 215	had
+T12	Event 249 261	did not know
+T13	Head_End 245 248	she
+T16	Head_End 283 287	body
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 End:T5
+E3	Event:T6 End:T5
+E4	Event:T7 Head:T8
+E5	Event:T9 Head:T8 End:T10
+E6	Event:T11 End:T19 End2:T20
+E7	Event:T12 Head:T13
+T15	Att_span 16 38	at a teaching hospital
+R1	Event_att Arg1:T15 Arg2:E1	
+T17	Att_span 103 123	for student lectures
+R2	Event_att Arg1:T17 Arg2:E3	
+R3	EventTemporal Arg1:E5 Arg2:E4	
+T18	Event 167 175	awaiting
+E8	Event:T18 Head:T10 End:T8
+T19	Head_End 195 206	her brother
+R4	EntityEqual Arg1:T19 Arg2:T10	
+T20	Head_End 216 228	earlier died
+T14	Event 274 278	left
+E9	Event:T14 Head:T19 End:T16
+T21	Att_span 288 298	to science
+R5	Event_att Arg1:T21 Arg2:E9	

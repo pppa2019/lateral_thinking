@@ -1,0 +1,14 @@
+T1	Head_End 2 5	man
+T2	Event 6 21	ran into a fire
+E1	Event:T2 Head:T1
+T3	Event 27 32	lived
+E2	Event:T3 Head:T1
+R1	EventTemporal Arg1:E1 Arg2:E2	
+T4	Head_End 37 40	man
+T5	Event 41 47	stayed
+E3	Event:T5 Head:T4
+T6	Att_span 54 71	there was no fire
+R2	Event_att Arg1:T6 Arg2:E3	
+T7	Event 77 81	died
+E4	Event:T7 Head:T4
+R3	EventTemporal Arg1:E3 Arg2:E4	

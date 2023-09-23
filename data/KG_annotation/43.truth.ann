@@ -1,0 +1,19 @@
+T1	Head_End 4 7	man
+T2	Head_End 12 29	a sword swallower
+T3	Att_span 30 53	in a carnival side-show
+R1	Entity_att Arg1:T3 Arg2:T2	
+R2	EntityEqual Arg1:T2 Arg2:T1	
+T4	Head_End 62 64	he
+T5	Event 69 79	practicing
+E1	Event:T5 Head:T4
+R3	EntityEqual Arg1:T4 Arg2:T1	
+T6	Head_End 81 88	someone
+T7	Event 89 96	tickled
+E2	Event:T7 Head:T6 End:T8
+T8	Head_End 97 107	his throat
+T9	Att_span 108 124	with the feather
+R4	EventSameTime Arg1:E1 Arg2:E2	
+R5	Event_att Arg1:T9 Arg2:E2	
+T10	Event 141 144	gag
+E3	Event:T10 Head:T4
+R6	EventCause Arg1:E2 Arg2:E3	

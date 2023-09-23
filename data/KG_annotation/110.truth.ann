@@ -1,0 +1,20 @@
+T1	Event 12 29	the starting gate
+T4	Event 108 112	left
+T5	Head_End 85 90	horse
+T6	Head_End 117 121	gate
+T7	Event 130 133	run
+T8	Att_span 146 150	rest
+E1	Event:T1 
+E2	Event:T4 Head:T5 End:T6
+E3	Event:T7 End:T5
+R1	Entity_att Arg1:T8 Arg2:T5
+T2	Att_span 35 45	horse race
+R2	Event_att Arg1:T2 Arg2:E1	
+T3	Head_End 52 55	man
+T9	Head_End 61 67	jockey
+R3	EntityEqual Arg1:T9 Arg2:T3	
+T10	Event 72 80	fell off
+E4	Event:T10 Head:T9 End:T5
+T11	Head_End 167 176	the stick
+T12	Head_End 184 195	riding crop
+R4	EntityEqual Arg1:T11 Arg2:T12	

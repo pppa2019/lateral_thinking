@@ -1,0 +1,51 @@
+T1	Event 8 11	had
+T2	Head_End 2 7	woman
+T3	Head_End 18 26	goldfish
+T4	Att_span 14 17	pet
+T5	Event 37 42	loved
+T6	Event 68 75	noticed
+T7	Head_End 64 67	she
+T8	Head_End 116 119	and
+T9	Event 88 96	swimming
+T10	Head_End 81 83	it
+T11	Event 123 129	looked
+T12	Head_End 135 141	unwell
+T13	Head_End 60 63	day
+T14	Att_span 56 59	one
+T15	Event 147 153	rushed
+T16	Head_End 143 146	she
+T17	Non_Core_Event 192 196	told
+T18	Head_End 161 164	vet
+T20	Non_Core_Event 248 253	found
+T21	Head_End 231 234	she
+T23	Event 267 275	swimming
+T24	Head_End 258 266	goldfish
+T25	Event 289 296	looking
+T26	Head_End 297 304	healthy
+T27	Att_span 305 310	again
+T28	Event 235 243	returned
+T29	Event 328 335	managed
+T30	Head_End 324 327	vet
+T31	Head_End 336 340	this
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T5 Head:T2 End:T3
+E3	Event:T6 Head:T7 End:T8
+E4	Event:T9 Head:T10
+E5	Event:T11 Head:T10 End:T12
+E6	Event:T15 Head:T16 End:T18
+E7	Non_Core_Event:T17 Head:T18
+E8	Non_Core_Event:T20 Head:T21
+E9	Event:T23 Head:T24
+E10	Event:T25 Head:T24 End:T26
+E11	Event:T28 End:T21
+E12	Event:T29 Head:T30 End:T31
+R1	Entity_att Arg1:T4 Arg2:T3
+R2	Entity_att Arg1:T14 Arg2:T13
+R3	Event_att Arg1:T27 Arg2:T25
+R4	EntityEqual Arg1:T10 Arg2:T3	
+T19	Event 204 213	come back
+E13	Event:T19 
+R5	NC2Event Arg1:E7 Arg2:E13	
+T32	Att_span 214 224	in an hour
+R6	Event_att Arg1:T32 Arg2:E13	
+R7	NC2Event Arg1:E8 Arg2:E10	

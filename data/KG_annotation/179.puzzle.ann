@@ -1,0 +1,13 @@
+T1	Head_End 2 5	man
+T2	Event 9 14	doing
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 19 22	job
+T4	Head_End 28 36	his suit
+T5	Event 37 42	tears
+E2	Event:T5 Head:T4
+R1	EventSameTime Arg1:E1 Arg2:E2	
+T6	Att_span 45 60	Fifteen minutes
+R2	Event_att Arg1:T6 Arg2:E1	
+T7	Event 73 77	dead
+E3	Event:T7 Head:T1
+R3	EventTemporal Arg1:E2 Arg2:E3	

@@ -1,0 +1,2 @@
+It's a game of Monopoly.
+The car token passes Go and the player collects $200.

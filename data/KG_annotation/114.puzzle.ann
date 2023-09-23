@@ -1,0 +1,9 @@
+T1	Event 8 12	lies
+T2	Head_End 2 7	woman
+E1	Event:T1 End:T2
+T3	Att_span 13 17	dead
+T4	Att_span 18 31	in the street
+T5	Att_span 32 42	near a car
+R1	Event_att Arg1:T3 Arg2:E1	
+R2	Event_att Arg1:T4 Arg2:E1	
+R3	Event_att Arg1:T5 Arg2:E1	

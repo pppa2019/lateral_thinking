@@ -1,0 +1,20 @@
+T1	Event 69 74	dying
+T2	Head_End 63 68	she's
+T3	Event 94 100	sounds
+T4	Head_End 59 62	and
+T5	Event 106 112	"opens
+T6	Head_End 27 35	envelope
+E1	Event:T1 End:T2 End:T6 End2:T10
+E2	Event:T3 End:T4 Head:T11
+E3	Event:T5 End:T6 End2:T11
+T7	Att_span 15 21	orally
+T8	Event 10 14	done
+E4	Event:T8 
+R1	Event_att Arg1:T7 Arg2:E4	
+T9	Att_span 54 57	dye
+R2	Entity_att Arg1:T9 Arg2:T6	
+T10	Head_End 80 85	cloth
+T11	Head_End 129 133	dies
+T12	Event 138 151	said out loud
+E5	Event:T12 
+R3	EventSameTime Arg1:E5 Arg2:E2	

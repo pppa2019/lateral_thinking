@@ -1,0 +1,12 @@
+T1	Event 19 22	try
+T2	Head_End 26 31	crowd
+T3	Head_End 48 56	umbrella
+T4	Att_span 42 47	small
+T5	Event 69 73	gets
+T6	Head_End 62 68	nobody
+T7	Event 74 77	wet
+E1	Event:T1 End:T2
+E2	Event:T5 End:T6
+E3	Event:T7 End:T6
+R1	Entity_att Arg1:T4 Arg2:T3
+T8	Head_End 0 18	three large people

@@ -1,0 +1,9 @@
+T1	Head_End 35 39	ball
+T2	Att_span 28 34	soccer
+T3	Event 40 50	containing
+T4	Head_End 51 75	a quantity of dried peas
+T5	Head_End 12 16	shop
+T6	Att_span 5 11	sports
+E1	Event:T3 End:T4 End2:T1
+R1	Entity_att Arg1:T2 Arg2:T1
+R2	Entity_att Arg1:T6 Arg2:T5

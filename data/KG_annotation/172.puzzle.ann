@@ -1,0 +1,13 @@
+T1	Head_End 5 8	man
+T2	Event 9 14	jumps
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 15 30	out of a window
+T4	Head_End 35 40	phone
+T5	Event 41 45	rang
+E2	Event:T5 Head:T4
+T6	Non_Core_Event 54 63	regretted
+E3	Non_Core_Event:T6 Head:T8
+T7	Event 69 80	he had done
+E4	Event:T7 
+R1	NC2Event Arg1:E3 Arg2:E4	
+T8	Head_End 51 53	he

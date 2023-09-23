@@ -1,0 +1,59 @@
+T1	Event 16 21	hired
+T2	Head_End 9 12	man
+T3	Att_span 4 8	poor
+T4	Event 36 41	clean
+T5	Head_End 46 52	palace
+T6	Event 68 73	wants
+T8	Head_End 78 81	man
+T9	Head_End 91 109	part of the palace
+T10	Att_span 63 67	only
+T14	Head_End 135 141	anyone
+T15	Head_End 155 162	bedroom
+T16	Event 173 178	keeps
+T17	Head_End 189 193	lamp
+T18	Att_span 183 188	magic
+T19	Event 222 228	scrubs
+T20	Head_End 205 208	man
+T21	Att_span 200 204	poor
+T22	Head_End 233 239	palace
+T23	Event 262 266	rubs
+T24	Head_End 277 281	lamp
+T25	Att_span 271 276	magic
+T26	Event 309 317	appears;
+T27	Head_End 303 308	djinn
+T28	Event 331 337	wishes
+T29	Head_End 327 330	man
+T30	Att_span 322 326	poor
+T31	Head_End 342 348	riches
+T32	Event 354 369	no longer needs
+T33	Head_End 374 377	job
+E1	Event:T1 End:T2 Head:T34
+E2	Event:T4 Head:T2 End:T5
+E3	Non_Core_Event:T35 
+E5	Event:T16 End:T17 End2:T15
+E6	Event:T19 Head:T20 End:T22
+E7	Event:T23 Head:T20 End:T24
+E8	Event:T26 End:T27
+E9	Event:T28 Head:T29 End:T31
+E10	Event:T32 Head:T29 End:T33
+R1	Entity_att Arg1:T3 Arg2:T2
+R2	Event_att Arg1:T10 Arg2:T6
+R3	Event_att Arg1:T18 Arg2:T17
+R4	Entity_att Arg1:T21 Arg2:T20
+R5	Entity_att Arg1:T25 Arg2:T24
+R6	Entity_att Arg1:T30 Arg2:T29
+T34	Head_End 25 32	aladdin
+E11	Non_Core_Event:T35 Head:T34
+T35	Non_Core_Event 68 73	wants
+T7	Event 85 90	clean
+E12	Event:T7 Head:T8 End:T9
+R7	NC2Event Arg1:E11 Arg2:E12	
+T11	Event 121 134	does not wish
+E4	Event:T11 Head:T34 End:T14
+T12	Event 145 150	enter
+E13	Event:T12 Head:T14 End:T15
+R8	EventCause Arg1:E4 Arg2:T6	
+R9	EventTemporal Arg1:E6 Arg2:E7	
+R10	EventTemporal Arg1:E7 Arg2:E8	
+R11	EventTemporal Arg1:E8 Arg2:E9	
+R12	EventTemporal Arg1:E9 Arg2:E10	

@@ -1,0 +1,27 @@
+T1	Head_End 12 26	a jealous wife
+T2	Event 27 32	found
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 45 53	a letter
+T4	Att_span 54 78	addressed to her husband
+T5	Att_span 33 44	in the mail
+R1	Event_att Arg1:T5 Arg2:E1	
+R2	Entity_att Arg1:T4 Arg2:T3	
+T6	Head_End 80 83	She
+T7	Event 84 106	remove the letter from
+E2	Event:T7 Head:T6 End:T8
+T8	Head_End 107 126	the sealed envelope
+T9	Att_span 127 176	without breaking the seal or tearing the envelope
+R3	Event_att Arg1:T9 Arg2:E2	
+T10	Event 186 197	put it back
+E3	Event:T10 Head:T6 End:T3
+R4	EventTemporal Arg1:E2 Arg2:E3	
+T11	Att_span 198 213	in the envelope
+R5	Event_att Arg1:T11 Arg2:E3	
+T12	Head_End 222 233	her husband
+T13	Non_Core_Event 234 246	did not know
+E4	Non_Core_Event:T13 Head:T12
+T14	Event 263 276	had been read
+E5	Event:T14 Head:T15
+R6	NC2Event Arg1:E4 Arg2:E5	
+T15	Head_End 256 262	letter
+R7	EventCause Arg1:E3 Arg2:E4	

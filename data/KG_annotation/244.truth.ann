@@ -1,0 +1,15 @@
+T1	Att_span 0 40	During a forest fire some months earlier
+T2	Head_End 44 63	fire-fighting plane
+T3	Event 68 78	scooped up
+E1	Event:T3 Head:T2 End:T4
+T4	Head_End 79 84	water
+T5	Att_span 85 98	from the lake
+R1	Event_att Arg1:T5 Arg2:E1	
+T6	Event 102 106	drop
+E2	Event:T6 Head:T4 End:T7
+T7	Head_End 114 118	fire
+T8	Head_End 124 129	plane
+T9	Event 147 156	picked up
+E3	Event:T9 Head:T8 End:T10
+T10	Head_End 157 180	the unfortunate swimmer
+R2	EntityEqual Arg1:T8 Arg2:T2	

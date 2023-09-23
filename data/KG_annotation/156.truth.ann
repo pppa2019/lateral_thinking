@@ -1,0 +1,11 @@
+T1	Event 31 35	near
+T2	Head_End 23 27	town
+T3	Head_End 40 50	north pole
+T5	Event 59 64	lasts
+T6	Head_End 53 58	night
+E1	Event:T1 End:T2 Head:T3
+E2	Event:T5 Head:T6 End:T4
+T7	Head_End 0 6	friday
+T8	Head_End 12 17	horse
+R2	EntityEqual Arg1:T8 Arg2:T7	
+T4	Head_End 65 75	six months

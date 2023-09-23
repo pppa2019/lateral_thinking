@@ -1,0 +1,28 @@
+T1	Head_End 2 5	man
+T2	Event 10 22	walking down
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 25 29	road
+T4	Head_End 37 42	stone
+T5	Event 43 49	lodged
+E2	Event:T5 Head:T4 End:T6
+T6	Head_End 57 88	between his foot and his sandal
+T7	Event 94 108	leaned against
+E3	Event:T7 Head:T1 End:T8
+T8	Head_End 111 115	pole
+T9	Att_span 121 148	with his head down to watch
+T10	Event 153 158	shook
+E4	Event:T10 Head:T1 End:T11
+T11	Head_End 159 167	his foot
+T12	Event 171 179	dislodge
+E5	Event:T12 Head:T4
+R1	Event_att Arg1:T9 Arg2:E4	
+R2	EventCause Arg1:E4 Arg2:E5	
+T13	Head_End 192 203	Another man
+T14	Event 204 211	came up
+E6	Event:T14 Head:T13
+T15	Event 216 221	broke
+E7	Event:T15 Head:T13 End:T16
+T16	Head_End 222 241	the first man's arm
+T17	Att_span 242 257	in three places
+R3	Entity_att Arg1:T17 Arg2:T16	
+R4	EventTemporal Arg1:E6 Arg2:E7	

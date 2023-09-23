@@ -1,0 +1,12 @@
+T1	Event 18 32	about to start
+T2	Head_End 9 14	woman
+T3	Head_End 37 49	cleaning job
+T4	Event 59 68	collapses
+T5	Event 74 79	faint
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 End:T2
+E3	Event:T5 End:T2
+T6	Att_span 2 8	strong
+R1	Entity_att Arg1:T6 Arg2:T2	
+R2	EventTemporal Arg1:E2 Arg2:E3	
+R3	EventTemporal Arg1:E1 Arg2:E2	

@@ -1,0 +1,41 @@
+T1	Event 16 22	drinks
+T2	Head_End 12 15	man
+T4	Event 103 108	fired
+T5	Head_End 85 87	he
+T6	Event 119 124	moves
+T7	Head_End 115 118	man
+T8	Head_End 136 139	job
+T9	Att_span 128 135	another
+T10	Event 144 150	begins
+T11	Head_End 151 171	doing the same thing
+T13	Non_Core_Event 227 232	tells
+T15	Event 263 268	stops
+E1	Event:T1 Head:T2
+E2	Event:T4 End:T5
+E3	Event:T6 Head:T7
+E4	Event:T10 Head:T7 End:T11
+E5	Non_Core_Event:T13 
+E6	Event:T15 Head:T7
+R1	Entity_att Arg1:T9 Arg2:T8
+T3	Att_span 27 36	breakfast
+T17	Att_span 52 57	lunch
+R3	Event_att Arg1:T3 Arg2:E1	
+R4	Event_att Arg1:T17 Arg2:E1	
+T18	Head_End 69 73	boss
+T19	Non_Core_Event 74 83	finds out
+E7	Non_Core_Event:T19 Head:T18
+R5	NC2Event Arg1:E7 Arg2:E1	
+R6	EventCause Arg1:E7 Arg2:E2	
+R7	EventTemporal Arg1:E3 Arg2:E4	
+R8	EventTemporal Arg1:E2 Arg2:E3	
+T12	Head_End 193 197	boss
+T16	Event 198 207	finds out
+E8	Event:T16 Head:T12
+R2	EventTemporal Arg1:E8 Arg2:E5	
+T20	Att_span 218 226	jokingly
+R9	Event_att Arg1:T20 Arg2:E5	
+T14	Event 251 256	fired
+E9	Event:T14 
+R10	NC2Event Arg1:E5 Arg2:E9	
+R11	EventCause Arg1:E6 Arg2:E9	
+R12	EventTemporal Arg1:E4 Arg2:E8	

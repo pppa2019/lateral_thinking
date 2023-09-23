@@ -1,0 +1,12 @@
+T1	Head_End 4 7	man
+T2	Head_End 15 31	amateur mechanic
+R1	EntityEqual Arg1:T2 Arg2:T1	
+T3	Head_End 37 41	book
+T4	Head_End 47 72	volkswagen service manual
+R2	EntityEqual Arg1:T4 Arg2:T3	
+T5	Head_End 74 84	the beetle
+T6	Head_End 90 93	car
+R3	EntityEqual Arg1:T6 Arg2:T5	
+T7	Head_End 103 117	pile of bricks
+T8	Event 134 145	fell off of
+E1	Event:T8 Head:T6 End:T7

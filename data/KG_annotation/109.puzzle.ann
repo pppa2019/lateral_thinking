@@ -1,0 +1,19 @@
+T2	Head_End 0 14	hans and fritz
+T3	Non_Core_Event 59 62	try
+T4	Head_End 54 58	they
+E2	Non_Core_Event:T3 Head:T4
+T1	Head_End 19 31	german spies
+R1	EntityEqual Arg1:T1 Arg2:T2	
+T6	Att_span 39 52	world war ii.
+R2	Entity_att Arg1:T6 Arg2:T1	
+R3	EntityEqual Arg1:T4 Arg2:T2	
+T5	Event 66 71	enter
+E1	Event:T5 End:T7
+R4	NC2Event Arg1:E2 Arg2:E1	
+T7	Head_End 72 87	america  posing
+T8	Head_End 91 109	returning tourists
+R5	EntityEqual Arg1:T7 Arg2:T8	
+T9	Head_End 112 116	hans
+R6	EntityPartof Arg1:T9 Arg2:T2	
+T10	Event 132 140	arrested
+E3	Event:T10 End:T9

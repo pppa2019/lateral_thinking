@@ -1,0 +1,18 @@
+T1	Head_End 0 7	Two men
+T2	Att_span 12 22	in a field
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Head_End 29 32	man
+T4	Att_span 33 44	in the mask
+R2	Entity_att Arg1:T4 Arg2:T3	
+T5	Event 48 56	standing
+E1	Event:T5 Head:T3
+T6	Att_span 57 70	on the corner
+R3	Event_att Arg1:T6 Arg2:E1	
+T7	Head_End 77 82	other
+R4	EntityPartof Arg1:T3 Arg2:T1	
+R5	EntityPartof Arg1:T7 Arg2:T1	
+T8	Event 90 105	running towards
+E2	Event:T8 Head:T7 End:T3
+T9	Event 113 118	avoid
+E3	Event:T9 Head:T7 End:T3
+R6	EventCause Arg1:E2 Arg2:E3	

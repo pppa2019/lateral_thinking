@@ -1,0 +1,30 @@
+T1	Head_End 10 13	man
+T2	Event 14 18	took
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 23 27	duck
+T4	Event 44 53	came back
+E2	Event:T4 Head:T5
+T5	Head_End 41 43	he
+T6	Event 58 62	took
+E3	Event:T6 Head:T5 End:T7
+T7	Head_End 67 70	fox
+R1	EventTemporal Arg1:E1 Arg2:E3	
+R2	EntityEqual Arg1:T5 Arg2:T1	
+T9	Event 80 84	left
+E4	Event:T9 Head:T5 End:T7
+T10	Att_span 93 121	on the far side of the river
+R3	Event_att Arg1:T10 Arg2:E4	
+T8	Event 126 134	returned
+E5	Event:T8 Head:T5
+T11	Att_span 135 148	with the duck
+R4	Event_att Arg1:T11 Arg2:E5	
+T12	Event 158 162	left
+E6	Event:T12 End:T3 Head:T5
+T13	Att_span 172 188	on the near side
+R5	Event_att Arg1:T13 Arg2:E6	
+R6	EventTemporal Arg1:E3 Arg2:E4	
+R7	EventTemporal Arg1:E4 Arg2:E5	
+R8	EventTemporal Arg1:E5 Arg2:E6	
+T14	Event 220 237	returned and took
+E7	Event:T14 Head:T5 End:T3
+R9	EventTemporal Arg1:E6 Arg2:E7	

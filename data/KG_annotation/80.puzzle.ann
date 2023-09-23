@@ -1,0 +1,6 @@
+T1	Head_End 0 7	two men
+T2	Head_End 14 19	a box
+T3	Event 8 13	throw
+E1	Event:T3 Head:T1 End:T2
+T4	Att_span 20 34	off of a cliff
+R1	Event_att Arg1:T4 Arg2:E1	

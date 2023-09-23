@@ -1,0 +1,37 @@
+T1	Head_End 2 7	woman
+T2	Event 8 12	came
+E1	Event:T2 Head:T1 End:T6
+T3	Att_span 18 41	with a bag of groceries
+R1	Entity_att Arg1:T3 Arg2:T1	
+T4	Event 43 46	got
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 51 55	mail
+T6	Head_End 13 17	home
+T7	Event 61 72	walked into
+E3	Event:T7 Head:T1 End:T8
+T8	Head_End 77 82	house
+R2	EntityEqual Arg1:T8 Arg2:T6	
+R3	EventTemporal Arg1:E1 Arg2:E2	
+R4	EventTemporal Arg1:E2 Arg2:E3	
+T9	Event 85 98	On the way to
+E4	Event:T9 End:T10 Head:T1
+T10	Head_End 103 110	kitchen
+T11	Event 116 128	went through
+E5	Event:T11 Head:T1 End:T12
+T12	Head_End 133 144	living room
+R5	EventSameTime Arg1:E4 Arg2:E5	
+T13	Event 149 158	looked at
+E6	Event:T13 Head:T1 End:T14
+T14	Head_End 159 170	her husband
+R6	EventTemporal Arg1:E5 Arg2:E6	
+T15	Event 180 200	blown his brains out
+E7	Event:T15 Head:T14
+T16	Event 212 224	continued to
+E8	Event:T16 End:T10 Head:T1
+R7	EventTemporal Arg1:E6 Arg2:E8	
+T17	Event 238 246	put away
+E9	Event:T17 End:T18 Head:T1
+T18	Head_End 251 260	groceries
+T19	Event 266 277	made dinner
+E10	Event:T19 Head:T1
+R8	EventTemporal Arg1:E9 Arg2:E10	

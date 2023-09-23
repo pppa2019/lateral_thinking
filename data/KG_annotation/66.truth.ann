@@ -1,0 +1,62 @@
+T1	Event 10 14	shot
+T2	Head_End 2 5	man
+T3	Event 60 74	staggered into
+T4	Head_End 57 59	he
+T5	Head_End 79 88	back room
+T7	Event 119 125	called
+T8	Head_End 126 139	home  dialing
+T10	Event 157 173	hadn't turned on
+T11	Head_End 178 183	light
+T12	Event 216 222	gasped
+T14	Event 200 212	went through
+T15	Head_End 195 199	call
+T18	Event 297 300	set
+T19	Head_End 294 296	he
+T20	Head_End 305 310	phone
+T21	Event 319 324	await
+T22	Head_End 325 329	help
+T23	Event 351 358	treated
+T24	Head_End 373 384	pushbuttons
+T25	Att_span 363 372	telephone
+T26	Event 395 403	register
+T27	Head_End 390 394	cash
+T28	Event 454 477	upside down reflections
+T29	Head_End 422 449	arrangements of the numbers
+T30	Head_End 404 411	numbers
+T33	Event 512 518	dialed
+T34	Head_End 494 506	the stranger
+T35	Event 519 522	had
+T36	Head_End 523 529	no way
+E1	Event:T1 End:T2 Head:T37
+E2	Event:T3 Head:T4 End:T5
+E3	Event:T7 Head:T4 End:T8 Head2:T6
+E5	Event:T10 Head:T4 End:T11
+E6	Event:T12 End:T13 Head:T4
+E7	Event:T14 End:T15
+E9	Event:T18 Head:T19 End:T20
+E10	Event:T21 Head:T19 End:T22
+E11	Event:T23 Head:T19 Head2:T24 End:T30
+E12	Event:T26 End:T27
+E13	Event:T28 End:T29
+E14	Event:T33 Head:T34
+E15	Event:T35 End:T36 Head:T34
+R2	Entity_att Arg1:T25 Arg2:T24
+T37	Head_End 24 31	robbery
+T38	Att_span 32 44	in his store
+R4	Event_att Arg1:T38 Arg2:E1	
+T39	Att_span 45 55	one night.
+R5	Event_att Arg1:T39 Arg2:E1	
+T6	Head_End 100 109	telephone
+T9	Att_span 140 147	by feel
+R1	Event_att Arg1:T9 Arg2:E3	
+R6	EventCause Arg1:E5 Arg2:E3	
+T13	Head_End 225 266	i'm at the store.  i've been shot.  help!
+R7	EventTemporal Arg1:E9 Arg2:E10	
+T16	Head_End 335 339	none
+T17	Event 340 344	came
+E4	Event:T17 
+R8	EventTemporal Arg1:E10 Arg2:E4	
+T31	Event 533 537	know
+E8	Event:T31 End:T32
+T32	Head_End 538 559	where "the store" was
+R3	NC2Event Arg1:E15 Arg2:E8	

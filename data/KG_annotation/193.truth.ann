@@ -1,0 +1,12 @@
+T1	Event 39 57	impossible to look
+T3	Head_End 75 78	you
+T4	Head_End 58 70	east or west
+T5	Head_End 13 19	center
+T6	Att_span 7 12	exact
+E1	Event:T1 Head:T5 Head2:T4 Head3:T3
+R1	Entity_att Arg1:T6 Arg2:T5
+T7	Att_span 20 32	of the earth
+R2	Entity_att Arg1:T7 Arg2:T5	
+T2	Event 79 89	could look
+E2	Event:T2 End:T8 Head:T3
+T8	Head_End 90 104	north or south

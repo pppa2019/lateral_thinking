@@ -1,0 +1,12 @@
+T1	Event 89 95	ruined
+T2	Head_End 119 134	factory output.
+T4	Head_End 5 12	factory
+E1	Event:T1 End:T2 Head:T7
+T5	Att_span 16 40	buckinghamshire  england
+R1	Entity_att Arg1:T5 Arg2:T4	
+T6	Att_span 42 67	in the nineteenth century
+R2	Entity_att Arg1:T6 Arg2:T4	
+T7	Head_End 71 88	bungling employee
+T3	Head_End 144 156	his employer
+T8	Event 166 173	pleased
+E2	Event:T8 Head:T3

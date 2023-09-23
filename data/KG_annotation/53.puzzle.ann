@@ -1,0 +1,26 @@
+T1	Head_End 2 5	man
+T2	Event 6 12	enters
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 17 25	elevator
+T4	Att_span 29 59	a high rise apartment building
+R1	Entity_att Arg1:T4 Arg2:T3	
+T5	Event 61 70	takes off
+E2	Event:T5 Head:T1 End:T6
+T6	Head_End 71 80	one glove
+T7	Event 86 92	pushes
+E3	Event:T7 End:T8 Head:T1
+T8	Head_End 93 123	the button for the tenth floor
+R2	EventTemporal Arg1:E1 Arg2:E2	
+R3	EventTemporal Arg1:E2 Arg2:E3	
+T9	Event 153 159	enters
+E4	Event:T9 Head:T1 End:T3
+T10	Att_span 126 138	The next day
+R4	Event_att Arg1:T10 Arg2:E4	
+T11	Event 174 183	"puts on"
+E5	Event:T11 End:T12 Head:T1
+T12	Head_End 184 193	one glove
+T13	Event 199 205	pushes
+E6	Event:T13 End:T8 Head:T1
+R5	EventTemporal Arg1:E4 Arg2:E5	
+R6	EventTemporal Arg1:E5 Arg2:E6	
+R7	EventTemporal Arg1:E3 Arg2:E4	

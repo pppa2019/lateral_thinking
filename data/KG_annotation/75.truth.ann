@@ -1,0 +1,26 @@
+T1	Head_End 15 29	trapeze artist
+T3	Event 34 38	time
+T4	Head_End 44 47	act
+T5	Head_End 4 9	woman
+T9	Event 133 140	changes
+T10	Head_End 124 132	organist
+T11	Head_End 141 146	tempo
+T12	Event 150 155	stops
+T13	Head_End 160 165	music
+T14	Event 199 204	falls
+T15	Head_End 192 198	artist
+T16	Att_span 184 191	trapeze
+E1	Event:T3 End:T4 Head:T5
+E3	Event:T9 Head:T10 End:T11
+E4	Event:T12 Head:T10 End:T13
+E5	Event:T14 End:T15
+R3	Entity_att Arg1:T16 Arg2:T15
+T2	Event 79 83	jump
+E2	Event:T2 Head:T5 End:T6
+T6	Head_End 88 103	another trapeze
+T7	Att_span 166 174	too soon
+R1	Event_att Arg1:T7 Arg2:E4	
+T8	Event 212 217	death
+E6	Event:T8 
+R2	EventTemporal Arg1:E5 Arg2:E6	
+R4	EventCause Arg1:E4 Arg2:E5	

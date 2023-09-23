@@ -1,0 +1,1 @@
+A terse weather report once stated that the temperature in a certain place at midnight on June 1st was a certain number of degrees. Where was the place?

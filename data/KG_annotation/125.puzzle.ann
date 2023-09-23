@@ -1,0 +1,6 @@
+T1	Head_End 4 9	light
+T2	Event 10 18	goes out
+E1	Event:T2 Head:T1
+T3	Event 29 33	dies
+E2	Event:T3 Head:T4
+T4	Head_End 25 28	man

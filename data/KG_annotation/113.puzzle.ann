@@ -1,0 +1,12 @@
+T1	Head_End 0 10	two people
+T2	Event 15 19	dead
+E1	Event:T2 Head:T1
+T3	Att_span 20 28	in a car
+T4	Event 39 45	locked
+E2	Event:T4 End:T5
+R1	Event_att Arg1:T3 Arg2:E1	
+T5	Head_End 25 28	car
+T6	Event 80 85	blood
+E3	Event:T6 
+R2	EventSameTime Arg1:E1 Arg2:E3	
+R3	EventSameTime Arg1:E1 Arg2:E2	

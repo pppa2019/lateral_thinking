@@ -1,0 +1,33 @@
+T5	Event 60 67	reduces
+T6	Head_End 55 59	rain
+T7	Head_End 68 76	traction
+T9	Head_End 94 99	water
+T14	Event 185 189	gets
+T15	Head_End 176 184	car wash
+T17	Head_End 190 205	little business
+T18	Event 151 162	threatening
+T19	Head_End 143 147	rain
+T20	Event 215 227	doesn't make
+T21	Att_span 237 240	wet
+T22	Head_End 232 236	road
+T23	Event 251 255	take
+T25	Head_End 260 266	corner
+T26	Event 267 273	faster
+E2	Event:T5 Head:T6 End:T7
+E5	Event:T14 Head:T15 End:T17
+E6	Event:T18 Head:T19
+E7	Event:T20 Head:T15 End:T22
+E8	Event:T23 End:T25
+T1	Head_End 10 18	car wash
+T2	Att_span 19 33	on that corner
+R1	Entity_att Arg1:T2 Arg2:T1	
+T3	Att_span 109 117	car wash
+R2	Entity_att Arg1:T3 Arg2:T9	
+T4	Event 118 121	has
+E1	Event:T4 Head:T9 End:T8
+T8	Head_End 131 137	effect
+T10	Head_End 60 77	reduces traction.
+R3	EntityEqual Arg1:T8 Arg2:T10	
+R4	EventCause Arg1:E5 Arg2:E7	
+R5	Entity_att Arg1:T21 Arg2:T22	
+R6	EventCause Arg1:E7 Arg2:E8	

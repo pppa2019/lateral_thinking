@@ -1,0 +1,16 @@
+T1	Event 28 34	stated
+T2	Head_End 2 22	terse weather report
+T5	Head_End 44 55	temperature
+T6	Head_End 69 74	place
+T7	Att_span 61 68	certain
+T8	Head_End 103 130	a certain number of degrees
+T9	Event 138 141	was
+T10	Head_End 146 151	place
+E1	Event:T1 Head:T2 End:T5
+E2	Event:T9 End:T10
+R2	Entity_att Arg1:T7 Arg2:T6
+R3	Entity_att Arg1:T7 Arg2:T8
+T3	Att_span 75 86	at midnight
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Att_span 87 98	on june 1st
+R4	Event_att Arg1:T4 Arg2:E1	

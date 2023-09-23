@@ -1,0 +1,27 @@
+T1	Event 37 43	attack
+T5	Head_End 86 95	fragrance
+T6	Non_Core_Event 104 108	adds
+T9	Event 213 221	attacked
+T11	Event 242 246	used
+T12	Head_End 249 263	new aftershave
+E1	Event:T1 Head:T2 End:T15
+E3	Non_Core_Event:T6 
+E4	Event:T9 End:T10 Head:T16
+E5	Event:T11 End:T12 Head:T10
+T13	Head_End 4 7	man
+T14	Head_End 13 22	beekeeper
+R1	EntityEqual Arg1:T13 Arg2:T14	
+T2	Head_End 32 36	bees
+T15	Head_End 44 52	en masse
+T3	Event 66 81	don't recognize
+E2	Event:T3 Head:T2 End:T5
+T4	Event 122 130	based on
+E6	Event:T4 End:T7
+R2	NC2Event Arg1:E3 Arg2:E6	
+T7	Head_End 146 163	actually happened
+T8	Att_span 164 182	to his grandfather
+R3	Entity_att Arg1:T8 Arg2:T7	
+T10	Head_End 186 195	beekeeper
+T16	Head_End 229 233	bees
+T17	Att_span 264 282	for the first time
+R4	Event_att Arg1:T17 Arg2:E5	

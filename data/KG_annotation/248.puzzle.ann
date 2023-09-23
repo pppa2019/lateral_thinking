@@ -1,0 +1,32 @@
+T1	Head_End 0 5	Susan
+T2	Non_Core_Event 6 13	watched
+E1	Non_Core_Event:T2 Head:T1
+T3	Event 29 36	boarded
+E2	Event:T3 Head:T4 End:T5
+R1	NC2Event Arg1:E1 Arg2:E2	
+T4	Head_End 17 28	her husband
+T5	Head_End 37 66	the 8:15 PM Air Canada flight
+T6	Att_span 67 90	from Toronto to Chicago
+R2	Entity_att Arg1:T6 Arg2:T5	
+T7	Event 101 111	drove home
+E3	Event:T7 Head:T1
+T8	Att_span 112 128	from the airport
+T9	Event 146 159	watch a movie
+E4	Event:T9 Head:T1
+R3	EventTemporal Arg1:E3 Arg2:E4	
+R4	Event_att Arg1:T8 Arg2:E3	
+T10	Event 167 190	one hour into the movie
+E5	Event:T10 
+T11	Event 201 213	a news flash
+E6	Event:T11 
+R5	EventTemporal Arg1:E5 Arg2:E6	
+T12	Event 273 280	crashed
+E7	Event:T12 Head:T5
+T13	Att_span 281 298	with no survivors
+R6	Event_att Arg1:T13 Arg2:E7	
+R7	EventTemporal Arg1:E7 Arg2:E6	
+T14	Event 310 319	not react
+E8	Event:T14 Head:T1
+T15	Event 330 358	continued to watch the movie
+E9	Event:T15 Head:T1
+R8	EventSameTime Arg1:E8 Arg2:E9	

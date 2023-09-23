@@ -1,0 +1,40 @@
+T1	Head_End 4 14	pharmacist
+T2	Event 15 20	gives
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 25 28	man
+T4	Event 48 53	drink
+E2	Event:T4 Head:T3 End:T5
+T5	Head_End 29 44	a cup of coffee
+R1	EventTemporal Arg1:E1 Arg2:E2	
+T6	Event 65 72	waiting
+E3	Event:T6 Head:T3
+R2	EventSameTime Arg1:E3 Arg2:E1	
+T7	Non_Core_Event 126 130	says
+E4	Non_Core_Event:T7 Head:T1
+T8	Event 150 152	in
+E5	Event:T8 Head:T9 End:T5
+T9	Head_End 143 149	poison
+R3	NC2Event Arg1:E4 Arg2:E5	
+R4	EventTemporal Arg1:E2 Arg2:E4	
+T10	Event 167 176	I'll give
+E6	Event:T10 Head:T1 End:T14
+T11	Event 201 206	write
+E7	Event:T11 Head:T3 End:T15
+T12	Non_Core_Event 240 248	planning
+E8	Non_Core_Event:T12 Head:T3
+T13	Event 252 256	kill
+E9	Event:T13 End:T19 Head:T3
+T14	Head_End 185 193	antidote
+T15	Head_End 207 225	a signed statement
+T16	Event 274 278	keep
+E10	Event:T16 Head:T1 End:T17
+T17	Head_End 283 293	confession
+R5	EntityEqual Arg1:T15 Arg2:T17	
+T18	Event 298 314	anything happens
+E11	Event:T18 End:T19
+T19	Head_End 257 266	your wife
+R6	NC2Event Arg1:E8 Arg2:E9	
+T20	Event 334 344	give it to
+E12	Event:T20 Head:T1
+R7	EventCause Arg1:E11 Arg2:E12	
+T21	Head_End 349 355	police

@@ -1,0 +1,37 @@
+T2	Head_End 0 21	a man and his brother
+T3	Event 35 43	drinking
+T4	Non_Core_Event 51 56	begin
+T5	Head_End 46 50	they
+T7	Event 164 169	pulls
+T8	Head_End 143 146	man
+T9	Head_End 176 182	pistol
+T10	Event 187 192	blows
+T11	Head_End 207 213	brains
+T12	Event 156 159	fed
+T13	Event 223 227	sits
+T14	Head_End 220 222	he
+T15	Event 236 239	die
+E2	Event:T3 Head:T2
+E3	Non_Core_Event:T4 Head:T5
+E4	Event:T7 Head:T8 End:T9
+E5	Event:T10 Head:T8 End:T11
+E6	Event:T12 Head:T8
+E7	Event:T13 End:T14
+E8	Event:T15 End:T14
+T1	Event 83 99	won't get out of
+E1	Event:T1 End:T16 Head:T19
+T16	Head_End 104 114	man's face
+T17	Event 116 124	shouting
+E9	Event:T17 Head:T16
+T18	Event 129 137	cursing.
+E10	Event:T18 Head:T16
+R1	EventSameTime Arg1:E9 Arg2:E10	
+T6	Event 60 65	argue
+E11	Event:T6 
+R2	NC2Event Arg1:E3 Arg2:E11	
+T19	Head_End 71 82	the brother
+R3	EntityPartof Arg1:T2 Arg2:T19	
+R4	EventTemporal Arg1:E6 Arg2:E4	
+R5	EventTemporal Arg1:E4 Arg2:E5	
+R6	EventTemporal Arg1:E5 Arg2:E7	
+R7	EventTemporal Arg1:E7 Arg2:E8	

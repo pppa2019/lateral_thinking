@@ -1,0 +1,23 @@
+T1	Head_End 0 10	The drinks
+T2	Event 11 18	contain
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 28 37	ice cubes
+T4	Att_span 19 27	poisoned
+R1	Entity_att Arg1:T4 Arg2:T3	
+T5	Head_End 39 42	one
+T6	Event 47 52	drink
+E2	Event:T6 Head:T5
+T7	Att_span 54 60	slowly
+R2	Event_att Arg1:T7 Arg2:E2	
+T8	Event 82 86	melt
+E3	Event:T8 Head:T3
+R3	EventCause Arg1:E2 Arg2:E3	
+T9	Head_End 94 103	the other
+T10	Event 104 109	drink
+E4	Event:T10 Head:T9
+T11	Att_span 111 118	quickly
+R4	Event_att Arg1:T11 Arg2:E4	
+T12	Event 128 147	doesn't get much of
+E5	Event:T12 End:T13 Head:T9
+T13	Head_End 152 158	poison
+R5	EventCause Arg1:E4 Arg2:E5	

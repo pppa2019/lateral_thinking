@@ -1,0 +1,29 @@
+T1	Head_End 2 5	man
+T2	Event 6 14	wakes up
+E1	Event:T2 Head:T1
+T3	Att_span 15 24	one night
+R1	Event_att Arg1:T3 Arg2:E1	
+T4	Event 28 31	get
+E2	Event:T4 End:T5 Head:T1
+T5	Head_End 37 42	water
+R2	EventTemporal Arg1:E1 Arg2:E2	
+T6	Event 48 57	turns off
+E3	Event:T6 Head:T10 End:T8
+T7	Event 72 84	goes back to
+E4	Event:T7 End:T9 Head:T10
+T8	Head_End 62 67	light
+T9	Head_End 85 88	bed
+T10	Head_End 45 47	He
+R3	EventTemporal Arg1:E3 Arg2:E4	
+R4	EntityEqual Arg1:T1 Arg2:T10	
+T11	Event 111 120	looks out
+E5	Event:T11 Head:T10 End:T13
+T12	Att_span 91 107	The next morning
+R5	Event_att Arg1:T12 Arg2:E5	
+T13	Head_End 125 131	window
+T14	Event 133 140	screams
+E6	Event:T14 Head:T10
+T15	Event 146 151	kills
+E7	Event:T15 Head:T10 End:T10
+R6	EventTemporal Arg1:E5 Arg2:E6	
+R7	EventTemporal Arg1:E6 Arg2:E7	

@@ -1,0 +1,10 @@
+T1	Head_End 0 4	They
+T2	Event 5 11	proved
+E1	Event:T2 Head:T1
+T3	Att_span 23 29	guilty
+R1	Entity_att Arg1:T3 Arg2:T1	
+T4	Event 50 64	found innocent
+E2	Event:T4 Head:T1
+T5	Att_span 65 85	according to the law
+R2	Event_att Arg1:T5 Arg2:E2	
+R3	EventCause Arg1:E1 Arg2:E2	

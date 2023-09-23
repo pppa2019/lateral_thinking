@@ -1,0 +1,22 @@
+T1	Event 8 11	has
+T2	Head_End 2 7	woman
+T3	Event 100 108	declares
+T4	Head_End 148 152	seen
+T5	Event 210 218	punished
+T6	Head_End 194 199	woman
+T7	Att_span 189 193	this
+E1	Event:T1 Head:T2 End:T11
+E2	Event:T3 End:T4
+E3	Event:T5 End:T6
+R1	Entity_att Arg1:T7 Arg2:T6
+T8	Event 65 73	murdered
+E4	Event:T8 Head:T9 End:T10
+T9	Head_End 81 87	sister
+T10	Head_End 53 60	husband
+T11	Head_End 29 34	proof
+T12	Att_span 12 28	incontrovertible
+R2	Entity_att Arg1:T12 Arg2:T11	
+T13	Att_span 119 137	the strangest case
+R3	Entity_att Arg1:T13 Arg2:T4	
+T14	Head_End 169 187	cut-and-dried case
+R4	EntityEqual Arg1:T4 Arg2:T14	

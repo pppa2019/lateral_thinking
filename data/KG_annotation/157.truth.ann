@@ -1,0 +1,19 @@
+T1	Event 18 22	name
+T2	Head_End 34 37	dog
+T3	Att_span 30 33	pet
+T4	Event 52 55	had
+T5	Head_End 40 51	her husband
+T6	Event 59 66	stuffed
+T7	Head_End 56 58	it
+T8	Event 71 78	mounted
+T9	Event 88 99	made a mess
+E1	Event:T1 End:T2
+E2	Event:T4 End:T5
+E3	Event:T6 End:T7
+E4	Event:T8 End:T7
+E5	Event:T9 Head:T7 End:T11
+R1	Entity_att Arg1:T3 Arg2:T2
+T10	Head_End 0 9	spaghetti
+R2	EntityEqual Arg1:T10 Arg2:T2	
+R3	EventTemporal Arg1:E2 Arg2:E4	
+T11	Head_End 107 110	rug

@@ -1,0 +1,28 @@
+T1	Event 3 21	a bizarre accident
+E1	Event:T1 
+T2	Head_End 23 41	two identical vans
+T3	Event 42 64	simultaneously plunged
+E2	Event:T3 Head:T2
+T4	Att_span 65 80	over a dockside
+T5	Event 85 89	into
+E3	Event:T5 Head:T2 End:T6
+T6	Head_End 90 110	thirty feet of water
+R1	EventEqual Arg1:E1 Arg2:E2	
+R2	Event_att Arg1:T4 Arg2:E2	
+T7	Event 122 136	landed upright
+E4	Event:T7 Head:T2
+T8	Head_End 138 159	Each van had a driver
+T9	Att_span 168 171	fit
+T10	Att_span 173 194	uninjured by the fall
+T11	Att_span 200 209	conscious
+R3	Entity_att Arg1:T9 Arg2:T8	
+R4	Entity_att Arg1:T10 Arg2:T8	
+R5	Entity_att Arg1:T11 Arg2:T8	
+T12	Head_End 211 214	One
+T13	Event 215 222	drowned
+E5	Event:T13 Head:T12
+T14	Head_End 231 236	other
+T15	Event 237 251	easily escaped
+E6	Event:T15 End:T14
+R6	EntityPartof Arg1:T12 Arg2:T8	
+R7	EntityPartof Arg1:T14 Arg2:T8	

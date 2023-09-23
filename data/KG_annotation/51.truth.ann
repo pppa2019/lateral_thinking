@@ -1,0 +1,17 @@
+T1	Head_End 4 8	room
+T2	Event 12 27	the ballroom of
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 31 42	ocean liner
+T4	Event 49 53	sank
+E2	Event:T4 Head:T3
+T5	Att_span 54 67	some time ago
+R1	Event_att Arg1:T5 Arg2:E2	
+T6	Head_End 74 77	man
+T7	Event 78 88	ran out of
+E3	Event:T7 Head:T6 End:T8
+T8	Head_End 89 92	air
+T9	Event 99 108	diving in
+E4	Event:T9 
+T10	Head_End 113 118	wreck
+R2	EntityEqual Arg1:T10 Arg2:T3	
+R3	EventSameTime Arg1:E4 Arg2:E3	

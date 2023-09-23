@@ -1,0 +1,9 @@
+T1	Event 6 11	opens
+T2	Head_End 2 5	man
+T3	Head_End 16 21	mouth
+T4	Event 26 30	dies
+E1	Event:T1 Head:T2 End:T3
+E2	Event:T4 End:T2
+T5	Att_span 31 49	shortly afterwards
+R1	Event_att Arg1:T5 Arg2:E2	
+R2	EventTemporal Arg1:E1 Arg2:E2	

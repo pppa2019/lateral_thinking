@@ -1,0 +1,16 @@
+T1	Event 21 31	conducting
+T2	Head_End 34 51	communion service
+T4	Event 81 93	ran short of
+T6	Head_End 100 104	wine
+T7	Att_span 94 99	altar
+T8	Event 126 128	do
+T9	Head_End 111 119	red wine
+E1	Event:T1 End:T2 Head:T12
+E2	Event:T4 End:T6
+E3	Event:T8 Head:T9
+R1	Entity_att Arg1:T7 Arg2:T6
+T11	Head_End 4 7	man
+T12	Head_End 14 20	priest
+R3	EntityEqual Arg1:T11 Arg2:T12	
+T3	Att_span 52 70	in a nearby church
+R4	Event_att Arg1:T3 Arg2:E1	

@@ -1,0 +1,47 @@
+T1	Event 21 29	speeding
+T2	Head_End 10 16	couple
+T3	Event 57 60	ran
+T4	Head_End 68 71	gas
+T5	Event 82 86	went
+T6	Head_End 78 81	man
+T7	Event 91 95	help
+T8	Event 102 113	making sure
+T9	Head_End 142 145	and
+T10	Event 123 129	closed
+T11	Head_End 134 141	windows
+T12	Event 146 152	locked
+T13	Head_End 157 162	doors
+T14	Event 196 201	found
+T15	Head_End 193 195	he
+T16	Head_End 206 215	wife dead
+T17	Event 185 191	return
+T18	Event 267 273	closed
+T19	Head_End 248 255	windows
+T20	Att_span 261 266	still
+T21	Event 296 302	locked
+T22	Head_End 279 284	doors
+T23	Event 311 317	damage
+T24	Head_End 334 337	car
+E1	Event:T1 Head:T2
+E2	Event:T3 End:T4 Head:T25
+E3	Event:T5 Head:T6
+E4	Event:T7 End:T6
+E5	Event:T8 Head:T6 End:T9
+E6	Event:T10 End:T11 Head:T26
+E7	Event:T12 Head:T6 End:T13
+E8	Event:T14 Head:T15 End:T16 End2:T27
+E9	Event:T17 End:T15
+E10	Event:T18 End:T19
+E11	Event:T21 End:T22
+E12	Event:T23 End:T24
+R2	Event_att Arg1:T20 Arg2:T21
+T25	Head_End 51 56	sedan
+T26	Head_End 114 122	his wife
+R3	EventTemporal Arg1:E1 Arg2:E2	
+R4	EventTemporal Arg1:E3 Arg2:E4	
+R5	EventTemporal Arg1:E5 Arg2:E3	
+R6	EventTemporal Arg1:E4 Arg2:E7	
+T27	Head_End 220 230	a stranger
+T28	Event 231 241	in the car
+E13	Event:T28 Head:T27
+R1	EventTemporal Arg1:E9 Arg2:E8	

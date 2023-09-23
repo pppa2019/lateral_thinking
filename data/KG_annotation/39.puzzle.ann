@@ -1,0 +1,17 @@
+T1	Event 6 10	gets
+T2	Head_End 2 5	man
+T3	Non_Core_Event 58 63	knows
+T4	Head_End 55 57	he
+T5	Event 48 53	stops
+T6	Head_End 39 47	elevator
+E1	Event:T1 Head:T2 End:T7
+E2	Non_Core_Event:T3 Head:T4
+E3	Event:T5 End:T6
+T7	Head_End 19 28	elevator.
+R1	EntityEqual Arg1:T4 Arg2:T2	
+T8	Head_End 68 72	wife
+T9	Event 76 80	dead
+E4	Event:T9 Head:T8
+R2	NC2Event Arg1:E2 Arg2:E4	
+R3	EventTemporal Arg1:E1 Arg2:E3	
+R4	EventSameTime Arg1:E3 Arg2:E2	

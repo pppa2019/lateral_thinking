@@ -1,0 +1,5 @@
+T4	Event 50 55	lying
+E1	Event:T4 Head:T1
+T5	Att_span 65 89	in the middle of a field
+R1	Event_att Arg1:T5 Arg2:E1	
+T1	Head_End 10 49	a carrot, a pile of pebbles, and a pipe

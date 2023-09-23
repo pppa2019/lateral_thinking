@@ -1,0 +1,33 @@
+T1	Head_End 33 50	the twins' mother
+T3	Event 16 30	went into labo
+E1	Event:T3 Head:T1
+T2	Event 55 65	travelling
+E2	Event:T2 Head:T1
+T4	Att_span 66 85	from Guam to Hawaii
+R1	Event_att Arg1:T4 Arg2:E2	
+R2	EventSameTime Arg1:E1 Arg2:E2	
+T5	Head_End 103 108	Terry
+T6	Head_End 87 101	The older twin
+R3	EntityEqual Arg1:T5 Arg2:T6	
+T7	Event 114 118	born
+E3	Event:T7 Head:T5
+T8	Att_span 119 131	on March 1st
+R4	Event_att Arg1:T8 Arg2:E3	
+T9	Head_End 157 163	mother
+T10	Event 164 199	crossed the International Date Line
+E4	Event:T10 Head:T9
+R5	EntityEqual Arg1:T9 Arg2:T1	
+T11	Head_End 204 209	Kerry
+T12	Head_End 211 227	the younger twin
+R6	EntityEqual Arg1:T12 Arg2:T11	
+T13	Event 233 237	born
+E5	Event:T13 Head:T11
+R7	EventTemporal Arg1:E4 Arg2:E5	
+T14	Att_span 252 265	February 28th
+R8	Event_att Arg1:T14 Arg2:E5	
+T15	Event 298 313	two days before
+E6	Event:T15 Head:T16 End:T17
+T16	Head_End 283 294	February 28
+T17	Head_End 314 323	March 1st
+T18	Att_span 267 280	In leap years
+R9	Event_att Arg1:T18 Arg2:E6	

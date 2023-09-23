@@ -1,0 +1,21 @@
+T1	Event 15 21	throws
+T2	Head_End 11 14	she
+T3	Event 42 51	flies out
+T4	Head_End 39 41	it
+T5	Event 53 65	loops around
+T6	Event 71 81	comes back
+T7	Event 86 90	hits
+E1	Event:T1 Head:T2 End:T18
+E2	Event:T3 End:T4
+E3	Event:T5 End:T4
+E4	Event:T6 End:T4
+E5	Event:T7 Head:T4
+T18	Head_End 27 36	boomerang
+R2	EntityEqual Arg1:T4 Arg2:T18	
+R3	EventTemporal Arg1:E2 Arg2:E3	
+R4	EventTemporal Arg1:E3 Arg2:E4	
+R5	EventTemporal Arg1:E4 Arg2:E5	
+T19	Head_End 102 106	head
+T20	Event 108 115	killing
+E10	Event:T20 End:T2
+R6	EventTemporal Arg1:E5 Arg2:E10	

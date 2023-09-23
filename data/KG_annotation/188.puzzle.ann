@@ -1,0 +1,8 @@
+T1	Event 53 62	goes grey
+T2	Head_End 32 36	hair
+E1	Event:T1 End:T2
+T3	Head_End 86 95	moustache
+T4	Event 96 100	does
+E2	Event:T4 Head:T3
+R1	EventEqual Arg1:E2 Arg2:E1	
+R2	EventTemporal Arg1:E2 Arg2:E1	

@@ -1,0 +1,8 @@
+T1	Event 13 20	sitting
+T2	Head_End 4 9	plane
+E1	Event:T1 End:T2 End2:T3
+T3	Head_End 21 34	on the ground
+T4	Att_span 50 69	in denver  colorado
+T5	Att_span 35 49	at the airport
+R1	Event_att Arg1:T5 Arg2:E1	
+R2	Event_att Arg1:T4 Arg2:E1	

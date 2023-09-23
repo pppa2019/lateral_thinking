@@ -1,0 +1,47 @@
+T1	Head_End 2 19	physics professor
+T2	Event 23 36	demonstrating
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 37 59	conservation of energy
+T4	Event 63 73	suspending
+E2	Event:T4 Head:T1 End:T5
+T5	Head_End 76 88	bowling ball
+T6	Att_span 89 109	from a piece of rope
+R1	Event_att Arg1:T6 Arg2:E2	
+T7	Event 115 120	pulls
+E3	Event:T7 Head:T1 End:T8
+T8	Head_End 125 129	ball
+T9	Event 130 134	back
+E4	Event:T9 Head:T8
+R2	EventTemporal Arg1:E3 Arg2:E4	
+T10	Event 146 163	right in front of
+E5	Event:T10 Head:T8 End:T11
+R3	EventCause Arg1:E4 Arg2:E5	
+T11	Head_End 164 172	his nose
+R4	EntityEqual Arg1:T8 Arg2:T5	
+T12	Event 179 186	lets go
+E6	Event:T12 Head:T8
+R5	EventTemporal Arg1:E5 Arg2:E6	
+T13	Non_Core_Event 195 203	supposed
+E7	Non_Core_Event:T13 Head:T1
+T14	Event 207 222	swing away from
+E8	Event:T14 Head:T1
+R6	NC2Event Arg1:E7 Arg2:E8	
+T15	Event 233 237	back
+E9	Event:T15 Head:T8 End:T1
+R7	EventTemporal Arg1:E8 Arg2:E9	
+T16	Non_Core_Event 246 254	stopping
+E10	Non_Core_Event:T16 Head:T8
+T17	Event 260 271	in front of
+E11	Event:T17 End:T11
+R8	NC2Event Arg1:E10 Arg2:E11	
+R9	EventTemporal Arg1:E9 Arg2:E10	
+T18	Non_Core_Event 300 304	gave
+E12	Non_Core_Event:T18 Head:T1
+T19	Event 314 327	a slight push
+E13	Event:T19 End:T8
+R10	NC2Event Arg1:E12 Arg2:E13	
+T20	Event 351 364	crashing into
+E14	Event:T20 Head:T8 End:T11
+R11	EventCause Arg1:E13 Arg2:E14	
+T21	Att_span 374 389	upon its return
+R12	Event_att Arg1:T21 Arg2:E14	

@@ -1,0 +1,4 @@
+T1	Event 10 12	is
+T2	Head_End 4 9	movie
+E1	Event:T1 End:T2 Head:T3
+T3	Head_End 18 34	drive-in theatre

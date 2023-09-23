@@ -1,0 +1,24 @@
+T1	Event 8 14	seated
+T2	Head_End 0 3	you
+T4	Head_End 44 49	plane
+T5	Att_span 38 43	small
+T6	Event 93 97	loom
+T7	Head_End 83 92	mountains
+T8	Att_span 78 82	huge
+T9	Event 124 139	does not change
+T10	Head_End 140 170	speed  direction  or elevation
+T11	Event 180 187	survive
+T12	Head_End 176 179	you
+E1	Event:T1 End:T2 End2:T3
+E3	Event:T6 End:T7
+E4	Event:T9 End:T10 Head:T15
+E5	Event:T11 Head:T12
+R2	Entity_att Arg1:T8 Arg2:T7
+R1	Entity_att Arg1:T5 Arg2:T4	
+T3	Head_End 27 32	pilot
+R3	EntityPartof Arg1:T3 Arg2:T4	
+T13	Att_span 50 77	at an altitude of one mile.
+R4	Event_att Arg1:T13 Arg2:E1	
+T14	Att_span 98 112	directly ahead
+R5	Event_att Arg1:T14 Arg2:E3	
+T15	Head_End 118 123	pilot

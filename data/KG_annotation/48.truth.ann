@@ -1,0 +1,14 @@
+T1	Head_End 4 7	man
+T2	Event 11 21	delivering
+E1	Event:T2 Head:T1 End:T3
+T3	Head_End 22 30	a pardon
+T4	Head_End 36 61	the flicker of the lights
+T5	Non_Core_Event 62 71	indicates
+E2	Non_Core_Event:T5 Head:T4
+T6	Head_End 81 87	person
+T7	Att_span 91 102	be pardoned
+T8	Event 117 129	electrocuted
+E3	Event:T8 Head:T6
+R1	NC2Event Arg1:E2 Arg2:E3	
+R2	Entity_att Arg1:T7 Arg2:T6	
+R3	EntityEqual Arg1:T6 Arg2:T1	

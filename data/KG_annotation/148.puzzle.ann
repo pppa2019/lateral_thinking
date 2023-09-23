@@ -1,0 +1,12 @@
+T1	Event 9 16	sitting
+T2	Head_End 2 5	man
+E1	Event:T1 End:T2
+T3	Att_span 17 27	in a chair
+T4	Att_span 31 41	in a cabin
+T5	Att_span 45 70	on the side of a mountain
+T6	Event 74 79	dead.
+E2	Event:T6 
+R1	Event_att Arg1:T3 Arg2:E1	
+R2	Event_att Arg1:T4 Arg2:E1	
+R3	Event_att Arg1:T5 Arg2:E1	
+R4	EventTemporal Arg1:E1 Arg2:E2	

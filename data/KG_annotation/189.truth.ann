@@ -1,0 +1,14 @@
+T1	Event 49 52	hit
+T2	Head_End 41 44	one
+T3	Head_End 55 62	"birdie
+T4	Head_End 87 92	other
+T5	Head_End 96 101	eagle
+T7	Att_span 26 39	golf parlance
+E1	Event:T1 Head:T2 End:T3 End:T5 Head2:T4
+T8	Head_End 0 4	they
+T9	Head_End 10 22	two golfers.
+R2	EntityEqual Arg1:T8 Arg2:T9	
+T6	Head_End 64 77	one under par
+T10	Head_End 103 116	two under par
+R1	EntityEqual Arg1:T10 Arg2:T5	
+R3	EntityEqual Arg1:T6 Arg2:T3	

@@ -1,0 +1,7 @@
+T1	Event 39 44	lived
+T2	Head_End 3 6	he'
+T3	Event 8 17	turned on
+T4	Head_End 22 27	light
+E1	Event:T1 Head:T2
+E2	Event:T3 Head:T2 End:T4
+R1	EventCause Arg1:E2 Arg2:E1	

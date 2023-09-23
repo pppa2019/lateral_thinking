@@ -1,0 +1,30 @@
+T1	Head_End 5 13	incident
+T3	Event 67 74	camping
+T4	Head_End 59 62	man
+T5	Event 131 140	attracted
+T6	Head_End 125 130	blood
+T7	Head_End 149 153	fish
+T8	Att_span 141 148	piranha
+T9	Event 161 168	removed
+T10	Head_End 173 179	finger
+T11	Event 180 189	including
+T12	Head_End 194 198	cut!
+T13	Event 95 98	put
+T14	Head_End 92 94	he
+T15	Head_End 103 107	hand
+E1	Event:T3 Head:T4 End:T17
+E2	Event:T5 Head:T6 End:T7
+E3	Event:T9 End:T10 Head:T7
+E4	Event:T11 End:T12 End2:T10
+E5	Event:T13 Head:T14 End:T15
+R2	Entity_att Arg1:T8 Arg2:T7
+T2	Event 14 24	took place
+E6	Event:T2 Head:T1 End:T16
+T16	Head_End 28 41	south america
+T17	Head_End 80 86	river.
+T18	Att_span 108 120	in the river
+R1	Event_att Arg1:T18 Arg2:E5	
+R3	EventTemporal Arg1:E5 Arg2:E2	
+R4	EventTemporal Arg1:E1 Arg2:E5	
+R5	EventTemporal Arg1:E5 Arg2:E2	
+R6	EventTemporal Arg1:E2 Arg2:E3	

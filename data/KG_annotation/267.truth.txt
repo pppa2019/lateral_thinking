@@ -1,0 +1,1 @@
+Since the weather report did not specify degrees in Fahrenheit or Celsius/centigrade, the temperature must have been the same in both scales. Only a temperature of -40 degrees is the same in both Fahrenheit and Celsius/ centigrade. That temperature for June would certainly make the place Antarctica.
